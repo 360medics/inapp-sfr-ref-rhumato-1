@@ -32,7 +32,7 @@ export default Vue.extend({
 .ListPage {
   display: flex;
   flex-flow: column nowrap;
-  padding: 0 0.75rem;
+  padding: 0.75rem;
   &__item {
       display: flex;
       justify-content: space-between;

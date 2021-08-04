@@ -58,7 +58,6 @@ export default Vue.extend({
   },
   methods: {
     handleFindResult(result, searching) {
-      console.log(result)
       this.displayResultSearch = searching
       this.listResult = result
 
@@ -81,8 +80,7 @@ export default Vue.extend({
 .subMenu {
   padding: 0 .75rem;
   &__title {
-    margin-top: 0;
-    margin-bottom: .5rem;
+    margin: .5rem 0;
     font-weight: 500;
     line-height: 1.2;
     text-align: left;
