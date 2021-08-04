@@ -15,13 +15,8 @@
 <script lang="js">
     export default {
         name: 'TendinopathieCoiffe',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

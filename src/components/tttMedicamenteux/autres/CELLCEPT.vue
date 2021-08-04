@@ -89,13 +89,8 @@
 <script lang="js">
     export default {
         name: 'CELLCEPT',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

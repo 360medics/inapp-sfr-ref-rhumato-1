@@ -76,15 +76,15 @@ import Vue from "vue";
 
 export default Vue.extend({
   name: "Behcet",
-  mounted() {},
+
   data() {
     return {
-      score1: 0,
-      score2: 0,
-      score3: 0,
-      score4: 0,
-      score5: 0,
-      score6: 0
+      score1: null,
+      score2: null,
+      score3: null,
+      score4: null,
+      score5: null,
+      score6: null
     };
   },
   methods: {

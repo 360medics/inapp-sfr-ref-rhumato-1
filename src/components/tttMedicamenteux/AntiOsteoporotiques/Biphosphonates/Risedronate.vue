@@ -126,13 +126,8 @@
 <script lang="js">
     export default {
         name: 'Risedronate',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

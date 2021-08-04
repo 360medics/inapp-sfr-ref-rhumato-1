@@ -201,7 +201,7 @@
 import Vue from "vue";
 
 export default Vue.extend({
-  mounted() {},
+
   data() {
     return {
       necessary_condition: false,
@@ -303,14 +303,11 @@ export default Vue.extend({
 
 <style scoped lang="scss">
 @import "src/sass/global.scss";
-@import "src/sass/global";
-
 .GoutteAcrEular {}
 
 .flex {
   display: flex;
 }
-
 
 input, select {
   height: 30px;
@@ -321,7 +318,6 @@ input, select {
   margin: 0 10px;
   border: none;
 }
-
 ul {
   padding: 0;
 }

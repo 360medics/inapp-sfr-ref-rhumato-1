@@ -10,13 +10,8 @@
 <script lang="js">
     export default {
         name: 'preJAKi',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

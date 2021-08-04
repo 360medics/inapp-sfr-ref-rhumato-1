@@ -21,13 +21,8 @@
 <script lang="js">
     export default {
         name: 'GeneraliteRhumato',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

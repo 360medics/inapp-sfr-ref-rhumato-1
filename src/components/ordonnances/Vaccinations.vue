@@ -10,13 +10,8 @@
 <script lang="js">
     export default {
         name: 'Vaccinations',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

@@ -285,13 +285,8 @@
 <script lang="js">
     export default {
         name: 'AINS',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

@@ -9,15 +9,10 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
-export default Vue.extend({
-  data() {
-    return {};
-  },
-  methods: {
-  },
-  mounted() {},
-});
+  import Vue from "vue";
+  export default Vue.extend({
+    name: 'Ldl',
+  });
 </script>
 
 <style scoped lang="scss">

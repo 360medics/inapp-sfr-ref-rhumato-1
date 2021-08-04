@@ -18,13 +18,8 @@
 <script lang="js">
     export default {
         name: 'ContreIndications',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

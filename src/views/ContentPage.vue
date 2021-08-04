@@ -14,6 +14,7 @@
 <style>
 .content-page {
    padding: 0 0.75em;
+   margin-top: 1em;
 }
 
 .regulatory {
@@ -40,6 +41,7 @@ import Das28 from '@/components/scores/RIC/PolyarthriteRhumatoide/Das28.vue';
 import AcrEular2010 from '@/components/scores/RIC/PolyarthriteRhumatoide/AcrEular2010.vue';
 import Asas from '@/components/scores/RIC/Spondyloarthrite/Asas.vue';
 import NewYorkClassification from '@/components/scores/RIC/Spondyloarthrite/NewYorkClassification.vue';
+import NewYorkCriteria from '@/components/scores/RIC/Spondyloarthrite/NewYorkCriteria.vue';
 import Amor from '@/components/scores/RIC/Spondyloarthrite/Amor.vue';
 import Asdas from '@/components/scores/RIC/Spondyloarthrite/Asdas.vue';
 import IMC from '@/components/scores/Imc.vue';
@@ -299,6 +301,7 @@ export default Vue.extend({
     AcrEular2010,
     Asas,
     NewYorkClassification,
+    NewYorkCriteria,
     Amor,
     Asdas,
     IMC,
@@ -363,9 +366,6 @@ export default Vue.extend({
         this.isScore = !this.$route.fullPath.includes('new-york') && this.$route.fullPath.includes('score') ;
         this.searchComponentName(dataTree, slug);
       })
-      .catch((e) => {
-        console.log(e);
-      });
   },
 });
 </script>

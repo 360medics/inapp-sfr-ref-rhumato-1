@@ -10,13 +10,8 @@
 <script lang="js">
     export default {
         name: 'preAntiTNF',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

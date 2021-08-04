@@ -62,8 +62,8 @@
 <script lang="js">
 export default {
     name: 'RealisationPratique',
-    props: [],
-    mounted() {},
+
+
     data() {
         return {
           video1: false,
@@ -72,8 +72,8 @@ export default {
           video4: false,
         };
     },
-    methods: {},
-    computed: {}
+
+
 }
 </script>
 

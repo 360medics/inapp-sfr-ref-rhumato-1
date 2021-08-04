@@ -47,13 +47,8 @@
 <script lang="js">
     export default {
         name: 'AntiCD20',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

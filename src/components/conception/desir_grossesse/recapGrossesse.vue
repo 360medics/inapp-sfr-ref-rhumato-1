@@ -135,13 +135,8 @@
 <script lang="js">
     export default {
         name: 'recapGrossesse',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 
@@ -150,8 +145,6 @@
     .recapGrossesse {
       padding: 0 15px;
       text-align: left;
-
-
 
       .bold {
         font-weight: bold;

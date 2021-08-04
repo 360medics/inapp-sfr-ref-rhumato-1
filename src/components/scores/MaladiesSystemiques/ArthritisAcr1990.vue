@@ -88,7 +88,7 @@ export default Vue.extend({
       questions: [],
     };
   },
-  mounted() {},
+
 });
 </script>
 

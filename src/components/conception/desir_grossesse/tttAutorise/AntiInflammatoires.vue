@@ -20,13 +20,8 @@
 <script lang="js">
     export default {
         name: 'AntiInflammatoires',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

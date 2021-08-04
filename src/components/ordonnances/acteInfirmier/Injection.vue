@@ -10,13 +10,8 @@
 <script lang="js">
     export default {
         name: 'Injection',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

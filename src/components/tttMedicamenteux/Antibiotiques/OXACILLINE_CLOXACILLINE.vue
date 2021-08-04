@@ -64,13 +64,8 @@
 <script lang="js">
     export default {
         name: 'OXACILLINE_CLOXACILLINE',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

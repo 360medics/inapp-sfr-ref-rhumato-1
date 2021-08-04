@@ -76,7 +76,6 @@ export default {
     };
   },
   name: 'tree-menu',
-  computed: {},
   methods: {
     toggleChildren() {
       this.showChildren = !this.showChildren;
@@ -100,22 +99,21 @@ export default {
       return finalLink;
     },
   },
-  mounted() {},
+
 };
 </script>
 <style scoped lang="scss">
 @import 'src/sass/global.scss';
 .tree-menu {
-  all: unset;
   color: #472e5a;
   font-weight: bold;
   background: #ecf1f5;
   border-radius: 5px;
   margin-top: 0.5rem;
-  display: block;
   padding: 16px;
-
   transition: all 0.5s linear;
+  border: 2px solid #f7f7f7;
+  box-shadow: 0px 0px 10px 5px rgba(246,246,246,0.69);
 
   i {
     background: #80cc28;
@@ -151,6 +149,8 @@ export default {
   &.grandChildren {
     background-color: #fff;
     color: #4c2b62;
+    box-shadow: none;
+    border: none;
   }
 }
 .pdf-viewer {

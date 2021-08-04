@@ -52,13 +52,8 @@
 <script lang="js">
     export default {
         name: 'Troubles',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

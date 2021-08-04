@@ -125,13 +125,13 @@
 import Vue from "vue";
 
 export default Vue.extend({
-  mounted() {},
+
   data() {
     return {
-      score1: 0,
-      score2: 0,
-      score3: 0,
-      score4: 0,
+      score1: null,
+      score2: null,
+      score3: null,
+      score4: null,
     };
   },
   methods: {

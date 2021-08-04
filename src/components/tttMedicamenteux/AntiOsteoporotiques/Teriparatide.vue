@@ -118,13 +118,8 @@
 <script lang="js">
     export default {
         name: 'Teriparatide',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

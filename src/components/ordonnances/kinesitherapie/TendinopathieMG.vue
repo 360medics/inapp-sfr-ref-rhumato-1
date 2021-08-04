@@ -15,13 +15,8 @@
 <script lang="js">
     export default {
         name: 'TendinopathieMG',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

@@ -80,7 +80,7 @@ critères ACR/EULAR</h2>
 import Vue from "vue";
 
 export default Vue.extend({
-  mounted() {},
+
 });
 </script>
 

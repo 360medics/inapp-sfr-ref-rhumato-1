@@ -39,13 +39,8 @@
 <script lang="js">
 export default {
     name: 'Complications',
-    props: [],
-    mounted() {},
-    data() {
-        return {};
-    },
-    methods: {},
-    computed: {}
+
+
 }
 </script>
 

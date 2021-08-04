@@ -1,18 +1,24 @@
 <template>
-  <div class="SubListPage">
-    <h1>{{ list.name }}</h1>
-    <div class="sub-categories">
-      <div v-for="(subChildren, index) in list.children" :key="list.name + index">
-        <tree-menu
-          :name="subChildren.name"
-          :type="subChildren.type"
-          :slug="subChildren.slug"
-          :children="subChildren.children"
-          :depth="0"
-          :content="subChildren.content"
-        ></tree-menu>
+  <div>
+    <SearchBar @onSearch="handleFindResult" @onClear="handleRemoveSearch" />
+    <ListSearchResult :resultItems="listResult" :notFound="resultNotFound" v-if="displayResultSearch"/>
+    <main class="subMenu" v-else="displayResultSearch">
+      <h1 class="subMenu__title">
+        {{ submenu.name }}
+      </h1>
+      <div class="sub-categories">
+        <div v-for="(subChildren, index) in submenu.children" :key="submenu.name + index">
+          <tree-menu
+            :name="subChildren.name"
+            :type="subChildren.type"
+            :slug="subChildren.slug"
+            :children="subChildren.children"
+            :depth="0"
+            :content="subChildren.content"
+          ></tree-menu>
+        </div>
       </div>
-    </div>
+    </main>
   </div>
 </template>
 
@@ -20,16 +26,21 @@
 import Vue from "vue";
 import DataService from "@/service/DataService";
 import TreeMenu from "@/components/TreeMenu.vue";
+import SearchBar from "@/components/search/SearchBar.vue";
+import ListSearchResult from '@/components/ListSearchResult.vue';
 
 export default Vue.extend({
   name: "SubListPage",
-  data() {
-    return {
-      list: [],
-    };
-  },
+  data: () => ({
+    submenu: [],
+    displayResultSearch: false,
+    listResult: [],
+    resultNotFound: null,
+  }),
   components: {
     TreeMenu,
+    SearchBar,
+    ListSearchResult
   },
   mounted() {
     DataService.load()
@@ -40,23 +51,37 @@ export default Vue.extend({
         // Retrive component name from slug.
         for (let list of dataTree) {
           if (list.slug === slug) {
-            this.list = list;
+            this.submenu = list;
             break;
           }
         }
       })
-      .catch((e) => {
-        console.log(e);
-      });
   },
+  methods: {
+    handleFindResult(result, searching) {
+      console.log(result)
+      this.displayResultSearch = searching
+      this.listResult = result
+
+      if (this.listResult.length > 0 && searching) {
+        this.resultNotFound = false
+      }
+      if (this.listResult.length === 0 && searching) {
+        this.resultNotFound = true
+      }
+    },
+    handleRemoveSearch(remove){
+      this.displayResultSearch = remove
+    }
+  }
 });
 </script>
-<style scoped lang="scss">
-@import "src/sass/global.scss";;
-.SubListPage {
-  padding: 0 .75rem;
 
-  h1 {
+<style scoped lang="scss">
+
+.subMenu {
+  padding: 0 .75rem;
+  &__title {
     margin-top: 0;
     margin-bottom: .5rem;
     font-weight: 500;
@@ -67,6 +92,4 @@ export default Vue.extend({
   }
 }
 
-.sub-categories {
-}
 </style>

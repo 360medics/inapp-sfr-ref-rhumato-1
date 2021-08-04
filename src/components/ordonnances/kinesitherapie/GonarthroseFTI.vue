@@ -15,13 +15,8 @@
 <script lang="js">
     export default {
         name: 'GonarthroseFTI',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

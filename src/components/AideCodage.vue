@@ -175,13 +175,8 @@
 <script lang="js">
     export default {
         name: 'AideCodage',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

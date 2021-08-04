@@ -1,23 +1,20 @@
 <template>
-  <div class="header">
-    <div @click="$router.go(-1)" class="back">
-      <i class="far fa-chevron-circle-left"></i>
+  <header class="header">
+    <div @click="goBack" class="header__icon header__icon--left" v-if="displayChevronCircle">
+      <i class="far fa-chevron-circle-left" />
     </div>
 
-    <div>
-      <img
-        class="test"
-        :src="require('@/assets/logo-sfr.png')"
-        alt="Logo sfr"
-      />
-      <img :src="require('@/assets/logo-ref.png')" alt="Logo ref" />
+    <router-link  to="/">
+      <img class="header__logo" :src="require('@/assets/logo-sfr.png')" alt="Logo sfr" />
+      <img class="header__logo" :src="require('@/assets/logo-ref.png')" alt="Logo ref" />
+    </router-link>
+
+    <div v-if="isMobile()" class="header__icon header__icon--right">
+        <a href="cmd://webview-close" >
+          <i class="far fa-times-circle" />
+        </a>
     </div>
-    <div class="quit">
-      <a href="cmd://webview-close">
-        <i class="far fa-times-circle"></i>
-      </a>
-    </div>
-  </div>
+  </header>
 </template>
 
 <script lang="ts">
@@ -25,38 +22,51 @@ import Vue from 'vue';
 import { goBack, isMobile } from '@/global';
 
 export default Vue.extend({
-  props: [],
-  mounted() {},
+  name: "Header",
+  data: () => ({
+    displayChevronCircle: false,
+  }),
   methods: {
     goBack,
     isMobile,
+  },
+  watch: {
+    $route: function() {
+      if (this.$route.path === "/") {
+        this.displayChevronCircle = false
+      } else  {
+        this.displayChevronCircle = true
+      }
+    }
   },
 });
 </script>
 
 <style scoped lang="scss">
-@import 'src/sass/global.scss';
-.header {
-  margin-bottom: 1em;
-  box-shadow: 0px 3px 6px #00000029;
-  border-radius: 0 0 1.06em 1.06em;
-  padding: 1rem 0.75rem;
-  justify-content: space-between;
-  display: flex;
-  align-items: center;
-  background-color: #F1F1F6;
-
-  img {
-    height: 40px;
+  .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      padding: 1rem 0.75rem;
+      background-color: #F1F1F6;
+      box-shadow: 0px 3px 6px #00000029;
+      border-radius: 0 0 1.06em 1.06em;
+      &__logo {
+          height: 40px;
+      }
+      &__icon {
+        font-size: 24px;
+        position: absolute;
+        &--left {
+          left: 15px;
+        }
+        &--right {
+          right: 15px;
+        }
+      }
   }
-
-  .back {
-    font-size: 24px;
+  .far {
     color: #38bbec;
   }
-}
-.fa-times-circle {
-  font-size: 24px;
-  color: #38bbec;
-}
 </style>

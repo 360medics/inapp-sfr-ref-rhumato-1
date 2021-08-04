@@ -192,13 +192,8 @@
 <script lang="js">
     export default {
         name: 'Glucocorticoides',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

@@ -67,13 +67,8 @@
 <script lang="js">
     export default {
         name: 'CEFTAZIDIME',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

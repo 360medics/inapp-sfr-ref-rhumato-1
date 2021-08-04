@@ -53,13 +53,8 @@
 <script lang="js">
     export default {
         name: 'AntiIL23',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

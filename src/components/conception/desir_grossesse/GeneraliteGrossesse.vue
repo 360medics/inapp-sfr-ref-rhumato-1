@@ -14,13 +14,8 @@
 <script lang="js">
     export default {
         name: 'generalite',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

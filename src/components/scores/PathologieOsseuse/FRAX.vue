@@ -34,7 +34,7 @@ import SubListPage from "@/views/SubListPage";
 export default {
   name: 'FRAX',
   components: {SubListPage},
-  props: [],
+
   mounted() {
   },
   data() {
@@ -60,7 +60,7 @@ export default {
       return finalLink;
     },
   },
-  computed: {}
+
 }
 </script>
 

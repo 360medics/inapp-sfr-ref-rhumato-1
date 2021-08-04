@@ -16,13 +16,8 @@
 <script lang="js">
     export default {
         name: 'CalendrierVaccinal',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

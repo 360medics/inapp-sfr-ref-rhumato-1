@@ -45,13 +45,8 @@
 <script lang="js">
     export default {
         name: 'MembreSuperieur',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

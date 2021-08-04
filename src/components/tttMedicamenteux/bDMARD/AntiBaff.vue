@@ -41,13 +41,8 @@
 <script lang="js">
     export default {
         name: 'AntiBaff',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

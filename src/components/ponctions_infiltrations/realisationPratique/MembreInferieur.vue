@@ -177,13 +177,8 @@
 <script lang="js">
     export default {
         name: 'MembreInferieur',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

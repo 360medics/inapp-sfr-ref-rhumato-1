@@ -317,7 +317,7 @@ export default Vue.extend({
 
   },
   methods:{},
-  mounted() {},
+
 });
 </script>
 

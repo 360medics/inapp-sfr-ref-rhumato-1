@@ -3,7 +3,7 @@
     <h2 class="title">Score HAQ</h2>
     <span class="line"></span>
 
-    <div v-for="(dataQuestion, i) in datasQuestion" :key="i">
+    <div v-for="(dataQuestion, i) in dataQuestions" :key="i">
       <HaqQuestion
         :index="i"
         :title="dataQuestion.title"
@@ -14,28 +14,30 @@
       <br />
     </div>
 
-    <div class="haq-result" :class="{green : finalScore < 2, orange : (finalScore >= 2 && finalScore < 3), red: finalScore == 3}">
-      Résultat: {{ finalScore }}
-    </div>
+    <ReferenceScore :scoreResult="finalScore"  />
+
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
 import HaqQuestion from './HaqQuestion.vue';
+import ReferenceScore from "@/components/ReferenceScore.vue";
 
 export default Vue.extend({
   name: 'HAQ',
-  components: { HaqQuestion },
+  components: {
+    HaqQuestion,
+    ReferenceScore
+  },
   data() {
     return {
       finalScore: 0,
       scores: [],
-      datasQuestion: [
+      dataQuestions: [
         {
           title: 'Habillement, soins corporels',
-          question:
-            'Vous habiller, y compris nouer vos lacets et boutonner vos vêtements ?',
+          question: 'Vous habiller, y compris nouer vos lacets et boutonner vos vêtements ?',
           malusScore: [0, 1, 2, 3],
           userScore: 0,
         },
@@ -100,8 +102,7 @@ export default Vue.extend({
         },
         {
           title: 'Attraper',
-          question:
-            'Prendre un objet pesant 2,5 kg situé au-dessus de votre tête ?',
+          question: 'Prendre un objet pesant 2,5 kg situé au-dessus de votre tête ?',
           malusScore: [0, 1, 2, 3],
           userScore: 0,
         },
@@ -138,8 +139,7 @@ export default Vue.extend({
           userScore: 0,
         },
         {
-          question:
-            "Faire des travaux ménagers tels que passer l'aspirateur ou faire du petit jardinage ?",
+          question: "Faire des travaux ménagers tels que passer l'aspirateur ou faire du petit jardinage ?",
           malusScore: [0, 1, 2, 3],
           userScore: 0,
         },
@@ -159,37 +159,13 @@ export default Vue.extend({
     },
     upwardChange(e: any) {
       this.scores[e.index] = e.userScore;
-      console.log(this.scores, 'scores');
       this.calcResult();
     },
   },
-  mounted() {},
+
 });
 </script>
 
 <style scoped lang="scss">
 @import 'src/sass/global.scss';
-@import 'src/sass/global';
-
-.Haq .haq-result {
-  position: fixed;
-  bottom: 0;
-  color: white;
-  border-radius: .5em;
-  padding: 1rem !important;
-  margin-bottom: .5rem !important;
-  font-weight: bold;
-}
-
-.haq-result.green {
-  background-color: green;
-}
-
-.haq-result.orange {
-  background-color: orange;
-}
-
-.haq-result.red {
-  background-color: red;
-}
 </style>

@@ -124,13 +124,8 @@
 <script lang="js">
 export default {
     name: 'Colchicine',
-    props: [],
-    mounted() {},
-    data() {
-        return {};
-    },
-    methods: {},
-    computed: {}
+
+
 }
 </script>
 

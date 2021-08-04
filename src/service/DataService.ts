@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios from "axios";
 
 class DataServiceClass {
   $data: any;
@@ -6,34 +6,33 @@ class DataServiceClass {
   load(): Promise<any> {
     return new Promise((resolve, reject) => {
       axios
-        .get('./data.json')
-        .then((response) => {
-          this.$data = response.data;
-          resolve(this.$data);
-        })
-        .catch((e) => {
-          console.log(e);
-          reject(e);
-        });
+          .get('./dataTree.json')
+          .then((response) => {
+            this.$data = response.data;
+            resolve(this.$data);
+          })
     });
   }
 
   loadCRI(): Promise<any> {
     return new Promise((resolve, reject) => {
       axios
-        .get('./fichesCRI.json')
-        .then((response) => {
+        .get("./fichesCRI.json")
+        .then(response => {
           resolve(response.data);
         })
-        .catch((e) => {
-          console.log(e);
-          reject(e);
-        });
     });
   }
 
-  getList(slug: string) {
-    // boucle
+  loadSearch(): Promise<any> {
+    return new Promise((resolve, reject) => {
+      axios
+        .get("./dataFlat.json")
+        .then(response => {
+          this.$data = response.data;
+          resolve(this.$data);
+        })
+    });
   }
 }
 

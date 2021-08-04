@@ -7,84 +7,47 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import DataService from '@/service/DataService';
-
 import Header from '@/components/Header.vue';
 
 export default Vue.extend({
   components: { Header },
-  data() {
-    return {};
-  },
-  methods: {},
-  mounted() {
-    DataService.load()
-      .then(() => {
-        this.name = DataService.$data.appData.name;
-        this.categories = DataService.$data.tree;
-      })
-      .catch((e) => {
-        console.log(e);
-      });
-  },
 });
 </script>
+
 <style lang="scss">
-@import 'src/sass/global.scss';
+  @import 'src/sass/global.scss';
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+  }
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-}
-@font-face {
-  font-family: 'Helvetica Neue';
-  src: url('~@/assets/fonts/HelveticaNeue-Bold.otf') format('otf'),
-    url('~@/assets/fonts/HelveticaNeue-Bold_1.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-}
+  #app {
+    font-family: 'Helvetica Neue';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2c3e50;
+    width: 100%;
+    height: 100%;
+  }
 
-@font-face {
-  font-family: 'Helvetica Neue';
-  src: url('~@/assets/fonts/HelveticaNeue-Medium.otf') format('otf'),
-    url('~@/assets/fonts/HelveticaNeue-Medium_1.woff') format('woff');
-  font-weight: medium;
-  font-style: normal;
-}
+  #nav {
+    padding: 30px;
+  }
 
-@font-face {
-  font-family: 'Helvetica Neue';
-  src: url('~@/assets/fonts/HelveticaNeue-Regular.otf') format('otf'),
-    url('~@/assets/fonts/HelveticaNeue-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-#app {
-  font-family: 'Helvetica Neue';
-  font-weight: bold;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-  /* position: fixed; */
-  width: 100%;
-  height: 100%;
-}
+  #nav a {
+    font-weight: bold;
+    color: #2c3e50;
+  }
 
-#nav {
-  padding: 30px;
-}
+  #nav a.router-link-exact-active {
+    color: #42b983;
+  }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+  .score_ref {
+    font-style: italic;
+    font-size: smaller;
+  }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-.score_ref {
-  font-style: italic;
-  font-size: smaller;
-}
 </style>

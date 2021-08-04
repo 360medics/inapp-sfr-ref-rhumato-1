@@ -43,7 +43,7 @@ export default Vue.extend({
       });
     },
   },
-  mounted() {},
+
 });
 </script>
 <style scoped lang="scss">

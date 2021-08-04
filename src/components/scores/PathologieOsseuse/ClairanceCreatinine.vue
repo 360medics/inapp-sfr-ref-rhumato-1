@@ -44,12 +44,15 @@
     <label class="btn" :class="{selected: origine === '1'}" for="btnradio4">Oui</label>
 
     <br>
-    <input class="btn" style="width: 100%!important; margin-top: 15px; border: 1px solid black!important;" type="button" value="Calculer" @click="calcul">
 
-    <div class="result">
+    <button class="btn btn__submit" @click="calcul"> Calculer </button>
+
+    <div class="result" v-if="showResult">
       <h4>Formule de Cockroft & Gault: {{ resultCG }} ml/min/1.72m2</h4>
       <h4>Formule MDRD: {{ resultMDRD }} ml/min/1.72m2</h4>
     </div>
+
+    <h4 v-if="errorCalculate" class="message--error">Vérifier les informations saisies</h4>
 
     <p class="description"> La clairance est indispensable avant toute injection de produit de contraste au scanner et en IRM.</p>
 
@@ -66,18 +69,21 @@ export default Vue.extend({
   name:"ClairanceCreatinine",
   data() {
     return {
-      birth: 0,
-      year: 0,
-      poids: 0,
-      taux: 0,
-      sexe: "f",
-      origine: "0",
+      birth: null,
+      year: null,
+      poids: null,
+      taux: null,
+      sexe: null,
+      origine: null,
       resultCG: 0,
       resultMDRD: 0,
+      showResult: false,
+      errorCalculate: false
     }
   },
   methods: {
     calcul() {
+
       if (this.sexe === "h") {
         this.resultCG = 1.23 * parseInt(this.poids) * (140 - parseInt(this.year)) / parseInt(this.taux)
       } else {
@@ -85,11 +91,20 @@ export default Vue.extend({
       }
 
       this.resultMDRD = (186 * (parseInt(this.taux) * 0.0113)) - (1.154 * parseInt(this.year)) - 0.203
+
       if (this.origine === "1") {
         this.resultMDRD *= 1.21;
       }
       if (this.sexe === "f") {
         this.resultMDRD *= 0.742;
+      }
+
+      if (isNaN(this.resultMDRD) || isNaN(this.resultCG)) {
+        this.showResult = false
+        this.errorCalculate = true
+      } else {
+        this.showResult = true
+        this.errorCalculate = false
       }
 
     }
@@ -101,6 +116,16 @@ export default Vue.extend({
 @import "src/sass/global.scss";
 
 .PathologieOsseuse {
+  input {
+    height: 30px;
+    padding: 0 3px;
+    background: #EDECF4 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+    margin: 0 10px;
+    border: none;
+  }
+
   [type="number"] {
     width: 60px;
   }
@@ -112,5 +137,17 @@ export default Vue.extend({
   div {
     margin: 10px 0;
   }
+}
+.message--error {
+  color: #ff0000;
+  text-align: center;
+}
+.btn__submit {
+  background-color: #80cd29 !important;
+  color: #fff !important;
+  border: solid 2px #74bd21 !important;
+  font-size: 1em;
+  font-weight: 700;
+  border: none;
 }
 </style>

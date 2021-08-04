@@ -102,7 +102,7 @@ import Vue from "vue";
 
 export default Vue.extend({
   name: "Das28",
-  mounted() {},
+
   data() {
     return {
       valuePainfullJoint: 0,

@@ -48,14 +48,14 @@ import Vue from "vue";
 
 export default Vue.extend({
   name: "Dapsa",
-  mounted() {},
+
   data() {
     return {
-      value1: 0,
-      value2: 0,
-      value3: 0,
-      value4: 0,
-      value5: 0,
+      value1: null,
+      value2: null,
+      value3: null,
+      value4: null,
+      value5: null,
       result: 0,
       activity: ""
     };
@@ -94,6 +94,15 @@ export default Vue.extend({
 
   [type="number"] {
     width: 60px;
+  }
+  input {
+    height: 30px;
+    padding: 0 3px;
+    background: #EDECF4 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+    margin: 0 10px;
+    border: none;
   }
 
   .form {

@@ -26,13 +26,8 @@
 <script lang="js">
     export default {
         name: 'Sulfasalazine',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

@@ -123,13 +123,8 @@
 <script lang="js">
     export default {
         name: 'Iombalgie',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

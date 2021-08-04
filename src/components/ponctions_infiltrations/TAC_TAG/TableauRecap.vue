@@ -22,13 +22,8 @@
 <script lang="js">
     export default {
         name: 'TableauRecap',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

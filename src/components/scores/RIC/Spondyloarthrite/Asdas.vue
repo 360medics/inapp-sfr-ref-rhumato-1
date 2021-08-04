@@ -218,7 +218,7 @@ import Vue from 'vue';
 
 export default Vue.extend({
   name: 'Asdas',
-  mounted() {},
+
   data() {
     return {
       painScale: 0,
@@ -314,6 +314,16 @@ export default Vue.extend({
 @import 'src/sass/global';
 
 .Asdas {
+  input:not([type='radio']) {
+    height: 30px;
+    padding: 0 3px;
+    background: #EDECF4 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+    margin: .75em;
+    border: none;
+    width: 60px;
+  }
   [type='radio'] {
     -webkit-appearance: none;
     -moz-appearance: none;

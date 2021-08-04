@@ -65,13 +65,8 @@
 <script lang="js">
     export default {
         name: 'AMOXICILLINE',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

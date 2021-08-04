@@ -384,13 +384,8 @@
 <script lang="js">
     export default {
         name: 'BilanPreBiotherapie',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

@@ -16,13 +16,8 @@
 <script lang="js">
     export default {
         name: 'SDRC',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

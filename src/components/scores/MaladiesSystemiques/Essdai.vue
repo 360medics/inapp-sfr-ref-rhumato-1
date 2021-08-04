@@ -398,18 +398,18 @@ import Vue from 'vue';
 export default Vue.extend({
   data() {
     return {
-      score1: 0,
-      score2: 0,
-      score3: 0,
-      score4: 0,
-      score5: 0,
-      score6: 0,
-      score7: 0,
-      score8: 0,
-      score9: 0,
-      score10: 0,
-      score11: 0,
-      score12: 0,
+      score1: null,
+      score2: null,
+      score3: null,
+      score4: null,
+      score5: null,
+      score6: null,
+      score7: null,
+      score8: null,
+      score9: null,
+      score10: null,
+      score11: null,
+      score12: null,
       result: 0,
       activity: '',
     };
@@ -490,7 +490,7 @@ export default Vue.extend({
       this.calcul();
     },
   },
-  mounted() {},
+
 });
 </script>
 
@@ -553,9 +553,6 @@ export default Vue.extend({
     display: block !important;
     margin-top: 2rem;
     margin-bottom: 1rem;
-
-    /* align-content: space-around; */
-    /* align-items: flex-start; */
     text-align: center;
     color: white;
   }

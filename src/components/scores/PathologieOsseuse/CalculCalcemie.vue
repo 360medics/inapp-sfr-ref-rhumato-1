@@ -33,8 +33,8 @@
 <script lang="js">
 export default {
     name: 'CalculCalcemie',
-    props: [],
-    mounted() {},
+
+
     data() {
         return {
           calcemie: 0,
@@ -47,13 +47,12 @@ export default {
         this.result = parseInt(this.calcemie) - 0.025 * (parseInt(this.albuminemie) - 40)
       }
     },
-    computed: {}
+
 }
 </script>
 
 <style scoped lang="scss">
 @import 'src/sass/global.scss';
-@import 'src/sass/global';
 
 .CalculCalcemie {
   [type='number'] {
@@ -66,6 +65,17 @@ export default {
     justify-content: space-between;
     padding: 15px;
     line-height: 40px;
+  }
+
+  input {
+    height: 30px;
+    padding: 0 3px;
+    background: #EDECF4 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+    margin: .75em;
+    border: none;
+    width: 60px;
   }
 }
 </style>

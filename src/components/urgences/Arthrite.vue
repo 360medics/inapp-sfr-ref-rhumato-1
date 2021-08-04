@@ -30,13 +30,8 @@
 <script lang="js">
     export default {
         name: 'Arthrite',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

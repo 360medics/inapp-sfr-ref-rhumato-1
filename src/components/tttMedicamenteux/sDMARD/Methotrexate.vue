@@ -134,13 +134,8 @@
 <script lang="js">
     export default {
         name: 'Methotrexate',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

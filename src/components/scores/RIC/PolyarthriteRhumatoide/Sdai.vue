@@ -132,7 +132,7 @@
 <script lang="ts">
 import Vue from 'vue';
 export default Vue.extend({
-  mounted() {},
+
   data() {
     return {
       tenderJoins: 0,
@@ -172,10 +172,17 @@ export default Vue.extend({
 
 <style scoped lang="scss">
 @import 'src/sass/global.scss';
-@import 'src/sass/global';
 
 .Sdai {
-  input {
+
+  input:not([type="radio"]) {
+    height: 30px;
+    padding: 0 3px;
+    background: #EDECF4 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+    margin: .75em;
+    border: none;
     width: 60px;
   }
 

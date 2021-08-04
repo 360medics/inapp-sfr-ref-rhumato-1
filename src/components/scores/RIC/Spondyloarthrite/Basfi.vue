@@ -180,16 +180,16 @@ export default Vue.extend({
   name: 'Basfi',
   data() {
     return {
-      vItem1: 0,
-      vItem2: 0,
-      vItem3: 0,
-      vItem4: 0,
-      vItem5: 0,
-      vItem6: 0,
-      vItem7: 0,
-      vItem8: 0,
-      vItem9: 0,
-      vItem10: 0,
+      vItem1: null,
+      vItem2: null,
+      vItem3: null,
+      vItem4: null,
+      vItem5: null,
+      vItem6: null,
+      vItem7: null,
+      vItem8: null,
+      vItem9: null,
+      vItem10: null,
       result: 0,
     };
   },
@@ -213,7 +213,7 @@ export default Vue.extend({
       return (this.result = Res);
     },
   },
-  mounted() {},
+
 });
 </script>
 
@@ -268,10 +268,8 @@ export default Vue.extend({
 
   .score_table {
     border-width: 0;
-    border-collapse: 0;
     margin-left: auto;
     margin-right: auto;
-    padding: 2;
   }
 }
 </style>

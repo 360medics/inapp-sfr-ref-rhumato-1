@@ -19,13 +19,8 @@
 <script lang="js">
     export default {
         name: 'Abatacept',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

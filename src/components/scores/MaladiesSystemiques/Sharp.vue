@@ -21,8 +21,8 @@
       id="majeurBtncheck2"
       autocomplete="off"
     />
-    <label class="btn btn-outline-primary" for="majeurBtncheck2"
-      >DLCO {{ '<' }} 70%
+    <label class="btn btn-outline-primary" for="majeurBtncheck2">
+      DLCO < 70%
     </label>
 
     <input
@@ -50,7 +50,7 @@
       autocomplete="off"
     />
     <label class="btn btn-outline-primary" for="majeurBtncheck5"
-      >3. Phénomène de Raynaud</label
+      >3. Phénomène de Raynaud et/ou hypomotilité oesophagienne</label
     >
 
     <input
@@ -85,8 +85,6 @@
     <label class="btn btn-outline-primary" for="mineurBtncheck1"
       >1. Alopécie</label
     >
-
-    <h5>2. Atteinte pulmonaire :</h5>
 
     <input
       type="checkbox"
@@ -198,7 +196,6 @@ import Vue from 'vue';
 
 export default Vue.extend({
   name: 'Sharp',
-  mounted() {},
 });
 </script>
 

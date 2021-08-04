@@ -103,13 +103,8 @@
 <script lang="js">
     export default {
         name: 'Hypercalcemie',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

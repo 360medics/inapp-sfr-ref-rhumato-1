@@ -24,7 +24,7 @@ import TreeMenu from '@/components/TreeMenu.vue';
 export default Vue.extend({
   name: 'FichesDuCRI',
   components: { TreeMenu },
-  methods: {},
+
   data() {
     return {
       listFiches: [],

@@ -97,13 +97,13 @@
 <script lang="ts">
 import Vue from "vue";
 export default Vue.extend({
-  mounted() {},
+
   data() {
     return {
-      tenderJoins: 0,
-      swollenJoins: 0,
-      patientEvaluation: 0,
-      medicEvaluation: 0,
+      tenderJoins: null,
+      swollenJoins: null,
+      patientEvaluation: null,
+      medicEvaluation: null,
     };
   },
   methods: {
@@ -123,7 +123,15 @@ export default Vue.extend({
 @import "src/sass/global.scss";
 
 .Cdai {
+
   input {
+    height: 30px;
+    padding: 0 3px;
+    background: #EDECF4 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+    margin: 0 10px;
+    border: none;
     width: 60px;
   }
 

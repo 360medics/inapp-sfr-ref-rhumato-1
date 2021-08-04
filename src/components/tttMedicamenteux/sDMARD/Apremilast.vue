@@ -66,13 +66,8 @@
 <script lang="js">
     export default {
         name: 'Apremilast',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

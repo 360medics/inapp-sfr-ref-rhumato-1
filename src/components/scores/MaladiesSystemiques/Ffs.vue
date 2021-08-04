@@ -98,7 +98,7 @@ export default Vue.extend({
       deep: true,
     },
   },
-  mounted() {},
+
 });
 </script>
 <style scoped lang="scss">

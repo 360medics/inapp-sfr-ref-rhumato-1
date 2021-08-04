@@ -125,13 +125,8 @@
 <script lang="js">
     export default {
         name: 'AcideZoledronique',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

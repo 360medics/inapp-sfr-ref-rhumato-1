@@ -77,7 +77,7 @@
       </p>
     </div>
 
-    <div class="result">
+    <div class="result" v-if="showResult">
       <h3>{{ result }} Points</h3>
       <h3> 0 Critère d'exclusion </h3>
       <h3>{{ result >= 4 ? "Positif" : "Negatif" }}</h3>
@@ -93,21 +93,27 @@
 import Vue from "vue";
 
 export default Vue.extend({
-  mounted() {},
+  name: "PprEularAcr2012",
   data() {
     return {
-      score1: 0,
-      score2: 0,
-      score3: 0,
-      score4: 0,
-      score5: 0,
-      score6: 0,
+      score1: null,
+      score2: null,
+      score3: null,
+      score4: null,
+      score5: null,
+      score6: null,
       result: 0,
+      showResult: false
     };
   },
   methods: {
     calcul() {
       this.result = parseInt(this.score1) + parseInt(this.score2) + parseInt(this.score3) + parseInt(this.score4) + parseInt(this.score5) + parseInt(this.score6);
+      if (isNaN(this.result)){
+        this.showResult = false
+      } else {
+        this.showResult = true
+      }
     },
 
     choice1(number) {
@@ -199,9 +205,6 @@ export default Vue.extend({
     display: block !important;
     margin-top: 2rem;
     margin-bottom: 1rem;
-
-    /* align-content: space-around; */
-    /* align-items: flex-start; */
     text-align: center;
     color: white;
   }

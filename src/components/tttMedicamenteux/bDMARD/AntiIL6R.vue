@@ -82,13 +82,8 @@
 <script lang="js">
     export default {
         name: 'AntiIL6R',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

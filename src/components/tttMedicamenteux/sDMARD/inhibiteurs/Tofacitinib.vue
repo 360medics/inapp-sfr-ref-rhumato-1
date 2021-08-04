@@ -75,13 +75,8 @@
 <script lang="js">
     export default {
         name: 'Tofacitinib',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

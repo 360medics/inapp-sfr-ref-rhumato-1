@@ -108,7 +108,7 @@ import Vue from 'vue';
 
 export default Vue.extend({
   name: 'Caspar',
-  mounted() {},
+
   data() {
     return {
       isFirstCriteriaChecked: false,

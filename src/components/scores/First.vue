@@ -106,7 +106,7 @@ export default Vue.extend({
       quest: [],
     };
   },
-  mounted() {},
+
 });
 </script>
 

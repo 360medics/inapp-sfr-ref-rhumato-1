@@ -180,7 +180,8 @@
                       "type": "",
                       "content": "",
                       "slug": "criteres-de-new-york-modifies",
-                      "submenu": false
+                      "submenu": false,
+                      "component": "NewYorkCriteria"
                     },
                     {
                       "id": "",
@@ -545,7 +546,7 @@
               "children": [
                 {
                   "id": "",
-                  "name": "Classification",
+                  "name": "Critères de classification ACR-EULAR de la sclérodermie systémique",
                   "subtitle": "",
                   "appId": 1,
                   "parentId": 2,
@@ -557,7 +558,7 @@
                 },
                 {
                   "id": "",
-                  "name": "Activité",
+                  "name": "Score de Rodnan",
                   "subtitle": "",
                   "appId": 1,
                   "parentId": 2,
