@@ -2795,30 +2795,6 @@
           "submenu": false
         }
       ]
-    },
-    {
-      "id": "",
-      "name": "Fonctions recherches",
-      "subtitle": "Sous-titre facultatif",
-      "appId": 1,
-      "parentId": null,
-      "type": "list",
-      "content": "",
-      "slug": "fonctions-recherche",
-      "submenu": true,
-      "children": [
-        {
-          "id": "",
-          "name": "Sous sections dans l'arborescence",
-          "subtitle": "Sous-titre facultatif",
-          "appId": 1,
-          "parentId": null,
-          "type": "html",
-          "content": "",
-          "slug": "sous-sections-dans-l-arborescence",
-          "submenu": false
-        }
-      ]
     }
   ]
 }
