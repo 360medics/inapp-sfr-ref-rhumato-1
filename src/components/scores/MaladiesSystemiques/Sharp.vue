@@ -1,193 +1,89 @@
 <template>
   <div class="Sharp">
-    <h2 class="title">Critères de sharp</h2>
-    <h4 class="subtitle">Critère majeurs</h4>
+    <h2>Critères de sharp</h2>
+    <h3>Critère majeurs</h3>
+    <span>{{ criteriaMajor }}</span>
+    <ul>
+      <li>
+        <input type="checkbox" id="myosite" value="Myosite sévère" v-model="criteriaMajor">
+        <label for="myosite">Myosite sévère</label>
+      </li>
+      <li>
+        <input type="checkbox" id="pulmonaire" value="Atteinte pulmonaire" v-model="criteriaMajor">
+        <label for="pulmonaire">Atteinte pulmonaire :</label>
+        <ul>
+          <li>DLCO < 70%</li>
+          <li>HTAP</li>
+          <li>Lésion histologiques vasculaire</li>
+        </ul>
+      </li>
+      <li>
+        <input type="checkbox" id="raynaud" value="raynaud" v-model="criteriaMajor">
+        <label for="raynaud">Phénomène de Raynaud et/ou hypomotilité oesophagienne</label>
+      </li>
+      <li>
+        <input type="checkbox" id="sclérodactylie" value="sclérodactylie" v-model="criteriaMajor">
+        <label for="sclérodactylie">Mains gonflées ou sclérodactylie</label>
+      </li>
+      <li>
+        <input type="checkbox" id="anti-U1-RNP" value="anti-U1-RNP" v-model="criteriaMajor">
+        <label for="anti-U1-RNP">Anticorps anti-ENA positif avec positivité des anti-U1-RNP et
+          négativité des anti-Sm</label>
+      </li>
+    </ul>
+    <h3>Critère mineurs</h3>
+    <span>{{ criteriaMinor }}</span>
+    <ul>
+      <li>
+        <input type="checkbox" id="Alopécie" value="Alopécie" v-model="criteriaMinor">
+        <label for="Alopécie">Alopécie</label>
+      </li>
+      <li>
+        <input type="checkbox" id="Leucopénie" value="Leucopénie" v-model="criteriaMinor">
+        <label for="Leucopénie">Leucopénie</label>
+      </li>
+      <li>
+        <input type="checkbox" id="Anémie" value="Anémie" v-model="criteriaMinor">
+        <label for="Anémie">Anémie</label>
+      </li>
+      <li>
+        <input type="checkbox" id="Pleurésie" value="Pleurésie" v-model="criteriaMinor">
+        <label for="Pleurésie">Pleurésie</label>
+      </li>
+      <li>
+        <input type="checkbox" id="Péricardite" value="Péricardite" v-model="criteriaMinor">
+        <label for="Péricardite">Péricardite</label>
+      </li>
+      <li>
+        <input type="checkbox" id="Arthrite" value="Arthrite" v-model="criteriaMinor">
+        <label for="Arthrite">Arthrite</label>
+      </li>
+      <li>
+        <input type="checkbox" id="Trijumeau" value="Trijumeau" v-model="criteriaMinor">
+        <label for="Trijumeau">Névralagie du Trijumeau</label>
+      </li>
+      <li>
+        <input type="checkbox" id="rashMalaire" value="rashMalaire" v-model="criteriaMinor">
+        <label for="rashMalaire">Rash Malaire</label>
+      </li>
+      <li>
+        <input type="checkbox" id="Thrombopénie" value="Thrombopénie" v-model="criteriaMinor">
+        <label for="Thrombopénie">Thrombopénie</label>
+      </li>
+      <li>
+        <input type="checkbox" id="MyositeModérée" value="MyositeModérée" v-model="criteriaMinor">
+        <label for="MyositeModérée">Myosite modérée</label>
+      </li>
+      <li>
+        <input type="checkbox" id="ATCD" value="ATCD" v-model="criteriaMinor">
+        <label for="ATCD">ATCD de mains gonflées</label>
+      </li>
+    </ul>
 
-    <input
-      type="checkbox"
-      class="btn-check"
-      id="majeurBtncheck1"
-      autocomplete="off"
-    />
-    <label class="btn btn-outline-primary" for="majeurBtncheck1"
-      >1. Myosite sévère</label
-    >
-
-    <h5>2. Atteinte pulmonaire :</h5>
-
-    <input
-      type="checkbox"
-      class="btn-check"
-      id="majeurBtncheck2"
-      autocomplete="off"
-    />
-    <label class="btn btn-outline-primary" for="majeurBtncheck2">
-      DLCO < 70%
-    </label>
-
-    <input
-      type="checkbox"
-      class="btn-check"
-      id="majeurBtncheck3"
-      autocomplete="off"
-    />
-    <label class="btn btn-outline-primary" for="majeurBtncheck3">HTAP</label>
-
-    <input
-      type="checkbox"
-      class="btn-check"
-      id="majeurBtncheck4"
-      autocomplete="off"
-    />
-    <label class="btn btn-outline-primary" for="majeurBtncheck4"
-      >Lésion histologiques vasculaire</label
-    >
-
-    <input
-      type="checkbox"
-      class="btn-check"
-      id="majeurBtncheck5"
-      autocomplete="off"
-    />
-    <label class="btn btn-outline-primary" for="majeurBtncheck5"
-      >3. Phénomène de Raynaud et/ou hypomotilité oesophagienne</label
-    >
-
-    <input
-      type="checkbox"
-      class="btn-check"
-      id="majeurBtncheck6"
-      autocomplete="off"
-    />
-    <label class="btn btn-outline-primary" for="majeurBtncheck6"
-      >4. Mains gonflées ou sclérodactylie</label
-    >
-
-    <input
-      type="checkbox"
-      class="btn-check"
-      id="majeurBtncheck7"
-      autocomplete="off"
-    />
-    <label class="btn btn-outline-primary" for="majeurBtncheck7"
-      >5. Anticorps anti-ENA positif avec positivité des anti-U1-RNP et
-      négativité des anti-Sm</label
-    >
-
-    <h4 class="subtitle">Critère mineurs</h4>
-
-    <input
-      type="checkbox"
-      class="btn-check"
-      id="mineurBtncheck1"
-      autocomplete="off"
-    />
-    <label class="btn btn-outline-primary" for="mineurBtncheck1"
-      >1. Alopécie</label
-    >
-
-    <input
-      type="checkbox"
-      class="btn-check"
-      id="mineurBtncheck2"
-      autocomplete="off"
-    />
-    <label class="btn btn-outline-primary" for="mineurBtncheck2"
-      >2. Leucopénie</label
-    >
-
-    <input
-      type="checkbox"
-      class="btn-check"
-      id="mineurBtncheck3"
-      autocomplete="off"
-    />
-    <label class="btn btn-outline-primary" for="mineurBtncheck3"
-      >3. Anémie</label
-    >
-
-    <input
-      type="checkbox"
-      class="btn-check"
-      id="mineurBtncheck4"
-      autocomplete="off"
-    />
-    <label class="btn btn-outline-primary" for="mineurBtncheck4"
-      >4. Pleurésie</label
-    >
-
-    <input
-      type="checkbox"
-      class="btn-check"
-      id="mineurBtncheck5"
-      autocomplete="off"
-    />
-    <label class="btn btn-outline-primary" for="mineurBtncheck5"
-      >5. Péricardite</label
-    >
-
-    <input
-      type="checkbox"
-      class="btn-check"
-      id="mineurBtncheck6"
-      autocomplete="off"
-    />
-    <label class="btn btn-outline-primary" for="mineurBtncheck6"
-      >6. Arthrite</label
-    >
-
-    <input
-      type="checkbox"
-      class="btn-check"
-      id="mineurBtncheck7"
-      autocomplete="off"
-    />
-    <label class="btn btn-outline-primary" for="mineurBtncheck7"
-      >7. Névralagie du Trijumeau</label
-    >
-
-    <input
-      type="checkbox"
-      class="btn-check"
-      id="mineurBtncheck8"
-      autocomplete="off"
-    />
-    <label class="btn btn-outline-primary" for="mineurBtncheck8"
-      >8. Rash Malaire</label
-    >
-
-    <input
-      type="checkbox"
-      class="btn-check"
-      id="mineurBtncheck9"
-      autocomplete="off"
-    />
-    <label class="btn btn-outline-primary" for="mineurBtncheck9"
-      >9. Thrombopénie</label
-    >
-
-    <input
-      type="checkbox"
-      class="btn-check"
-      id="mineurBtncheck10"
-      autocomplete="off"
-    />
-    <label class="btn btn-outline-primary" for="mineurBtncheck10"
-      >10. Myosite modérée</label
-    >
-
-    <input
-      type="checkbox"
-      class="btn-check"
-      id="mineurBtncheck11"
-      autocomplete="off"
-    />
-    <label class="btn btn-outline-primary" for="mineurBtncheck11"
-      >11. ATCD de mains gonflées</label
-    >
-
-    <p>Diagnostic si 4 critères majeurs sans anti-Sm</p>
-    <p>Ou probable si 3 majeurs ou 2 majeurs et 1 mineurs sans anti-Sm</p>
+    <p>
+      Diagnostic si 4 critères majeurs sans anti-Sm
+      Ou probable si 3 majeurs ou 2 majeurs et 1 mineurs sans anti-Sm
+    </p>
   </div>
 </template>
 
@@ -196,20 +92,16 @@ import Vue from 'vue';
 
 export default Vue.extend({
   name: 'Sharp',
+  data: {
+    criteriaMajor: [],
+    criteriaMinor: 0
+  }
 });
 </script>
 
 <style scoped lang="scss">
 @import 'src/sass/global.scss';
-@import 'src/sass/global';
 
 .Sharp {
-  [type='checkbox'] {
-    appearance: none;
-  }
-
-  .btn {
-    height: unset;
-  }
 }
 </style>

@@ -19,7 +19,7 @@
 </template>
 
 <script lang="ts">
-
+import { isMobile } from '@/global';
 export default {
   name: 'ListSearchResult',
 
@@ -28,11 +28,7 @@ export default {
     notFound: Boolean
   },
   methods: {
-    isMobile() {
-      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-          navigator.userAgent
-      );
-    },
+    isMobile
   }
 };
 </script>
