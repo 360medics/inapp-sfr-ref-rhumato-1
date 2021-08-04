@@ -33,23 +33,44 @@
         <i v-else class="fas fa-chevron-down"></i>
       </div>
       <div
+        v-if="showChildren"
         v-for="(pdf, i) in children"
         :key="i"
-        :class="showChildren ? 'pdf-viewer' : ''"
+        :class="{
+          'tree-menu': showChildren,
+          grandChildren: depth % 2 === 1,
+          children: depth !== 0 && depth % 2 === 0,
+    }"
       >
-        <iframe
-          v-if="showChildren"
-          :src="pdf.content"
-          width="100%"
-          height="100%"
-          frameborder="0"
-          scrolling="no"
-          allowfullscreen="true"
-        ></iframe>
+        <a
+          :href="externLink(pdf.content)"
+          class="label-wrapper"
+          :target="isMobile() ? '_self' : '_blank'"
+        >
+          {{ pdf.name }}
+        </a>
+<!--        <iframe-->
+<!--          :src="pdf.content"-->
+<!--          width="100%"-->
+<!--          height="100%"-->
+<!--          frameborder="0"-->
+<!--          scrolling="no"-->
+<!--          allowfullscreen="true"-->
+<!--        ></iframe>-->
       </div>
     </div>
 
     <div v-else-if="this.type === 'link'">
+      <a
+        :href="externLink(content)"
+        class="label-wrapper"
+        :target="isMobile() ? '_self' : '_blank'"
+      >
+        {{ name }}
+      </a>
+    </div>
+
+    <div v-else-if="this.type === 'pdf'">
       <a
         :href="externLink(content)"
         class="label-wrapper"
@@ -155,6 +176,5 @@ export default {
 }
 .pdf-viewer {
   margin: 10px;
-  height: 40vh;
 }
 </style>
