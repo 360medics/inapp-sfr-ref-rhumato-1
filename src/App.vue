@@ -18,9 +18,9 @@ export default Vue.extend({
   @import 'src/sass/global.scss';
   html,
   body {
-    padding: 0;
     margin: 0;
     background-color: #fff;
+    padding: 0 0 0.75rem;
   }
 
   #app {

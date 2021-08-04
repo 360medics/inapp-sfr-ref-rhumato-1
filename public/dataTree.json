@@ -138,7 +138,7 @@
               "children": [
                 {
                   "id": "",
-                  "name": "classification ",
+                  "name": "Classification ",
                   "subtitle": "",
                   "appId": 1,
                   "parentId": 2,
@@ -261,7 +261,7 @@
               "children": [
                 {
                   "id": "",
-                  "name": "classification ",
+                  "name": "Classification ",
                   "subtitle": "",
                   "appId": 1,
                   "parentId": 2,
@@ -324,7 +324,7 @@
               "children": [
                 {
                   "id": "",
-                  "name": "classification",
+                  "name": "Critères de classification de la PPR EULAR/ACR 2012",
                   "subtitle": "",
                   "appId": 1,
                   "parentId": 2,
@@ -761,7 +761,7 @@
       "children": [
         {
           "id": "",
-          "name": "Polyarthrite Rhumatoïde",
+          "name": "Polyarthrite Rhumatoïde (Reco)",
           "subtitle": "",
           "appId": 1,
           "parentId": 2,
@@ -772,7 +772,7 @@
         },
         {
           "id": "",
-          "name": "Spondyloarthrite",
+          "name": "Spondyloarthrite (Reco)",
           "subtitle": "",
           "appId": 1,
           "parentId": 2,
@@ -783,7 +783,7 @@
         },
         {
           "id": "",
-          "name": "Ostéoporose",
+          "name": "Ostéoporose (Reco)",
           "subtitle": "",
           "appId": 1,
           "parentId": 2,
@@ -794,7 +794,7 @@
         },
         {
           "id": "",
-          "name": "Goutte",
+          "name": "Goutte (Reco)",
           "subtitle": "",
           "appId": 1,
           "parentId": 2,
@@ -805,7 +805,7 @@
         },
         {
           "id": "",
-          "name": "Gonarthrose",
+          "name": "Gonarthrose (Reco)",
           "subtitle": "",
           "appId": 1,
           "parentId": 2,
@@ -816,7 +816,7 @@
         },
         {
           "id": "",
-          "name": "Arthrite septique",
+          "name": "Arthrite septique (Reco)",
           "subtitle": "",
           "appId": 1,
           "parentId": 2,

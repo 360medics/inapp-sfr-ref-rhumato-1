@@ -106,9 +106,9 @@
                 Caractéristiques temporelles de l'épisode Présence de >= 2 éléments
                 (avec ou sans ttt)
               </h5>
-              <li>Temps requis pour douleur maximale &lsaquo; 24 h</li>
-              <li>Résolution des symptômes dans les 14 jours</li>
-              <li>Résolution complète des symptômes entre les épisode</li>
+              <li>- Temps requis pour douleur maximale &lsaquo; 24 h</li>
+              <li>- Résolution des symptômes dans les 14 jours</li>
+              <li>- Résolution complète des symptômes entre les épisode</li>
             </ul>
             <div style="display: flex; justify-content: space-between">
               <label for="temporal_characteristic_id">Nombre d'épisodes</label>
@@ -303,7 +303,9 @@ export default Vue.extend({
 
 <style scoped lang="scss">
 @import "src/sass/global.scss";
-.GoutteAcrEular {}
+.GoutteAcrEular {
+  padding: 0 0.75rem;
+}
 
 .flex {
   display: flex;
@@ -319,6 +321,7 @@ input, select {
   border: none;
 }
 ul {
+  list-style-type: none;
   padding: 0;
 }
 </style>
