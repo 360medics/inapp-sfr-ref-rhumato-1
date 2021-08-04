@@ -47,7 +47,6 @@ export default Vue.extend({
       .then(() => {
         const slug = this.$route.params.slug;
         const dataTree = DataService.$data.tree;
-
         // Retrive component name from slug.
         for (let list of dataTree) {
           if (list.slug === slug) {

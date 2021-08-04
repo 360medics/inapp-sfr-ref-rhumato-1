@@ -1317,13 +1317,13 @@
     },
     {
       "id": "",
-      "name": "Traitements médicamenteux ",
+      "name": "Traitements médicamenteux",
       "subtitle": "Sous-titre facultatif",
       "appId": 1,
       "parentId": null,
       "type": "list",
       "content": "",
-      "slug": "traitements-medicamenteux ",
+      "slug": "traitements-medicamenteux",
       "submenu": true,
       "children": [
         {
