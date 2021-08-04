@@ -3,13 +3,13 @@
     <p v-if="notFound">Aucun résultat</p>
     <ul class="list">
       <li v-for="(result, i) in resultItems" :key="i"  class="list__item">
-        <div v-if="result.item.type === 'html'">
+        <div v-if="result.item.type === 'html'" class="list__item__container">
           <router-link :to="'/score/' + result.item.slug" >
             {{ result.item.name }}
         </router-link>
         </div>
 
-        <div v-if="result.item.type === 'link'">
+        <div v-if="result.item.type === 'link'" class="list__item__container">
           <a v-if="!isMobile()" :href="result.item.content" target="blank">{{ result.item.name }}</a>
           <a v-else :href="'medics://viewer?m_source=' + result.item.content">{{ result.item.name }}</a>
         </div>
@@ -46,6 +46,11 @@ export default {
     justify-content: center;
     align-items: center;
     list-style-type: none;
+    &__container{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
   }
   a {
     color: #472e5a;
