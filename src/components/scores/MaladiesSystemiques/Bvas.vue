@@ -156,7 +156,6 @@
 
       <div>
         <h3 class="title">Signes pulmonaires</h3>
-        &lt;!&ndash; 7 &ndash;&gt;
 
         <div>
           <input type="checkbox" name="pulmonary0" id="pulmonary0" v-model="pulmonary.checked[0]" @change="updateScore(pulmonary)">
@@ -199,7 +198,6 @@
 
       <div>
         <h3 class="title">Signes cardiaques</h3>
-        &lt;!&ndash; 6 &ndash;&gt;
 
         <div>
           <input type="checkbox" name="cardiac0" id="cardiac0" v-model="cardiac.checked[0]" @change="updateScore(cardiac)">
@@ -237,7 +235,6 @@
 
       <div>
         <h3 class="title">Manifestations digestives</h3>
-        &lt;!&ndash; 3 &ndash;&gt;
 
         <div>
           <input type="checkbox" name="digestive0" id="digestive0" v-model="digestive.checked[0]"  @change="updateScore(digestive)">
@@ -260,7 +257,6 @@
 
       <div>
         <h3 class="title">Signes rénaux</h3>
-        &lt;!&ndash; 7 &ndash;&gt;
 
         <div>
           <input type="checkbox" name="renal0" id="renal0" v-model="renal.checked[0]"  @change="updateScore(renal)">
@@ -303,7 +299,6 @@
 
       <div>
         <h3 class="title">Signes neurologiques</h3>
-         9 &ndash;&gt;
 
         <div>
           <input type="checkbox" name="neurologic0" id="neurologic0" v-model="neurologic.checked[0]"  @change="updateScore(neurologic)">
@@ -352,8 +347,7 @@
 
         <p v-if="stable">Sous total {{ neurologic.subTotal }} (max : {{ neurologic.stableMax }})</p>
         <p v-if="!stable">Sous total {{ neurologic.subTotal }} (max : {{ neurologic.unstableMax }})</p>
-&lt;!&ndash;      </div>
-
+      </div>
 
       <div>
         <input type="checkbox" name="stable" id="stable" @change="toggleStable">
@@ -363,9 +357,18 @@
 
     <p class="result">Total {{ total }} </p>
 
-    <div class="info">
-      <span>Interprétation: The Birmingham Vasculitis Activity Score (BVAS) is a method for assessing the activity of vasculitis. Note that scoring ranges are higher when any of the features are new or worse. Creatinine levels can be scored at patient’s first assessment only.</span>
-    </div>
+    <em class="source">
+      <p>source : Application Rheumatools</p>
+      <span>Interprétation :</span>
+      <p>The Birmingham Vasculitis Activity Score (BVAS) is a method for assessing the activity of vasculitis.</p>
+      <p>Note that scoring ranges are higher when any of the features are new or worse. Creatinine levels can be scored at patient’s first assessment only.</p>
+      <span>Références :</span>
+      <p>Luqmani et al (1994). "Birmingham Vasculitis Activity Score (BVAS) in systemic necrotizing vasculitis." QJM 87(11):671-8</p>
+      <p>Luqmani et al (1997). "Disease assessment and management of the vasculitides." Baillieres Clin Rheumatol 11(2): 423-46;</p>
+      <p>Mukhtyar et al (2009). "Modification and validation of the Birmingham Vasculitis Activity Score (version 3) ARD 2009 68:1827</p>
+
+
+    </em>
 
     <ReferenceScore  :scoreResult="total"/>
 
