@@ -14,7 +14,7 @@
       <br />
     </div>
 
-    <ReferenceScore :scoreResult="finalScore" lowValue="2" highValue="3"/>
+    <ReferenceScore :colorCount="3" :scoreResult="finalScore" lowValue="2" highValue="3"/>
 
   </div>
 </template>

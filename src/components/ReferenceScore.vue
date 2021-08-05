@@ -1,12 +1,23 @@
 <template>
-  <div class="haq__result" :class="{
+  <div>
+    <div v-if="colorCount > 3" class="haq__result" :class="{
+             haq__result__green : scoreResult < lowValue,
+             haq__result__orangeLight: (scoreResult >= lowValue && scoreResult < midValue),
+             haq__result__orange : (scoreResult >= midValue && scoreResult < highValue),
+             haq__result__red: scoreResult >= highValue
+           }"
+    >
+      Résultat: {{ scoreResult }}
+    </div>
+
+    <div v-if="colorCount === 3" class="haq__result" :class="{
           haq__result__green : scoreResult < lowValue,
-          haq__result__orangeLight: (scoreResult >= lowValue && scoreResult < midValue),
-          haq__result__orange : (scoreResult >= midValue && scoreResult < highValue),
-          haq__result__red: scoreResult >= highValue
+          haq__result__orange : (scoreResult >= lowValue && scoreResult < highValue),
+          haq__result__red: scoreResult == highValue
         }"
-  >
-    Résultat: {{ scoreResult }}
+    >
+      Résultat: {{ scoreResult }}
+    </div>
   </div>
 </template>
 
@@ -18,6 +29,7 @@ export default {
     lowValue: Number,
     midValue: Number,
     highValue: Number,
+    colorCount: Number
   }
 }
 </script>
