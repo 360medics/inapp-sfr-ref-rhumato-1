@@ -21,16 +21,16 @@
         <td>1-5 ans</td>
       </tr>
     </table> -->
-    <img src="@/assets/rhumato_aji.png">
+    <PNGViewer :src="'rhumato_aji.png'" :myID="'rhumato_aji.png'"/>
   </section>
 </template>
 
 <script lang="js">
-    export default {
-        name: 'AJI',
-
-
-    }
+import PNGViewer from "@/components/PNGViewer";
+export default {
+  name: 'AJI',
+  components: { PNGViewer }
+}
 </script>
 
 <style scoped lang="scss">

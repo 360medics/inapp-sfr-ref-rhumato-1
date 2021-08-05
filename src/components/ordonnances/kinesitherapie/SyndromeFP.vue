@@ -1,7 +1,7 @@
 <template lang="html">
     <section class="SyndromeFP">
       <h2 class="title">Syndrome FP</h2>
-<span class="line"></span>
+      <span class="line"></span>
 
       <p>
         Ces modèles d’ordonnances sont proposés à titre indicatif, beaucoup de kinésithérapeutes proposent une prise en charge personnalisée à la suite d’un bilan diagnostique, ainsi, il est possible de noter sur votre ordonnance de kinésithérapie :
@@ -9,15 +9,17 @@
         « Merci de réaliser un bilan diagnostique pour … et de proposer un programme adapté »
       </p>
 
-      <img src="@/assets/SyndromeFPKine.png">    </section>
+      <PNGViewer :src="'SyndromeFPKine.png'" myID="'SyndromeFPKine.png'"/>
+
+    </section>
 </template>
 
 <script lang="js">
-    export default {
-        name: 'SyndromeFP',
-
-
-    }
+import PNGViewer from "@/components/PNGViewer";
+export default {
+  name: 'SyndromeFP',
+  components: { PNGViewer }
+}
 </script>
 
 <style scoped lang="scss">

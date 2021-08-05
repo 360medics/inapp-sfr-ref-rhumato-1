@@ -2,17 +2,16 @@
   <section class="preMethotrexate">
     <h2 class="title">Biologie pré-Methotrexate</h2>
 <span class="line"></span>
-
-    <img src="@/assets/pré-MethotrexateBiologie.png">
+    <PNGViewer :src="'pré-MethotrexateBiologie.png'" myID="'pré-MethotrexateBiologie.png'"/>
   </section>
 </template>
 
 <script lang="js">
-    export default {
-        name: 'preMethotrexate',
-
-
-    }
+import PNGViewer from "@/components/PNGViewer";
+export default {
+  name: 'preMethotrexate',
+  components: { PNGViewer }
+}
 </script>
 
 <style scoped lang="scss">

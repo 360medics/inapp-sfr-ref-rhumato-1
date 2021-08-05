@@ -1,7 +1,7 @@
 <template>
 <div class="Amor">
   <!-- <h3>http://www.rhumato.info/fiches-pratiques2/166-spondylarthrite-ankylosante/1747-criteres-damor-des-spondylarthropathies</h3> -->
-  <h2 class="title">Critères d’AMOR DES SPONDYLARTHROPATHIES</h2>
+  <h2 class="title">Critères d’amor des spondylarthropathies</h2>
   <span class="line"></span>
 
   <h4>Sélectionner les critères :</h4>

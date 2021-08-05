@@ -2,9 +2,7 @@
   <section class="CalendrierVaccinal">
     <h2 class="title">Calendrier Vaccinal</h2>
 <span class="line"></span>
-
-    <img src="@/assets/calendrier_vaccinal.png">
-
+    <PNGViewer :src="'calendrier_vaccinal.png'" :myID="'calendrier_vaccinal.png'"/>
     <p>
       Vaccin vivants atténués (BCG, ROR, varicelle, fièvre jaune) contre indiqués si traitement immunosuppresseur, biothérapie et/ou corticothérapie à dose immunosuppressive (>10 mg d’équivalent prednisone ou > 2mg/kg/j)
       <br><br>
@@ -14,11 +12,11 @@
 </template>
 
 <script lang="js">
-    export default {
-        name: 'CalendrierVaccinal',
-
-
-    }
+  import PNGViewer from "@/components/PNGViewer";
+  export default {
+    name: 'CalendrierVaccinal',
+    components: { PNGViewer }
+  }
 </script>
 
 <style scoped lang="scss">
