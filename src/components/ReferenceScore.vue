@@ -1,5 +1,11 @@
 <template>
-  <div class="haq-result" :class="{green : scoreResult < 2, orange : (scoreResult >= 2 && scoreResult < 3), red: scoreResult == 3}">
+  <div class="haq__result" :class="{
+          haq__result__green : scoreResult < lowValue,
+          haq__result__orangeLight: (scoreResult >= lowValue && scoreResult < midValue),
+          haq__result__orange : (scoreResult >= midValue && scoreResult < highValue),
+          haq__result__red: scoreResult >= highValue
+        }"
+  >
     Résultat: {{ scoreResult }}
   </div>
 </template>
@@ -10,7 +16,7 @@ export default {
   props: {
     scoreResult: Number,
     lowValue: Number,
-    midlValue: Number,
+    midValue: Number,
     highValue: Number,
   }
 }
@@ -18,7 +24,7 @@ export default {
 
 <style scoped lang="scss">
 
-.haq-result {
+.haq__result {
   position: fixed;
   bottom: 0;
   color: white;
@@ -26,18 +32,19 @@ export default {
   padding: 1rem !important;
   margin-bottom: .5rem !important;
   font-weight: bold;
-}
+  &__green {
+    background-color: #a5c90f;
+  }
+  &__orangeLight{
+    background-color: #ffb366;
+  }
+  &__orange{
+    background-color: #ff8829;
+  }
+  &__red{
+    background-color: #cc0000;
+  }
 
-.haq-result.green {
-  background-color: green;
-}
-
-.haq-result.orange {
-  background-color: orange;
-}
-
-.haq-result.red {
-  background-color: red;
 }
 
 </style>

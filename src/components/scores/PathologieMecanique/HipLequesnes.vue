@@ -26,7 +26,7 @@
     <a class="source" v-if="!isMobile()" :href="'http://www.antalvite.fr/pdf/Indice%20algo-fonctionnel%20de%20Lequesne%20pour%20la%20hanche.pdf'" target="blank">Lien vers la source</a>
     <a class="source" v-else :href="'medics://viewer?m_source=' + 'http://www.antalvite.fr/pdf/Indice%20algo-fonctionnel%20de%20Lequesne%20pour%20la%20hanche.pdf'">Lien vers la source</a>
 
-    <ReferenceScore  :scoreResult="finalScore"/>
+    <ReferenceScore  :scoreResult="finalScore" midValue="2" highValue="3"/>
 
   </div>
 </template>
@@ -87,7 +87,7 @@ export default Vue.extend({
   padding: 1em 0;
   width: 50vw;
   text-align: center;
-  margin: 0 auto;
+  margin: 1em 0 0 1.6em;
 }
 
 </style>
