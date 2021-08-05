@@ -3,11 +3,6 @@
     <h2 class="title">Calcul de l'IMC femme et homme</h2>
 
     <span class="line"></span>
-    <div class="info">
-      Chez un patient présentant une rachialgie ≥ 3 mois dont l'âge du
-      diagnostic est &lsaquo; 45 ans alors on peut classer sa maladie dans la
-      forme spondylarthrite axiale
-    </div>
 
     <div class="container">
       <form class="form">
