@@ -4,7 +4,7 @@
     <p class="details">(Hanche)</p>
     <span class="line"></span>
 
-    <div v-for="(dataQuestion, i) in datasQuestion" :key="i">
+    <div v-for="(dataQuestion, i) in dataQuestions" :key="i">
       <HipLequesnesQuestion
         :index="i"
         :title="dataQuestion.title"
@@ -26,22 +26,28 @@
     <a class="source" v-if="!isMobile()" :href="'http://www.antalvite.fr/pdf/Indice%20algo-fonctionnel%20de%20Lequesne%20pour%20la%20hanche.pdf'" target="blank">Lien vers la source</a>
     <a class="source" v-else :href="'medics://viewer?m_source=' + 'http://www.antalvite.fr/pdf/Indice%20algo-fonctionnel%20de%20Lequesne%20pour%20la%20hanche.pdf'">Lien vers la source</a>
 
+    <ReferenceScore  :scoreResult="finalScore"/>
+
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
 import HipLequesnesQuestion from "./HipLequesnesQuestion.vue";
+import ReferenceScore from "@/components/ReferenceScore.vue";
 import { isMobile } from '@/global';
 
 export default Vue.extend({
   name: "HipLequesnes",
-  components: { HipLequesnesQuestion },
+  components: {
+    HipLequesnesQuestion,
+    ReferenceScore
+  },
   data() {
     return {
       finalScore: 0,
       scores: [],
-      datasQuestion: [
+      dataQuestions: [
         { title: "Douleur ou gêne", question: " Douleur ou gêne Nocturne", response: ['0 - Aucune', '1 - Seulement aux mouvements et dans certaines postures.','2 - Même immobile, sans bouger.'], malusScore: [0,1,2], userScore: 0},
         { question: "Dérouillage matinal", response: [ '0 - Aucun ou inférieur à 1 minute.', '1 - Entre une et 15 minutes.','2 - Plus de 15 minutes'],  malusScore: [0,1,2], userScore: 0},
         { question: "Rester debout ou piétiner sur place 1/2 heure augmente-t-il la douleur ?", response: [ '0 - Non', '1 - Oui.'],  malusScore: [0,1], userScore: 0},

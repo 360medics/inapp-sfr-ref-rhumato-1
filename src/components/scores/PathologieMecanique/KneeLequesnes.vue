@@ -29,17 +29,22 @@
     <a class="source" v-if="!isMobile()" :href="'http://www.antalvite.fr/pdf/Indice%20algo-fonctionnel%20de%20Lequesne%20pour%20le%20genou.pdf'" target="blank">Lien vers la source</a>
     <a class="source" v-else :href="'medics://viewer?m_source=' + 'http://www.antalvite.fr/pdf/Indice%20algo-fonctionnel%20de%20Lequesne%20pour%20le%20genou.pdf'">Lien vers la source</a>
 
+    <ReferenceScore :scoreResult="finalScore" />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue"
 import HipLequesnesQuestion from "@/components/scores/PathologieMecanique/HipLequesnesQuestion.vue";
+import ReferenceScore from "@/components/ReferenceScore.vue";
 import { isMobile } from '@/global';
 
 export default Vue.extend({
   name:"KneeLequesnes",
-  components: { HipLequesnesQuestion },
+  components: {
+    HipLequesnesQuestion,
+    ReferenceScore
+  },
 
   data() {
     return {
