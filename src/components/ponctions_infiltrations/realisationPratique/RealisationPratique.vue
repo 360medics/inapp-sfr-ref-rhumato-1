@@ -18,7 +18,7 @@
         </div>
         <iframe
           v-if="video1"
-          src="http://www.lecofer.org/videos/K4d.mp4"
+          src="https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/vid%C3%A9os/genou.mp4"
           allowfullscreen="true"
         ></iframe>
       </li>
@@ -29,7 +29,7 @@
         </div>
         <iframe
           v-if="video2"
-          src="http://www.lecofer.org/videos/K5e.mp4"
+          src="https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/vid%C3%A9os/epaule.mp4"
           allowfullscreen="true"
         ></iframe>
       </li>
@@ -40,7 +40,7 @@
         </div>
         <iframe
           v-if="video3"
-          src="http://www.lecofer.org/videos/K6f.mp4"
+          src="https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/vid%C3%A9os/poignet.mp4"
           allowfullscreen="true"
         ></iframe>
       </li>
@@ -51,7 +51,7 @@
         </div>
         <iframe
           v-if="video4"
-          src="http://www.lecofer.org/videos/K7g.mp4"
+          src="https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/vid%C3%A9os/cheville.mp4"
           allowfullscreen="true"
         ></iframe>
       </li>
