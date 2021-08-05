@@ -417,18 +417,18 @@ export default Vue.extend({
   methods: {
     calcul() {
       this.result =
-        parseInt(this.score1) +
-        parseInt(this.score2) +
-        parseInt(this.score3) +
-        parseInt(this.score4) +
-        parseInt(this.score5) +
-        parseInt(this.score6) +
-        parseInt(this.score7) +
-        parseInt(this.score8) +
-        parseInt(this.score9) +
-        parseInt(this.score10) +
-        parseInt(this.score11) +
-        parseInt(this.score12);
+        this.score1 +
+        this.score2 +
+        this.score3 +
+        this.score4 +
+        this.score5 +
+        this.score6 +
+        this.score7 +
+        this.score8 +
+        this.score9 +
+        this.score10 +
+        this.score11 +
+        this.score12;
 
       if (this.result >= 0 && this.result < 4) {
         this.activity = "Absence d'activité";
