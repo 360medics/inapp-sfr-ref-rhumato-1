@@ -3,62 +3,91 @@
     <h2 class="title">Calcul de la clairance de la créatinine selon Cockroft & Gault et MDRD</h2>
     <span class="line"></span>
 
-    <div>
-      <span class="input-group-text">Année de naissance: </span>
-      <input type="number" class="form-control" v-model="birth">
+    <div class="flex-creatinine">
+      <span class="input-group-text before">Année de naissance: </span>
+      <div>
+        <input type="number" class="form-control" v-model="birth">
+      </div>
     </div>
 
-    <div>
-      <span class="input-group-text">Age: </span>
-      <input type="number" class="form-control" v-model="year">
-      <span class="input-group-text"> ans</span>
+    <div class="flex-creatinine">
+      <span class="input-group-text before">Age: </span>
+      <div>
+        <input type="number" class="form-control" v-model="year">
+        <span class="input-group-text">ans</span>
+      </div>
     </div>
 
-    <div>
-      <span class="input-group-text">Poids: </span>
-      <input type="number" class="form-control" v-model="poids">
-      <span class="input-group-text"> Kg</span>
+    <div class="flex-creatinine">
+      <span class="input-group-text before">Poids: </span>
+      <div>
+        <input type="number" class="form-control" v-model="poids">
+        <span class="input-group-text">kg</span>
+      </div>
     </div>
 
-    <div>
-      <span class="input-group-text">Taux de Créatine: </span>
-      <input type="number" class="form-control" v-model="taux">
-      <span class="input-group-text"> µmol/L</span>
+    <div class="flex-creatinine">
+      <span class="input-group-text before">Taille: </span>
+      <div>
+        <input type="number" class="form-control" v-model="taille">
+        <span class="input-group-text">cm</span>
+      </div>
     </div>
 
+    <div class="flex-creatinine">
+      <span class="input-group-text before">Taux de Créatine: </span>
+      <div>
+        <input type="number" class="form-control" v-model="taux">
+        <span class="input-group-text"> µmol/L</span>
+      </div>
+    </div>
 
-    <p class="description">Sexe</p>
+    <div class="flex-creatinine">
+      <span class="input-group-text before">Sexe: </span>
+      <div class="flex-creatinine">
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked value="f" v-model="sexe">
+        <label class="btn" :class="{selected: sexe === 'f'}" for="btnradio1">Femme</label>
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" value="h" v-model="sexe">
+        <label class="btn" :class="{selected: sexe === 'h'}" for="btnradio2">Homme</label>
+      </div>
+    </div>
 
-    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked value="f" v-model="sexe">
-    <label class="btn" :class="{selected: sexe === 'f'}" for="btnradio1">Femme</label>
-
-    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" value="h" v-model="sexe">
-    <label class="btn" :class="{selected: sexe === 'h'}" for="btnradio2">Homme</label>
-
-    <p class="description">Origine afro-américaine</p>
-
-    <input type="radio" class="btn-check" name="btnradio1" id="btnradio3" autocomplete="off" checked value="0" v-model="origine">
-    <label class="btn" :class="{selected: origine === '0'}" for="btnradio3">Non</label>
-
-    <input type="radio" class="btn-check" name="btnradio1" id="btnradio4" autocomplete="off" value="1" v-model="origine">
-    <label class="btn" :class="{selected: origine === '1'}" for="btnradio4">Oui</label>
+    <div class="flex-creatinine">
+      <span class="input-group-text before">Origine afro-américaine:</span>
+      <div class="flex-creatinine">
+        <input type="radio" class="btn-check" name="btnradio1" id="btnradio3" autocomplete="off" checked value="0" v-model="origine">
+        <label class="btn" :class="{selected: origine === '0'}" for="btnradio3">Non</label>
+        <input type="radio" class="btn-check" name="btnradio1" id="btnradio4" autocomplete="off" value="1" v-model="origine">
+        <label class="btn" :class="{selected: origine === '1'}" for="btnradio4">Oui</label>
+      </div>
+    </div>
 
     <br>
 
     <button class="btn btn__submit" @click="calcul"> Calculer </button>
 
     <div class="result" v-if="showResult">
-      <h4>Formule de Cockroft & Gault: {{ resultCG }} ml/min/1.72m2</h4>
-      <h4>Formule MDRD: {{ resultMDRD }} ml/min/1.72m2</h4>
+      <p>IMC: {{ imc }} : {{ imcInterpretation }}</p>
+      <p>Cockroft & Gault: {{ resultCG }} ml/min/1.72m2</p>
+      <p>MDRD: {{ resultMDRD }} ml/min/1.72m2</p>
     </div>
 
     <h4 v-if="errorCalculate" class="message--error">Vérifier les informations saisies</h4>
 
-    <p class="description"> La clairance est indispensable avant toute injection de produit de contraste au scanner et en IRM.</p>
+    <h3>Interprétation :</h3>
+    <p>80 à 120 ml/min : Valeurs normales</p>
+    <p>60 et 80 ml/min : Insuffisance rénale légère</p>
+    <p>30 et 60 ml/min : Insuffisance rénale modérée</p>
+    <p>< 30 ml/min : Insuffisance rénale sévère</p>
 
-    <p class="description">Le calcul de la clairance de la créatinine permet d'éviter une éventuelle insuffisance rénale induite par ces produits de contraste.</p>
-
-    <p class="description">* Le résultat du calcul de la clairance est donné à titre indicatif. Le site clairance-creatinine.fr ne peut être tenue pour responsable en cas de conséquences indésirables.</p>
+    <h3>Source</h3>
+    <a v-if="!isMobile()" href="https://360medics.com/fr/calculators/tools/clairance-de-la-creatinine" target="_blank">360medics.com/fr/calculators/tools/clairance-de-la-creatinine</a>
+    <a v-if="isMobile()" href="medics://viewer?m_source=https://360medics.com/fr/calculators/tools/clairance-de-la-creatinine">360medics.com/fr/calculators/tools/clairance-de-la-creatinine"</a>
+    <p>La fiabilité de cette formule est suffisante pour peu qu'on l'utilise sur des sujets adultes (de 20 à 100 ans) pour un poids compris entre 50 et 75 Kg. Les résultats sont normalisés pour une surface corporelle moyenne d'un adulte (1,73 m2).</p>
+    <h3>Références Cockroft & Gault</h3>
+    <p>Nephron. 1976;16(1):31-41. Prediction of creatinine clearance from serum creatinine. Cockcroft DW, Gault MH.</p>
+    <h3>Références MDRD</h3>
+    <p>Ann Intern Med. 2006 Aug 15;145(4):247-54. Using standardized serum creatinine values in the modification of diet in renal disease study equation for estimating glomerular filtration rate. Levey AS, Coresh J, Greene T, Stevens LA, Zhang YL, Hendriksen S, Kusek JW, Van Lente F; Chronic Kidney Disease Epidemiology Collaboration. Tufts-New England Medical Center, Boston, Massachusetts 02111, USA. Ann Intern Med. 2008 Oct 7;149(7):519.</p>
   </div>
 </template>
 
@@ -72,31 +101,57 @@ export default Vue.extend({
       birth: null,
       year: null,
       poids: null,
+      taille: null,
       taux: null,
-      sexe: null,
-      origine: null,
+      sexe: "",
+      origine: "",
       resultCG: 0,
       resultMDRD: 0,
+      imc: 0,
+      imcInterpretation: '',
       showResult: false,
       errorCalculate: false
     }
   },
   methods: {
+    isMobile() {
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      );
+    },
     calcul() {
 
       if (this.sexe === "h") {
-        this.resultCG = 1.23 * parseInt(this.poids) * (140 - parseInt(this.year)) / parseInt(this.taux)
+        this.resultCG = Math.round(1.23 * parseInt(this.poids) * (140 - parseInt(this.year)) / parseInt(this.taux)*100)/100
       } else {
-        this.resultCG = 1.04 * parseInt(this.poids) * (140 - parseInt(this.year)) / parseInt(this.taux)
+        this.resultCG = Math.round(1.04 * parseInt(this.poids) * (140 - parseInt(this.year)) / parseInt(this.taux)*100)/100
       }
 
-      this.resultMDRD = (186 * (parseInt(this.taux) * 0.0113)) - (1.154 * parseInt(this.year)) - 0.203
+      this.resultMDRD = Math.round(186 * Math.pow(this.taux * 0.0113, -1.154)  * Math.pow(this.year, -0.203)*100)/100
 
       if (this.origine === "1") {
-        this.resultMDRD *= 1.21;
+        this.resultMDRD = Math.round(this.resultMDRD * 1.21*100)/100;
       }
       if (this.sexe === "f") {
-        this.resultMDRD *= 0.742;
+        this.resultMDRD = Math.round(this.resultMDRD * 0.742*100)/100;
+      }
+
+      this.imc = Math.round(this.poids/((this.taille/100)*(this.taille/100))*10)/10
+
+      if (this.imc < 16.5) {
+        this.imcInterpretation = 'Sous-poids'
+      } else if (16.5 <= this.imc && this.imc < 18.5) {
+        this.imcInterpretation = 'Maigreur'
+      } else if (18.5 <= this.imc && this.imc < 25) {
+        this.imcInterpretation = 'Corpulence normale'
+      } else if (23 <= this.imc && this.imc < 30) {
+        this.imcInterpretation = 'Surpoids'
+      } else if (30<= this.imc && this.imc < 35) {
+        this.imcInterpretation = 'Obésité modérée'
+      } else if (35<= this.imc && this.imc < 40) {
+        this.imcInterpretation = 'Obésité sévère'
+      } else {
+        this.imcInterpretation = 'Obésité morbide'
       }
 
       if (isNaN(this.resultMDRD) || isNaN(this.resultCG)) {
@@ -149,5 +204,15 @@ export default Vue.extend({
   font-size: 1em;
   font-weight: 700;
   border: none;
+}
+
+.flex-creatinine {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-creatinine>span, .flex-creatinine>div {
+  width: 40%;
 }
 </style>
