@@ -370,7 +370,7 @@
 
     </em>
 
-    <ReferenceScore  :colorCount="4" :scoreResult="total" lowValue="10" midValue="30" highValue="50"/>
+    <ReferenceScore  :colorCount="4" :scoreResult="total" lowValue="9" midValue="30" highValue="50"/>
 
   </div>
 </template>
