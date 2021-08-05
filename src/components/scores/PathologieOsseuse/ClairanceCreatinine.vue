@@ -81,8 +81,8 @@
     <p>< 30 ml/min : Insuffisance rénale sévère</p>
 
     <h3>Source</h3>
-    <a v-if="!isMobile()" href="https://360medics.com/fr/calculators/tools/clairance-de-la-creatinine" target="_blank">360medics.com/fr/calculators/tools/clairance-de-la-creatinine</a>
-    <a v-if="isMobile()" href="medics://viewer?m_source=https://360medics.com/fr/calculators/tools/clairance-de-la-creatinine">360medics.com/fr/calculators/tools/clairance-de-la-creatinine"</a>
+    <a v-if="!isMobile()" href="https://360medics.com/fr/calculators/tools/clairance-de-la-creatinine" target="_blank">Voir le lien</a>
+    <a v-if="isMobile()" href="medics://viewer?m_source=https://360medics.com/fr/calculators/tools/clairance-de-la-creatinine">Voir le lien</a>
     <p>La fiabilité de cette formule est suffisante pour peu qu'on l'utilise sur des sujets adultes (de 20 à 100 ans) pour un poids compris entre 50 et 75 Kg. Les résultats sont normalisés pour une surface corporelle moyenne d'un adulte (1,73 m2).</p>
     <h3>Références Cockroft & Gault</h3>
     <p>Nephron. 1976;16(1):31-41. Prediction of creatinine clearance from serum creatinine. Cockcroft DW, Gault MH.</p>
@@ -213,6 +213,6 @@ export default Vue.extend({
 }
 
 .flex-creatinine>span, .flex-creatinine>div {
-  width: 40%;
+  width: 50%;
 }
 </style>

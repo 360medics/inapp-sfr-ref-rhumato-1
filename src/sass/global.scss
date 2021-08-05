@@ -37,7 +37,7 @@
 .title {
     color: #4c2b63;
     font-weight: 700 !important;
-    font-size: 1.8rem !important;
+    font-size: 1.7rem !important;
     margin-bottom: .5rem !important;
     line-height: 1.2 !important;
     margin: 0 6% !important;
@@ -71,9 +71,21 @@
     color: #fbf9f8 !important;
     border-radius: .5em;
     background-color: #472e5a !important;
-    padding: 1rem !important;
+    padding: 0.5rem !important;
     margin-bottom: .5rem !important;
-    font-weight: bold;
+    font-weight: normal;
+}
+
+.result.green {
+    background-color: green !important;
+}
+
+.result.orange {
+    background-color: orange !important;
+}
+
+.result.red {
+    background-color: #d00606 !important;
 }
 
 .introduction{
