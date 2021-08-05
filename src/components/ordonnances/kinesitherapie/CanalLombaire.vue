@@ -8,17 +8,16 @@
         <br><br>
         « Merci de réaliser un bilan diagnostique pour … et de proposer un programme adapté »
       </p>
-
-      <img src="@/assets/CanalLombaireKine.png">
+      <PNGViewer :src="'CanalLombaireKine.png'" :myID="'CanalLombaireKine.png'"/>
     </section>
 </template>
 
 <script lang="js">
-    export default {
-        name: 'CanalLombaire',
-
-
-    }
+  import PNGViewer from "@/components/PNGViewer";
+  export default {
+    name: 'CanalLombaire',
+    components: { PNGViewer }
+  }
 </script>
 
 <style scoped lang="scss">

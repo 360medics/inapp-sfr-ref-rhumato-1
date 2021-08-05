@@ -2,17 +2,16 @@
   <section class="Salazopyrine">
     <h2 class="title">Salazopyrine</h2>
 <span class="line"></span>
-
-    <img src="@/assets/SalazopyrineCSDMARDS.png">
+    <PNGViewer :src="'SalazopyrineCSDMARDS.png'" myID="'SalazopyrineCSDMARDS.png'"/>
   </section>
 </template>
 
 <script lang="js">
-    export default {
-        name: 'Salazopyrine',
-
-
-    }
+import PNGViewer from "@/components/PNGViewer";
+export default {
+  name: 'Salazopyrine',
+  components: { PNGViewer }
+}
 </script>
 
 <style scoped lang="scss">

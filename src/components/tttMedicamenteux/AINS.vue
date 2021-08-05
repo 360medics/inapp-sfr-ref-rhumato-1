@@ -271,23 +271,24 @@
           <li>
             <span class="underline">Effets attendues inhibition COX2</span> : anti-inflammatoire et analgésique (souhaitable), augmentation TA, rétention hydrosodée (EI)
             <br>
-            <img src="@/assets/AINS.png">
           </li>
         </ul>
       </li>
     </ul>
+    <PNGViewer :src="'AINS.png'" :myID="'AINS.png'"/>
 
     <p class="bold">Algorithme de prescription des AINS</p>
-    <img src="@/assets/algo_AINS.png">
+    <PNGViewer :src="'algo_AINS.png'" :myID:="'algo_AINS.png'"/>
   </section>
 </template>
 
 <script lang="js">
-    export default {
-        name: 'AINS',
 
-
-    }
+  import PNGViewer from "@/components/PNGViewer";
+  export default {
+    name: 'AINS',
+    components: {PNGViewer}
+  }
 </script>
 
 <style scoped lang="scss">
@@ -310,6 +311,9 @@
         border-collapse: collapse;
         width: 100%;
         margin-bottom: 15px;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
       }
 
       td, th {

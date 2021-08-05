@@ -182,19 +182,18 @@
         </ul>
       </li>
     </ul>
-
-    <img src="@/assets/glucocorticoide.png">
+    <PNGViewer :src="'glucocorticoide.png'" myID="'glucocorticoide.png'"/>
 
     <p>Sources : VIDAL, HAS, Pharmacomédicale.org, COFER</p>
   </section>
 </template>
 
 <script lang="js">
-    export default {
-        name: 'Glucocorticoides',
-
-
-    }
+import PNGViewer from "@/components/PNGViewer";
+export default {
+  name: 'Glucocorticoides',
+  components: { PNGViewer }
+}
 </script>
 
 <style scoped lang="scss">
@@ -217,6 +216,9 @@
         border-collapse: collapse;
         width: 100%;
         margin-bottom: 15px;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
       }
 
       td, th {

@@ -4,8 +4,7 @@
 <span class="line"></span>
 
     <p>Sur ordonnance d’exception</p>
-
-    <img src="@/assets/bDMARDS.png">
+    <PNGViewer :src="'bDMARDS.png'" :myID="'bDMARDS.png'"/>
 
     <p>
       <span class="bold">1 : Patient</span><br>
@@ -34,11 +33,14 @@
 </template>
 
 <script lang="js">
-    export default {
-        name: 'bDMARS',
+  import PNGViewer from "@/components/PNGViewer";
+  export default {
+    name: 'bDMARS',
+    components: {PNGViewer},
+    component: { PNGViewer }
 
 
-    }
+  }
 </script>
 
 <style scoped lang="scss">

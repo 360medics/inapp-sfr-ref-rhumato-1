@@ -130,10 +130,10 @@
     </table>
 
     <p>Quels corticoïdes injecter ?</p>
-    <img src="@/assets/ponction_infiltration3.png">
+    <PNGViewer :src="'ponction_infiltration3.png'" :myID="'ponction_infiltration3.png'"/>
 
     <p>Quels corticoïdes injecter selon les indications ?</p>
-    <img src="@/assets/ponction_infiltration4.png">
+    <PNGViewer :src="'ponction_infiltration4.png'" :myID="'ponction_infiltration4.png'"/>
 
     <div class="line"></div>
 
@@ -156,7 +156,6 @@
       <li>Mise des gants stériles</li>
     </ul>
     <img src="@/assets/ponction_infiltration5.png">
-
     <div class="line"></div>
 
     <p>Points supplémentaires </p>
@@ -175,11 +174,11 @@
 </template>
 
 <script lang="js">
-    export default {
-        name: 'MembreInferieur',
-
-
-    }
+import PNGViewer from "@/components/PNGViewer";
+export default {
+  name: 'MembreInferieur',
+  components: { PNGViewer }
+}
 </script>
 
 <style scoped lang="scss">
@@ -216,6 +215,9 @@
         border-collapse: collapse;
         width: 100%;
         margin-bottom: 15px;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
       }
 
       td, th {

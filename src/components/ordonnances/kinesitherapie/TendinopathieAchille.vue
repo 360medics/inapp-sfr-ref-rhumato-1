@@ -8,16 +8,16 @@
         <br><br>
         « Merci de réaliser un bilan diagnostique pour … et de proposer un programme adapté »
       </p>
-
-      <img src="@/assets/TendinopathieAchilleKine.png">    </section>
+      <PNGViewer :src="'TendinopathieAchilleKine.png'" myID="'TendinopathieAchilleKine.png'"/>
+    </section>
 </template>
 
 <script lang="js">
-    export default {
-        name: 'TendinopathieAchille',
-
-
-    }
+import PNGViewer from "@/components/PNGViewer";
+export default {
+  name: 'TendinopathieAchille',
+  components: { PNGViewer }
+}
 </script>
 
 <style scoped lang="scss">

@@ -1,6 +1,6 @@
 <template>
   <div class="Cdai">
-    <h2 class="title">polyarthrite rhumatoïde - CDAI</h2>
+    <h2 class="title">Polyarthrite rhumatoïde - CDAI</h2>
     <p class="description">
       Le CDAI ou Clinical Disease Activity Index est inspiré de la famille de
       scores « DAS » pour la polyarthrite rhumatoïde, comprenant DAS28 et

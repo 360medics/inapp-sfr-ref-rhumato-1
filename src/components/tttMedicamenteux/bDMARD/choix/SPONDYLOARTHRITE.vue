@@ -1,18 +1,17 @@
 <template lang="html">
   <section class="SPONDYLOARTHRITE">
-    <h2 class="title">SPONDYLOARTHRITE</h2>
+    <h2 class="title">Spondyloarthrite</h2>
 <span class="line"></span>
-
-    <img src="@/assets/SPONDYLOARTHRITE.png">
+    <PNGViewer :src="'SPONDYLOARTHRITE.png'" myID="'SPONDYLOARTHRITE.png'" class="image"/>
   </section>
 </template>
 
 <script lang="js">
-    export default {
-        name: 'SPONDYLOARTHRITE',
-
-
-    }
+import PNGViewer from "@/components/PNGViewer";
+export default {
+  name: 'SPONDYLOARTHRITE',
+  components: { PNGViewer }
+}
 </script>
 
 <style scoped lang="scss">
@@ -20,11 +19,9 @@
     .SPONDYLOARTHRITE {
       padding: 0 15px;
       text-align: left;
-
-
-
-      img {
-        max-width: 100%;
-      }
     }
+
+.image {
+  margin-top: 50px;
+}
 </style>

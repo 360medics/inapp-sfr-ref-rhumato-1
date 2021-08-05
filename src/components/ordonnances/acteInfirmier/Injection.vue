@@ -2,17 +2,16 @@
   <section class="Injection">
     <h2 class="title">Injection Teriparatide</h2>
 <span class="line"></span>
-
-    <img src="@/assets/InjectionActe.png">
+    <PNGViewer :src="'InjectionActe.png'" :myID="'InjectionActe.png'"/>
   </section>
 </template>
 
 <script lang="js">
-    export default {
-        name: 'Injection',
-
-
-    }
+import PNGViewer from "@/components/PNGViewer";
+export default {
+  name: 'Injection',
+  components: { PNGViewer }
+}
 </script>
 
 <style scoped lang="scss">
