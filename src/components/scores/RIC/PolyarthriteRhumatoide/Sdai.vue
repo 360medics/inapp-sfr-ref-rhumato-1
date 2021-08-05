@@ -1,6 +1,6 @@
 <template>
   <div class="Sdai">
-    <h2 class="title">polyarthrite rhumatoïde - SDAI</h2>
+    <h2 class="title">Polyarthrite rhumatoïde - SDAI</h2>
     <p class="description">
       Le SDAI ou Simplified Disease Activity Index est inspiré de la famille de
       scores « DAS » pour la polyarthrite rhumatoïde, comprenant DAS28 et

@@ -2,17 +2,18 @@
   <section class="Apremilast">
     <h2 class="title">Apremilast</h2>
 <span class="line"></span>
-
-    <img src="@/assets/ApremilastCSDMARDS.png">
+    <PNGViewer :src="'ApremilastCSDMARDS.png'" :myID="'ApremilastCSDMARDS.png'"/>
   </section>
 </template>
 
 <script lang="js">
-    export default {
-        name: 'Apremilast',
+  import PNGViewer from "@/components/PNGViewer";
+  export default {
+    name: 'Apremilast',
+    components: {PNGViewer}
 
 
-    }
+  }
 </script>
 
 <style scoped lang="scss">
