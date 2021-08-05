@@ -30,13 +30,12 @@ export default Vue.extend({
     goBack,
     isMobile,
   },
+  mounted() {
+    this.displayChevronCircle = this.$route.path !== "/";
+  },
   watch: {
     $route: function() {
-      if (this.$route.path === "/") {
-        this.displayChevronCircle = false
-      } else  {
-        this.displayChevronCircle = true
-      }
+      this.displayChevronCircle = this.$route.path !== "/";
     }
   },
 });
