@@ -9,7 +9,6 @@ const flattenData = (nestedObject, fullObject) => {
 };
 
 const fillFlatData = flatEntries => {
-  //flatEntries.children = [];
   if (flatData.includes(flatEntries)) {
     return;
   }
