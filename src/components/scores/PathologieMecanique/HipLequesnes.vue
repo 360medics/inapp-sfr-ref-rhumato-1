@@ -22,11 +22,9 @@
       Indice <em>{{ finalScore }}</em
       >.
     </h3>
-
+    <p>Si l’indice est ≥ à 10-12, une prothèse peut être envisagée</p>
     <a class="source" v-if="!isMobile()" :href="'http://www.antalvite.fr/pdf/Indice%20algo-fonctionnel%20de%20Lequesne%20pour%20la%20hanche.pdf'" target="blank">Lien vers la source</a>
     <a class="source" v-else :href="'medics://viewer?m_source=' + 'http://www.antalvite.fr/pdf/Indice%20algo-fonctionnel%20de%20Lequesne%20pour%20la%20hanche.pdf'">Lien vers la source</a>
-
-    <ReferenceScore  :scoreResult="finalScore" midValue="2" highValue="3"/>
 
   </div>
 </template>
@@ -34,14 +32,12 @@
 <script lang="ts">
 import Vue from "vue";
 import HipLequesnesQuestion from "./HipLequesnesQuestion.vue";
-import ReferenceScore from "@/components/ReferenceScore.vue";
 import { isMobile } from '@/global';
 
 export default Vue.extend({
   name: "HipLequesnes",
   components: {
-    HipLequesnesQuestion,
-    ReferenceScore
+    HipLequesnesQuestion
   },
   data() {
     return {
@@ -65,7 +61,7 @@ export default Vue.extend({
   methods: {
     isMobile,
     calcResult() {
-      this.finalScore = this.scores.reduce((x1, x2) => (parseFloat(x1) + parseFloat(x2)).toFixed(1));
+      this.finalScore = parseInt(this.scores.reduce((x1, x2) => (parseFloat(x1) + parseFloat(x2)).toFixed(1)));
     },
     upwardChange(e: any) {
       this.scores[e.index] = e.userScore;

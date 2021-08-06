@@ -13,9 +13,9 @@
       <br />
     </div>
     <div class="result" :class="{red: finalScore >= 2, orange: finalScore === 1, green: finalScore === 0}">
+      <p>Score : {{ finalScore }}</p>
       <p>SURVIE À 5 ANS (%): <strong>{{ percentageSurvivalAtFiveYears }}</strong></p>
       <p>RISQUE DE DÉCÈS : <strong>{{ riskOfDeath }}</strong></p>
-      <p>{{ finalScore }}</p>
     </div>
     <p class="score_ref">
       Références:<br />- Gayraud M, Guillevin L, le Toumelin P, Cohen P, Lhote

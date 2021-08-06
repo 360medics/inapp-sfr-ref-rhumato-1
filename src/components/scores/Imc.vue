@@ -21,21 +21,24 @@
         <h4 >{{ this.result }}</h4>
       </div>
 
-
       <span class="line"></span>
-      <span>
+      <br>
+      <p>
         Bon a savoir L'IMC permet de determiner la corpulence d'une personne. La
         même formule est utilisée pour le calcul de l'IMC de la femme et de
         l'homme. L'Organisation Mondiale de la Santé (OMS) a défini cet Indice de
         Masse Corporelle comme le standard pour évaluer les risques liés au
         surpoids.
-      </span>
+      </p>
+      <a class="source" v-if="!isMobile()" :href="'https://www.imc.fr/'" target="blank">Lien vers la source</a>
+      <a class="source" v-else :href="'medics://viewer?m_source=' + 'https://www.imc.fr/'">Lien vers la source</a>
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import { isMobile } from '@/global';
 
 export default Vue.extend({
   data() {
@@ -48,6 +51,7 @@ export default Vue.extend({
     };
   },
   methods: {
+    isMobile,
     getDetail(imc) {
       if (imc < 16.5) {
         return "Famine";

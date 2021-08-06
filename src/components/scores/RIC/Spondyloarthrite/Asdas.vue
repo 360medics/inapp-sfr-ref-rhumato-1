@@ -354,7 +354,7 @@ export default Vue.extend({
   }
 
   .score {
-    font-size: 30px;
+    font-size: 16px;
     font-weight: 900;
   }
 }

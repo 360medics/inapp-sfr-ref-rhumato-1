@@ -164,6 +164,12 @@
         </p>
       </div>
     </form>
+
+    <div class="info">
+      <p>Interprétation:
+        Le BASFI (Bath ankylosing spondylitis functional index) reflète le retentissement fonctionnel, c'est-à-dire l'incapacité à exécuter des actions de la vie quotidienne. Pour chacune des dix activités, il faut évaluer de 0 à 10 la facilité ou la difficulté à les effectuer pendant le mois passé. 0 signifie la facilité totale, 10 signifie l'impossibilité. Ce score est une aide au suivi des spondylarthrites ankylosantes.</p>
+    </div>
+
     <p class="score_ref">
       Références:<br />Calin A, Garrett S, Whitelock H et al. A new approch to
       defining functional ability in ankylosing spondylitis : the development of

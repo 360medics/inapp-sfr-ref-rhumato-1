@@ -245,7 +245,7 @@
     <span
       >Attention: coter "absence d'activité" les manifestations anciennes
       stables liées à des lésions séquallaires plutôt qu'à une activité de la
-      maladie, ainsi que les manifestations neuroloques périphériques non liées
+      maladie, ainsi que les manifestations neurologiques périphériques non liées
       à la maladie</span
     >
     <br />
@@ -276,7 +276,7 @@
     <p @click="choice9(15)" class="btn" :class="{ selected: score9 === 15 }">
       Atteinte neurologique périphérique très active prouvée par l'ENMG
       <br />
-      - Neuropathie axonale sensitivo-motrice pure avec déficite moteur <= 3/5
+      - Neuropathie axonale sensitivo-motrice pure avec déficit moteur <= 3/5
       <br />
       - Atteinte neurologique périphérique liée à une vascularite (ex:
       mononévrite multiple...)

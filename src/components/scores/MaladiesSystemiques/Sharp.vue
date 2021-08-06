@@ -4,7 +4,7 @@
     <h2 class="Sharp__title">Critères de sharp</h2>
 
     <div class="Sharp__container__subtitle">
-      <h3 class="Sharp__subtitle">Critère majeurs</h3>
+      <h3 class="Sharp__subtitle">Critère majeurs :</h3>
       <span class="Sharp__count">{{ countMajor }}</span>
     </div>
 
@@ -16,11 +16,10 @@
     <div class="Sharp__list__item">
         <input class="Sharp__list__item__input" type="checkbox" id="pulmonaire" value="Atteinte pulmonaire" v-model="checkMajor">
         <label class="Sharp__list__item__label" for="pulmonaire">Atteinte pulmonaire :</label>
-
-          <p class="Sharp__list__sublist">- DLCO < 70%</p>
-          <p class="Sharp__list__sublist">- HTAP</p>
-          <p class="Sharp__list__sublist">- Lésion histologiques vasculaire</p>
     </div>
+    <p class="Sharp__list__sublist">- DLCO < 70%</p>
+    <p class="Sharp__list__sublist">- HTAP</p>
+    <p class="Sharp__list__sublist">- Lésion histologiques vasculaire</p>
     <div class="Sharp__list__item">
         <input class="Sharp__list__item__input" type="checkbox" id="raynaud" value="raynaud" v-model="checkMajor">
         <label class="Sharp__list__item__label" for="raynaud">Phénomène de Raynaud et/ou hypomotilité oesophagienne</label>
@@ -37,7 +36,7 @@
     </div>
 
     <div class="Sharp__container__subtitle">
-      <h3 class="Sharp__subtitle">Critère mineurs</h3>
+      <h3 class="Sharp__subtitle">Critère mineurs :</h3>
       <span class="Sharp__count">{{ countMinor }}</span>
     </div>
     <div class="Sharp__list__item">
@@ -147,6 +146,8 @@ export default Vue.extend({
       margin-left: 3.5em;
     }
     &__item {
+      display: flex;
+      align-items: center;
       &__label {
         font-weight: 400;
         letter-spacing: .04em;

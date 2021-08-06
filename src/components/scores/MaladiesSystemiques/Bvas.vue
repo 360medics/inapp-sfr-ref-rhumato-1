@@ -366,11 +366,9 @@
       <p>Luqmani et al (1994). "Birmingham Vasculitis Activity Score (BVAS) in systemic necrotizing vasculitis." QJM 87(11):671-8</p>
       <p>Luqmani et al (1997). "Disease assessment and management of the vasculitides." Baillieres Clin Rheumatol 11(2): 423-46;</p>
       <p>Mukhtyar et al (2009). "Modification and validation of the Birmingham Vasculitis Activity Score (version 3) ARD 2009 68:1827</p>
-
-
     </em>
 
-    <ReferenceScore  :colorCount="4" :scoreResult="total" lowValue="9" midValue="30" highValue="50"/>
+    <ReferenceScore  :colorCount="4" :scoreResult="total" :lowValue="9" :midValue="30" :highValue="50"/>
 
   </div>
 </template>

@@ -116,16 +116,27 @@
     </div>
 
     <div class="info">
-      <em
+      <p
         >L'interprétation de ce score compris entre 0 et 76 ne dépend pas de son
-        évolution au cours du temps. Généralement, on considère qu'il y a
-        rémission si le score est compris entre 0 et 2,8 inclus. Une activité
-        faible est indiquée par un score > 2,8 jusqu'à 10 inclus. Une activité
+        évolution au cours du temps.<br>Généralement, on considère qu'il y a
+        rémission si le score est compris entre 0 et 2,8 inclus. <br>Une activité
+        faible est indiquée par un score > 2,8 jusqu'à 10 inclus. <br>Une activité
         modérée est indiquée par un score compris entre > 10 et 22 inclus,
         tandis qu'une activité élevée est indiquée par un score strictement
-        supérieur à 22.</em
+        supérieur à 22.</p
       >
     </div>
+
+    <em class="source">
+      <p>source : Application Rheumatools</p>
+      <span>Références :</span>
+      <p>Van der Heijde DMFM van't Hof MA van Riel PLCM et al. Judging disease activity in clinical practice in rheumatoid arthritis: first step in the development of a disease activity score/</p>
+      <p>Ann Rheum Dis1990;49;916-20</p>
+      <p>Site DAS :</p>
+      <a class="source" v-if="!isMobile()" :href="'https://www.das-score.nl/nl-nl/'" target="blank">https://www.das-score.nl/nl-nl/</a>
+      <a class="source" v-else :href="'medics://viewer?m_source=' + 'https://www.das-score.nl/nl-nl/'">https://www.das-score.nl/nl-nl/</a>
+
+    </em>
   </div>
 </template>
 
@@ -145,6 +156,11 @@ export default Vue.extend({
     };
   },
   methods: {
+    isMobile() {
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      );
+    },
     calcTotal() {
       if (this.crpType === 'l') {
         return (
