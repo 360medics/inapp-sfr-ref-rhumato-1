@@ -1,13 +1,15 @@
-<template>
+<template xmlns="http://www.w3.org/1999/html">
   <div class="content-page">
-    <keep-alive>
-      <component v-bind:is="componentName"></component>
-    </keep-alive>
-    <p class="regulatory" v-if="isScore">
+    <main>
+      <keep-alive>
+        <component v-bind:is="componentName"></component>
+      </keep-alive>
+    </main>
+    <footer class="footer" v-if="isScore">
       L’évaluation d’un patient est avant tout clinique et/ou biologique. Le
       traitement d’un patient ne peut reposer sur le seul résultat de cette
       application.
-    </p>
+    </footer>
   </div>
 </template>
 
@@ -17,7 +19,7 @@
    margin-top: 1em;
 }
 
-.regulatory {
+.footer {
   font-style: italic;
   font-weight: 200;
   font-size: .75rem;

@@ -133,7 +133,7 @@ export default {
   margin-top: 0.5rem;
   padding: 16px;
   transition: all 0.5s linear;
-  border: 2px solid #f7f7f7;
+  border: 1px solid #f7f7f7;
   box-shadow: 0px 0px 10px 5px rgba(246,246,246,0.69);
 
   i {
