@@ -98,25 +98,16 @@
           </p>
         </div>
 
-        <div class="result">
+        <div class="result" :class="{red : calcTotal() >= 6}">
           <h4>Score : {{ calcTotal() }}</h4>
         </div>
       </form>
     </div>
 
-         <div class="info">
-      <span>
-        Interprétation : Les critères ACR/EULAR donnent la possibilité de
-        diagnostiquer précocement une polyarthrite rhumatoïde. Un score à 6 ou
-        plus pose le diagnostic de polyarthrite rhumatoïde.
-      </span>
-      <br>
-      <span>
-        Références : Funovits J, Aletaha D, Bykerk V, Combe B, Dougados M, Emery
-        P, et al. The American College of Rheumatology/European League Against
-        Rheumatism classification criteria for rheumatoid arthritis:
-        methodological report Phase 1. Ann Rheum Dis 2010; 69: 1589–95.
-      </span>
+    <div class="info">
+      <p>Interprétation : Les critères ACR/EULAR donnent la possibilité de diagnostiquer précocement une polyarthrite rhumatoïde.</p>
+      <p><strong>Un score à 6 ou plus pose le diagnostic de polyarthrite rhumatoïde.</strong></p>
+     <p>Références : Funovits J, Aletaha D, Bykerk V, Combe B, Dougados M, Emery P, et al. The American College of Rheumatology/European League Against Rheumatism classification criteria for rheumatoid arthritis: methodological report Phase 1. Ann Rheum Dis 2010; 69: 1589–95.</p>
     </div>
   </div>
 </template>

@@ -2,7 +2,7 @@
   <div class="Ffs">
     <h2 class="title">SCORE FFS</h2>
     <span class="line"></span>
-
+    <br>
     <div v-for="(dataQuestion, i) in datasQuestion" :key="i">
       <SelenaSledaiCheckBox
         :index="i"
@@ -12,10 +12,10 @@
       ></SelenaSledaiCheckBox>
       <br />
     </div>
-    <div class="result">
-      <h3>SURVIE À 5 ANS (%): {{ percentageSurvivalAtFiveYears }}</h3>
-      <h3>RISQUE DE DÉCÈS : {{ riskOfDeath }}</h3>
-      <h2>{{ finalScore }}</h2>
+    <div class="result" :class="{red: finalScore >= 2, orange: finalScore === 1, green: finalScore === 0}">
+      <p>SURVIE À 5 ANS (%): <strong>{{ percentageSurvivalAtFiveYears }}</strong></p>
+      <p>RISQUE DE DÉCÈS : <strong>{{ riskOfDeath }}</strong></p>
+      <p>{{ finalScore }}</p>
     </div>
     <p class="score_ref">
       Références:<br />- Gayraud M, Guillevin L, le Toumelin P, Cohen P, Lhote

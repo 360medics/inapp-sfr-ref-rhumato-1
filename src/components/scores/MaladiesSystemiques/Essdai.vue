@@ -385,9 +385,8 @@
       - ou apparition d'une hypergammaglobulinémie (< 5 g/L)
     </p>
 
-    <div class="result">
-      <h4>Résultat: {{ result }}</h4>
-      <h4>{{ activity }}</h4>
+    <div class="essdai-result" :class="{green : result < 4, marron : (result >= 4 && result < 50), orange: (result >= 50 && result < 100),  red: result >= 100}">
+      Résultat: {{ result }} - {{ activity }}
     </div>
   </div>
 </template>
@@ -411,24 +410,24 @@ export default Vue.extend({
       score11: null,
       score12: null,
       result: 0,
-      activity: '',
+      activity: "Absence d'activité",
     };
   },
   methods: {
     calcul() {
       this.result =
-        parseInt(this.score1) +
-        parseInt(this.score2) +
-        parseInt(this.score3) +
-        parseInt(this.score4) +
-        parseInt(this.score5) +
-        parseInt(this.score6) +
-        parseInt(this.score7) +
-        parseInt(this.score8) +
-        parseInt(this.score9) +
-        parseInt(this.score10) +
-        parseInt(this.score11) +
-        parseInt(this.score12);
+        this.score1 +
+        this.score2 +
+        this.score3 +
+        this.score4 +
+        this.score5 +
+        this.score6 +
+        this.score7 +
+        this.score8 +
+        this.score9 +
+        this.score10 +
+        this.score11 +
+        this.score12;
 
       if (this.result >= 0 && this.result < 4) {
         this.activity = "Absence d'activité";
@@ -562,5 +561,33 @@ export default Vue.extend({
     width: 100%;
     border-top: 2px solid #ccc;
   }
+}
+
+
+.essdai-result {
+  position: fixed;
+  bottom: 0;
+  color: white;
+  border-radius: .5em;
+  padding: 1rem !important;
+  margin-bottom: .5rem !important;
+  font-weight: bold;
+  width: 80%;
+}
+
+.essdai-result.green {
+  background-color: green;
+}
+
+.essdai-result.marron {
+  background-color: darkgoldenrod;
+}
+
+.essdai-result.orange {
+  background-color: orange;
+}
+
+.essdai-result.red {
+  background-color: #d00606;
 }
 </style>

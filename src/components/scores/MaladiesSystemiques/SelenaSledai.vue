@@ -2,7 +2,7 @@
   <div class="score">
     <h2 class="title">SCORE SELENA-SLEDAI</h2>
     <span class="line"></span>
-
+    <br>
     <div v-for="(dataQuestion, i) in datasQuestion" :key="i">
       <SelenaSledaiCheckBox
         :index="i"
@@ -14,10 +14,14 @@
     </div>
 
     <span class="line"></span>
-    <div class="result">
-      Score final <em>{{ finalScore }}</em
-      >.
+    <br>
+    <div class="result" :class="{red: (finalScore > 74), orange: (finalScore > 49 && finalScore < 75), marron: (finalScore > 25 && finalScore < 50), green: finalScore < 26}">
+      Score final <em>{{ finalScore }}</em>.
+      <p>Vérification de la présence ou non de 24 variable. Le résultat varie de 0 à 105.</p>
     </div>
+
+    <h3>Interprétation :</h3>
+    <p>Donne une évaluation de l'activité de la maladie lupique. Le poids attribué à chaque variable a été déterminé par analyse de régression mutliple. Les manifestations décrites sont prises en comptes si elle sont présentes le jour de la consultation ou bien dans les 10 jours précédents.</p>
     <p class="score_ref">
       Références:<br />
       Bombardier C., Gladmann D.D., Urowitz M.B., Caron D., Chang C.H., and the

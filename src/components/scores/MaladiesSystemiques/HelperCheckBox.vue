@@ -126,6 +126,8 @@ export default Vue.extend({
       display: flex;
       align-items: center;
       cursor: pointer;
+      width: 60%;
+      font-size: 14px;
     }
   }
 }
