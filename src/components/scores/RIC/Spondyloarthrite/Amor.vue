@@ -10,8 +10,8 @@
       Douleurs nocturnes ou raideur matinale de siège lombaire ou dorsal (1 points)
     </div>
 
-    <div class="btn" :class="{ selected: toggle[2] === true }" @click="toggle[2] === false ? calcPlus(1, 2) : calcLess(1, 2)">
-      Oligoarthrite asymétrique (1 points)
+    <div class="btn" :class="{ selected: toggle[2] === true }" @click="toggle[2] === false ? calcPlus(1, 2) : calcLess(2, 2)">
+      Oligoarthrite asymétrique (2 points)
     </div>
 
     <div class="btn" :class="{ selected: toggle[3] === true }" @click="toggle[3] === false ? calcPlus(1, 3) : calcLess(1, 3 )">
