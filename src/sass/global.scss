@@ -31,7 +31,14 @@
     &input {
         background-color: #38bbec;
     }
-
+    &__submit {
+        background-color: #80cd29 !important;
+        color: #fff !important;
+        border: solid 2px #74bd21 !important;
+        font-size: 1em;
+        font-weight: 700;
+        border: none;
+    }
 }
 
 .title {

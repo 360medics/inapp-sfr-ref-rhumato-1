@@ -197,14 +197,6 @@ export default Vue.extend({
   color: #ff0000;
   text-align: center;
 }
-.btn__submit {
-  background-color: #80cd29 !important;
-  color: #fff !important;
-  border: solid 2px #74bd21 !important;
-  font-size: 1em;
-  font-weight: 700;
-  border: none;
-}
 
 .flex-creatinine {
   display: flex;
