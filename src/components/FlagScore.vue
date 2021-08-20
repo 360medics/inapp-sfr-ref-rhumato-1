@@ -23,7 +23,7 @@
 
 <script lang="ts">
 export default {
-  name: "ReferenceScore",
+  name: "FlagScore",
   props: {
     scoreResult: Number,
     lowValue: Number,

@@ -14,7 +14,7 @@
       <br />
     </div>
 
-    <ReferenceScore :colorCount="3" :scoreResult="finalScore" lowValue="2" highValue="3"/>
+    <FlagScore :colorCount="3" :scoreResult="finalScore" lowValue="2" highValue="3"/>
 
   </div>
 </template>
@@ -22,13 +22,13 @@
 <script lang="ts">
 import Vue from 'vue';
 import HaqQuestion from './HaqQuestion.vue';
-import ReferenceScore from "@/components/ReferenceScore.vue";
+import FlagScore from "@/components/FlagScore.vue";
 
 export default Vue.extend({
   name: 'HAQ',
   components: {
     HaqQuestion,
-    ReferenceScore
+    FlagScore
   },
   data() {
     return {

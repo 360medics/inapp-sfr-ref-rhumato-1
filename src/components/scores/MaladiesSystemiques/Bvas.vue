@@ -368,19 +368,19 @@
       <p>Mukhtyar et al (2009). "Modification and validation of the Birmingham Vasculitis Activity Score (version 3) ARD 2009 68:1827</p>
     </em>
 
-    <ReferenceScore  :colorCount="4" :scoreResult="total" :lowValue="9" :midValue="30" :highValue="50"/>
+    <FlagScore  :colorCount="4" :scoreResult="total" :lowValue="9" :midValue="30" :highValue="50"/>
 
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
-import ReferenceScore from "@/components/ReferenceScore.vue";
+import FlagScore from "@/components/FlagScore.vue";
 
 export default Vue.extend({
   name: "Bvas",
   components: {
-    ReferenceScore
+    FlagScore
   },
 /*  mounted() {
     this.calcTotal();
