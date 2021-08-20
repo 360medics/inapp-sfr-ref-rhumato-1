@@ -1,6 +1,6 @@
 <template>
     <div class="ReferencesMedical">
-
+        <p v-if="source">source : {{source}}</p>
         <em v-if="message1">
             Interprétation:<br>
             {{message1}}
@@ -22,6 +22,7 @@ export default Vue.extend({
     props: {
         message1: String,
         message2: String,
+        source: String
     },
 });
 </script>
