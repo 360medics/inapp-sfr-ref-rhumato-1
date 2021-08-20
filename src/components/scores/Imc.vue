@@ -30,8 +30,6 @@
         Masse Corporelle comme le standard pour évaluer les risques liés au
         surpoids.
       </p>
-      <a class="source" v-if="!isMobile()" :href="'https://www.imc.fr/'" target="blank">Lien vers la source</a>
-      <a class="source" v-else :href="'medics://viewer?m_source=' + 'https://www.imc.fr/'">Lien vers la source</a>
     </div>
   </div>
 </template>
