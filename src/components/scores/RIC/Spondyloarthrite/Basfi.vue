@@ -51,7 +51,7 @@
       /><span class="score_note"> (0=aisé, 10=impossible)</span>
 
       <p>
-        4. Pouvez-vous vous lever d'un siège dans accoudoirs, sans vous aider de
+        4. Pouvez-vous vous lever d'un siège sans accoudoirs, sans vous aider de
         vos mains ni d'aucune aide ?
       </p>
       <input
@@ -150,7 +150,7 @@
         <hr width="80%" class="line" />
         <p align="center">
           <input
-            class="btn"
+            class="btn btn__submit"
             name="Submit"
             type="button"
             @click="f_Calculer()"
