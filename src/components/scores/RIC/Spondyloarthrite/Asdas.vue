@@ -189,7 +189,7 @@
         </div>
       </section>
 
-      <button type="button" class="btn validate" v-on:click="calcScore">
+      <button type="button" class="btn btn__submit" v-on:click="calcScore">
         calculer
       </button>
     </form>
