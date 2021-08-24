@@ -937,7 +937,7 @@
           "children": [
             {
               "id": "",
-              "name": "Généralités",
+              "name": "Généralités à propos de la grossesse",
               "subtitle": "Sous-titre facultatif",
               "appId": 1,
               "parentId": null,
@@ -1265,7 +1265,7 @@
           "children": [
             {
               "id": "",
-              "name": "Généralités",
+              "name": "Généralités (rhumato)",
               "subtitle": "Sous-titre facultatif",
               "appId": 1,
               "parentId": null,
@@ -2044,7 +2044,7 @@
           "children": [
             {
               "id": "",
-              "name": "Généralités",
+              "name": "Généralités (Tac Tag)",
               "subtitle": "Sous-titre facultatif",
               "appId": 1,
               "parentId": null,

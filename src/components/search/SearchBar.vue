@@ -1,7 +1,7 @@
 <template>
-  <form class="search" @input="handleSearch" >
+  <form class="search" >
     <div class="search__wrapper">
-        <input class="search__input" v-model="searchText"  :placeholder="searchText" />
+        <input class="search__input" placeholder="Rechercher..." @input="handleSearch($event.target.value)" />
 
         <button class="search__button search__button__find">
           <i class="fas fa-search"  />
@@ -22,7 +22,6 @@ import Fuse from "fuse.js";
 export default {
   name: 'SearchBar',
   data: () => ({
-    searchText: "",
     isSearching: false,
     list: [],
     options: {
@@ -41,18 +40,15 @@ export default {
   },
   methods: {
     handleClear() {
-        this.searchText = "";
         this.isSearching = false
         this.$emit('onClear', this.isSearching )
     },
-    handleSearch (event) {
+    handleSearch (e) {
       const fuse = new Fuse(this.list, this.options)
-      const inputValue = event.target.value
-      if (inputValue === "") {
+      if (e === "") {
         this.handleClear()
-      }else{
-        let fuseSearch = fuse.search(this.searchText)
-        this.searchText = inputValue
+      } else {
+        let fuseSearch = fuse.search(e)
         this.isSearching = true
 
         const mySearch = fuseSearch.filter((resultFuse: any) => {

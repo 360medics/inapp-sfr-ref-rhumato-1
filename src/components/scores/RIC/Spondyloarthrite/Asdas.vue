@@ -330,6 +330,7 @@ export default Vue.extend({
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    display: none;
   }
 
   label:hover,
@@ -353,12 +354,11 @@ export default Vue.extend({
 
   .btn {
     width: 40% !important;
-    margin: 0 30% !important;
+    margin-left: 30% !important;
   }
 
   .btn__submit {
     width: 40% !important;
-    margin: 5% 30% !important;
   }
 
   .score {
