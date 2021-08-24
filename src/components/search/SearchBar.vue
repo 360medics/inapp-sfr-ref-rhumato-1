@@ -1,14 +1,14 @@
 <template>
   <form class="search" >
     <div class="search__wrapper">
-        <input class="search__input" placeholder="Rechercher..." @input="handleSearch($event.target.value)" />
+        <input class="search__input" :value="searchText" placeholder="Rechercher..." @input="handleSearch($event.target.value)" />
 
         <button class="search__button search__button__find">
           <i class="fas fa-search"  />
         </button>
 
-        <button class="search__button search__button__clear" @click="handleClear">
-          <i class="fas fa-times" v-if="isSearching"/>
+        <button v-if="searchText" class="search__button search__button__clear" @click="handleClear">
+          <i class="fas fa-times"/>
         </button>
     </div>
   </form>
@@ -22,7 +22,7 @@ import Fuse from "fuse.js";
 export default {
   name: 'SearchBar',
   data: () => ({
-    isSearching: false,
+    searchText: "",
     list: [],
     options: {
       ignoreLocation : true,
@@ -40,22 +40,21 @@ export default {
   },
   methods: {
     handleClear() {
-        this.isSearching = false
-        this.$emit('onClear', this.isSearching )
+      this.searchText = ""
+      this.$emit('onClear', false )
     },
     handleSearch (e) {
       const fuse = new Fuse(this.list, this.options)
       if (e === "") {
         this.handleClear()
       } else {
+        this.searchText = e
         let fuseSearch = fuse.search(e)
-        this.isSearching = true
-
         const mySearch = fuseSearch.filter((resultFuse: any) => {
           return !resultFuse.item.children
         })
 
-        this.$emit('onSearch', mySearch, this.isSearching )
+        this.$emit('onSearch', mySearch, true )
       }
     },
   },
