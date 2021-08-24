@@ -60,7 +60,7 @@
         </div>
       </section>
 
-      <button type="button" class="btn validate" v-on:click="calcScore">
+      <button type="button" class="btn btn__submit" v-on:click="calcScore">
         Calculer résultat
       </button>
     </form>
@@ -69,41 +69,34 @@
       <p>Score :{{ score }}</p>
       <p>Activité P.R :{{ prActivity }}</p>
     </div>
-
-    <div class="info">
-      <em>
-        Interprétation:<br>
-        Le nombre d'articulations douloureuses (de 0 à 28) est indiqué par le
-        patient lors de la consultation. Le nombre d'articulations gonflées est
-        constaté par le médecin lors de la consultation. Attention, les
-        articulations des pieds et des chevilles ne sont pas prises en compte.<br>
-        L'évaluation globale par le patient de l’activité de la PR est une
-        échelle visuelle analogique de 0 à 100 mm. Le principe est le même que
-        pour l'évaluation de la douleur : 0 = aucune manifestation de la PR, 100
-        = gravité maximale que peut imaginer le patient.<br>
-        Lors de l'utilisation de la VS, le nombre à indiquer est le nombre de mm
-        à la première heure.
-      </em>
-      <br><br>
-      <em>
-        Réference:<br>
-        Formules:
-        DAS (VS) = 0,56 x √ad + 0,28 x √ag + 0,7 x ln(VS) + 0,014 x em
-        DAS (CRP) = 0,56 x √ad + 0,28 x √ag + 0,36 x ln(CRP + 1) + 0,014 x em + 0,96
-     Van der Heijde DMFM van't Hof MA van Riel PLCM et al. Judging disease activity in clinical practice in rheumatoid arthritis: first step in the development of a disease activity score. Ann Rheum Dis1990;49:916–20.
-     Site DAS 28 : http://www.das-score.nl
-      </em>
-    </div>
+      <ReferencesMedical
+          message1="Le nombre d'articulations douloureuses (de 0 à 28) est indiqué par le
+          patient lors de la consultation. Le nombre d'articulations gonflées est
+          constaté par le médecin lors de la consultation. Attention, les
+          articulations des pieds et des chevilles ne sont pas prises en compte.
+          L'évaluation globale par le patient de l’activité de la PR est une
+          échelle visuelle analogique de 0 à 100 mm. Le principe est le même que
+          pour l'évaluation de la douleur : 0 = aucune manifestation de la PR, 100
+          = gravité maximale que peut imaginer le patient.
+          Lors de l'utilisation de la VS, le nombre à indiquer est le nombre de mm
+          à la première heure."
+          message2="Formules:
+          DAS (VS) = 0,56 x √ad + 0,28 x √ag + 0,7 x ln(VS) + 0,014 x em
+          DAS (CRP) = 0,56 x √ad + 0,28 x √ag + 0,36 x ln(CRP + 1) + 0,014 x em + 0,96
+          Van der Heijde DMFM van't Hof MA van Riel PLCM et al. Judging disease activity in clinical practice in rheumatoid arthritis: first step in the development of a disease activity score. Ann Rheum Dis1990;49:916–20.
+          Site DAS 28 : http://www.das-score.nl"
+      />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import ReferencesMedical from "@/components/ReferencesMedical.vue";
 
 export default Vue.extend({
   name: "Das28",
-
-  data() {
+    components: {ReferencesMedical},
+    data() {
     return {
       valuePainfullJoint: 0,
       valueSwollenJoint: 0,

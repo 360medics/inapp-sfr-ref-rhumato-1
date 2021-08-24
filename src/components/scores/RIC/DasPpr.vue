@@ -89,7 +89,7 @@
       <label for="radio4" class="btn" :class="{selected: arms_up === '0'}">Bien au dessus des épaules ( &#62; 90° ) </label>
 
 
-      <div class="btn validate" @click="getResult()">Valider</div>
+      <div class="btn btn__submit" @click="getResult()">Valider</div>
     </form>
     <div v-if="score" class="result">
       <p>SCORE: {{this.score}}.<br>INTERPRETATION : {{ this.result }}</p>
@@ -143,7 +143,6 @@ export default Vue.extend({
 
 <style scoped lang="scss">
 @import "src/sass/global.scss";
-@import "src/sass/global";
 
 .DasPpr {
   [type="number"] {

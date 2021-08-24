@@ -77,7 +77,7 @@ import Osteoporose from '@/components/bilans/Osteoporose.vue';
 import GeneraliteGrossesse from '@/components/conception/desir_grossesse/GeneraliteGrossesse.vue';
 import MethotrexateGrossesse from '@/components/conception/desir_grossesse/tttIndique/Methotrexate.vue';
 import LeflunomideGrossesse from '@/components/conception/desir_grossesse/tttIndique/Leflunomide.vue';
-import MycophénolateMofetil from '@/components/conception/desir_grossesse/tttIndique/MycophénolateMofetil.vue';
+import MycophenolateMofetil from '@/components/conception/desir_grossesse/tttIndique/MycophenolateMofetil.vue';
 import Cyclophosphamide from '@/components/conception/desir_grossesse/tttIndique/Cyclophosphamide.vue';
 import TofacitinibBaricitinib from '@/components/conception/desir_grossesse/tttIndique/TofacitinibBaricitinib.vue';
 import AbataceptCondition from '@/components/conception/desir_grossesse/tttAutoriseSousCondition/AbataceptCondition.vue';
@@ -337,7 +337,7 @@ export default Vue.extend({
     GeneraliteGrossesse,
     MethotrexateGrossesse,
     LeflunomideGrossesse,
-    MycophénolateMofetil,
+    MycophenolateMofetil,
     Cyclophosphamide,
     TofacitinibBaricitinib,
   },

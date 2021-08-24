@@ -80,7 +80,7 @@
 
         <div>
           <input type="checkbox" name="mucousAndEyes2" id="mucousAndEyes2" v-model="mucousAndEyes.checked[2]" @change="updateScore(mucousAndEyes)">
-          <label class="btn" :class="{selected: mucousAndEyes.checked[2]}" for="mucousAndEyes2">Inflammation lacrimale ou salivaire</label>
+          <label class="btn" :class="{selected: mucousAndEyes.checked[2]}" for="mucousAndEyes2">Inflammation lacrymale ou salivaire</label>
         </div>
 
         <div>
@@ -356,31 +356,29 @@
     </form>
 
     <p class="result">Total {{ total }} </p>
-
-    <em class="source">
-      <p>source : Application Rheumatools</p>
-      <span>Interprétation :</span>
-      <p>The Birmingham Vasculitis Activity Score (BVAS) is a method for assessing the activity of vasculitis.</p>
-      <p>Note that scoring ranges are higher when any of the features are new or worse. Creatinine levels can be scored at patient’s first assessment only.</p>
-      <span>Références :</span>
-      <p>Luqmani et al (1994). "Birmingham Vasculitis Activity Score (BVAS) in systemic necrotizing vasculitis." QJM 87(11):671-8</p>
-      <p>Luqmani et al (1997). "Disease assessment and management of the vasculitides." Baillieres Clin Rheumatol 11(2): 423-46;</p>
-      <p>Mukhtyar et al (2009). "Modification and validation of the Birmingham Vasculitis Activity Score (version 3) ARD 2009 68:1827</p>
-    </em>
-
-    <ReferenceScore  :colorCount="4" :scoreResult="total" :lowValue="9" :midValue="30" :highValue="50"/>
-
+      <ReferencesMedical
+          message1="The Birmingham Vasculitis Activity Score (BVAS) is a method for assessing the activity of vasculitis.
+          Note that scoring ranges are higher when any of the features are new or worse.
+          Creatinine levels can be scored at patient’s first assessment only."
+          message2="Luqmani et al (1994). Birmingham Vasculitis Activity Score (BVAS) in systemic necrotizing vasculitis. QJM 87(11):671-8
+          Luqmani et al (1997). Disease assessment and management of the vasculitides. Baillieres Clin Rheumatol 11(2): 423-46;
+          Mukhtyar et al (2009). Modification and validation of the Birmingham Vasculitis Activity Score (version 3) ARD 2009 68:1827"
+          source="Application Rheumatools"
+      />
+    <FlagScore  :colorCount="4" :scoreResult="total" :lowValue="9" :midValue="30" :highValue="50"/>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
-import ReferenceScore from "@/components/ReferenceScore.vue";
+import FlagScore from "@/components/FlagScore.vue";
+import ReferencesMedical from "@/components/ReferencesMedical.vue";
 
 export default Vue.extend({
   name: "Bvas",
   components: {
-    ReferenceScore
+      ReferencesMedical,
+    FlagScore
   },
 /*  mounted() {
     this.calcTotal();

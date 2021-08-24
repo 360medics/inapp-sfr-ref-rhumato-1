@@ -80,6 +80,16 @@
     <p>30 et 60 ml/min : Insuffisance rénale modérée</p>
     <p>< 30 ml/min : Insuffisance rénale sévère</p>
 
+      <h3>Interprétation IMC</h3>
+
+      <p>- de 16.5 : Sous poids</p>
+      <p>- 16.5 à 18.5 : Maigreur</p>
+      <p>- 18.5 à 25 : Corpulence normale</p>
+      <p>- 25 à 30 : Surpoids</p>
+      <p>- 30 à 35 : Obésité modérée</p>
+      <p>- 35 à 40 : Obésité sévère</p>
+      <p>+ de 40 : Obésité morbide</p>
+
     <h3>Source</h3>
     <a v-if="!isMobile()" href="https://360medics.com/fr/calculators/tools/clairance-de-la-creatinine" target="_blank">Voir le lien</a>
     <a v-if="isMobile()" href="medics://viewer?m_source=https://360medics.com/fr/calculators/tools/clairance-de-la-creatinine">Voir le lien</a>
@@ -88,6 +98,10 @@
     <p>Nephron. 1976;16(1):31-41. Prediction of creatinine clearance from serum creatinine. Cockcroft DW, Gault MH.</p>
     <h3>Références MDRD</h3>
     <p>Ann Intern Med. 2006 Aug 15;145(4):247-54. Using standardized serum creatinine values in the modification of diet in renal disease study equation for estimating glomerular filtration rate. Levey AS, Coresh J, Greene T, Stevens LA, Zhang YL, Hendriksen S, Kusek JW, Van Lente F; Chronic Kidney Disease Epidemiology Collaboration. Tufts-New England Medical Center, Boston, Massachusetts 02111, USA. Ann Intern Med. 2008 Oct 7;149(7):519.</p>
+
+
+      <h3>Références IMC</h3>
+      <p>World Health Organ Tech Rep Ser. 1995;854:1-452. Physical status: the use and interpretation of anthropometry. Report of a WHO Expert Committee.</p>
   </div>
 </template>
 
@@ -196,14 +210,6 @@ export default Vue.extend({
 .message--error {
   color: #ff0000;
   text-align: center;
-}
-.btn__submit {
-  background-color: #80cd29 !important;
-  color: #fff !important;
-  border: solid 2px #74bd21 !important;
-  font-size: 1em;
-  font-weight: 700;
-  border: none;
 }
 
 .flex-creatinine {

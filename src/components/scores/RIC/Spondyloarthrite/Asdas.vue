@@ -1,31 +1,29 @@
 <template>
   <div class="Asdas">
     <h3 class="title">Score ASDAS</h3>
-
-    <span align="center" class="score_note"
-      >Renseignez chaque item. Indiquez une valeur de 0 (absent) à 10 (extrême)
-      pour les questions concernant votre ressenti.</span
-    >
+    <br>
+    <span align="center" class="score_note">Renseignez chaque item. Indiquez une valeur de 0 (absent) à 10 (extrême)
+      pour les questions concernant votre ressenti.</span>
     <span class="line"></span>
 
     <form>
       <section>
-        <h5 class="categorie">
+        <h4 class="categorie">
           1. Où situez-vous votre degré global de douleur au niveau du cou, du
           dos et des hanches dans le cadre de votre spondylarthrite ankylosante
           ?
-        </h5>
-        <div>
+        </h4>
+        <div class="flex">
           <input type="number" v-model="painScale" max="10" />
-          <p>(0=absent, 10=extrême)</p>
+          <em>(0=absent, 10=extrême)</em>
         </div>
       </section>
 
       <section>
-        <h5 class="categorie">
+        <h4 class="categorie">
           2. Quelle est la durée de votre raideur matinale à partir de votre
           réveil ?
-        </h5>
+        </h4>
         <div>
           <input
             type="radio"
@@ -154,18 +152,22 @@
         </div>
       </section>
       <section>
-        <h5>3. Comment évaluez-vous globalement de votre maladie ?</h5>
-        <input type="number" v-model="selfEval" max="10" />
-        <p>(0=absent, 10=extrême)</p>
+        <h4>3. Comment évaluez-vous globalement votre maladie ?</h4>
+        <div class="flex">
+          <input type="number" v-model="selfEval" max="10" />
+          <em>(0=absent, 10=extrême)</em>
+        </div>
       </section>
 
       <section>
-        <h5 class="categorie">
+        <h4 class="categorie">
           4. Où situez-vous votre degré de gonflement ou de douleur articulaire
           en dehors du cou, du dos et des hanches ?
-        </h5>
-        <input type="number" v-model="scaleStateJoint" max="10" />
-        <p>(0=absent, 10=extrême)</p>
+        </h4>
+        <div class="flex">
+          <input type="number" v-model="scaleStateJoint" max="10" />
+          <em>(0=absent, 10=extrême)</em>
+        </div>
       </section>
 
       <section id="cpr-vs">
@@ -189,8 +191,8 @@
         </div>
       </section>
 
-      <button type="button" class="btn validate" v-on:click="calcScore">
-        calculer
+      <button type="button" class="btn btn__submit" v-on:click="calcScore">
+        Calculer
       </button>
     </form>
     <section class="result">
@@ -350,7 +352,13 @@ export default Vue.extend({
   }
 
   .btn {
-    width: 40%;
+    width: 40% !important;
+    margin: 0 30% !important;
+  }
+
+  .btn__submit {
+    width: 40% !important;
+    margin: 5% 30% !important;
   }
 
   .score {
@@ -363,5 +371,11 @@ export default Vue.extend({
   font-size: smaller;
   font-style: italic;
   justify-content: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>

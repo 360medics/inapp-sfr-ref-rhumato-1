@@ -153,10 +153,12 @@ export default Vue.extend({
         letter-spacing: .04em;
         line-height: 2;
         cursor: pointer;
+        flex: 10;
       }
       &__input {
         margin-right: 2em;
         cursor: pointer;
+        flex: 1;
       }
     }
   }

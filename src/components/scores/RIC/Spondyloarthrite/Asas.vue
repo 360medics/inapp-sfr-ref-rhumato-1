@@ -1,13 +1,19 @@
 <template>
   <div class="Asas">
     <h2 class="title">Spondylarthrite axiale, Critères ASAS</h2>
-    <p class="description"></p>
+    <p class="description">
+        Chez un patient présentant une rachialgie ≥ 3 mois dont l'âge du diagnostic est < 45 ans, on peut classer sa maladie dans la forme spondylarthrite axiale si:
+        Sacro-iliite à l'imagerie.
+        ET
+        ≥ 1 signe de spondylarthite.
+
+        OU
+
+        HLA-B27 positif.
+        ET
+        ≥ 2 autres signes de spondylarthite.
+    </p>
     <span class="line"></span>
-    <div class="information">
-      Chez un patient présentant une rachialgie ≥ 3 mois dont l'âge du
-      diagnostic est &lsaquo; 45 ans alors on peut classer sa maladie dans la
-      forme spondylarthrite axiale
-    </div>
 
     <form class="form">
       <h4 class="subtitle">Sacro-iliite à l'imagerie:</h4>

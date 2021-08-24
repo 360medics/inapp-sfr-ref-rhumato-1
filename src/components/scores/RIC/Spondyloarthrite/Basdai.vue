@@ -76,6 +76,7 @@
       <div class="radio">
         <input
           name="vDuree"
+          class="radio__puce"
           id="vDuree1"
           type="radio"
           value="0"
@@ -91,6 +92,7 @@
       <div class="radio">
         <input
           name="vDuree"
+          class="radio__puce"
           id="vDuree2"
           type="radio"
           v-model="picked"
@@ -105,6 +107,7 @@
       <div class="radio">
         <input
           name="vDuree"
+          class="radio__puce"
           id="vDuree3"
           type="radio"
           v-model="picked"
@@ -119,6 +122,7 @@
       <div class="radio">
         <input
           name="vDuree"
+          class="radio__puce"
           id="vDuree4"
           type="radio"
           v-model="picked"
@@ -133,6 +137,7 @@
       <div class="radio">
         <input
           name="vDuree"
+          class="radio__puce"
           id="vDuree5"
           type="radio"
           v-model="picked"
@@ -144,6 +149,7 @@
       <div class="radio">
         <input
           name="vDuree"
+          class="radio__puce"
           id="vDuree6"
           type="radio"
           value="6.25"
@@ -158,6 +164,7 @@
       <div class="radio">
         <input
           name="vDuree"
+          class="radio__puce"
           id="vDuree7"
           type="radio"
           value="7.5"
@@ -172,6 +179,7 @@
       <div class="radio">
         <input
           name="vDuree"
+          class="radio__puce"
           id="vDuree8"
           type="radio"
           value="8.75"
@@ -186,6 +194,7 @@
       <div class="radio">
         <input
           name="vDuree"
+          class="radio__puce"
           id="vDuree9"
           type="radio"
           value="10"
@@ -202,7 +211,7 @@
         <hr width="80%" class="line" />
         <p align="center">
           <input
-            class="btn"
+            class="btn btn__submit"
             name="Submit"
             type="button"
             @click="f_Calculer()"
@@ -264,59 +273,47 @@ export default Vue.extend({
 
 <style scoped lang="scss">
 @import 'src/sass/global.scss';
-@import 'src/sass/global';
 
 .Basdai {
-  display: flex;
-  flex-direction: column;
-  margin-top: 10px;
-
-  input {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-  }
-
-  label {
-  }
-
-  .label:hover,
-  .label:focus {
-    color: grey;
-  }
-
-  .label:active {
-    background-color: white;
-    color: black;
-    outline: 1px solid black;
-  }
-
-  [type='radio']:checked + label {
-    background-color: violet;
-  }
-
-  .score_note {
-    font-size: smaller;
-    font-style: italic;
-  }
-
-  .inputNumber {
-    border-radius: 30px;
-    padding: 8px;
-    font-size: 15px;
-    width: 90%;
-  }
-
-  .form {
-    align-self: center;
-  }
-
-  .score_table {
-    border-width: 0;
-    border-collapse: 0;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 2;
-  }
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    .label:hover,
+    .label:focus {
+        color: grey;
+    }
+    .label:active {
+        background-color: white;
+        color: black;
+        outline: 1px solid black;
+    }
+    [type='radio']:checked + label {
+        background-color: violet;
+    }
+    .score_note {
+        font-size: smaller;
+        font-style: italic;
+    }
+    .inputNumber {
+        border-radius: 30px;
+        padding: 8px;
+        font-size: 15px;
+        width: 90%;
+    }
+    .form {
+        align-self: center;
+    }
+    .score_table {
+        border-width: 0;
+        border-collapse: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .radio {
+        display: flex;
+        &__puce {
+            display: none;
+        }
+    }
 }
 </style>

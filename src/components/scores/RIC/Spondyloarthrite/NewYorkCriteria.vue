@@ -7,7 +7,7 @@
         </tr>
         <tr>
           <td class="table__td">Lombalgies avec raideur de plus de trois mois, améliorées à l'effort, mais ne cédant pas au repos
-            <br>Limitation des mouvements du rachis lombaire à la fois dans le plan frontal et sagital
+            <br>Limitation des mouvements du rachis lombaire à la fois dans le plan frontal et sagittal
             <br>Limitation de l'ampliation thoracique par rapport aux valeurs normales corrigées pour l'âge et le sexe</td>
         </tr>
         </tbody>
