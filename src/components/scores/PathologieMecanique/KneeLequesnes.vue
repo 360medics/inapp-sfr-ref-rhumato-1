@@ -26,8 +26,8 @@
     </h3>
     <p>Si l’indice est ≥ à 10-12, une prothèse peut être envisagée</p>
 
-    <a class="source" v-if="!isMobile()" :href="'http://www.antalvite.fr/pdf/Indice%20algo-fonctionnel%20de%20Lequesne%20pour%20le%20genou.pdf'" target="blank">Lien vers la source</a>
-    <a class="source" v-else :href="'medics://viewer?m_source=' + 'http://www.antalvite.fr/pdf/Indice%20algo-fonctionnel%20de%20Lequesne%20pour%20le%20genou.pdf'">Lien vers la source</a>
+      <FlagScore :colorCount="3" :scoreResult="finalScore" :lowValue="2" :highValue="12"/>
+      <ReferencesMedical sourceLink="http://www.antalvite.fr/pdf/Indice%20algo-fonctionnel%20de%20Lequesne%20pour%20le%20genou.pdf" />
 
   </div>
 </template>
@@ -36,10 +36,14 @@
 import Vue from "vue"
 import HipLequesnesQuestion from "@/components/scores/PathologieMecanique/HipLequesnesQuestion.vue";
 import { isMobile } from '@/global';
+import ReferencesMedical from "@/components/ReferencesMedical.vue";
+import FlagScore from "@/components/FlagScore.vue";
 
 export default Vue.extend({
   name:"KneeLequesnes",
   components: {
+      FlagScore,
+      ReferencesMedical,
     HipLequesnesQuestion
   },
 
@@ -161,30 +165,16 @@ export default Vue.extend({
   methods: {
     isMobile,
     calcResult() {
-      this.finalScore = this.scores.reduce((x1, x2) => (parseFloat(x1) + parseFloat(x2)).toFixed(1));
+      this.finalScore = parseFloat(this.scores.reduce((x1, x2) => (parseFloat(x1) + parseFloat(x2)).toFixed(1)));
     },
     upwardChange(e: any) {
       this.scores[e.index] = e.userScore;
       this.calcResult();
     },
   },
-  mounted() {}
 });
 </script>
 
 <style scoped lang="scss">
 @import "src/sass/global";
-
-.source {
-  text-decoration: none;
-  color: #4c2b63;
-  border: 1px solid #4c2b63;
-  border-radius: 5px;
-  display: block;
-  padding: 1em 0;
-  width: 50vw;
-  text-align: center;
-  margin: 1em 0 0 1.6em;
-}
-
 </style>

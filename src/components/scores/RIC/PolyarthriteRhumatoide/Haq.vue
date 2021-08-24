@@ -14,7 +14,7 @@
       <br />
     </div>
 
-    <FlagScore :colorCount="3" :scoreResult="finalScore" lowValue="2" highValue="3"/>
+    <FlagScore :colorCount="3" :scoreResult="finalScore" :lowValue="2" :highValue="3"/>
       <ReferencesMedical sourceText="application rheumatools" />
   </div>
 </template>
