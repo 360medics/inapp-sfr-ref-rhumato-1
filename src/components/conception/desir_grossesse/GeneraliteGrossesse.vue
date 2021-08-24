@@ -5,7 +5,7 @@
 
         <ul>
           <li>Evaluation de l’activité de la maladie devant tout désir de grossesse</li>
-          <li>Différer la grossesse en cas de maladie active 🡪 intensification thérapeutique jusqu’à contrôle</li>
+          <li>Différer la grossesse en cas de maladie active & intensification thérapeutique jusqu’à contrôle</li>
           <li>En cas de rémission prolongée, adapter les traitements en vue de la grossesse</li>
         </ul>
     </section>
