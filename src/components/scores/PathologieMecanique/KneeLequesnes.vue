@@ -20,13 +20,13 @@
 
 
     <span class="line"></span>
-    <h3 class="title">
-      Indice <em>{{ finalScore }}</em
-    >.
-    </h3>
+      <div class="result" v-if="finalScore">
+          <h4 >Indice {{ finalScore }}</h4>
+      </div>
+
     <p>Si l’indice est ≥ à 10-12, une prothèse peut être envisagée</p>
 
-      <FlagScore :colorCount="3" :scoreResult="finalScore" :lowValue="2" :highValue="12"/>
+      <FlagScore :colorCount="3" :scoreResult="finalScore" :lowValue="10" :highValue="23"/>
       <ReferencesMedical sourceLink="http://www.antalvite.fr/pdf/Indice%20algo-fonctionnel%20de%20Lequesne%20pour%20le%20genou.pdf" />
 
   </div>
@@ -124,39 +124,51 @@ export default Vue.extend({
         {
           title: "AUTRES DIFFICULTÉS DE LA VIE QUOTIDIENNE",
           question: "Pouvez-vous monter un étage ?",
-          response: [
-            '0 - Oui',
-            '1 - Non'
-          ],
-          malusScore: [0, 2],
+            response: [
+                '0.0 - Sans difficulté',
+                '0.5 - Assez facilement',
+                '1.0 - Avec difficulté',
+                '1.5 - Avec beaucoup de difficulté',
+                '2.0 - Impossible',
+            ],
+            malusScore: [0, 0.5, 1, 1.5, 2],
           userScore: 0
         },
         {
           question: "Pouvez-vous descendre un étage?",
-          response: [
-            '0 - Oui',
-            '1 - Non'
-          ],
-          malusScore: [0, 2],
+            response: [
+                '0.0 - Sans difficulté',
+                '0.5 - Assez facilement',
+                '1.0 - Avec difficulté',
+                '1.5 - Avec beaucoup de difficulté',
+                '2.0 - Impossible',
+            ],
+            malusScore: [0, 0.5, 1, 1.5, 2],
           userScore: 0
         },
 
         {
           question: "Pouvez-vous vous accroupir ou rester à genoux?",
-          response: [
-            '0 - Oui',
-            '1 - Non'
-          ],
-          malusScore: [0, 2],
-          userScore: 0
+            response: [
+                '0.0 - Sans difficulté',
+                '0.5 - Assez facilement',
+                '1.0 - Avec difficulté',
+                '1.5 - Avec beaucoup de difficulté',
+                '2.0 - Impossible',
+            ],
+            malusScore: [0, 0.5, 1, 1.5, 2],
+            userScore: 0
         },
         {
           question: "Pouvez-vous marcher en terrain irrégulier?",
-          response: [
-            '0 - Oui',
-            '1 - Non'
-          ],
-          malusScore: [0, 2],
+            response: [
+                '0.0 - Sans difficulté',
+                '0.5 - Assez facilement',
+                '1.0 - Avec difficulté',
+                '1.5 - Avec beaucoup de difficulté',
+                '2.0 - Impossible',
+            ],
+          malusScore: [0, 0.5, 1, 1.5, 2],
           userScore: 0
         },
       ],
