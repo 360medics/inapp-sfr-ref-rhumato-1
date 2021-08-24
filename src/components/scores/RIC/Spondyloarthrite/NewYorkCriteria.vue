@@ -35,15 +35,18 @@
         </tbody>
       </table>
 
+        <ReferencesMedical sourceLink="" />
     </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import ReferencesMedical from "@/components/ReferencesMedical.vue";
 
 export default Vue.extend({
   name: "NewYorkCriteria",
-  data() {
+    components: {ReferencesMedical},
+    data() {
     return {
       result: null,
     };

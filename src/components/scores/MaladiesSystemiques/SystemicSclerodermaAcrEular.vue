@@ -279,15 +279,20 @@
         atteints de sclérodermie systémique.
       </p>
     </div>
+
+      <ReferencesMedical sourceLink="https://www.fai2r.org/les-pathologies-rares/sclerodermie-systemique/criteres/" />
+
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import ReferencesMedical from "@/components/ReferencesMedical.vue";
 
 export default Vue.extend({
   name: "SystemicSclerodermaAcrEular",
-  data(){
+    components: {ReferencesMedical},
+    data(){
     return{
       questions:{
         q1:null,
@@ -331,5 +336,8 @@ export default Vue.extend({
   [type="radio"] {
     display: none;
   }
+    .description {
+        color: #fff;
+    }
 }
 </style>

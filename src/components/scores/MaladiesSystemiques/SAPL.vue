@@ -104,14 +104,17 @@
         critère biologique sont présents.
       </p>
     </div>
+      <ReferencesMedical sourceLink="https://www.fai2r.org/les-pathologies-rares/syndrome-des-antiphospholipides/criteres/criteres-de-classification-sapl/" />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import ReferencesMedical from "@/components/ReferencesMedical.vue";
 export default Vue.extend({
   name: "Sapl",
-  data() {
+    components: {ReferencesMedical},
+    data() {
     return {
       questions1: [],
       questions2: [],

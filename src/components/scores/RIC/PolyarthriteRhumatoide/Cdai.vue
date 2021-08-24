@@ -91,14 +91,16 @@
         22.
       </em>
     </div>
+      <ReferencesMedical sourceText="application rheumatools" />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import ReferencesMedical from "@/components/ReferencesMedical.vue";
 export default Vue.extend({
-
-  data() {
+    components: {ReferencesMedical},
+    data() {
     return {
       tenderJoins: null,
       swollenJoins: null,

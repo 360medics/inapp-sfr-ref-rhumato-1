@@ -30,6 +30,7 @@
         Masse Corporelle comme le standard pour évaluer les risques liés au
         surpoids.
       </p>
+      <ReferencesMedical sourceLink="https://www.imc.fr/" />
     </div>
   </div>
 </template>
@@ -37,9 +38,11 @@
 <script lang="ts">
 import Vue from "vue";
 import { isMobile } from '@/global';
+import ReferencesMedical from "@/components/ReferencesMedical.vue";
 
 export default Vue.extend({
-  data() {
+    components: {ReferencesMedical},
+    data() {
     return {
       weight: null,
       size: null,
