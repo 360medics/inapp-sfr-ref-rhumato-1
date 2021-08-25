@@ -109,15 +109,17 @@
       <p><strong>Un score à 6 ou plus pose le diagnostic de polyarthrite rhumatoïde.</strong></p>
      <p>Références : Funovits J, Aletaha D, Bykerk V, Combe B, Dougados M, Emery P, et al. The American College of Rheumatology/European League Against Rheumatism classification criteria for rheumatoid arthritis: methodological report Phase 1. Ann Rheum Dis 2010; 69: 1589–95.</p>
     </div>
+      <Footer/>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import Footer from "@/components/Footer.vue";
 
 export default Vue.extend({
-
-  data() {
+    components: {Footer},
+    data() {
     return {
       score1: null,
       score2: null,

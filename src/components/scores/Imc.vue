@@ -32,6 +32,7 @@
       </p>
       <ReferencesMedical sourceLink="https://www.imc.fr/" />
     </div>
+      <Footer/>
   </div>
 </template>
 
@@ -39,9 +40,10 @@
 import Vue from "vue";
 import { isMobile } from '@/global';
 import ReferencesMedical from "@/components/ReferencesMedical.vue";
+import Footer from "@/components/Footer.vue";
 
 export default Vue.extend({
-    components: {ReferencesMedical},
+    components: {Footer, ReferencesMedical},
     data() {
     return {
       weight: null,

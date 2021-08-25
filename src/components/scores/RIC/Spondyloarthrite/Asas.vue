@@ -69,15 +69,17 @@
         validation and final selection. Ann Rheum Dis. 2009;68:777–83.
       </em>
     </div>
+      <Footer/>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import Footer from "@/components/Footer.vue";
 
 export default Vue.extend({
-
-  data() {
+    components: {Footer},
+    data() {
     return {
       result: "",
       toggle1: {

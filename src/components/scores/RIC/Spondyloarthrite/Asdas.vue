@@ -212,16 +212,18 @@
       disease activity score in patients with ankylosing spondylitis. Ann Rheum
       Dis 2009;68:1811-8.
     </p>
+      <Footer/>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
+import Footer from "@/components/Footer.vue";
 
 export default Vue.extend({
   name: 'Asdas',
-
-  data() {
+    components: {Footer},
+    data() {
     return {
       painScale: 0,
       durationMorningStiffness: '',

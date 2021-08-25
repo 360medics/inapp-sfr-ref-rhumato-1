@@ -20,15 +20,18 @@
           Incapable de le faire
       </div>
     </section>
+      <Footer/>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import Footer from "@/components/Footer.vue";
 
 export default Vue.extend({
   name: "HaqQuestion",
-  props: ["index", "title", "question", "malusScore"],
+    components: {Footer},
+    props: ["index", "title", "question", "malusScore"],
   data() {
     return {
       score: null

@@ -107,17 +107,19 @@
       <a v-if="!isMobile()" :href="'http://medicalcul.free.fr/firstquest.html'" target="blank">Lien vers la source</a>
       <a v-else :href="'medics://viewer?m_source=' + 'http://medicalcul.free.fr/firstquest.html'">Lien vers la source</a>
     </em>
-
+      <Footer/>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
 import { isMobile } from '@/global';
+import Footer from "@/components/Footer.vue";
 
 export default Vue.extend({
   name: "First",
-  data() {
+    components: {Footer},
+    data() {
     return {
       quest: [],
     };

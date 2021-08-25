@@ -88,16 +88,18 @@
     </div>
 
       <ReferencesMedical sourceLink="https://www.fai2r.org/les-pathologies-rares/maladie-de-horton-pseudo-polyarthrite-rhizomelique/criteres/criteres-de-classification-de-la-ppr-eular-acr-2012/" />
+      <Footer/>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
 import ReferencesMedical from "@/components/ReferencesMedical.vue";
+import Footer from "@/components/Footer.vue";
 
 export default Vue.extend({
   name: "PprEularAcr2012",
-    components: {ReferencesMedical},
+    components: {Footer, ReferencesMedical},
     data() {
     return {
       score1: 0,

@@ -16,6 +16,7 @@
 
     <FlagScore :colorCount="3" :scoreResult="finalScore" :lowValue="2" :highValue="3"/>
       <ReferencesMedical sourceText="application rheumatools" />
+      <Footer/>
   </div>
 </template>
 
@@ -24,10 +25,12 @@ import Vue from 'vue';
 import HaqQuestion from './HaqQuestion.vue';
 import FlagScore from "@/components/FlagScore.vue";
 import ReferencesMedical from "@/components/ReferencesMedical.vue";
+import Footer from "@/components/Footer.vue";
 
 export default Vue.extend({
   name: 'HAQ',
   components: {
+      Footer,
       ReferencesMedical,
     HaqQuestion,
     FlagScore

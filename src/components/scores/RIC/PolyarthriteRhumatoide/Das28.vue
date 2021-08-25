@@ -86,16 +86,18 @@
           Van der Heijde DMFM van't Hof MA van Riel PLCM et al. Judging disease activity in clinical practice in rheumatoid arthritis: first step in the development of a disease activity score. Ann Rheum Dis1990;49:916–20.
           Site DAS 28 : http://www.das-score.nl"
       />
+      <Footer/>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
 import ReferencesMedical from "@/components/ReferencesMedical.vue";
+import Footer from "@/components/Footer.vue";
 
 export default Vue.extend({
   name: "Das28",
-    components: {ReferencesMedical},
+    components: {Footer, ReferencesMedical},
     data() {
     return {
       valuePainfullJoint: 0,

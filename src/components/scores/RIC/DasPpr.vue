@@ -92,15 +92,17 @@
     </div>
 
       <ReferencesMedical sourceLink="http://actualites-therapeutiques.com/diapo/2013/Matin/3%20-%20Berthelot%20JM.pdf"/>
+      <Footer/>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
 import ReferencesMedical from "@/components/ReferencesMedical.vue";
+import Footer from "@/components/Footer.vue";
 
 export default Vue.extend({
-    components: {ReferencesMedical},
+    components: {Footer, ReferencesMedical},
     data() {
     return {
       crp: null,
