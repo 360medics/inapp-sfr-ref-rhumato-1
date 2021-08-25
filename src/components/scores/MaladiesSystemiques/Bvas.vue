@@ -366,6 +366,7 @@
           sourceText="Application Rheumatools"
       />
     <FlagScore  :colorCount="4" :scoreResult="total" :lowValue="9" :midValue="30" :highValue="50"/>
+      <Footer/>
   </div>
 </template>
 
@@ -373,10 +374,12 @@
 import Vue from "vue";
 import FlagScore from "@/components/FlagScore.vue";
 import ReferencesMedical from "@/components/ReferencesMedical.vue";
+import Footer from "@/components/Footer.vue";
 
 export default Vue.extend({
   name: "Bvas",
   components: {
+      Footer,
       ReferencesMedical,
     FlagScore
   },

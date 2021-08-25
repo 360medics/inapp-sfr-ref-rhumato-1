@@ -27,15 +27,17 @@
       nodosa and Churg-Strauss syndrome. A prospective study in 342 patients.
       Medicine (Baltimore) 1996;75(1):17-28.
     </p>
+      <Footer/>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
 import SelenaSledaiCheckBox from './HelperCheckBox.vue';
+import Footer from "@/components/Footer.vue";
 
 export default Vue.extend({
-  components: { SelenaSledaiCheckBox },
+  components: {Footer, SelenaSledaiCheckBox },
   name: 'SelenaSledai',
   data() {
     return {

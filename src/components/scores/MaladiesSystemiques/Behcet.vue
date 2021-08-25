@@ -66,18 +66,20 @@
       <span v-if="total() >= 3"> POSITIF</span> <span v-else>NEGATIF</span>
   </div>
   </div>
+      <Footer/>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import Footer from "@/components/Footer.vue";
 
 
 
 export default Vue.extend({
   name: "Behcet",
-
-  data() {
+    components: {Footer},
+    data() {
     return {
       score1: null,
       score2: null,

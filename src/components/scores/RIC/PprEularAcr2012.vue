@@ -77,7 +77,7 @@
       </p>
     </div>
 
-    <div class="result" v-if="showResult">
+    <div class="result">
       <h3>{{ result }} Points</h3>
       <h3> 0 Critère d'exclusion </h3>
       <h3>{{ result >= 4 ? "Positif" : "Negatif" }}</h3>
@@ -86,34 +86,32 @@
          <div class="info">
       <span>Si le patient a plus de 50 ans, des douleurs scapulaires bilatérales, une CRP et/ou une VS augmentées ET un score ≥ 4 sans les critères échographiques ou un score ≥ 5 avec les critères échographiques ⇒ la sensibilité est de 68 % et la spécificité est de 78 % sans l’échographie et 66 % et 81 % avec l’échographie. </span>
     </div>
+
+      <ReferencesMedical sourceLink="https://www.fai2r.org/les-pathologies-rares/maladie-de-horton-pseudo-polyarthrite-rhizomelique/criteres/criteres-de-classification-de-la-ppr-eular-acr-2012/" />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import ReferencesMedical from "@/components/ReferencesMedical.vue";
 
 export default Vue.extend({
   name: "PprEularAcr2012",
-  data() {
+    components: {ReferencesMedical},
+    data() {
     return {
-      score1: null,
-      score2: null,
-      score3: null,
-      score4: null,
-      score5: null,
-      score6: null,
+      score1: 0,
+      score2: 0,
+      score3: 0,
+      score4: 0,
+      score5: 0,
+      score6: 0,
       result: 0,
-      showResult: false
     };
   },
   methods: {
     calcul() {
       this.result = parseInt(this.score1) + parseInt(this.score2) + parseInt(this.score3) + parseInt(this.score4) + parseInt(this.score5) + parseInt(this.score6);
-      if (isNaN(this.result)){
-        this.showResult = false
-      } else {
-        this.showResult = true
-      }
     },
 
     choice1(number) {
