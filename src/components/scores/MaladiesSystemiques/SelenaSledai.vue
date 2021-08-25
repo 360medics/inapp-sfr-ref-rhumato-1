@@ -29,7 +29,7 @@
       disease activity index for lupus patients. Arthritis Rheum., 1992, 35,
       630-640.
     </p>
-      <Footer/>
+          <Footer/>
   </div>
 </template>
 

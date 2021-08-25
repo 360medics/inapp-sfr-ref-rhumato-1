@@ -16,7 +16,6 @@
         </div>
       </div>
     </section>
-      <Footer/>
   </div>
 </template>
 <script lang="ts">
