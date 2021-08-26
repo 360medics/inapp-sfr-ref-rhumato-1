@@ -1,6 +1,5 @@
 <template>
-  <!-- fai2r.org/les-pathologies-rares/maladie-de-horton-pseudo-polyarthrite-rhizomelique/criteres/criteres-de-classification-de-larterite-a-cellules-geantes-de-lacr-1990 -->
-  <div class="ArthritisAcr1990">
+ <div class="ArthritisAcr1990">
     <h3 class="title">
       Critères de classification de l’Artérite à Cellules Géantes de l’ACR 1990
     </h3>
@@ -75,15 +74,21 @@
       <p v-else>Négatif</p>
       <p>Si 3 critères sont présents, la sensibilité est de 93,5% et la spécificité est de 91,2%</p>
     </div>
-  </div>
+
+     <ReferencesMedical sourceLink="https://www.fai2r.org/les-pathologies-rares/maladie-de-horton-pseudo-polyarthrite-rhizomelique/criteres/criteres-de-classification-de-larterite-a-cellules-geantes-de-lacr-1990/" />
+  <Footer/>
+ </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import ReferencesMedical from "@/components/ReferencesMedical.vue";
+import Footer from "@/components/Footer.vue";
 
 export default Vue.extend({
   name: "ArthritisAcr1990",
-  data() {
+    components: {Footer, ReferencesMedical},
+    data() {
     return {
       questions: [],
     };

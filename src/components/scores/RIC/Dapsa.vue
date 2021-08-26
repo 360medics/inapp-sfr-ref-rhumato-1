@@ -40,16 +40,18 @@
       <br>
       Disease Activity: {{ activity }}
     </div>
+      <Footer/>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import Footer from "@/components/Footer.vue";
 
 export default Vue.extend({
   name: "Dapsa",
-
-  data() {
+    components: {Footer},
+    data() {
     return {
       value1: null,
       value2: null,

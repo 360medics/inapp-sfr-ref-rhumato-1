@@ -86,14 +86,19 @@
 
       </div>
 
+      <ReferencesMedical sourceLink="https://www.fai2r.org/les-pathologies-rares/maladie-de-still-de-ladulte/criteres/criteres-de-classification-proposes-fautrel/" />
+      <Footer/>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue"
+import ReferencesMedical from "@/components/ReferencesMedical.vue";
+import Footer from "@/components/Footer.vue";
 
 export default Vue.extend({
-  data() {
+    components: {Footer, ReferencesMedical},
+    data() {
     return {
       number1: 0,
       number2: 0,

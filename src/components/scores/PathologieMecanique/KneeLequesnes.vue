@@ -20,15 +20,14 @@
 
 
     <span class="line"></span>
-    <h3 class="title">
-      Indice <em>{{ finalScore }}</em
-    >.
-    </h3>
+      <div class="result" v-if="finalScore">
+          <h4 >Indice {{ finalScore }}</h4>
+      </div>
+
     <p>Si l’indice est ≥ à 10-12, une prothèse peut être envisagée</p>
 
-    <a class="source" v-if="!isMobile()" :href="'http://www.antalvite.fr/pdf/Indice%20algo-fonctionnel%20de%20Lequesne%20pour%20le%20genou.pdf'" target="blank">Lien vers la source</a>
-    <a class="source" v-else :href="'medics://viewer?m_source=' + 'http://www.antalvite.fr/pdf/Indice%20algo-fonctionnel%20de%20Lequesne%20pour%20le%20genou.pdf'">Lien vers la source</a>
-
+      <ReferencesMedical sourceLink="http://www.antalvite.fr/pdf/Indice%20algo-fonctionnel%20de%20Lequesne%20pour%20le%20genou.pdf" />
+      <Footer/>
   </div>
 </template>
 
@@ -36,10 +35,14 @@
 import Vue from "vue"
 import HipLequesnesQuestion from "@/components/scores/PathologieMecanique/HipLequesnesQuestion.vue";
 import { isMobile } from '@/global';
+import ReferencesMedical from "@/components/ReferencesMedical.vue";
+import Footer from "@/components/Footer.vue";
 
 export default Vue.extend({
   name:"KneeLequesnes",
   components: {
+      Footer,
+      ReferencesMedical,
     HipLequesnesQuestion
   },
 
@@ -120,39 +123,51 @@ export default Vue.extend({
         {
           title: "AUTRES DIFFICULTÉS DE LA VIE QUOTIDIENNE",
           question: "Pouvez-vous monter un étage ?",
-          response: [
-            '0 - Oui',
-            '1 - Non'
-          ],
-          malusScore: [0, 2],
+            response: [
+                '0.0 - Sans difficulté',
+                '0.5 - Assez facilement',
+                '1.0 - Avec difficulté',
+                '1.5 - Avec beaucoup de difficulté',
+                '2.0 - Impossible',
+            ],
+            malusScore: [0, 0.5, 1, 1.5, 2],
           userScore: 0
         },
         {
           question: "Pouvez-vous descendre un étage?",
-          response: [
-            '0 - Oui',
-            '1 - Non'
-          ],
-          malusScore: [0, 2],
+            response: [
+                '0.0 - Sans difficulté',
+                '0.5 - Assez facilement',
+                '1.0 - Avec difficulté',
+                '1.5 - Avec beaucoup de difficulté',
+                '2.0 - Impossible',
+            ],
+            malusScore: [0, 0.5, 1, 1.5, 2],
           userScore: 0
         },
 
         {
           question: "Pouvez-vous vous accroupir ou rester à genoux?",
-          response: [
-            '0 - Oui',
-            '1 - Non'
-          ],
-          malusScore: [0, 2],
-          userScore: 0
+            response: [
+                '0.0 - Sans difficulté',
+                '0.5 - Assez facilement',
+                '1.0 - Avec difficulté',
+                '1.5 - Avec beaucoup de difficulté',
+                '2.0 - Impossible',
+            ],
+            malusScore: [0, 0.5, 1, 1.5, 2],
+            userScore: 0
         },
         {
           question: "Pouvez-vous marcher en terrain irrégulier?",
-          response: [
-            '0 - Oui',
-            '1 - Non'
-          ],
-          malusScore: [0, 2],
+            response: [
+                '0.0 - Sans difficulté',
+                '0.5 - Assez facilement',
+                '1.0 - Avec difficulté',
+                '1.5 - Avec beaucoup de difficulté',
+                '2.0 - Impossible',
+            ],
+          malusScore: [0, 0.5, 1, 1.5, 2],
           userScore: 0
         },
       ],
@@ -161,30 +176,16 @@ export default Vue.extend({
   methods: {
     isMobile,
     calcResult() {
-      this.finalScore = this.scores.reduce((x1, x2) => (parseFloat(x1) + parseFloat(x2)).toFixed(1));
+      this.finalScore = parseFloat(this.scores.reduce((x1, x2) => (parseFloat(x1) + parseFloat(x2)).toFixed(1)));
     },
     upwardChange(e: any) {
       this.scores[e.index] = e.userScore;
       this.calcResult();
     },
   },
-  mounted() {}
 });
 </script>
 
 <style scoped lang="scss">
 @import "src/sass/global";
-
-.source {
-  text-decoration: none;
-  color: #4c2b63;
-  border: 1px solid #4c2b63;
-  border-radius: 5px;
-  display: block;
-  padding: 1em 0;
-  width: 50vw;
-  text-align: center;
-  margin: 1em 0 0 1.6em;
-}
-
 </style>

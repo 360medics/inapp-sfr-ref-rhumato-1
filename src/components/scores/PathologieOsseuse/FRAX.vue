@@ -25,15 +25,17 @@
     >
       Calculer en ligne
     </a>
+      <Footer/>
   </section>
 </template>
 
 <script lang="js">
 import SubListPage from "@/views/SubListPage";
+import Footer from "@/components/Footer";
 
 export default {
   name: 'FRAX',
-  components: {SubListPage},
+  components: {Footer, SubListPage},
 
   mounted() {
   },

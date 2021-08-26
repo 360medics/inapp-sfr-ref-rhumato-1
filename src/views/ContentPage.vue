@@ -5,11 +5,6 @@
         <component v-bind:is="componentName"></component>
       </keep-alive>
     </main>
-    <footer class="footer" v-if="isScore">
-      L’évaluation d’un patient est avant tout clinique et/ou biologique. Le
-      traitement d’un patient ne peut reposer sur le seul résultat de cette
-      application.
-    </footer>
   </div>
 </template>
 
@@ -18,15 +13,6 @@
    padding: 0 0.75em;
    margin-top: 1em;
 }
-
-.footer {
-  font-style: italic;
-  font-weight: 200;
-  font-size: .75rem;
-  color: #707070;
-  margin: 70px 0;
-}
-
 </style>
 
 <script lang="ts">

@@ -58,11 +58,8 @@
             name="arms_up_radio"
             value="2"
             style="display: none"
-
           />
       <label for="radio2" class="btn" :class="{selected: arms_up === '2'}">En dessous ceinture scapulaire ( &#x3C; 90° )</label>
-
-
 
       <input
             type="radio"
@@ -71,11 +68,8 @@
             name="arms_up_radio"
             value="1"
             style="display: none"
-
       />
       <label for="radio3" class="btn" :class="{selected: arms_up === '1'}">Au niveau de la ceinture scapulaire ( 90° )</label>
-
-
 
       <input
             v-model="arms_up"
@@ -84,28 +78,30 @@
             name="arms_up_radio"
             value="0"
             style="display: none"
-
       />
       <label for="radio4" class="btn" :class="{selected: arms_up === '0'}">Bien au dessus des épaules ( &#62; 90° ) </label>
 
-
       <div class="btn btn__submit" @click="getResult()">Valider</div>
     </form>
-    <div v-if="score" class="result">
+
+      <div v-if="score" class="result">
       <p>SCORE: {{this.score}}.<br>INTERPRETATION : {{ this.result }}</p>
     </div>
     <div v-if="error" class="result">
       <p>{{ this.error }}</p>
     </div>
+      <Footer/>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import ReferencesMedical from "@/components/ReferencesMedical.vue";
+import Footer from "@/components/Footer.vue";
 
 export default Vue.extend({
-
-  data() {
+    components: {Footer, ReferencesMedical},
+    data() {
     return {
       crp: null,
       duration_stiffness: null,

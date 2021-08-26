@@ -18,25 +18,26 @@
     </div>
 
     <span class="line"></span>
-    <h3 class="title">
-      Indice <em>{{ finalScore }}</em
-      >.
-    </h3>
+      <div class="result" v-if="finalScore">
+          <h4 >Indice {{ finalScore }}</h4>
+      </div>
     <p>Si l’indice est ≥ à 10-12, une prothèse peut être envisagée</p>
-    <a class="source" v-if="!isMobile()" :href="'http://www.antalvite.fr/pdf/Indice%20algo-fonctionnel%20de%20Lequesne%20pour%20la%20hanche.pdf'" target="blank">Lien vers la source</a>
-    <a class="source" v-else :href="'medics://viewer?m_source=' + 'http://www.antalvite.fr/pdf/Indice%20algo-fonctionnel%20de%20Lequesne%20pour%20la%20hanche.pdf'">Lien vers la source</a>
-
+      <ReferencesMedical sourceLink="http://www.antalvite.fr/pdf/Indice%20algo-fonctionnel%20de%20Lequesne%20pour%20la%20hanche.pdf" />
+      <Footer/>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
 import HipLequesnesQuestion from "./HipLequesnesQuestion.vue";
-import { isMobile } from '@/global';
+import ReferencesMedical from "@/components/ReferencesMedical.vue";
+import Footer from "@/components/Footer.vue";
 
 export default Vue.extend({
   name: "HipLequesnes",
   components: {
+      Footer,
+      ReferencesMedical,
     HipLequesnesQuestion
   },
   data() {
@@ -53,13 +54,12 @@ export default Vue.extend({
         { question: "Aides nécessaires", response: ['+0 - Aucune canne ou béquille nécessaire.', '+1 - Une canne ou une béquille est nécessaire.', '+2 - Deux cannes ou deux béquilles sont nécessaires.'], malusScore: [0,1,2], userScore: 0},
         { title: "Autres difficultés de la vie quotidienne", question: "Pouvez-vous monter ou descendre un étage ?", response: ['0.0 - Sans difficulté.', '0.5 - Assez facilement.', '1.0 - Avec difficulté.', '1.5 - Avec beaucoup de difficulté.','2.0 - Impossible.'], malusScore: [0,0.5,1,1.5,2], userScore: 0},
         { question: "Pouvez-vous enfiler vos chaussettes par devant ?", response: ['0.0 - Sans difficulté.','0.5 - Assez facilement.', '1.0 - Avec difficulté.', '1.5 - Avec beaucoup de difficulté.', '2.0 - Impossible.'], malusScore: [0,0.5,1,1.5,2], userScore: 0},
-        { title: "Pouvez-vous ramasser un objet par terre ?", question: "Pouvez-vous monter ou descendre un étage ?", response: ['0.0 - Sans difficulté.','0.5 - Assez facilement.', '1.0 - Avec difficulté.', '1.5 - Avec beaucoup de difficulté.', '2.0 - Impossible.'], malusScore: [0,0.5,1,1.5,2], userScore: 0},
-        { title: "Pouvez-vous sortir d'une voiture, d'un fauteuil profond ?", question: "Pouvez-vous monter ou descendre un étage ?", response: ['0.0 - Sans difficulté.','0.5 - Assez facilement.', '1.0 - Avec difficulté.', '1.5 - Avec beaucoup de difficulté.', '2.0 - Impossible.'], malusScore: [0,0.5,1,1.5,2], userScore: 0},
+        { question: "Pouvez-vous ramasser un objet par terre ?", response: ['0.0 - Sans difficulté.','0.5 - Assez facilement.', '1.0 - Avec difficulté.', '1.5 - Avec beaucoup de difficulté.', '2.0 - Impossible.'], malusScore: [0,0.5,1,1.5,2], userScore: 0},
+        { question: "Pouvez-vous sortir d'une voiture, d'un fauteuil profond ?", response: ['0.0 - Sans difficulté.','0.5 - Assez facilement.', '1.0 - Avec difficulté.', '1.5 - Avec beaucoup de difficulté.', '2.0 - Impossible.'], malusScore: [0,0.5,1,1.5,2], userScore: 0},
       ],
     };
   },
   methods: {
-    isMobile,
     calcResult() {
       this.finalScore = parseInt(this.scores.reduce((x1, x2) => (parseFloat(x1) + parseFloat(x2)).toFixed(1)));
     },

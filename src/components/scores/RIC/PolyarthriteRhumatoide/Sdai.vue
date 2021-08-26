@@ -135,16 +135,17 @@
       <p>Site DAS :</p>
       <a class="source" v-if="!isMobile()" :href="'https://www.das-score.nl/nl-nl/'" target="blank">https://www.das-score.nl/nl-nl/</a>
       <a class="source" v-else :href="'medics://viewer?m_source=' + 'https://www.das-score.nl/nl-nl/'">https://www.das-score.nl/nl-nl/</a>
-
     </em>
+      <Footer/>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
+import Footer from "@/components/Footer.vue";
 export default Vue.extend({
-
-  data() {
+    components: {Footer},
+    data() {
     return {
       tenderJoins: 0,
       swollenJoins: 0,

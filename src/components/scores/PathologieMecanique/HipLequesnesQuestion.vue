@@ -24,9 +24,11 @@
 
 <script lang="ts">
 import Vue from "vue";
+import Footer from "@/components/Footer.vue";
 export default Vue.extend({
   name: "HipLequesnesQuestion",
-  props: ["index", "title", "question", "response", "malusScore", "scores"],
+    components: {Footer},
+    props: ["index", "title", "question", "response", "malusScore", "scores"],
   data() {
     return {
       oui: ''

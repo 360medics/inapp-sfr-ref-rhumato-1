@@ -69,7 +69,7 @@
   </div>
 
     <ReferencesMedical message2="Amor B  Dougados M Mujiyawa M. Critères diagnostiques des spondylarthropathies. Rev Rhum 1990; 57: 85-89" />
-
+    <Footer/>
 </div>
 
 
@@ -78,9 +78,10 @@
 <script lang="ts">
 import Vue from "vue";
 import ReferencesMedical from "@/components/ReferencesMedical.vue";
+import Footer from "@/components/Footer.vue";
 
 export default Vue.extend({
-    components: {ReferencesMedical},
+    components: {Footer, ReferencesMedical},
     data() {
     return{
     toggle: {

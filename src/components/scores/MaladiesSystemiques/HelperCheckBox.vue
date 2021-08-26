@@ -20,10 +20,12 @@
 </template>
 <script lang="ts">
 import Vue from 'vue';
+import Footer from "@/components/Footer.vue";
 
 export default Vue.extend({
   name: 'SelenaSledaiCheckBox',
-  props: ['index', 'question', 'malusScore'],
+    components: {Footer},
+    props: ['index', 'question', 'malusScore'],
   methods: {
     checkboxChange(e: any) {
       this.$emit('upwardChange', {

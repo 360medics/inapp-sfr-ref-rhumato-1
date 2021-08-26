@@ -6,55 +6,55 @@
     <!-- first choice -->
       <label> Aphtose orale </label>
       <span v-if="this.score1 == 0">
-      <button type="button" class="btn" @click="choice1(1);">oui</button>
+      <button type="button" class="btn" @click="choice1(1);">non</button>
       </span>
       <span v-else>
-      <button type="button" class="btn" @click="choice1(0)">non</button>
+      <button type="button" class="btn selected" @click="choice1(0)">oui</button>
       </span>
     <!-- second choice -->
       <br>
       <label>Aphtose génitale </label>
       <span v-if="this.score2 == 0">
-      <button type="button" class="btn" @click="choice2(2);">oui</button>
+      <button type="button" class="btn" @click="choice2(2);">non</button>
       </span>
       <span v-else>
-      <button type="button" class="btn" @click="choice2(0)">non</button>
+      <button type="button" class="btn selected" @click="choice2(0)">oui</button>
       </span>
       <br>
       <!-- third choice -->
       <label> Lésions cutanées </label>
       <span v-if="this.score3 == 0">
-      <button type="button" class="btn" @click="choice3(1);">oui</button>
+      <button type="button" class="btn" @click="choice3(1);">non</button>
       </span>
       <span v-else>
-      <button type="button" class="btn"  @click="choice3(0)">non</button>
+      <button type="button" class="btn selected"  @click="choice3(0)">oui</button>
       </span>
       <br>
       <!-- fourth choice -->
       <label> Atteinte oculaire </label>
       <span v-if="this.score4 == 0">
-      <button type="button" class="btn" @click="choice4(2);">oui</button>
+      <button type="button" class="btn" @click="choice4(2);">non</button>
       </span>
       <span v-else>
-      <button type="button"  class="btn" @click="choice4(0)">non</button>
+      <button type="button"  class="btn selected" @click="choice4(0)">oui</button>
       </span>
       <br>
       <!-- fifth choice -->
       <label> Test pathergique positif  </label>
       <span v-if="this.score5 == 0">
-      <button type="button"  class="btn" @click="choice5(1);">oui</button>
+      <button type="button"  class="btn" @click="choice5(1);">non</button>
       </span>
       <span v-else>
-      <button type="button"  class="btn" @click="choice5(0)">non</button>
+      <button type="button"  class="btn selected" @click="choice5(0)">oui</button>
       </span>
       <br>
       <!-- sixth choice -->
       <label> Lésion vasculaire (thrombose artérielle, veineuse, anévrysme) </label>
       <span v-if="this.score6 == 0">
-      <button type="button"  class="btn" @click="choice6(1);">oui</button>
+      <button type="button"  class="btn" @click="choice6(1);">non</button>
       </span>
       <span v-else>
-      <button type="button" class="btn" @click="choice6(0)">non</button>
+      <button type="button" class="btn selected" @click="choice6(0)">oui</button>
       </span>
       <br>
 
@@ -66,25 +66,29 @@
       <span v-if="total() >= 3"> POSITIF</span> <span v-else>NEGATIF</span>
   </div>
   </div>
+      <ReferencesMedical sourceLink="https://www.fai2r.org/les-pathologies-rares/behcet/criteres/" />
+      <Footer/>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import Footer from "@/components/Footer.vue";
+import ReferencesMedical from "@/components/ReferencesMedical.vue";
 
 
 
 export default Vue.extend({
   name: "Behcet",
-
-  data() {
+    components: {ReferencesMedical, Footer},
+    data() {
     return {
-      score1: null,
-      score2: null,
-      score3: null,
-      score4: null,
-      score5: null,
-      score6: null
+      score1: 0,
+      score2: 0,
+      score3: 0,
+      score4: 0,
+      score5: 0,
+      score6: 0
     };
   },
   methods: {

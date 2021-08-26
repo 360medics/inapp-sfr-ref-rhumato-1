@@ -194,15 +194,17 @@
       Rheumatology/ European League Against Rheumatism collaborative initiative.
       Ann Rheum Dis 2015; 74: 1789.
     </span>
+      <Footer/>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import Footer from "@/components/Footer.vue";
 
 export default Vue.extend({
-
-  data() {
+    components: {Footer},
+    data() {
     return {
       necessary_condition: false,
       necessary_condition2: false,

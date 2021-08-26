@@ -25,15 +25,21 @@
       </tr>
 
     </table>
+
+      <ReferencesMedical sourceLink="https://www.edimark.fr/Front/frontpost/getfiles/17243.pdf" />
+      <Footer/>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import ReferencesMedical from "@/components/ReferencesMedical.vue";
+import Footer from "@/components/Footer.vue";
 
 export default Vue.extend({
   name: "NewYorkClassification",
-  data() {
+    components: {Footer, ReferencesMedical},
+    data() {
     return {
       result: null,
     };
