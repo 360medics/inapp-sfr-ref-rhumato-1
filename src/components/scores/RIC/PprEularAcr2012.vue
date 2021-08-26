@@ -188,12 +188,6 @@ export default Vue.extend({
     color: white;
   }
 
-  .title {
-    color: rgb(143, 58, 177);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  }
-
   .result {
     width: 80%;
     margin: auto;

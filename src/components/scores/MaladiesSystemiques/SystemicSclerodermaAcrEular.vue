@@ -337,8 +337,5 @@ export default Vue.extend({
   [type="radio"] {
     display: none;
   }
-    .description {
-        color: #fff;
-    }
 }
 </style>

@@ -363,16 +363,14 @@
           message2="Luqmani et al (1994). Birmingham Vasculitis Activity Score (BVAS) in systemic necrotizing vasculitis. QJM 87(11):671-8
           Luqmani et al (1997). Disease assessment and management of the vasculitides. Baillieres Clin Rheumatol 11(2): 423-46;
           Mukhtyar et al (2009). Modification and validation of the Birmingham Vasculitis Activity Score (version 3) ARD 2009 68:1827"
-          sourceText="Application Rheumatools"
+          sourceLink="http://www.google.com"
       />
-    <FlagScore  :colorCount="4" :scoreResult="total" :lowValue="9" :midValue="30" :highValue="50"/>
       <Footer/>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
-import FlagScore from "@/components/FlagScore.vue";
 import ReferencesMedical from "@/components/ReferencesMedical.vue";
 import Footer from "@/components/Footer.vue";
 
@@ -381,7 +379,6 @@ export default Vue.extend({
   components: {
       Footer,
       ReferencesMedical,
-    FlagScore
   },
 /*  mounted() {
     this.calcTotal();

@@ -22,8 +22,6 @@
           <h4 >Indice {{ finalScore }}</h4>
       </div>
     <p>Si l’indice est ≥ à 10-12, une prothèse peut être envisagée</p>
-
-      <FlagScore :colorCount="3" :scoreResult="finalScore" :lowValue="10" :highValue="23"/>
       <ReferencesMedical sourceLink="http://www.antalvite.fr/pdf/Indice%20algo-fonctionnel%20de%20Lequesne%20pour%20la%20hanche.pdf" />
       <Footer/>
   </div>
@@ -33,14 +31,12 @@
 import Vue from "vue";
 import HipLequesnesQuestion from "./HipLequesnesQuestion.vue";
 import ReferencesMedical from "@/components/ReferencesMedical.vue";
-import FlagScore from "@/components/FlagScore.vue";
 import Footer from "@/components/Footer.vue";
 
 export default Vue.extend({
   name: "HipLequesnes",
   components: {
       Footer,
-      FlagScore,
       ReferencesMedical,
     HipLequesnesQuestion
   },

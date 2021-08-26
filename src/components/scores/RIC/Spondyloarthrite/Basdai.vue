@@ -208,7 +208,6 @@
       </div>
       <br />
       <div>
-        <hr width="80%" class="line" />
         <p align="center">
           <input
             class="btn btn__submit"
@@ -218,7 +217,6 @@
             value="Calculer"
           />
         </p>
-        <hr width="80%" class="line" />
         <p class="result">
           Score :
           {{ result }}
