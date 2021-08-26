@@ -39,7 +39,6 @@ export default Vue.extend({
     color: #707070;
     font-weight: 500;
     font-size: 1rem;
-    margin: 0 6%;
     &__link {
         user-select: none;
         text-decoration: none;

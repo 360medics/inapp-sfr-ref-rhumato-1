@@ -126,7 +126,6 @@ export default Vue.extend({
     font-weight: 700;
     font-size: 1.8rem;
     line-height: 1.2;
-    margin: 0 6% .5rem 6%;
   }
   &__subtitle {
     font-size: 1.2rem;

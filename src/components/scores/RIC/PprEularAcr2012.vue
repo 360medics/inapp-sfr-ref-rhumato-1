@@ -188,21 +188,6 @@ export default Vue.extend({
     color: white;
   }
 
-  .result {
-    width: 80%;
-    margin: auto;
-    border-radius: 10px;
-    background-color: #4c2b62;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    justify-content: center;
-    display: block !important;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    text-align: center;
-    color: white;
-  }
-
   .line {
     display: block;
     width: 100%;
