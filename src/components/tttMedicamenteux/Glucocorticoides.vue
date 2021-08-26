@@ -5,78 +5,80 @@
 
     <p class="bold">DCI et nom commercial</p>
 
-    <table>
-      <tr>
-        <th>DCI</th>
-        <th>Nom commercial</th>
-        <th>Effet minéralocorticoïde</th>
-        <th>Effet anti-inflammatoire</th>
-        <th>Doses équivalence</th>
-      </tr>
-      <tr class="courte">
-        <td>Cortisol</td>
-        <td>Hydrocortisone®</td>
-        <td>1</td>
-        <td>1</td>
-        <td>20</td>
-      </tr>
-      <tr class="courte">
-        <td>Cortisone</td>
-        <td>Cortisone®</td>
-        <td>0.8</td>
-        <td>0.8</td>
-        <td>25</td>
-      </tr>
-      <tr class="moyenne">
-        <td>Prednisone</td>
-        <td>Cortancyl®</td>
-        <td>0.8</td>
-        <td>4</td>
-        <td>5</td>
-      </tr>
-      <tr class="moyenne">
-        <td>Prednisolone</td>
-        <td>Solupred®</td>
-        <td>0.8</td>
-        <td>4</td>
-        <td>5</td>
-      </tr>
-      <tr class="moyenne">
-        <td>Méthylprednisolone</td>
-        <td>Solumédrol® Médrol®</td>
-        <td>0.5</td>
-        <td>5</td>
-        <td>4</td>
-      </tr>
-      <tr class="longue">
-        <td>Triamcinolone</td>
-        <td>Hexatrione® Kénacort®</td>
-        <td>0</td>
-        <td>5</td>
-        <td>4</td>
-      </tr>
-      <tr class="longue">
-        <td>Dexaméthasone</td>
-        <td>Dectancyl® 0.5 mg</td>
-        <td>0</td>
-        <td>25-30</td>
-        <td>0.75</td>
-      </tr>
-      <tr class="longue">
-        <td>Bétaméthasone</td>
-        <td>Betnesol® Célestène® Diprostène®</td>
-        <td>0</td>
-        <td>25-30</td>
-        <td>0.75</td>
-      </tr>
-      <tr class="longue">
-        <td>Fludrocortisone</td>
-        <td>Flucortac® 50 µg</td>
-        <td>250</td>
-        <td>10</td>
-        <td>2</td>
-      </tr>
-    </table>
+    <PNGViewer :src="'gluco.png'" :myID="'glocu'"/>
+
+<!--    <table>-->
+<!--      <tr>-->
+<!--        <th>DCI</th>-->
+<!--        <th>Nom commercial</th>-->
+<!--        <th>Effet minéralocorticoïde</th>-->
+<!--        <th>Effet anti-inflammatoire</th>-->
+<!--        <th>Doses équivalence</th>-->
+<!--      </tr>-->
+<!--      <tr class="courte">-->
+<!--        <td>Cortisol</td>-->
+<!--        <td>Hydrocortisone®</td>-->
+<!--        <td>1</td>-->
+<!--        <td>1</td>-->
+<!--        <td>20</td>-->
+<!--      </tr>-->
+<!--      <tr class="courte">-->
+<!--        <td>Cortisone</td>-->
+<!--        <td>Cortisone®</td>-->
+<!--        <td>0.8</td>-->
+<!--        <td>0.8</td>-->
+<!--        <td>25</td>-->
+<!--      </tr>-->
+<!--      <tr class="moyenne">-->
+<!--        <td>Prednisone</td>-->
+<!--        <td>Cortancyl®</td>-->
+<!--        <td>0.8</td>-->
+<!--        <td>4</td>-->
+<!--        <td>5</td>-->
+<!--      </tr>-->
+<!--      <tr class="moyenne">-->
+<!--        <td>Prednisolone</td>-->
+<!--        <td>Solupred®</td>-->
+<!--        <td>0.8</td>-->
+<!--        <td>4</td>-->
+<!--        <td>5</td>-->
+<!--      </tr>-->
+<!--      <tr class="moyenne">-->
+<!--        <td>Méthylprednisolone</td>-->
+<!--        <td>Solumédrol® Médrol®</td>-->
+<!--        <td>0.5</td>-->
+<!--        <td>5</td>-->
+<!--        <td>4</td>-->
+<!--      </tr>-->
+<!--      <tr class="longue">-->
+<!--        <td>Triamcinolone</td>-->
+<!--        <td>Hexatrione® Kénacort®</td>-->
+<!--        <td>0</td>-->
+<!--        <td>5</td>-->
+<!--        <td>4</td>-->
+<!--      </tr>-->
+<!--      <tr class="longue">-->
+<!--        <td>Dexaméthasone</td>-->
+<!--        <td>Dectancyl® 0.5 mg</td>-->
+<!--        <td>0</td>-->
+<!--        <td>25-30</td>-->
+<!--        <td>0.75</td>-->
+<!--      </tr>-->
+<!--      <tr class="longue">-->
+<!--        <td>Bétaméthasone</td>-->
+<!--        <td>Betnesol® Célestène® Diprostène®</td>-->
+<!--        <td>0</td>-->
+<!--        <td>25-30</td>-->
+<!--        <td>0.75</td>-->
+<!--      </tr>-->
+<!--      <tr class="longue">-->
+<!--        <td>Fludrocortisone</td>-->
+<!--        <td>Flucortac® 50 µg</td>-->
+<!--        <td>250</td>-->
+<!--        <td>10</td>-->
+<!--        <td>2</td>-->
+<!--      </tr>-->
+<!--    </table>-->
     <p>Demi-vie <span class="courte">courte (8-12h)</span>, <span class="moyenne">moyenne (12-36h)</span>, <span class="longue">longue (36-54h)</span></p>
 
     <p class="bold">Mécanismes d’action des GC</p>

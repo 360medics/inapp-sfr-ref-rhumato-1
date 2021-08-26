@@ -94,19 +94,12 @@
       Items présents : {{ quest.length }}
     </div>
 
-    <em class="source">
-      <span>Interprétation :</span>
-      <p>
-        Le questionnaire FiRST est un outil de dépistage de la fibromyalgie, simple et facile d'utilisation, avec une bonne sensibilité et spécificité. Un score de 5 items sur les 6 items du questionnaire permet de détecter la fibromyalgie avec une sensibilité de 90,5 % et une spécificité de 85,7 %.
-      </p>
-      <span>Références :</span>
-      <p>
-        Burckhardt CS, clark SR, Benett RM. Fibromyalgia and quality of life : a comparative analysis. J Rheumatology 1993 ; 20:475-9.
-        Perrot S, Bouhassira D, Fermanian J. Cercle d'Etude de la Douleur en Rhumatologie. Development and validation of the Fibromyalgia Rapid Screening tool (FiRST). Pain. 2010 ; 150:250.
-      </p>
-      <a v-if="!isMobile()" :href="'http://medicalcul.free.fr/firstquest.html'" target="blank">Lien vers la source</a>
-      <a v-else :href="'medics://viewer?m_source=' + 'http://medicalcul.free.fr/firstquest.html'">Lien vers la source</a>
-    </em>
+    <ReferencesMedical
+      message1="Le questionnaire FiRST est un outil de dépistage de la fibromyalgie, simple et facile d'utilisation, avec une bonne sensibilité et spécificité. Un score de 5 items sur les 6 items du questionnaire permet de détecter la fibromyalgie avec une sensibilité de 90,5 % et une spécificité de 85,7 %."
+      message2="Burckhardt CS, clark SR, Benett RM. Fibromyalgia and quality of life : a comparative analysis. J Rheumatology 1993 ; 20:475-9.
+        Perrot S, Bouhassira D, Fermanian J. Cercle d'Etude de la Douleur en Rhumatologie. Development and validation of the Fibromyalgia Rapid Screening tool (FiRST). Pain. 2010 ; 150:250."
+      source-link="http://medicalcul.free.fr/firstquest.html"
+    />
       <Footer/>
   </div>
 </template>
@@ -115,10 +108,11 @@
 import Vue from "vue";
 import { isMobile } from '@/global';
 import Footer from "@/components/Footer.vue";
+import ReferencesMedical from "@/components/ReferencesMedical.vue";
 
 export default Vue.extend({
   name: "First",
-    components: {Footer},
+    components: {Footer, ReferencesMedical },
     data() {
     return {
       quest: [],
