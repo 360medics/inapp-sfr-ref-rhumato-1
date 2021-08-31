@@ -26,8 +26,9 @@
 
     <p>Si l’indice est ≥ à 10-12, une prothèse peut être envisagée</p>
 
-      <ReferencesMedical sourceLink="http://www.antalvite.fr/pdf/Indice%20algo-fonctionnel%20de%20Lequesne%20pour%20le%20genou.pdf" />
-      <Footer/>
+<!--&lt;!&ndash;      <ReferencesMedical sourceLink="http://www.antalvite.fr/pdf/Indice%20algo-fonctionnel%20de%20Lequesne%20pour%20le%20genou.pdf" />&ndash;&gt;-->
+<!--*Note* : les liens avec des espaces ne fonctionne pas avec les inapps 360medics-->
+    <Footer/>
   </div>
 </template>
 
