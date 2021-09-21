@@ -90,6 +90,12 @@
     <div v-if="error" class="result">
       <p>{{ this.error }}</p>
     </div>
+    <ReferencesMedical
+      message1="Formules:
+          CRP (mg/ dl) + échelle visuelle analogique (EVA) patient (0-10) + EVA médecin (0-10) + (dérouillage matinal [mn] × 0,1) + élévation des bras (de 0, normale, à 3, nulle)"
+      message2="- Leeb BF, Bird HA. A disease activity score for polymyalgia rheumatica. Ann Rheum Dis 2004;63:1279-83.<br><br>
+- Binard A, Lefebvre B, De Bandt M, Berthelot JM, Saraux A; Club “Rhumatismes et Infl ammation”. Validity of the polymyalgia rheumatica activity score in primary care practice. Ann Rheum Dis 2009;68:541-5"
+    />
       <Footer/>
   </div>
 </template>

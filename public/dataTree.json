@@ -165,7 +165,7 @@
                       "subtitle": "",
                       "appId": 1,
                       "parentId": 2,
-                      "type": "",
+                      "type": "html",
                       "content": "",
                       "slug": "classificaton-de-new-york",
                       "submenu": false,
@@ -177,7 +177,7 @@
                       "subtitle": "",
                       "appId": 1,
                       "parentId": 2,
-                      "type": "",
+                      "type": "html",
                       "content": "",
                       "slug": "criteres-de-new-york-modifies",
                       "submenu": false,
@@ -2308,7 +2308,8 @@
               "type": "html",
               "content": "",
               "slug": "tsdmards",
-              "submenu": false
+              "submenu": false,
+              "component": "tsDMARDS"
             },
             {
               "id": "",
@@ -2316,10 +2317,96 @@
               "subtitle": "Sous-titre facultatif",
               "appId": 1,
               "parentId": null,
-              "type": "html",
+              "type": "list",
               "content": "",
               "slug": "traitement-anti-osteoporotique",
-              "submenu": false
+              "submenu": true,
+              "children": [
+                {
+                  "id": "",
+                  "name": "Denosumab / Tériparatide",
+                  "subtitle": "Sous-titre facultatif",
+                  "appId": 1,
+                  "parentId": null,
+                  "type": "html",
+                  "content": "",
+                  "slug": "denosumabordonnance",
+                  "submenu": false,
+                  "component": "DenosumabOrdonnance"
+                },
+                {
+                  "id": "",
+                  "name": "Injection Teriparatide",
+                  "subtitle": "Sous-titre facultatif",
+                  "appId": 1,
+                  "parentId": null,
+                  "type": "html",
+                  "content": "",
+                  "slug": "teriparatideordonnance",
+                  "submenu": false,
+                  "component": "TeriparatideOrdonance"
+                },
+                {
+                  "id": "",
+                  "name": "Ordonnance acide zolédronique",
+                  "subtitle": "Sous-titre facultatif",
+                  "appId": 1,
+                  "parentId": null,
+                  "type": "html",
+                  "content": "",
+                  "slug": "zoledroniqueordonnance",
+                  "submenu": false,
+                  "component": "ZoledroniqueOrdonance"
+                },
+                {
+                  "id": "",
+                  "name": "Perfusion acide zolédronique",
+                  "subtitle": "Sous-titre facultatif",
+                  "appId": 1,
+                  "parentId": null,
+                  "type": "html",
+                  "content": "",
+                  "slug": "zoledroniqueperfordonnance",
+                  "submenu": false,
+                  "component": "ZoledroniquePerfOrdonance"
+                },
+                {
+                  "id": "",
+                  "name": "Ordonnance bisphosphonates oraux (ex.Risedronate)",
+                  "subtitle": "Sous-titre facultatif",
+                  "appId": 1,
+                  "parentId": null,
+                  "type": "html",
+                  "content": "",
+                  "slug": "residronateordonnance",
+                  "submenu": false,
+                  "component": "RisedronateOrdo"
+                },
+                {
+                  "id": "",
+                  "name": "Ordonnance bisphosphonates oraux (ex.Alendronate)",
+                  "subtitle": "Sous-titre facultatif",
+                  "appId": 1,
+                  "parentId": null,
+                  "type": "html",
+                  "content": "",
+                  "slug": "alendronateordonnance",
+                  "submenu": false,
+                  "component": "AlendronateOrdo"
+                }
+              ]
+            },
+            {
+              "id": "",
+              "name": "Supplémentation vitamine D",
+              "subtitle": "Sous-titre facultatif",
+              "appId": 1,
+              "parentId": null,
+              "type": "html",
+              "content": "",
+              "slug": "vitamined",
+              "submenu": false,
+              "component": "Vitamined"
             },
             {
               "id": "",

@@ -154,6 +154,14 @@ import ApremilastOrdonnance from '@/components/ordonnances/csDMARDS/Apremilast.v
 import MethotrexateOrdonnance from '@/components/ordonnances/csDMARDS/Methotrexate.vue';
 import Salazopyrine from '@/components/ordonnances/csDMARDS/Salazopyrine.vue';
 import bDMARDS from '@/components/ordonnances/bDMARDS.vue';
+import tsDMARDS from '@/components/ordonnances/tsDMARDS.vue';
+import DenosumabOrdonnance from '@/components/ordonnances/antiOsteo/DenosumabOrdonnance.vue';
+import TeriparatideOrdonance from '@/components/ordonnances/antiOsteo/TeriparatideOrdonance.vue';
+import ZoledroniqueOrdonance from '@/components/ordonnances/antiOsteo/ZoledroniqueOrdonance.vue';
+import ZoledroniquePerfOrdonance from '@/components/ordonnances/antiOsteo/ZoledroniquePerfOrdonance.vue';
+import RisedronateOrdo from '@/components/ordonnances/antiOsteo/RisedronateOrdo.vue';
+import AlendronateOrdo from '@/components/ordonnances/antiOsteo/AlendronateOrdo.vue';
+import Vitamined from '@/components/ordonnances/Vitamined.vue';
 import preAntiTNF from '@/components/ordonnances/biologie/preAntiTNF.vue';
 import preJAKi from '@/components/ordonnances/biologie/preJAKi.vue';
 import preMethotrexate from '@/components/ordonnances/biologie/preMethotrexate.vue';
@@ -192,7 +200,15 @@ export default Vue.extend({
     Cervicalgie,
     preAntiTNF,
     bDMARDS,
+    tsDMARDS,
+    DenosumabOrdonnance,
+    TeriparatideOrdonance,
     ApremilastOrdonnance,
+    ZoledroniqueOrdonance,
+    ZoledroniquePerfOrdonance,
+    RisedronateOrdo,
+    AlendronateOrdo,
+    Vitamined,
     Salazopyrine,
     AideCodage,
     MethotrexateOrdonnance,

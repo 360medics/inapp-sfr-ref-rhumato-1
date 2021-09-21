@@ -35,7 +35,7 @@
         </tbody>
       </table>
 
-        <ReferencesMedical sourceLink="" />
+        <ReferencesMedical message2="van der Linden S, Valkenburg HA, Cats A. Evaluation of diagnostic criteria for ankylosing spondylitis. A proposal for modification of the New York criteria. Arthritis Rheum. avr 1984;27(4):361" />
         <Footer/>
     </div>
 </template>

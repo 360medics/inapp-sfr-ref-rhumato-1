@@ -1,14 +1,13 @@
 <template>
     <div class="ReferencesMedical">
-        <em v-if="message1">
-            Interprétation:<br>
-            {{message1}}
-        </em>
-        <br><br>
-        <em v-if="message2">
-            Réference:<br>
-            {{message2}}
-        </em>
+        <div v-if="message1">
+            <em>Interprétation:</em><br>
+          <p>{{message1}}</p>
+        </div>
+        <div v-if="message2">
+            <em>Réference(s):</em><br>
+          <p v-html="message2"></p>
+        </div>
         <p v-if="sourceText">source : {{sourceText}}</p>
         <div v-if="sourceLink">
             <a class="ReferencesMedical__link" v-if="!isMobile()" :href="sourceLink" target="_blank">Voir la source</a>

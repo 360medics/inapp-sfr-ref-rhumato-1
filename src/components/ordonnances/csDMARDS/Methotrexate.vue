@@ -2,6 +2,7 @@
   <section class="Methotrexate">
     <h2 class="title">Methotrexate</h2>
 <span class="line"></span>
+    <p>Sur ordonnance d’exception</p>
     <PNGViewer :src="'MethotrexateCSDMARDS.png'" :myID="'MethotrexateCSDMARDS.png'"/>
   </section>
 </template>
