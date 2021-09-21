@@ -147,17 +147,11 @@
       /><span class="score_note"> (0=aisé, 10=impossible)</span>
 
       <div>
-        <hr width="80%" class="line" />
-        <p align="center">
-          <input
-            class="btn btn__submit"
-            name="Submit"
-            type="button"
-            @click="f_Calculer()"
-            value="Calculer"
-          />
-        </p>
-        <hr width="80%" class="line" />
+
+        <button type="button" class="btn btn__submit" @click="f_Calculer()">
+          Calculer
+        </button>
+
         <p class="result">
           Score :
           {{ result }}

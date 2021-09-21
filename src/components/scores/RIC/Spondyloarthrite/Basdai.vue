@@ -208,15 +208,11 @@
       </div>
       <br />
       <div>
-        <p align="center">
-          <input
-            class="btn btn__submit"
-            name="Submit"
-            type="button"
-            @click="f_Calculer()"
-            value="Calculer"
-          />
-        </p>
+
+        <button type="button" class="btn btn__submit" @click="f_Calculer()">
+          Calculer
+        </button>
+
         <p class="result">
           Score :
           {{ result }}

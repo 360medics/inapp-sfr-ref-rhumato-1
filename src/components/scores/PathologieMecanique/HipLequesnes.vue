@@ -22,7 +22,8 @@
           <h4 >Indice {{ finalScore }}</h4>
       </div>
     <p>Si l’indice est ≥ à 10-12, une prothèse peut être envisagée</p>
-      <ReferencesMedical sourceLink="http://www.antalvite.fr/pdf/Indice%20algo-fonctionnel%20de%20Lequesne%20pour%20la%20hanche.pdf" />
+<!--&lt;!&ndash;      <ReferencesMedical sourceLink="http://www.antalvite.fr/pdf/Indice%20algo-fonctionnel%20de%20Lequesne%20pour%20la%20hanche.pdf" />&ndash;&gt;-->
+    <!--*Note* : les liens avec des espaces ne fonctionne pas avec les inapps 360medics, pas de référence-->
       <Footer/>
   </div>
 </template>
@@ -61,10 +62,11 @@ export default Vue.extend({
   },
   methods: {
     calcResult() {
-      this.finalScore = parseInt(this.scores.reduce((x1, x2) => (parseFloat(x1) + parseFloat(x2)).toFixed(1)));
+      const sumScores = this.scores.reduce((accumulator, currentValue) => accumulator + currentValue);
+      this.finalScore = sumScores
     },
     upwardChange(e: any) {
-      this.scores[e.index] = e.userScore;
+      this.scores[e.index] = parseFloat(e.userScore);
       this.calcResult();
     },
   },

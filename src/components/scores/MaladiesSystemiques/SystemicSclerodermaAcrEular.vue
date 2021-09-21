@@ -265,15 +265,15 @@
     <label class="btn" :class="{selected: questions.q10 === '3'}" for="btnradio20">OUI</label>
 
     <div class="result">
-      <p class="description">{{ total }} Points</p>
+      <p>{{ total }} Points</p>
 
-      <p class="description">0 Critère d'exclusion</p>
+      <p>0 Critère d'exclusion</p>
 
-      <p v-if="total < 9" class="description">Negatif</p>
+      <p v-if="total < 9">Negatif</p>
 
-      <p v-else class="description">Positif</p>
+      <p v-else>Positif</p>
 
-      <p class="description">
+      <p>
         Le critère peut être retenu s'il est présent à un moment au moins de
         l'histoire clinique. Un score ≥ 9 permet de classer les patients comme
         atteints de sclérodermie systémique.
