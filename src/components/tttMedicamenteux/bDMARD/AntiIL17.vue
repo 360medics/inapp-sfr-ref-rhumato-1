@@ -64,19 +64,17 @@
     </div>
 
     <p class="bold">CONTRE-INDICATIONS</p>
-    <div>
-      Infection active et cliniquement importante (par exemple tuberculose).<br />
-      Hypersensibilité à la substance ou excipient.<br />
-    </div>
-
+    <ul>
+        <li>Infection active et cliniquement importante (par exemple tuberculose).</li>
+        <li>Hypersensibilité à la substance ou excipient.</li>
+    </ul>
     <p class="bold">PRECAUTIONS</p>
-    <div>
-      Infection chronique ou antécédents d’infections récurrentes<br />
-      Dépistage tuberculose latente<br />
-      Tumeurs malignes solides (active ou rémission < 5 ans sauf carcinome
-      basocellulaire ou carcinome épidermoïde)<br />
-      Maladie inflammatoire chronique de l’intestin<br />
-    </div>
+    <ul>
+        <li>Infection chronique ou antécédents d’infections récurrentes</li>
+        <li>Dépistage tuberculose latente</li>
+        <li>Tumeurs malignes solides (active ou rémission < 5 ans sauf carcinome basocellulaire ou carcinome épidermoïde)</li>
+        <li>Maladie inflammatoire chronique de l’intestin</li>
+    </ul>
   </section>
 </template>
 

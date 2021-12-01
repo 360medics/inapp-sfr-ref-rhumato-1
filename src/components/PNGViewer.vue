@@ -89,9 +89,6 @@ export default {
     getTrueSize() {
       this.trueHeight = this.$refs.imageModal.naturalHeight;
       this.trueWidth = this.$refs.imageModal.naturalWidth;
-      // const myThing = document.querySelector(`.${this.myID}`);
-      // myThing.style.setProperty('--true-width', `${this.trueWidth / 10}px`);
-      // myThing.style.setProperty('--true-height', `${this.trueHeight / 10}px`);
     },
     setSize(a) {
       a.target.style.setProperty('width', `${(this.trueWidth / 10) * 5}px`);
@@ -151,13 +148,6 @@ export default {
   margin-top: 15px;
 }
 
-.modal__header {
-  padding: 20px 20px 10px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-
 .modal__body {
   display: flex;
   flex-direction: column;
@@ -172,17 +162,10 @@ export default {
   padding-left: 20px;
 }
 
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.2s;
-}
-.fade-enter,
-.fade-leave-to {
-  opacity: 0;
-}
 .image-container {
   overflow: scroll;
   max-width: 100%;
   margin: auto;
 }
+
 </style>

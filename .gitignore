@@ -7,7 +7,6 @@ node_modules
 .env.local
 .env.*.local
 yarn.lock
-package.json.lock
 
 # Log files
 npm-debug.log*

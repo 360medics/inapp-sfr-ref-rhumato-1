@@ -103,7 +103,7 @@ export default Vue.extend({
   input {
     height: 30px;
     padding: 0 3px;
-    background: #EDECF4 0% 0% no-repeat padding-box;
+    background: #EDECF4 0 0 no-repeat padding-box;
     border-radius: 5px;
     opacity: 1;
     margin: .75em;
