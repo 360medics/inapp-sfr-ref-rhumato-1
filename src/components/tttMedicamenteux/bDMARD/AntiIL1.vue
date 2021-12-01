@@ -41,8 +41,8 @@
       <ul>
         <li>Maladie de Still : 4 mg/kg toutes les 4 semaines, max 300 mg</li>
         <li>Arthrite goutteuse : 150 mg en une dose unique au cours de la crise</li>
+          <li>Syndrome de fièvre : 150 mg toutes les 4 semaines si > 40 kg ou 2 mg/kg si entre 7,5 et 40 kg. Si inefficace à J7, possible 2ème injection à J7</li>
       </ul>
-      Syndrome de fièvre : 150 mg toutes les 4 semaines si > 40 kg ou 2 mg/kg si entre 7,5 et 40 kg. Si inefficace à J7, possible 2ème injection à J7
     </div>
 
     <p class="bold">CONTRE-INDICATIONS</p>
