@@ -46,6 +46,7 @@
           :href="externLink(pdf.content)"
           class="label-wrapper"
           :target="isMobile() ? '_self' : '_blank'"
+          rel="noopener noreferrer"
         >
           {{ pdf.name }}
         </a>
@@ -76,6 +77,7 @@
         :href="externLink(content)"
         class="label-wrapper"
         :target="isMobile() ? '_self' : '_blank'"
+        rel="noopener noreferrer"
       >
         {{ name }}
       </a>

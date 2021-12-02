@@ -10,7 +10,7 @@
         </div>
         <p v-if="sourceText">source : {{sourceText}}</p>
         <div v-if="sourceLink">
-            <a class="ReferencesMedical__link" v-if="!isMobile()" :href="sourceLink" target="_blank">Voir la source</a>
+            <a class="ReferencesMedical__link" v-if="!isMobile()" :href="sourceLink" target="_blank" rel="noopener noreferrer">Voir la source</a>
             <a class="ReferencesMedical__link" v-else :href="'medics://viewer?m_source=' + sourceLink">Voir la source</a>
         </div>
     </div>
