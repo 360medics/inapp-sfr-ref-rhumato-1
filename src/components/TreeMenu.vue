@@ -50,14 +50,6 @@
         >
           {{ pdf.name }}
         </a>
-<!--        <iframe-->
-<!--          :src="pdf.content"-->
-<!--          width="100%"-->
-<!--          height="100%"-->
-<!--          frameborder="0"-->
-<!--          scrolling="no"-->
-<!--          allowfullscreen="true"-->
-<!--        ></iframe>-->
       </div>
     </div>
 
@@ -69,6 +61,7 @@
         rel="noopener noreferrer"
       >
         {{ name }}
+          <i v-if="!this.showChildren" class="fas fa-link"></i>
       </a>
     </div>
 
