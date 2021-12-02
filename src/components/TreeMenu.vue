@@ -65,6 +65,7 @@
         :href="externLink(content)"
         class="label-wrapper"
         :target="isMobile() ? '_self' : '_blank'"
+        rel="noopener noreferrer"
       >
         {{ name }}
       </a>
