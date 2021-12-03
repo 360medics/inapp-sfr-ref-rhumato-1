@@ -9,8 +9,8 @@
     <div v-if="this.type === 'list'">
       <div class="label-wrapper" @click="toggleChildren">
         {{ name }}
-        <i v-if="!this.showChildren" class="fas fa-chevron-right"></i>
-        <i v-else class="fas fa-chevron-down"></i>
+        <i v-if="!this.showChildren" class="fas fa-chevron-right" />
+        <i v-else class="fas fa-chevron-down" />
       </div>
       <tree-menu
         v-if="showChildren"
@@ -46,17 +46,10 @@
           :href="externLink(pdf.content)"
           class="label-wrapper"
           :target="isMobile() ? '_self' : '_blank'"
+          rel="noopener noreferrer"
         >
           {{ pdf.name }}
         </a>
-<!--        <iframe-->
-<!--          :src="pdf.content"-->
-<!--          width="100%"-->
-<!--          height="100%"-->
-<!--          frameborder="0"-->
-<!--          scrolling="no"-->
-<!--          allowfullscreen="true"-->
-<!--        ></iframe>-->
       </div>
     </div>
 
@@ -65,8 +58,10 @@
         :href="externLink(content)"
         class="label-wrapper"
         :target="isMobile() ? '_self' : '_blank'"
+        rel="noopener noreferrer"
       >
         {{ name }}
+          <i v-if="!this.showChildren" class="fas fa-link"></i>
       </a>
     </div>
 
@@ -75,6 +70,7 @@
         :href="externLink(content)"
         class="label-wrapper"
         :target="isMobile() ? '_self' : '_blank'"
+        rel="noopener noreferrer"
       >
         {{ name }}
       </a>
@@ -83,6 +79,7 @@
     <router-link :to="'/score/' + this.slug" v-else>
       <div class="label-wrapper">
         {{ name }}
+          <i v-if="!this.showChildren" class="fas fa-chevron-right" />
       </div>
     </router-link>
   </div>

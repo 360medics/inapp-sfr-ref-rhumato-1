@@ -5,6 +5,7 @@ import SubListPage from "@/views/SubListPage.vue";
 import ContentPage from "@/views/ContentPage.vue";
 import Search from "@/components/ListSearchResult.vue";
 import CRI from "@/views/CRI.vue";
+import AideCodage from '@/components/AideCodage.vue'
 
 Vue.use(VueRouter);
 

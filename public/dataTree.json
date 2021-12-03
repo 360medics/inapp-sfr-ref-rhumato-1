@@ -37,17 +37,6 @@
               "slug": "polyarthrite-rhumatoide",
               "submenu": true,
               "children": [
-                {
-                  "id": "",
-                  "name": "Classification",
-                  "subtitle": "",
-                  "appId": 1,
-                  "parentId": 2,
-                  "type": "list",
-                  "content": "",
-                  "slug": "classification",
-                  "submenu": true,
-                  "children": [
                     {
                       "id": "",
                       "name": "ACR/EULAR 2010 ",
@@ -59,20 +48,7 @@
                       "slug": "acr-eular-2010",
                       "component": "AcrEular2010",
                       "submenu": false
-                    }
-                  ]
-                },
-                {
-                  "id": "",
-                  "name": "Activité",
-                  "subtitle": "",
-                  "appId": 1,
-                  "parentId": 2,
-                  "type": "list",
-                  "content": "",
-                  "slug": "activite",
-                  "submenu": true,
-                  "children": [
+                    },
                     {
                       "id": "",
                       "name": "DAS28 ",
@@ -122,8 +98,6 @@
                       "submenu": false
                     }
                   ]
-                }
-              ]
             },
             {
               "id": "",
@@ -259,17 +233,18 @@
               "slug": "rhumatisme-psoriasique",
               "submenu": true,
               "children": [
-                {
-                  "id": "",
-                  "name": "Classification ",
-                  "subtitle": "",
-                  "appId": 1,
-                  "parentId": 2,
-                  "type": "list",
-                  "content": "",
-                  "slug": "classification",
-                  "submenu": true,
-                  "children": [
+                    {
+                      "id": "",
+                      "name": "DAPSA",
+                      "subtitle": "",
+                      "appId": 1,
+                      "parentId": 2,
+                      "type": "html",
+                      "content": "https://rheuma.charite.de/fileadmin/user_upload/microsites/ohne_AZ/m_cc13/rheuma/Templates/DAPSA_ENG.pdf",
+                      "slug": "dapsa",
+                      "submenu": false,
+                      "component": "Dapsa"
+                    },
                     {
                       "id": "",
                       "name": "CASPAR",
@@ -282,33 +257,6 @@
                       "submenu": false,
                       "component": "Caspar"
                     }
-                  ]
-                },
-                {
-                  "id": "",
-                  "name": "Activité ",
-                  "subtitle": "",
-                  "appId": 1,
-                  "parentId": 2,
-                  "type": "list",
-                  "content": "",
-                  "slug": "activite",
-                  "submenu": true,
-                  "children": [
-                    {
-                      "id": "",
-                      "name": "DAPSA",
-                      "subtitle": "",
-                      "appId": 1,
-                      "parentId": 2,
-                      "type": "html",
-                      "content": "https://rheuma.charite.de/fileadmin/user_upload/microsites/ohne_AZ/m_cc13/rheuma/Templates/DAPSA_ENG.pdf",
-                      "slug": "dapsa",
-                      "submenu": false,
-                      "component": "Dapsa"
-                    }
-                  ]
-                }
               ]
             },
             {
@@ -336,28 +284,15 @@
                 },
                 {
                   "id": "",
-                  "name": "Activité ",
+                  "name": "DAS-PPR",
                   "subtitle": "",
                   "appId": 1,
                   "parentId": 2,
-                  "type": "list",
+                  "type": "html",
                   "content": "http://actualites-therapeutiques.com/diapo/2013/Matin/3%20-%20Berthelot%20JM.pdf",
-                  "slug": "activite",
-                  "submenu": true,
-                  "children": [
-                    {
-                      "id": "",
-                      "name": "DAS-PPR",
-                      "subtitle": "",
-                      "appId": 1,
-                      "parentId": 2,
-                      "type": "html",
-                      "content": "http://actualites-therapeutiques.com/diapo/2013/Matin/3%20-%20Berthelot%20JM.pdf",
-                      "slug": "dasppr",
-                      "submenu": false,
-                      "component": "DasPpr"
-                    }
-                  ]
+                  "slug": "dasppr",
+                  "submenu": false,
+                  "component": "DasPpr"
                 }
               ]
             }
@@ -365,28 +300,15 @@
         },
         {
           "id": "",
-          "name": "Rhumatismes microcristallins",
+          "name": "Rhumatismes microcristallins : goutte",
           "subtitle": "",
           "appId": 1,
           "parentId": 2,
-          "type": "list",
-          "content": "",
-          "slug": "rhumatismes-microcristallins",
-          "submenu": true,
-          "children": [
-            {
-              "id": "",
-              "name": "Goutte",
-              "subtitle": "",
-              "appId": 1,
-              "parentId": 2,
-              "type": "html",
-              "content": "https://www.revmed.ch/Scores/SCORES-DIAGNOSTIQUES/RHUMATOLOGIE/Score-diagnostique-pour-la-goutte-ACR-et-EULAR",
-              "slug": "goutte-acr-eular",
-              "submenu": false,
-              "component": "GoutteAcrEular"
-            }
-          ]
+          "type": "html",
+          "content": "https://www.revmed.ch/Scores/SCORES-DIAGNOSTIQUES/RHUMATOLOGIE/Score-diagnostique-pour-la-goutte-ACR-et-EULAR",
+          "slug": "goutte-acr-eular",
+          "submenu": false,
+          "component": "GoutteAcrEular"
         },
         {
           "id": "",
@@ -417,24 +339,11 @@
               "subtitle": "",
               "appId": 1,
               "parentId": 2,
-              "type": "list",
+              "type": "html",
               "content": "",
-              "slug": "syndrome-de-gougerot-sjogren",
+              "slug": "essdai",
               "submenu": false,
-              "children": [
-                {
-                  "id": "",
-                  "name": "ESSDAI",
-                  "subtitle": "",
-                  "appId": 1,
-                  "parentId": 2,
-                  "type": "html",
-                  "content": "",
-                  "slug": "essdai",
-                  "submenu": false,
-                  "component": "Essdai"
-                }
-              ]
+              "component": "Essdai"
             },
             {
               "id": "",
@@ -638,24 +547,11 @@
               "subtitle": "",
               "appId": 1,
               "parentId": 2,
-              "type": "list",
-              "content": "",
-              "slug": "coxarthrose",
-              "submenu": true,
-              "children": [
-                {
-                  "id": "",
-                  "name": "Indice fonctionnel de Lequesnes (hanche)",
-                  "subtitle": "",
-                  "appId": 1,
-                  "parentId": 2,
-                  "type": "html",
-                  "component": "HipLequesnes",
-                  "content": "http://www.antalvite.fr/pdf/Indice%20algo-fonctionnel%20de%20Lequesne%20pour%20la%20hanche.pdf",
-                  "slug": "indice-fonctionnel-de-lequesnes-hanche",
-                  "submenu": false
-                }
-              ]
+              "type": "html",
+              "content": "http://www.antalvite.fr/pdf/Indice%20algo-fonctionnel%20de%20Lequesne%20pour%20la%20hanche.pdf",
+              "slug": "indice-fonctionnel-de-lequesnes-hanche",
+              "submenu": false,
+              "component": "HipLequesnes"
             },
             {
               "id": "",
@@ -663,64 +559,37 @@
               "subtitle": "",
               "appId": 1,
               "parentId": 2,
-              "type": "list",
-              "content": "",
-              "slug": "gonarthrose",
-              "submenu": true,
-              "children": [
-                {
-                  "id": "",
-                  "name": "Indice fonctionnel de Lequesnes (genou)",
-                  "subtitle": "",
-                  "appId": 1,
-                  "parentId": 2,
-                  "type": "html",
-                  "component": "KneeLequesnes",
-                  "content": "http://www.antalvite.fr/pdf/Indice%20algo-fonctionnel%20de%20Lequesne%20pour%20le%20genou.pdf",
-                  "slug": "indice-fonctionnel-de-lequesnes-genou",
-                  "submenu": false
-                }
-              ]
+              "type": "html",
+              "content": "http://www.antalvite.fr/pdf/Indice%20algo-fonctionnel%20de%20Lequesne%20pour%20le%20genou.pdf",
+              "slug": "indice-fonctionnel-de-lequesnes-genou",
+              "submenu": false,
+              "component": "KneeLequesnes"
             }
           ]
         },
         {
           "id": "",
-          "name": "Syndromes douloureux",
-          "subtitle": "",
+          "name": "Syndromes douloureux : fibromyalgie",
+          "subtitle": "fibromyalgie",
           "appId": 1,
           "parentId": 2,
-          "type": "list",
-          "content": "",
-          "slug": "syndromes-douloureux",
-          "submenu": true,
-          "children": [
-            {
-              "id": "",
-              "name": "Fibromyalgie ",
-              "subtitle": "",
-              "appId": 1,
-              "parentId": 2,
-              "type": "list",
-              "content": "",
-              "slug": "fibromyalgie ",
-              "submenu": true,
-              "children": [
-                {
-                  "id": "",
-                  "name": "First",
-                  "subtitle": "",
-                  "appId": 1,
-                  "parentId": 2,
-                  "type": "html",
-                  "content": "http://medicalcul.free.fr/firstquest.html",
-                  "slug": "first",
-                  "submenu": false,
-                  "component": "First"
-                }
-              ]
-            }
-          ]
+          "type": "html",
+          "content": "http://medicalcul.free.fr/firstquest.html",
+          "slug": "fibromyalgie",
+          "submenu": false,
+          "component": "First"
+        },
+        {
+          "id": "",
+          "name": "Syndrome de Gougerot Sjogren : ACR/EULAR 2016",
+          "subtitle": "ACR/EULAR 2016",
+          "appId": 1,
+          "parentId": 2,
+          "type": "html",
+          "content": "https://www.fai2r.org/les-pathologies-rares/gougerot-sjogren/criteres-de-classification-du-gougerot-sjogren-acr-eular-2016/",
+          "slug": "gougerot-sjogren",
+          "submenu": false,
+          "component": "AcrEular2016"
         },
         {
           "id": "",
@@ -840,76 +709,63 @@
       "children": [
         {
           "id": "",
-          "name": "Bilans diagnostic",
+          "name": "Bilan diagnostic  polyarthrite",
           "subtitle": "Sous-titre facultatif",
           "appId": 1,
           "parentId": null,
-          "type": "list",
+          "type": "html",
           "content": "",
-          "slug": "bilan-diagnostic",
-          "submenu": true,
-          "children": [
-            {
-              "id": "",
-              "name": "Bilan diagnostic  polyarthrite",
-              "subtitle": "Sous-titre facultatif",
-              "appId": 1,
-              "parentId": null,
-              "type": "html",
-              "content": "",
-              "slug": "bilan-diagnostic-polyarthrite",
-              "submenu": false,
-              "component": "Polyarthrite"
-            },
-            {
-              "id": "",
-              "name": "Bilan diagnostic  mono-arthrite",
-              "subtitle": "Sous-titre facultatif",
-              "appId": 1,
-              "parentId": null,
-              "type": "html",
-              "content": "",
-              "slug": "bilan-diagnostic-mono-arthrite",
-              "submenu": false,
-              "component": "MonoArthrite"
-            },
-            {
-              "id": "",
-              "name": "Bilan diagnostic lésion osseuse",
-              "subtitle": "Sous-titre facultatif",
-              "appId": 1,
-              "parentId": null,
-              "type": "html",
-              "content": "",
-              "slug": "bilan-diagnostic-lession-osseuse",
-              "submenu": false,
-              "component": "LesionOsseuse"
-            },
-            {
-              "id": "",
-              "name": "Bilan diagnostic Iombalgie > 3 mois",
-              "subtitle": "Sous-titre facultatif",
-              "appId": 1,
-              "parentId": null,
-              "type": "html",
-              "content": "",
-              "slug": "bilan-diagnostic-iombalgie",
-              "submenu": false,
-              "component": "Iombalgie"
-            },
-            {
-              "id": "",
-              "name": "Bilan étiologie ostéoporose ",
-              "subtitle": "Sous-titre facultatif",
-              "appId": 1,
-              "parentId": null,
-              "type": "html",
-              "content": "",
-              "slug": "bilan-etiologie-osteoporose",
-              "submenu": false,
-              "component": "Osteoporose"
-            }
-          ]
+          "slug": "bilan-diagnostic-polyarthrite",
+          "submenu": false,
+          "component": "Polyarthrite"
+        },
+        {
+          "id": "",
+          "name": "Bilan diagnostic  mono-arthrite",
+          "subtitle": "Sous-titre facultatif",
+          "appId": 1,
+          "parentId": null,
+          "type": "html",
+          "content": "",
+          "slug": "bilan-diagnostic-mono-arthrite",
+          "submenu": false,
+          "component": "MonoArthrite"
+        },
+        {
+          "id": "",
+          "name": "Bilan diagnostic lésion osseuse",
+          "subtitle": "Sous-titre facultatif",
+          "appId": 1,
+          "parentId": null,
+          "type": "html",
+          "content": "",
+          "slug": "bilan-diagnostic-lession-osseuse",
+          "submenu": false,
+          "component": "LesionOsseuse"
+        },
+        {
+          "id": "",
+          "name": "Bilan diagnostic Iombalgie > 3 mois",
+          "subtitle": "Sous-titre facultatif",
+          "appId": 1,
+          "parentId": null,
+          "type": "html",
+          "content": "",
+          "slug": "bilan-diagnostic-iombalgie",
+          "submenu": false,
+          "component": "Iombalgie"
+        },
+        {
+          "id": "",
+          "name": "Bilan étiologie ostéoporose ",
+          "subtitle": "Sous-titre facultatif",
+          "appId": 1,
+          "parentId": null,
+          "type": "html",
+          "content": "",
+          "slug": "bilan-etiologie-osteoporose",
+          "submenu": false,
+          "component": "Osteoporose"
         }
       ]
     },
@@ -2227,420 +2083,396 @@
       "slug": "ordonnances-et-comptes-rendus-type-d-examens",
       "submenu": true,
       "children": [
-        {
-          "id": "",
-          "name": "Ordonnances types",
-          "subtitle": "Sous-titre facultatif",
-          "appId": 1,
-          "parentId": null,
-          "type": "list",
-          "content": "",
-          "slug": "ordonnances-type",
-          "submenu": true,
-          "children": [
-            {
-              "id": "",
-              "name": "csDMARDS",
-              "subtitle": "Sous-titre facultatif",
-              "appId": 1,
-              "parentId": null,
-              "type": "list",
-              "content": "",
-              "slug": "csdmards",
-              "submenu": false,
-              "children": [
-                {
-                  "id": "",
-                  "name": "Methotrexate",
-                  "subtitle": "Sous-titre facultatif",
-                  "appId": 1,
-                  "parentId": null,
-                  "type": "html",
-                  "content": "",
-                  "slug": "methotrexateordonnance",
-                  "submenu": false,
-                  "component": "MethotrexateOrdonnance"
-                },
-                {
-                  "id": "",
-                  "name": "Salazopyrine",
-                  "subtitle": "Sous-titre facultatif",
-                  "appId": 1,
-                  "parentId": null,
-                  "type": "html",
-                  "content": "",
-                  "slug": "salazopyrine",
-                  "submenu": false,
-                  "component": "Salazopyrine"
-                },
-                {
-                  "id": "",
-                  "name": "Apremilast (ordonnance)",
-                  "subtitle": "Sous-titre facultatif",
-                  "appId": 1,
-                  "parentId": null,
-                  "type": "html",
-                  "content": "",
-                  "slug": "apremilastordonnance",
-                  "submenu": false,
-                  "component": "ApremilastOrdonnance"
-                }
-              ]
-            },
-            {
-              "id": "",
-              "name": "bDMARDS",
-              "subtitle": "Sous-titre facultatif",
-              "appId": 1,
-              "parentId": null,
-              "type": "html",
-              "content": "",
-              "slug": "bdmards",
-              "submenu": false,
-              "component": "bDMARDS"
-            },
-            {
-              "id": "",
-              "name": "tsDMARDS",
-              "subtitle": "Sous-titre facultatif",
-              "appId": 1,
-              "parentId": null,
-              "type": "html",
-              "content": "",
-              "slug": "tsdmards",
-              "submenu": false,
-              "component": "tsDMARDS"
-            },
-            {
-              "id": "",
-              "name": "Traitement anti-ostéoporotique",
-              "subtitle": "Sous-titre facultatif",
-              "appId": 1,
-              "parentId": null,
-              "type": "list",
-              "content": "",
-              "slug": "traitement-anti-osteoporotique",
-              "submenu": true,
-              "children": [
-                {
-                  "id": "",
-                  "name": "Denosumab / Tériparatide",
-                  "subtitle": "Sous-titre facultatif",
-                  "appId": 1,
-                  "parentId": null,
-                  "type": "html",
-                  "content": "",
-                  "slug": "denosumabordonnance",
-                  "submenu": false,
-                  "component": "DenosumabOrdonnance"
-                },
-                {
-                  "id": "",
-                  "name": "Injection Teriparatide",
-                  "subtitle": "Sous-titre facultatif",
-                  "appId": 1,
-                  "parentId": null,
-                  "type": "html",
-                  "content": "",
-                  "slug": "teriparatideordonnance",
-                  "submenu": false,
-                  "component": "TeriparatideOrdonance"
-                },
-                {
-                  "id": "",
-                  "name": "Ordonnance acide zolédronique",
-                  "subtitle": "Sous-titre facultatif",
-                  "appId": 1,
-                  "parentId": null,
-                  "type": "html",
-                  "content": "",
-                  "slug": "zoledroniqueordonnance",
-                  "submenu": false,
-                  "component": "ZoledroniqueOrdonance"
-                },
-                {
-                  "id": "",
-                  "name": "Perfusion acide zolédronique",
-                  "subtitle": "Sous-titre facultatif",
-                  "appId": 1,
-                  "parentId": null,
-                  "type": "html",
-                  "content": "",
-                  "slug": "zoledroniqueperfordonnance",
-                  "submenu": false,
-                  "component": "ZoledroniquePerfOrdonance"
-                },
-                {
-                  "id": "",
-                  "name": "Ordonnance bisphosphonates oraux (ex.Risedronate)",
-                  "subtitle": "Sous-titre facultatif",
-                  "appId": 1,
-                  "parentId": null,
-                  "type": "html",
-                  "content": "",
-                  "slug": "residronateordonnance",
-                  "submenu": false,
-                  "component": "RisedronateOrdo"
-                },
-                {
-                  "id": "",
-                  "name": "Ordonnance bisphosphonates oraux (ex.Alendronate)",
-                  "subtitle": "Sous-titre facultatif",
-                  "appId": 1,
-                  "parentId": null,
-                  "type": "html",
-                  "content": "",
-                  "slug": "alendronateordonnance",
-                  "submenu": false,
-                  "component": "AlendronateOrdo"
-                }
-              ]
-            },
-            {
-              "id": "",
-              "name": "Supplémentation vitamine D",
-              "subtitle": "Sous-titre facultatif",
-              "appId": 1,
-              "parentId": null,
-              "type": "html",
-              "content": "",
-              "slug": "vitamined",
-              "submenu": false,
-              "component": "Vitamined"
-            },
-            {
-              "id": "",
-              "name": "Biologie",
-              "subtitle": "Sous-titre facultatif",
-              "appId": 1,
-              "parentId": null,
-              "type": "list",
-              "content": "",
-              "slug": "biologie",
-              "submenu": false,
-              "children": [
-                {
-                  "id": "",
-                  "name": "pré-Methotrexate",
-                  "subtitle": "Sous-titre facultatif",
-                  "appId": 1,
-                  "parentId": null,
-                  "type": "html",
-                  "content": "",
-                  "slug": "pre-Methotrexate",
-                  "submenu": false,
-                  "component": "preMethotrexate"
-                },
-                {
-                  "id": "",
-                  "name": "pré-JAKi",
-                  "subtitle": "Sous-titre facultatif",
-                  "appId": 1,
-                  "parentId": null,
-                  "type": "html",
-                  "content": "",
-                  "slug": "pre-JAKi",
-                  "submenu": false,
-                  "component": "preJAKi"
-                },
-                {
-                  "id": "",
-                  "name": "pré-antiTNF",
-                  "subtitle": "Sous-titre facultatif",
-                  "appId": 1,
-                  "parentId": null,
-                  "type": "html",
-                  "content": "",
-                  "slug": "pre-antiTNF",
-                  "submenu": false,
-                  "component": "preAntiTNF"
-                }
-              ]
-            },
-            {
-              "id": "",
-              "name": "Kinésithérapie",
-              "subtitle": "Sous-titre facultatif",
-              "appId": 1,
-              "parentId": null,
-              "type": "list",
-              "content": "",
-              "slug": "kinesitherapie",
-              "submenu": false,
-              "children": [
-                {
-                  "id": "",
-                  "name": "Lombalgie chronique",
-                  "subtitle": "Sous-titre facultatif",
-                  "appId": 1,
-                  "parentId": null,
-                  "type": "html",
-                  "content": "",
-                  "slug": "lombalgie-chronique",
-                  "submenu": false,
-                  "component": "Lombalgie"
-                },
-                {
-                  "id": "",
-                  "name": "Canal lombaire rétréci",
-                  "subtitle": "Sous-titre facultatif",
-                  "appId": 1,
-                  "parentId": null,
-                  "type": "html",
-                  "content": "",
-                  "slug": "Canal-lombaire-retreci",
-                  "submenu": false,
-                  "component": "CanalLombaire"
-                },
-                {
-                  "id": "",
-                  "name": "Cervicalgie",
-                  "subtitle": "Sous-titre facultatif",
-                  "appId": 1,
-                  "parentId": null,
-                  "type": "html",
-                  "content": "",
-                  "slug": "cervicalgie",
-                  "submenu": false,
-                  "component": "Cervicalgie"
-                },
-                {
-                  "id": "",
-                  "name": "Tendinopathie coiffe rotateurs",
-                  "subtitle": "Sous-titre facultatif",
-                  "appId": 1,
-                  "parentId": null,
-                  "type": "html",
-                  "content": "",
-                  "slug": "Tendinopathie-coiffe-rotateurs",
-                  "submenu": false,
-                  "component": "TendinopathieCoiffe"
-                },
-                {
-                  "id": "",
-                  "name": "Gonarthrose FTI",
-                  "subtitle": "Sous-titre facultatif",
-                  "appId": 1,
-                  "parentId": null,
-                  "type": "html",
-                  "content": "",
-                  "slug": "Gonarthrose-FTI",
-                  "submenu": false,
-                  "component": "GonarthroseFTI"
-                },
-                {
-                  "id": "",
-                  "name": "Syndrome FP",
-                  "subtitle": "Sous-titre facultatif",
-                  "appId": 1,
-                  "parentId": null,
-                  "type": "html",
-                  "content": "",
-                  "slug": "syndrome-FP",
-                  "submenu": false,
-                  "component": "SyndromeFP"
-                },
-                {
-                  "id": "",
-                  "name": "Tendinopathie MG",
-                  "subtitle": "Sous-titre facultatif",
-                  "appId": 1,
-                  "parentId": null,
-                  "type": "html",
-                  "content": "",
-                  "slug": "tendinopathie-MG",
-                  "submenu": false,
-                  "component": "TendinopathieMG"
-                },
-                {
-                  "id": "",
-                  "name": "Tendinopathie d’Achille",
-                  "subtitle": "Sous-titre facultatif",
-                  "appId": 1,
-                  "parentId": null,
-                  "type": "html",
-                  "content": "",
-                  "slug": "tendinopathie-d-achille",
-                  "submenu": false,
-                  "component": "TendinopathieAchille"
-                },
-                {
-                  "id": "",
-                  "name": "Algoneurodystrophie (SDRC)",
-                  "subtitle": "Sous-titre facultatif",
-                  "appId": 1,
-                  "parentId": null,
-                  "type": "html",
-                  "content": "",
-                  "slug": "SDRC",
-                  "submenu": false,
-                  "component": "SDRC"
-                }
-              ]
-            },
-            {
-              "id": "",
-              "name": "Acte infirmier",
-              "subtitle": "Sous-titre facultatif",
-              "appId": 1,
-              "parentId": null,
-              "type": "list",
-              "content": "",
-              "slug": "acte-infirmier",
-              "submenu": false,
-              "children": [
-                {
-                  "id": "",
-                  "name": "Perfusion acide zolédronique",
-                  "subtitle": "Sous-titre facultatif",
-                  "appId": 1,
-                  "parentId": null,
-                  "type": "html",
-                  "content": "",
-                  "slug": "Perfusion-acide-zoledronique",
-                  "submenu": false,
-                  "component": "Perfusion"
-                },
-                {
-                  "id": "",
-                  "name": "Injection Teriparatide",
-                  "subtitle": "Sous-titre facultatif",
-                  "appId": 1,
-                  "parentId": null,
-                  "type": "html",
-                  "content": "",
-                  "slug": "Injection-teriparatide",
-                  "submenu": false,
-                  "component": "Injection"
-                }
-              ]
-            },
-            {
-              "id": "",
-              "name": "Vaccinations",
-              "subtitle": "Sous-titre facultatif",
-              "appId": 1,
-              "parentId": null,
-              "type": "html",
-              "content": "",
-              "slug": "Vaccinations",
-              "submenu": false,
-              "component": "Vaccinations"
-            }
-          ]
-        },
-        {
-          "id": "",
-          "name": "Compte rendu type",
-          "subtitle": "Sous-titre facultatif",
-          "appId": 1,
-          "parentId": null,
-          "type": "list",
-          "content": "",
-          "slug": "Compte-rendu-type",
-          "submenu": false,
-          "children": [
-            {
+          {
+            "id": "",
+            "name": "csDMARDS",
+            "subtitle": "Sous-titre facultatif",
+            "appId": 1,
+            "parentId": null,
+            "type": "list",
+            "content": "",
+            "slug": "csdmards",
+            "submenu": false,
+            "children": [
+              {
+                "id": "",
+                "name": "Methotrexate",
+                "subtitle": "Sous-titre facultatif",
+                "appId": 1,
+                "parentId": null,
+                "type": "html",
+                "content": "",
+                "slug": "methotrexateordonnance",
+                "submenu": false,
+                "component": "MethotrexateOrdonnance"
+              },
+              {
+                "id": "",
+                "name": "Salazopyrine",
+                "subtitle": "Sous-titre facultatif",
+                "appId": 1,
+                "parentId": null,
+                "type": "html",
+                "content": "",
+                "slug": "salazopyrine",
+                "submenu": false,
+                "component": "Salazopyrine"
+              },
+              {
+                "id": "",
+                "name": "Apremilast (ordonnance)",
+                "subtitle": "Sous-titre facultatif",
+                "appId": 1,
+                "parentId": null,
+                "type": "html",
+                "content": "",
+                "slug": "apremilastordonnance",
+                "submenu": false,
+                "component": "ApremilastOrdonnance"
+              }
+            ]
+          },
+          {
+            "id": "",
+            "name": "bDMARDS",
+            "subtitle": "Sous-titre facultatif",
+            "appId": 1,
+            "parentId": null,
+            "type": "html",
+            "content": "",
+            "slug": "bdmards",
+            "submenu": false,
+            "component": "bDMARDS"
+          },
+          {
+            "id": "",
+            "name": "tsDMARDS",
+            "subtitle": "Sous-titre facultatif",
+            "appId": 1,
+            "parentId": null,
+            "type": "html",
+            "content": "",
+            "slug": "tsdmards",
+            "submenu": false,
+            "component": "tsDMARDS"
+          },
+          {
+            "id": "",
+            "name": "Traitement anti-ostéoporotique",
+            "subtitle": "Sous-titre facultatif",
+            "appId": 1,
+            "parentId": null,
+            "type": "list",
+            "content": "",
+            "slug": "traitement-anti-osteoporotique",
+            "submenu": true,
+            "children": [
+              {
+                "id": "",
+                "name": "Denosumab / Tériparatide",
+                "subtitle": "Sous-titre facultatif",
+                "appId": 1,
+                "parentId": null,
+                "type": "html",
+                "content": "",
+                "slug": "denosumabordonnance",
+                "submenu": false,
+                "component": "DenosumabOrdonnance"
+              },
+              {
+                "id": "",
+                "name": "Injection Teriparatide",
+                "subtitle": "Sous-titre facultatif",
+                "appId": 1,
+                "parentId": null,
+                "type": "html",
+                "content": "",
+                "slug": "teriparatideordonnance",
+                "submenu": false,
+                "component": "TeriparatideOrdonance"
+              },
+              {
+                "id": "",
+                "name": "Ordonnance acide zolédronique",
+                "subtitle": "Sous-titre facultatif",
+                "appId": 1,
+                "parentId": null,
+                "type": "html",
+                "content": "",
+                "slug": "zoledroniqueordonnance",
+                "submenu": false,
+                "component": "ZoledroniqueOrdonance"
+              },
+              {
+                "id": "",
+                "name": "Perfusion acide zolédronique",
+                "subtitle": "Sous-titre facultatif",
+                "appId": 1,
+                "parentId": null,
+                "type": "html",
+                "content": "",
+                "slug": "zoledroniqueperfordonnance",
+                "submenu": false,
+                "component": "ZoledroniquePerfOrdonance"
+              },
+              {
+                "id": "",
+                "name": "Ordonnance bisphosphonates oraux (ex.Risedronate)",
+                "subtitle": "Sous-titre facultatif",
+                "appId": 1,
+                "parentId": null,
+                "type": "html",
+                "content": "",
+                "slug": "residronateordonnance",
+                "submenu": false,
+                "component": "RisedronateOrdo"
+              },
+              {
+                "id": "",
+                "name": "Ordonnance bisphosphonates oraux (ex.Alendronate)",
+                "subtitle": "Sous-titre facultatif",
+                "appId": 1,
+                "parentId": null,
+                "type": "html",
+                "content": "",
+                "slug": "alendronateordonnance",
+                "submenu": false,
+                "component": "AlendronateOrdo"
+              }
+            ]
+          },
+          {
+            "id": "",
+            "name": "Supplémentation vitamine D",
+            "subtitle": "Sous-titre facultatif",
+            "appId": 1,
+            "parentId": null,
+            "type": "html",
+            "content": "",
+            "slug": "vitamined",
+            "submenu": false,
+            "component": "Vitamined"
+          },
+          {
+            "id": "",
+            "name": "Biologie",
+            "subtitle": "Sous-titre facultatif",
+            "appId": 1,
+            "parentId": null,
+            "type": "list",
+            "content": "",
+            "slug": "biologie",
+            "submenu": false,
+            "children": [
+              {
+                "id": "",
+                "name": "pré-Methotrexate",
+                "subtitle": "Sous-titre facultatif",
+                "appId": 1,
+                "parentId": null,
+                "type": "html",
+                "content": "",
+                "slug": "pre-Methotrexate",
+                "submenu": false,
+                "component": "preMethotrexate"
+              },
+              {
+                "id": "",
+                "name": "pré-JAKi",
+                "subtitle": "Sous-titre facultatif",
+                "appId": 1,
+                "parentId": null,
+                "type": "html",
+                "content": "",
+                "slug": "pre-JAKi",
+                "submenu": false,
+                "component": "preJAKi"
+              },
+              {
+                "id": "",
+                "name": "pré-antiTNF",
+                "subtitle": "Sous-titre facultatif",
+                "appId": 1,
+                "parentId": null,
+                "type": "html",
+                "content": "",
+                "slug": "pre-antiTNF",
+                "submenu": false,
+                "component": "preAntiTNF"
+              }
+            ]
+          },
+          {
+            "id": "",
+            "name": "Kinésithérapie",
+            "subtitle": "Sous-titre facultatif",
+            "appId": 1,
+            "parentId": null,
+            "type": "list",
+            "content": "",
+            "slug": "kinesitherapie",
+            "submenu": false,
+            "children": [
+              {
+                "id": "",
+                "name": "Lombalgie chronique",
+                "subtitle": "Sous-titre facultatif",
+                "appId": 1,
+                "parentId": null,
+                "type": "html",
+                "content": "",
+                "slug": "lombalgie-chronique",
+                "submenu": false,
+                "component": "Lombalgie"
+              },
+              {
+                "id": "",
+                "name": "Canal lombaire rétréci",
+                "subtitle": "Sous-titre facultatif",
+                "appId": 1,
+                "parentId": null,
+                "type": "html",
+                "content": "",
+                "slug": "Canal-lombaire-retreci",
+                "submenu": false,
+                "component": "CanalLombaire"
+              },
+              {
+                "id": "",
+                "name": "Cervicalgie",
+                "subtitle": "Sous-titre facultatif",
+                "appId": 1,
+                "parentId": null,
+                "type": "html",
+                "content": "",
+                "slug": "cervicalgie",
+                "submenu": false,
+                "component": "Cervicalgie"
+              },
+              {
+                "id": "",
+                "name": "Tendinopathie coiffe rotateurs",
+                "subtitle": "Sous-titre facultatif",
+                "appId": 1,
+                "parentId": null,
+                "type": "html",
+                "content": "",
+                "slug": "Tendinopathie-coiffe-rotateurs",
+                "submenu": false,
+                "component": "TendinopathieCoiffe"
+              },
+              {
+                "id": "",
+                "name": "Gonarthrose FTI",
+                "subtitle": "Sous-titre facultatif",
+                "appId": 1,
+                "parentId": null,
+                "type": "html",
+                "content": "",
+                "slug": "Gonarthrose-FTI",
+                "submenu": false,
+                "component": "GonarthroseFTI"
+              },
+              {
+                "id": "",
+                "name": "Syndrome FP",
+                "subtitle": "Sous-titre facultatif",
+                "appId": 1,
+                "parentId": null,
+                "type": "html",
+                "content": "",
+                "slug": "syndrome-FP",
+                "submenu": false,
+                "component": "SyndromeFP"
+              },
+              {
+                "id": "",
+                "name": "Tendinopathie MG",
+                "subtitle": "Sous-titre facultatif",
+                "appId": 1,
+                "parentId": null,
+                "type": "html",
+                "content": "",
+                "slug": "tendinopathie-MG",
+                "submenu": false,
+                "component": "TendinopathieMG"
+              },
+              {
+                "id": "",
+                "name": "Tendinopathie d’Achille",
+                "subtitle": "Sous-titre facultatif",
+                "appId": 1,
+                "parentId": null,
+                "type": "html",
+                "content": "",
+                "slug": "tendinopathie-d-achille",
+                "submenu": false,
+                "component": "TendinopathieAchille"
+              },
+              {
+                "id": "",
+                "name": "Algoneurodystrophie (SDRC)",
+                "subtitle": "Sous-titre facultatif",
+                "appId": 1,
+                "parentId": null,
+                "type": "html",
+                "content": "",
+                "slug": "SDRC",
+                "submenu": false,
+                "component": "SDRC"
+              }
+            ]
+          },
+          {
+            "id": "",
+            "name": "Acte infirmier",
+            "subtitle": "Sous-titre facultatif",
+            "appId": 1,
+            "parentId": null,
+            "type": "list",
+            "content": "",
+            "slug": "acte-infirmier",
+            "submenu": false,
+            "children": [
+              {
+                "id": "",
+                "name": "Perfusion acide zolédronique",
+                "subtitle": "Sous-titre facultatif",
+                "appId": 1,
+                "parentId": null,
+                "type": "html",
+                "content": "",
+                "slug": "Perfusion-acide-zoledronique",
+                "submenu": false,
+                "component": "Perfusion"
+              },
+              {
+                "id": "",
+                "name": "Injection Teriparatide",
+                "subtitle": "Sous-titre facultatif",
+                "appId": 1,
+                "parentId": null,
+                "type": "html",
+                "content": "",
+                "slug": "Injection-teriparatide",
+                "submenu": false,
+                "component": "Injection"
+              }
+            ]
+          },
+          {
+            "id": "",
+            "name": "Vaccinations",
+            "subtitle": "Sous-titre facultatif",
+            "appId": 1,
+            "parentId": null,
+            "type": "html",
+            "content": "",
+            "slug": "Vaccinations",
+            "submenu": false,
+            "component": "Vaccinations"
+          },
+          {
               "id": "",
               "name": "Echographie",
               "subtitle": "Sous-titre facultatif",
@@ -2653,8 +2485,6 @@
               "component": "Echographie"
             }
           ]
-        }
-      ]
     },
     {
       "id": "",
@@ -2662,24 +2492,11 @@
       "subtitle": "Sous-titre facultatif",
       "appId": 1,
       "parentId": null,
-      "type": "list",
+      "type": "html",
       "content": "",
-      "slug": "aide-au-codage",
+      "slug": "aide-codage",
       "submenu": false,
-      "children": [
-        {
-          "id": "",
-          "name": "Aide au codage",
-          "subtitle": "Sous-titre facultatif",
-          "appId": 1,
-          "parentId": null,
-          "type": "html",
-          "content": "",
-          "slug": "aide-codage",
-          "submenu": false,
-          "component": "AideCodage"
-        }
-      ]
+      "component": "AideCodage"
     },
     {
       "id": "",
