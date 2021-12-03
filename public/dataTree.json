@@ -581,6 +581,18 @@
         },
         {
           "id": "",
+          "name": "Syndrome de Gougerot Sjogren : ACR/EULAR 2016",
+          "subtitle": "ACR/EULAR 2016",
+          "appId": 1,
+          "parentId": 2,
+          "type": "html",
+          "content": "https://www.fai2r.org/les-pathologies-rares/gougerot-sjogren/criteres-de-classification-du-gougerot-sjogren-acr-eular-2016/",
+          "slug": "gougerot-sjogren",
+          "submenu": false,
+          "component": "AcrEular2016"
+        },
+        {
+          "id": "",
           "name": "IMC",
           "subtitle": "",
           "appId": 1,
