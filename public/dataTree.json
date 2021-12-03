@@ -300,7 +300,7 @@
         },
         {
           "id": "",
-          "name": "Rhumatismes microcristallins (goutte)",
+          "name": "Rhumatismes microcristallins : goutte",
           "subtitle": "",
           "appId": 1,
           "parentId": 2,
@@ -569,8 +569,8 @@
         },
         {
           "id": "",
-          "name": "Syndromes douloureux ( fibromyalgie )",
-          "subtitle": "",
+          "name": "Syndromes douloureux : fibromyalgie",
+          "subtitle": "fibromyalgie",
           "appId": 1,
           "parentId": 2,
           "type": "html",
