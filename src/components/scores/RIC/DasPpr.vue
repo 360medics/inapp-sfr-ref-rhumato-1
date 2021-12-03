@@ -5,41 +5,42 @@
     <span class="line"></span>
 
     <form class="form">
-      <div>
-        <label for="crp_id"> CRP : </label>
-        <input v-model="crp" id="crp_id" type="number" /> ml/l
+      <div class="flex-row">
+        <label for="crp_id"> CRP (m/L): </label>
+        <input v-model="crp" id="crp_id" type="number" placeholder="ml / L" required />
       </div>
-      <div>
+      <div class="flex-row">
         <label for="duration_stiffness_id"
-          >Durée de la raideur matinale :
+          >Durée de la raideur matinale (minutes):
         </label>
         <input
           v-model="duration_stiffness"
           id="duration_stiffness_id"
           type="number"
+          placeholder="min"
+          required
         />
-        minutes
       </div>
-      <div>
-        <label for="patient_judgment_id"
-          >Jugement du patient sur l’activité de sa PPR :
+      <div class="flex-row">
+        <label for="patient_judgment_id">
+          Jugement du patient sur l’activité de sa PPR :
         </label>
-        <select v-model="patient_judgment" id="patient_judgment_id" type="text">
+        <select v-model="patient_judgment" id="patient_judgment_id" type="text" required>
           <option value="0" :key="0">{{ 0 }}</option>
           <option v-for="n in 10" :value="n" :key="n">{{ n }}</option>
         </select>
       </div>
-      <div>
-        <label for="doctor_judgment_id"
-          >Jugement du médecin sur l’activité de la PPR :
+      <div class="flex-row">
+        <label for="doctor_judgment_id">
+          Jugement du médecin sur l’activité de la PPR :
         </label>
-        <select v-model="doctor_judgment" id="doctor_judgment_id" type="text">
+        <select v-model="doctor_judgment" id="doctor_judgment_id" type="text" required>
           <option value="0" :key="0">{{ 0 }}</option>
           <option v-for="t in 10" :value="t" :key="t">{{ t }}</option>
         </select>
       </div>
 
-        Capacité à lever les bras:
+      <p>Capacité à lever les bras:</p>
           <input
             v-model="arms_up"
             type="radio"
@@ -48,8 +49,7 @@
             value="3"
             style="display: none"
           />
-          <label for="radio1" class="btn" :class="{selected: arms_up === '3'}">impossible</label>
-
+          <label for="radio1" class="btn" :class="{selected: arms_up === '3'}">Impossible</label>
 
           <input
             v-model="arms_up"
@@ -58,11 +58,8 @@
             name="arms_up_radio"
             value="2"
             style="display: none"
-
           />
-      <label for="radio2" class="btn" :class="{selected: arms_up === '2'}">en dessous ceinture scapulaire (&lsaquo; 90°)</label>
-
-
+      <label for="radio2" class="btn" :class="{selected: arms_up === '2'}">En dessous ceinture scapulaire ( &#x3C; 90° )</label>
 
       <input
             type="radio"
@@ -71,11 +68,8 @@
             name="arms_up_radio"
             value="1"
             style="display: none"
-
       />
-      <label for="radio3" class="btn" :class="{selected: arms_up === '1'}">au niveau de la ceinture scapulaire (90°)</label>
-
-
+      <label for="radio3" class="btn" :class="{selected: arms_up === '1'}">Au niveau de la ceinture scapulaire ( 90° )</label>
 
       <input
             v-model="arms_up"
@@ -84,52 +78,64 @@
             name="arms_up_radio"
             value="0"
             style="display: none"
-
       />
-      <label for="radio4" class="btn" :class="{selected: arms_up === '0'}">bien au dessus des épaules (&rsaquo; 90°) </label>
+      <label for="radio4" class="btn" :class="{selected: arms_up === '0'}">Bien au dessus des épaules ( &#62; 90° ) </label>
 
-
-      <div class="btn" @click="getResult()">Valider</div>
+      <div class="btn btn__submit" @click="getResult()">Valider</div>
     </form>
-    <div class="result">
-      <p>{{ this.result }}</p>
+
+      <div v-if="score" class="result">
+      <p>SCORE: {{this.score}}.<br>INTERPRETATION : {{ this.result }}</p>
     </div>
+    <div v-if="error" class="result">
+      <p>{{ this.error }}</p>
+    </div>
+    <ReferencesMedical
+      message1="Formules:
+          CRP (mg/ dl) + échelle visuelle analogique (EVA) patient (0-10) + EVA médecin (0-10) + (dérouillage matinal [mn] × 0,1) + élévation des bras (de 0, normale, à 3, nulle)"
+      message2="- Leeb BF, Bird HA. A disease activity score for polymyalgia rheumatica. Ann Rheum Dis 2004;63:1279-83.<br><br>
+- Binard A, Lefebvre B, De Bandt M, Berthelot JM, Saraux A; Club “Rhumatismes et Infl ammation”. Validity of the polymyalgia rheumatica activity score in primary care practice. Ann Rheum Dis 2009;68:541-5"
+    />
+      <Footer/>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import ReferencesMedical from "@/components/ReferencesMedical.vue";
+import Footer from "@/components/Footer.vue";
 
 export default Vue.extend({
-  mounted() {},
-  data() {
+    components: {Footer, ReferencesMedical},
+    data() {
     return {
-      crp: 0,
-      duration_stiffness: 0,
-      patient_judgment: 0,
-      doctor_judgment: 0,
-      arms_up: 0,
-      score: 0,
-      result: "",
+      crp: null,
+      duration_stiffness: null,
+      patient_judgment: null,
+      doctor_judgment: null,
+      arms_up: null,
+      score: null,
+      result: null,
+      error: null
     };
   },
   methods: {
     getResult() {
-      // a revoir la condtion
-
-      if (this.patient_judgment)
-        this.score = this.score + this.patient_judgment;
-      if (this.doctor_judgment)
+      if (this.crp && this.duration_stiffness && this.doctor_judgment && this.patient_judgment && this.arms_up) {
+        this.error = null
         this.score =
-          this.crp / 10 +
-          this.duration_stiffness / 10 +
+          parseInt(this.crp) / 10 +
+          parseInt(this.duration_stiffness) / 10 +
           this.patient_judgment +
           this.doctor_judgment +
-          this.arms_up;
-      if (this.score >= 7 && this.scrore <= 17) this.result = "Activité modéré";
-      else if (this.score > 17) this.result = "Activité forte";
-      else this.result = "Activité faible";
-      return this.result;
+          parseInt(this.arms_up);
+        if (this.score >= 7 && this.scrore <= 17) this.result = "Activité modéré";
+        else if (this.score > 17) this.result = "Activité forte";
+        else this.result = "Activité faible";
+        return this.result;
+      } else {
+        this.error = "Remplissez tous les champs pour valider le calcul"
+      }
     },
   },
 });
@@ -139,7 +145,6 @@ export default Vue.extend({
 
 <style scoped lang="scss">
 @import "src/sass/global.scss";
-@import "src/sass/global";
 
 .DasPpr {
   [type="number"] {
@@ -151,5 +156,38 @@ export default Vue.extend({
       margin: 10px 0;
     }
   }
+}
+
+input, select {
+  height: 30px;
+  padding: 0 3px;
+  background: #EDECF4 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  opacity: 1;
+  margin: 0 10px;
+  border: none;
+}
+
+::placeholder {
+  color: grey;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex-row label {
+  width: 60%;
+}
+
+label, p {
+  font-size: 14px;
 }
 </style>

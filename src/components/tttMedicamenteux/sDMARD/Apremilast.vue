@@ -1,6 +1,6 @@
 <template lang="html">
   <section class="Apremilast">
-    <h2 class="title">METHOTREXATE</h2>
+    <h2 class="title">APREMILAST</h2>
 <span class="line"></span>
 
     <p><span class="bold">DCI :</span> APREMILAST</p>
@@ -66,13 +66,8 @@
 <script lang="js">
     export default {
         name: 'Apremilast',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

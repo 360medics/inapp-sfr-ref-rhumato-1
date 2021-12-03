@@ -1,0 +1,2757 @@
+[
+  {
+    "id": "",
+    "name": "Abatacept",
+    "subtitle": "",
+    "appId": 0,
+    "parentId": 0,
+    "type": "list",
+    "content": "",
+    "slug": "abatacept",
+    "submenu": true,
+    "children": [
+      {
+        "id": "",
+        "name": "Polyarthrite Rhumatoïde",
+        "subtitle": "",
+        "appId": 0,
+        "parentId": 0,
+        "type": "list",
+        "content": "",
+        "slug": "polyarthrite-rhumatoide",
+        "submenu": true,
+        "children": [
+          {
+            "id": "",
+            "name": "Initiation de l’abatacept et suivi",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdflist",
+            "content": "",
+            "slug": "initiation-de-labatacept-et-suivi",
+            "submenu": true,
+            "children": [
+              {
+                "id": "",
+                "name": "Bilan pré-thérapeutique initial",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Abatacept/Polyarthrite-Rhumatoide/Initiation-de-l-abatacept-et-suivi/ABA_01_Bilan_pre-therapeutique.pdf",
+                "slug": "aba_01_bilan_pre-therapeutique_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Suivi thérapeutique",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Abatacept/Polyarthrite-Rhumatoide/Initiation-de-l-abatacept-et-suivi/ABA_02_Suivi.pdf",
+                "slug": "aba_02_suivi_pdf",
+                "submenu": false
+              }
+            ]
+          },
+          {
+            "id": "",
+            "name": "L'abatacept en injection sous-cutanée",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Abatacept/Polyarthrite-Rhumatoide/Labatacept-en-injection-sous-cutanee/ABA_17_Inj_Sous_Cut.pdf",
+            "slug": "aba_17_inj_sous_cut_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "Pathologies : que faire en cas d'antécédents ou d'apparition de... ?",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdflist",
+            "content": "",
+            "slug": "pathologies-que-faire-en-cas-dantecedents-ou-dapparition-de_-",
+            "submenu": true,
+            "children": [
+              {
+                "id": "",
+                "name": "Affections auto-immunes",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Abatacept/Polyarthrite-Rhumatoide/Pathologies-que-faire-en-cas-dantecedents-ou-dapparition-de/ABA_03_Affections_auto-immunes.pdf",
+                "slug": "aba_03_affections_auto-immunes_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Affections cardiovasculaires",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Abatacept/Polyarthrite-Rhumatoide/Pathologies-que-faire-en-cas-dantecedents-ou-dapparition-de/ABA_04_Affections_cardiovasculaires.pdf",
+                "slug": "aba_04_affections_cardiovasculaires_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Affections hématologiques et lymphomes",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Abatacept/Polyarthrite-Rhumatoide/Pathologies-que-faire-en-cas-dantecedents-ou-dapparition-de/ABA_05_Affections_hematologiques.pdf",
+                "slug": "aba_05_affections_hematologiques_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Anomalies hépatiques",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Abatacept/Polyarthrite-Rhumatoide/Pathologies-que-faire-en-cas-dantecedents-ou-dapparition-de/ABA_06_Anomalies_hepatiques.pdf",
+                "slug": "aba_06_anomalies_hepatiques_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Infections bactériennes et virales",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Abatacept/Polyarthrite-Rhumatoide/Pathologies-que-faire-en-cas-dantecedents-ou-dapparition-de/ABA_07_Infections_bact_vir.pdf",
+                "slug": "aba_07_infections_bact_vir_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Néoplasies solides",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Abatacept/Polyarthrite-Rhumatoide/Pathologies-que-faire-en-cas-dantecedents-ou-dapparition-de/ABA_08_Neoplasies_solides.pdf",
+                "slug": "aba_08_neoplasies_solides_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Réaction à la perfusion IV ou à l'injection SC : intolérance immédiate et retardée",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Abatacept/Polyarthrite-Rhumatoide/Pathologies-que-faire-en-cas-dantecedents-ou-dapparition-de/ABA_09_Reactions_perfusion.pdf",
+                "slug": "aba_09_reactions_perfusion_pdf",
+                "submenu": false
+              }
+            ]
+          },
+          {
+            "id": "",
+            "name": "Situations cliniques : conduite à tenir en cas de... ",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdflist",
+            "content": "",
+            "slug": "situations-cliniques-conduite-a-tenir-en-cas-de_",
+            "submenu": true,
+            "children": [
+              {
+                "id": "",
+                "name": "Situations particulières",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Abatacept/Polyarthrite-Rhumatoide/Situations-cliniques-conduite-a-tenir-en-cas-de/ABA_10_Situations_particulieres.pdf",
+                "slug": "aba_10_situations_particulieres_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Associations médicamenteuses",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Abatacept/Polyarthrite-Rhumatoide/Situations-cliniques-conduite-a-tenir-en-cas-de/ABA_11_Associations_medicamenteuses.pdf",
+                "slug": "aba_11_associations_medicamenteuses_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Chirurgie, soins dentaires, brûlures et traumatismes",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Abatacept/Polyarthrite-Rhumatoide/Situations-cliniques-conduite-a-tenir-en-cas-de/ABA_12_Chirurgie.pdf",
+                "slug": "aba_12_chirurgie_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Grossesse",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Abatacept/Polyarthrite-Rhumatoide/Situations-cliniques-conduite-a-tenir-en-cas-de/ABA_13_Grossesse.pdf",
+                "slug": "aba_13_grossesse_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Sujet âgé de plus de 75 ans",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Abatacept/Polyarthrite-Rhumatoide/Situations-cliniques-conduite-a-tenir-en-cas-de/ABA_14_Sujet_age.pdf",
+                "slug": "aba_14_sujet_age_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Vaccination",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Abatacept/Polyarthrite-Rhumatoide/Situations-cliniques-conduite-a-tenir-en-cas-de/ABA_15_Vaccination.pdf",
+                "slug": "aba_15_vaccination_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Voyage",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Abatacept/Polyarthrite-Rhumatoide/Situations-cliniques-conduite-a-tenir-en-cas-de/ABA_16_Voyage.pdf",
+                "slug": "aba_16_voyage_pdf",
+                "submenu": false
+              }
+            ]
+          },
+          {
+            "id": "",
+            "name": "Utilisation de l’abatacept dans la PR",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdflist",
+            "content": "",
+            "slug": "utilisation-de-labatacept-dans-la-pr",
+            "submenu": true,
+            "children": [
+              {
+                "id": "",
+                "name": "Information pour le patient",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Abatacept/Polyarthrite-Rhumatoide/Utilisation-de-l-abatacept-dans-la-PR/ABA_18_Info_patient.pdf",
+                "slug": "aba_18_info_patient_pdf",
+                "submenu": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "",
+    "name": "Anti-IL1",
+    "subtitle": "",
+    "appId": 0,
+    "parentId": 0,
+    "type": "list",
+    "content": "",
+    "slug": "anti-il1",
+    "submenu": true,
+    "children": [
+      {
+        "id": "",
+        "name": "Polyarthrite Rhumatoïde",
+        "subtitle": "",
+        "appId": 0,
+        "parentId": 0,
+        "type": "list",
+        "content": "",
+        "slug": "polyarthrite-rhumatoide",
+        "submenu": true,
+        "children": [
+          {
+            "id": "",
+            "name": "Bilan pré-thérapeutique et suivi d’un patient (adulte ou enfant) sous Anti-IL1",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-IL1/Polyarthrite-Rhumatoide/Bilan-pre-therapeutique-et-suivi-d-un-patient-(adulte-ou-enfant)-sous-Anti-IL1/F1_BILAN-SUIVI_ANTI-IL1.pdf",
+            "slug": "f1_bilan-suivi_anti-il1_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "Pathologies : que faire en cas d’antécédents ou d’apparition de... ?",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdflist",
+            "content": "",
+            "slug": "pathologies-que-faire-en-cas-dantecedents-ou-dapparition-de_-",
+            "submenu": true,
+            "children": [
+              {
+                "id": "",
+                "name": "Infections bactériennes ou virales",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-IL1/Polyarthrite-Rhumatoide/Pathologies-que-faire-en-cas-d-antecedents-ou-d-apparition-de/F2_INFECTIONS-BACTERIENNES-OU-VIRALES_ANTI-IL1_VDEF.pdf",
+                "slug": "f2_infections-bacteriennes-ou-virales_anti-il1_vdef_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Néoplasie solide et hématologique",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-IL1/Polyarthrite-Rhumatoide/Pathologies-que-faire-en-cas-d-antecedents-ou-d-apparition-de/F3_NEOPLASIE-SOLIDE-ET-HEMATOLOGIQUE_ANTI-IL1.pdf",
+                "slug": "f3_neoplasie-solide-et-hematologique_anti-il1_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Affections cardiovasculaires",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-IL1/Polyarthrite-Rhumatoide/Pathologies-que-faire-en-cas-d-antecedents-ou-d-apparition-de/F4_AFFECTIONS-CARDIOVASCULAIRE_ANTI-IL1.pdf",
+                "slug": "f4_affections-cardiovasculaire_anti-il1_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Intolérance cutanée ou systémique",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-IL1/Polyarthrite-Rhumatoide/Pathologies-que-faire-en-cas-d-antecedents-ou-d-apparition-de/F5_REACTIONS-CUTANEES_ANTI-IL1.pdf",
+                "slug": "f5_reactions-cutanees_anti-il1_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Maladies démyélinisantes",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-IL1/Polyarthrite-Rhumatoide/Pathologies-que-faire-en-cas-d-antecedents-ou-d-apparition-de/F6_DEMYELINISANTES_ANTI-IL1.pdf",
+                "slug": "f6_demyelinisantes_anti-il1_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Insuffisance hépatique",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-IL1/Polyarthrite-Rhumatoide/Pathologies-que-faire-en-cas-d-antecedents-ou-d-apparition-de/F7_INSUFFISANCE-HEPATIQUE_ANTI-IL1.pdf",
+                "slug": "f7_insuffisance-hepatique_anti-il1_pdf",
+                "submenu": false
+              }
+            ]
+          },
+          {
+            "id": "",
+            "name": "Situations cliniques : conduite à tenir en cas de...",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdflist",
+            "content": "",
+            "slug": "situations-cliniques-conduite-a-tenir-en-cas-de_",
+            "submenu": true,
+            "children": [
+              {
+                "id": "",
+                "name": "Chirurgie, soins dentaires, brûlure et traumatismes",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-IL1/Polyarthrite-Rhumatoide/Situations-cliniques-conduite-a-tenir-en-cas-de/F10_CHIRURGIE_ANTI-IL1.pdf",
+                "slug": "f10_chirurgie_anti-il1_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Grossesse",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-IL1/Polyarthrite-Rhumatoide/Situations-cliniques-conduite-a-tenir-en-cas-de/F11_GROSSESSE_ANTI-IL1.pdf",
+                "slug": "f11_grossesse_anti-il1_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Utilisation des anti-IL1 chez les enfants de moins de 4 ans",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-IL1/Polyarthrite-Rhumatoide/Situations-cliniques-conduite-a-tenir-en-cas-de/F12_ENFANT_4ANS_ANTI-IL1.pdf",
+                "slug": "f12_enfant_4ans_anti-il1_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Vaccination",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-IL1/Polyarthrite-Rhumatoide/Situations-cliniques-conduite-a-tenir-en-cas-de/F13_VACCINATION_ANTI-IL1_VDEF.pdf",
+                "slug": "f13_vaccination_anti-il1_vdef_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Voyage",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-IL1/Polyarthrite-Rhumatoide/Situations-cliniques-conduite-a-tenir-en-cas-de/F14_VOYAGE_ANTI-IL1.pdf",
+                "slug": "f14_voyage_anti-il1_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Situations particulières : insuffisance rénale sévère, dialyse",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-IL1/Polyarthrite-Rhumatoide/Situations-cliniques-conduite-a-tenir-en-cas-de/F8_SITUATIONS-PARTICULIERES_ANTI-IL1.pdf",
+                "slug": "f8_situations-particulieres_anti-il1_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Associations médicamenteuses",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-IL1/Polyarthrite-Rhumatoide/Situations-cliniques-conduite-a-tenir-en-cas-de/F9_ASSOCIATIONS-MEDICAMENTEUSE_ANTI-IL1.pdf",
+                "slug": "f9_associations-medicamenteuse_anti-il1_pdf",
+                "submenu": false
+              }
+            ]
+          },
+          {
+            "id": "",
+            "name": "Utilisation des Anti-IL1 dans la PR : Information pour...",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdflist",
+            "content": "",
+            "slug": "utilisation-des-anti-il1-dans-la-pr-information-pour_",
+            "submenu": true,
+            "children": [
+              {
+                "id": "",
+                "name": "le patient/parent",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-IL1/Polyarthrite-Rhumatoide/Utilisation-des-Anti-IL1-dans-la-PR-Information-pour/F15A_ANTI-IL1.pdf",
+                "slug": "f15a_anti-il1_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "l'adolescent",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-IL1/Polyarthrite-Rhumatoide/Utilisation-des-Anti-IL1-dans-la-PR-Information-pour/F15B_ANTI-IL1.pdf",
+                "slug": "f15b_anti-il1_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "l'enfant de moins de 12 ans",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-IL1/Polyarthrite-Rhumatoide/Utilisation-des-Anti-IL1-dans-la-PR-Information-pour/F15C_ANTI-IL1.pdf",
+                "slug": "f15c_anti-il1_pdf",
+                "submenu": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "",
+    "name": "Anti-IL17",
+    "subtitle": "",
+    "appId": 0,
+    "parentId": 0,
+    "type": "list",
+    "content": "",
+    "slug": "anti-il17",
+    "submenu": true,
+    "children": [
+      {
+        "id": "",
+        "name": "Que faire avant d’initier un anti-IL17 ?",
+        "subtitle": "",
+        "appId": 0,
+        "parentId": 0,
+        "type": "pdf",
+        "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-IL17/Que-faire-avant-d-initier-un-anti-IL17/Anti_IL17_Bilan.pdf",
+        "slug": "anti_il17_bilan_pdf",
+        "submenu": false
+      },
+      {
+        "id": "",
+        "name": "Comment suivre et optimiser le traitement d’un patient sous anti-IL17 ?",
+        "subtitle": "",
+        "appId": 0,
+        "parentId": 0,
+        "type": "pdf",
+        "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-IL17/Comment-suivre-et-optimiser-le-traitement-d-un-patient-sous-anti-IL17/Anti_IL17_Suivi_Optimisation.pdf",
+        "slug": "anti_il17_suivi_optimisation-_pdf",
+        "submenu": false
+      },
+      {
+        "id": "",
+        "name": "Que faire en cas d’antécédent ou d’apparition :",
+        "subtitle": "",
+        "appId": 0,
+        "parentId": 0,
+        "type": "pdflist",
+        "content": "",
+        "slug": "que-faire-en-cas-dantecedent-ou-dapparition-",
+        "submenu": true,
+        "children": [
+          {
+            "id": "",
+            "name": "d’affections auto-immunes ?",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-IL17/Que-faire-en-cas-d-antecedent-ou-d-apparition-/Anti_IL17_Affections_Auto_Immu.pdf",
+            "slug": "anti_il17_affections_auto_immu_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "d’affections cardiovasculaires ?",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-IL17/Que-faire-en-cas-d-antecedent-ou-d-apparition-/Anti_IL17_Cardio.pdf",
+            "slug": "anti_il17_cardio_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "d’affections hématologiques et lymphomes ?",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-IL17/Que-faire-en-cas-d-antecedent-ou-d-apparition-/Anti_IL17_Hemato.pdf",
+            "slug": "anti_il17_hemato_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "d’anomalies hépatiques ?",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-IL17/Que-faire-en-cas-d-antecedent-ou-d-apparition-/Anti_IL17_Hepato.pdf",
+            "slug": "anti_il17_hepato_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "de néoplasies solides ?",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-IL17/Que-faire-en-cas-d-antecedent-ou-d-apparition-/Anti_IL17_Neoplasies.pdf",
+            "slug": "anti_il17_neoplasies_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "de réactions à l’injection ?",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-IL17/Que-faire-en-cas-d-antecedent-ou-d-apparition-/Anti_IL17_Reaction_Cutanee.pdf",
+            "slug": "anti_il17_reaction_cutanee_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "de maladie inflammatoire chronique de l’intestin ?\n",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-IL17/Que-faire-en-cas-d-antecedent-ou-d-apparition-/Anti_IL17_mici.pdf",
+            "slug": "anti_il17_mici_pdf",
+            "submenu": false
+          }
+        ]
+      },
+      {
+        "id": "",
+        "name": "Conduite à tenir en cas... :",
+        "subtitle": "",
+        "appId": 0,
+        "parentId": 0,
+        "type": "pdflist",
+        "content": "",
+        "slug": "conduite-a-tenir-en-cas-",
+        "submenu": true,
+        "children": [
+          {
+            "id": "",
+            "name": "d’associations médicamenteuses",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-IL17/Conduite-a-tenir-en-cas-/Anti_IL17_Asso_Med.pdf",
+            "slug": "anti_il17_asso_med_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "de chirurgie, de soins dentaires ou de brûlure",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-IL17/Conduite-a-tenir-en-cas-/Anti_IL17_Chirurgie.pdf",
+            "slug": "anti_il17_chirurgie_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "de grossesse",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-IL17/Conduite-a-tenir-en-cas-/Anti_IL17_Grossesse.pdf",
+            "slug": "anti_il17_grossesse_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "de tuberculose, d’infection opportuniste ou fongique",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-IL17/Conduite-a-tenir-en-cas-/Anti_IL17_Infection_BK.pdf",
+            "slug": "anti_il17_infection_bk_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "d’infection virale ou bactérienne",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-IL17/Conduite-a-tenir-en-cas-/Anti_IL17_Infections_ViroBacterio.pdf",
+            "slug": "anti_il17_infections_virobacterio_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "de tatouage ou de piercing",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-IL17/Conduite-a-tenir-en-cas-/Anti_IL17_Tatouage-Piercing.pdf",
+            "slug": "anti_il17_tatouage-piercing_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "de vaccination",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-IL17/Conduite-a-tenir-en-cas-/Anti_IL17_Vaccination.pdf",
+            "slug": "anti_il17_vaccination_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "de voyage",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-IL17/Conduite-a-tenir-en-cas-/Anti_IL17_Voyage.pdf",
+            "slug": "anti_il17_voyage_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "de situations particulières (dialyse, hémoglobinopathie, splénectomie)",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-IL17/Conduite-a-tenir-en-cas-/Anti_IL17_situations_part.pdf",
+            "slug": "anti_il17_situations_part_pdf",
+            "submenu": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "",
+    "name": "Anti-IL6R",
+    "subtitle": "",
+    "appId": 0,
+    "parentId": 0,
+    "type": "list",
+    "content": "",
+    "slug": "anti-il6r",
+    "submenu": true,
+    "children": [
+      {
+        "id": "",
+        "name": "Que faire avant d’initier un anti-IL16R ?",
+        "subtitle": "",
+        "appId": 0,
+        "parentId": 0,
+        "type": "pdf",
+        "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Anti-IL6R/Que-faire-avant-d-initier-un-anti-IL16R/Anti_IL6R_Bilan.pdf",
+        "slug": "anti_il6r_bilan_pdf",
+        "submenu": false
+      },
+      {
+        "id": "",
+        "name": "Comment suivre et optimiser le traitement d’un patient sous anti-IL6R ?",
+        "subtitle": "",
+        "appId": 0,
+        "parentId": 0,
+        "type": "pdf",
+        "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Anti-IL6R/Comment-suivre-et-optimiser-le-traitement-d-un-patient-sous-anti-IL6R/Anti_IL6_Suivi_Optimisation.pdf",
+        "slug": "anti_il6_suivi_optimisation_pdf",
+        "submenu": false
+      },
+      {
+        "id": "",
+        "name": "Que faire en cas d’antécédent ou d’apparition :",
+        "subtitle": "",
+        "appId": 0,
+        "parentId": 0,
+        "type": "pdflist",
+        "content": "",
+        "slug": "que-faire-en-cas-dantecedent-ou-dapparition-",
+        "submenu": true,
+        "children": [
+          {
+            "id": "",
+            "name": "d’affections auto-immunes ?",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Anti-IL6R/Que-faire-en-cas-d-antecedent-ou-d-apparition-/Anti_IL6R_Affections_Auto_Immu.pdf",
+            "slug": "anti_il6r_affections_auto_immu_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "d’affections cardiovasculaires ?",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Anti-IL6R/Que-faire-en-cas-d-antecedent-ou-d-apparition-/Anti_IL6R_Cardio.pdf",
+            "slug": "anti_il6r_cardio_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "d’affections hématologiques et lymphomes ?",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Anti-IL6R/Que-faire-en-cas-d-antecedent-ou-d-apparition-/Anti_IL6R_Hemato.pdf",
+            "slug": "anti_il6r_hemato_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "de néoplasies solides ?",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Anti-IL6R/Que-faire-en-cas-d-antecedent-ou-d-apparition-/Anti_IL6R_Neoplasies.pdf",
+            "slug": "anti_il6r_neoplasies_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "de pathologies iléo-coliques ?",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Anti-IL6R/Que-faire-en-cas-d-antecedent-ou-d-apparition-/Anti_IL6R_Patho_Ileo.pdf",
+            "slug": "anti_il6r_patho_ileo_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "de réactions cutanées ou d’intolérance systémique ?",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Anti-IL6R/Que-faire-en-cas-d-antecedent-ou-d-apparition-/Anti_IL6R_Reaction_Cutanee.pdf",
+            "slug": "anti_il6r_reaction_cutanee_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "d’anomalies hépatiques ?",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Anti-IL6R/Que-faire-en-cas-d-antecedent-ou-d-apparition-/Anti_IL6_Hepato_08062021.pdf",
+            "slug": "anti_il6_hepato_08062021_pdf",
+            "submenu": false
+          }
+        ]
+      },
+      {
+        "id": "",
+        "name": "Conduite à tenir en cas :",
+        "subtitle": "",
+        "appId": 0,
+        "parentId": 0,
+        "type": "pdflist",
+        "content": "",
+        "slug": "conduite-a-tenir-en-cas-",
+        "submenu": true,
+        "children": [
+          {
+            "id": "",
+            "name": "d’associations médicamenteuses",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Anti-IL6R/Conduite-a-tenir-en-cas-/Anti_IL6R_Asso_Med.pdf",
+            "slug": "anti_il6r_asso_med_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "de chirurgie, de soins dentaires ou de brûlure",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Anti-IL6R/Conduite-a-tenir-en-cas-/Anti_IL6R_Chirurgie.pdf",
+            "slug": "anti_il6r_chirurgie_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "de grossesse",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Anti-IL6R/Conduite-a-tenir-en-cas-/Anti_IL6R_Grossesse.pdf",
+            "slug": "anti_il6r_grossesse_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "de tuberculose, d’infection opportuniste ou fongique",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Anti-IL6R/Conduite-a-tenir-en-cas-/Anti_IL6R_Infection_BK.pdf",
+            "slug": "anti_il6r_infection_bk_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "d’infection virale ou bactérienne",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Anti-IL6R/Conduite-a-tenir-en-cas-/Anti_IL6R_Infections_ViroBacterio.pdf",
+            "slug": "anti_il6r_infections_virobacterio_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "de pathologie pulmonaire de type broncho-pneumopathie chronique obstructive (BPCO), dilatation des bronches (DDB) ou pneumopathie interstitielle diffuse (PID)",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Anti-IL6R/Conduite-a-tenir-en-cas-/Anti_IL6R_Pathologie_pulmonaire.pdf",
+            "slug": "anti_il6r_pathologie_pulmonaire_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "de tatouage ou de piercing",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Anti-IL6R/Conduite-a-tenir-en-cas-/Anti_IL6R_Tatouage_Piercing.pdf",
+            "slug": "anti_il6r_tatouage_piercing_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "de vaccination",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Anti-IL6R/Conduite-a-tenir-en-cas-/Anti_IL6R_Vaccination_V2.pdf",
+            "slug": "anti_il6r_vaccination_v2_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "de voyage",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Anti-IL6R/Conduite-a-tenir-en-cas-/Anti_IL6R_Voyage.pdf",
+            "slug": "anti_il6r_voyage_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "de situations particulières (dialyse, hémoglobinopathie, splénectomie)",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Anti-IL6R/Conduite-a-tenir-en-cas-/Anti_IL6R_situations_part.pdf",
+            "slug": "anti_il6r_situations_part_pdf",
+            "submenu": false
+          }
+        ]
+      },
+      {
+        "id": "",
+        "name": "Comment utiliser les anti-IL6R :",
+        "subtitle": "",
+        "appId": 0,
+        "parentId": 0,
+        "type": "pdflist",
+        "content": "",
+        "slug": "comment-utiliser-les-anti-il6r-",
+        "submenu": true,
+        "children": [
+          {
+            "id": "",
+            "name": "dans l’arthrite juvénile idiopathique ?",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Anti-IL6R/Comment-utiliser-les-anti-IL6R-/Anti_IL6R_AJI.pdf",
+            "slug": "anti_il6r_aji_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "dans l’artérite à cellules géantes/maladie de Horton et dans la pseudopolyarthrite rhizomélique ?",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Anti-IL6R/Comment-utiliser-les-anti-IL6R-/Anti_IL6R_Horton.pdf",
+            "slug": "anti_il6r_horton_pdf",
+            "submenu": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "",
+    "name": "Anti-TNF",
+    "subtitle": "",
+    "appId": 0,
+    "parentId": 0,
+    "type": "list",
+    "content": "",
+    "slug": "anti-tnf",
+    "submenu": true,
+    "children": [
+      {
+        "id": "",
+        "name": "Que faire avant d’initier un anti-TNF ?",
+        "subtitle": "",
+        "appId": 0,
+        "parentId": 0,
+        "type": "pdf",
+        "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-TNF/Que-faire-avant-d-initier-un-anti-TNF/Anti_TNF_Bilan_04042021.pdf",
+        "slug": "anti_tnf_bilan_04042021_pdf",
+        "submenu": false
+      },
+      {
+        "id": "",
+        "name": "Comment suivre et optimiser le traitement d’un patient sous anti-TNF ?",
+        "subtitle": "",
+        "appId": 0,
+        "parentId": 0,
+        "type": "pdf",
+        "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-TNF/Comment-suivre-et-optimiser-le-traitement-d-un-patient-sous-anti-TNF/Anti_TNF_Suivi_Optimisation.pdf",
+        "slug": "anti_tnf_suivi_optimisation_pdf",
+        "submenu": false
+      },
+      {
+        "id": "",
+        "name": "Que faire en cas d’antécédent ou d’apparition :",
+        "subtitle": "",
+        "appId": 0,
+        "parentId": 0,
+        "type": "pdflist",
+        "content": "",
+        "slug": "que-faire-en-cas-dantecedent-ou-dapparition-",
+        "submenu": true,
+        "children": [
+          {
+            "id": "",
+            "name": "d’affections auto-immunes ?",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-TNF/Que-faire-en-cas-d-antecedent-ou-d-apparition-/Anti_TNF_Affections_Auto_Immu.pdf",
+            "slug": "anti_tnf_affections_auto_immu_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "d’affections cardiovasculaires ?",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-TNF/Que-faire-en-cas-d-antecedent-ou-d-apparition-/Anti_TNF_Cardio.pdf",
+            "slug": "anti_tnf_cardio_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "d’affections hématologiques et lymphomes ?",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-TNF/Que-faire-en-cas-d-antecedent-ou-d-apparition-/Anti_TNF_Hemato.pdf",
+            "slug": "anti_tnf_hemato_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "d’anomalies hépatiques ?",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-TNF/Que-faire-en-cas-d-antecedent-ou-d-apparition-/Anti_TNF_Hepato.pdf",
+            "slug": "anti_tnf_hepato_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "de néoplasies solides ?",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-TNF/Que-faire-en-cas-d-antecedent-ou-d-apparition-/Anti_TNF_Neoplasies.pdf",
+            "slug": "anti_tnf_neoplasies_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "de réactions cutanées ou d’intolérance systémique ?",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-TNF/Que-faire-en-cas-d-antecedent-ou-d-apparition-/Anti_TNF_Reaction_Cutanee.pdf",
+            "slug": "anti_tnf_reaction_cutanee_pdf",
+            "submenu": false
+          }
+        ]
+      },
+      {
+        "id": "",
+        "name": "Conduite à tenir en cas :",
+        "subtitle": "",
+        "appId": 0,
+        "parentId": 0,
+        "type": "pdflist",
+        "content": "",
+        "slug": "conduite-a-tenir-en-cas-",
+        "submenu": true,
+        "children": [
+          {
+            "id": "",
+            "name": "d’associations médicamenteuses",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-TNF/Conduite-a-tenir-en-cas-/Anti_TNF_Asso_Med.pdf",
+            "slug": "anti_tnf_asso_med_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "de chirurgie, de soins dentaires ou de brûlure\n",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-TNF/Conduite-a-tenir-en-cas-/Anti_TNF_Chirurgie.pdf",
+            "slug": "anti_tnf_chirurgie_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "de grossesse",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-TNF/Conduite-a-tenir-en-cas-/Anti_TNF_Grossesse.pdf",
+            "slug": "anti_tnf_grossesse_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "de tuberculose, d’infection opportuniste ou fongique",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-TNF/Conduite-a-tenir-en-cas-/Anti_TNF_Infection_BK.pdf",
+            "slug": "anti_tnf_infection_bk_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "d’infection virale ou bactérienne",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-TNF/Conduite-a-tenir-en-cas-/Anti_TNF_Infections_ViroBacterio.pdf",
+            "slug": "anti_tnf_infections_virobacterio_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "de pathologie pulmonaire de type broncho-pneumopathie chronique obstructive (BPCO), dilatation des bronches (DDB) ou pneumopathie interstitielle diffuse (PID)",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-TNF/Conduite-a-tenir-en-cas-/Anti_TNF_Pathologie_pulmonaire.pdf",
+            "slug": "anti_tnf_pathologie_pulmonaire_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "de tatouage ou de piercing",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-TNF/Conduite-a-tenir-en-cas-/Anti_TNF_Tatouage_Piercing.pdf",
+            "slug": "anti_tnf_tatouage_piercing_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "de vaccination",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-TNF/Conduite-a-tenir-en-cas-/Anti_TNF_Vaccination.pdf",
+            "slug": "anti_tnf_vaccination_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "de voyage",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-TNF/Conduite-a-tenir-en-cas-/Anti_TNF_Voyage.pdf",
+            "slug": "anti_tnf_voyage_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "de situations particulières (dialyse, hémoglobinopathie, splénectomie)\n",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-TNF/Conduite-a-tenir-en-cas-/Anti_TNF_situations_part_04042021.pdf",
+            "slug": "anti_tnf_situations_part_04042021_pdf",
+            "submenu": false
+          }
+        ]
+      },
+      {
+      "id": "",
+      "name": "Comment utiliser les anti-TNF dans l’arthrite juvénile idiopathique ?",
+      "subtitle": "",
+      "appId": 0,
+      "parentId": 0,
+      "type": "pdf",
+      "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-TNF/Comment-utiliser-les-anti-TNF-dans-l-arthrite-juvenile-idiopathique/Anti_TNF_AJI.pdf",
+      "slug": "anti_tnf_aji_pdf",
+      "submenu": false
+      },
+      {
+        "id": "",
+        "name": "Les anti-TNF biosimilaires dans les rhumatismes inflammatoires",
+        "subtitle": "",
+        "appId": 0,
+        "parentId": 0,
+        "type": "pdf",
+        "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/anti-TNF/Les-anti-TNF-biosimilaires-dans-les-rhumatismes-inflammatoires/Anti_TNF_Biosimilaire.pdf",
+        "slug": "anti_tnf_biosimilaire_pdf",
+        "submenu": false
+      }
+    ]
+  },
+  {
+    "id": "",
+    "name": "Belimumab",
+    "subtitle": "",
+    "appId": 0,
+    "parentId": 0,
+    "type": "list",
+    "content": "",
+    "slug": "belimumab",
+    "submenu": true,
+    "children": [
+      {
+        "id": "",
+        "name": "Bilan Pré-Thérapeutique",
+        "subtitle": "",
+        "appId": 0,
+        "parentId": 0,
+        "type": "pdf",
+        "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/belimumab/Bilan-Pre-Therapeutique/F1_BILAN_PRE-THERAPEUTIQUE_VDEF.pdf",
+        "slug": "f1_bilan_pre-therapeutique_vdef_pdf",
+        "submenu": false
+      },
+      {
+        "id": "",
+        "name": "Suivi Thérapeutique",
+        "subtitle": "",
+        "appId": 0,
+        "parentId": 0,
+        "type": "pdf",
+        "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/belimumab/Suivi-Therapeutique/F2_SUIVI_THERAPEUTIQUE_VDEF.pdf",
+        "slug": "f2_suivi_therapeutique_vdef_pdf",
+        "submenu": false
+      },
+      {
+        "id": "",
+        "name": "Pathologies : que faire en cas d'antécédents ou d'apparition de...",
+        "subtitle": "",
+        "appId": 0,
+        "parentId": 0,
+        "type": "pdflist",
+        "content": "",
+        "slug": "pathologies-que-faire-en-cas-dantecedents-ou-dapparition-de_",
+        "submenu": true,
+        "children": [
+          {
+            "id": "",
+            "name": "Atteinte neurologique\n",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/belimumab/Pathologies--que-faire-en-cas-dantecedents-ou-dapparition-de/F10_ATTEINTE_NEUROLOGIQUE_VDEF.pdf",
+            "slug": "f10_atteinte_neurologique_vdef_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "Réactions à l’injection lors de la perfusion",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/belimumab/Pathologies--que-faire-en-cas-dantecedents-ou-dapparition-de/F11_REACTIONS_INJECTION_VDEF.pdf",
+            "slug": "f11_reactions_injection_vdef_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "Infections bactériennes et virales",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/belimumab/Pathologies--que-faire-en-cas-dantecedents-ou-dapparition-de/F3_INFECTIONS_BACTERIENNES_ET_VIRALES_VDEF.pdf",
+            "slug": "f3_infections_bacteriennes_et_virales_vdef_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "Néoplasies solides - affections hématologiques malignes et lymphomes",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/belimumab/Pathologies--que-faire-en-cas-dantecedents-ou-dapparition-de/F4_NEOPLASIES_SOLIDES_VDEF.pdf",
+            "slug": "f4_neoplasies_solides_vdef_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "Atteinte cardiovasculaire",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/belimumab/Pathologies--que-faire-en-cas-dantecedents-ou-dapparition-de/F6_ATTEINTE_CARDIOVASCULAIRE_VDEF.pdf",
+            "slug": "f6_atteinte_cardiovasculaire_vdef_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "Atteinte rénale (néphrotique lupique) et dialyse",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/belimumab/Pathologies--que-faire-en-cas-dantecedents-ou-dapparition-de/F7_ATTEINTE_RENALE_VDEF.pdf",
+            "slug": "f7_atteinte_renale_vdef_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "Atteinte hépatique et/ou digestive",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/belimumab/Pathologies--que-faire-en-cas-dantecedents-ou-dapparition-de/F8_ATTEINTE_HEPATIQUE_VDEF.pdf",
+            "slug": "f8_atteinte_hepatique_vdef_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "Atteinte hématologique",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/belimumab/Pathologies--que-faire-en-cas-dantecedents-ou-dapparition-de/F9_ATTEINTE_HEMATOLOGIQUE_VDEF.pdf",
+            "slug": "f9_atteinte_hematologique_vdef_pdf",
+            "submenu": false
+          }
+        ]
+      },
+      {
+        "id": "",
+        "name": "Situation Clinique : conduite à tenir en cas de...",
+        "subtitle": "",
+        "appId": 0,
+        "parentId": 0,
+        "type": "pdflist",
+        "content": "",
+        "slug": "situation-clinique-conduite-a-tenir-en-cas-de_",
+        "submenu": true,
+        "children": [
+          {
+            "id": "",
+            "name": "Situations particulières : dialyse, hémoglobinopathie, splénectomie",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/belimumab/Situation-Clinique--conduite-a-tenir-en-cas-de/F12_DYALISE_HEMOGLOBINOPATHIE_SPLENECTOMIE_VDEF.pdf",
+            "slug": "f12_dyalise_hemoglobinopathie_splenectomie_vdef_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "Associations médicamenteuses",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/belimumab/Situation-Clinique--conduite-a-tenir-en-cas-de/F13_ASSOCIATIONS_MEDICAMENTEUSE_VDEF.pdf",
+            "slug": "f13_associations_medicamenteuse_vdef_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "Chirurgie, soins dentaires, brûlure et traumatismes",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/belimumab/Situation-Clinique--conduite-a-tenir-en-cas-de/F14_CHIRURGIE_SOINS_DENTAIRES_BRULURE_TRAUMATISMES_VDEF.pdf",
+            "slug": "f14_chirurgie_soins_dentaires_brulure_traumatismes_vdef_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "Grossesse",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/belimumab/Situation-Clinique--conduite-a-tenir-en-cas-de/F15_GROSSESSE_VDEF.pdf",
+            "slug": "f15_grossesse_vdef_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "Vaccination",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/belimumab/Situation-Clinique--conduite-a-tenir-en-cas-de/F16_VACCINATION_VDEF.pdf",
+            "slug": "f16_vaccination_vdef_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "Voyage",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/belimumab/Situation-Clinique--conduite-a-tenir-en-cas-de/F17_VOYAGE_VDEF.pdf",
+            "slug": "f17_voyage_vdef_pdf",
+            "submenu": false
+          }
+        ]
+      },
+      {
+        "id": "",
+        "name": "Utilisation du belimumab au cours du lupus systémique",
+        "subtitle": "",
+        "appId": 0,
+        "parentId": 0,
+        "type": "pdflist",
+        "content": "",
+        "slug": "utilisation-du-belimumab-au-cours-du-lupus-systemique",
+        "submenu": true,
+        "children": [
+          {
+            "id": "",
+            "name": "Information pour le patient",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/belimumab/Utilisation-du-belimumab-au-cours-du-lupus-systemique/F18_INFO_PATIENT_LUPUS_VDEF.pdf",
+            "slug": "f18_info_patient_lupus_vdef_pdf",
+            "submenu": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "",
+    "name": "Hydroxychloroquine",
+    "subtitle": "",
+    "appId": 0,
+    "parentId": 0,
+    "type": "list",
+    "content": "",
+    "slug": "hydroxychloroquine",
+    "submenu": true,
+    "children": [
+      {
+        "id": "",
+        "name": "Que faire avant d’initier un traitement par hydroxychloroquine ?",
+        "subtitle": "",
+        "appId": 0,
+        "parentId": 0,
+        "type": "pdf",
+        "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Hydroxychloroquine/Prise-en-charge-des-patients-sous-hydroxychloroquine/Que-faire-avant-d-initier-un-traitement-par-hydroxychloroquine/Plaquenil_Bilan.pdf",
+        "slug": "plaquenil_bilan_pdf",
+        "submenu": false
+      },
+      {
+        "id": "",
+        "name": "A quelle dose prescrire ?",
+        "subtitle": "",
+        "appId": 0,
+        "parentId": 0,
+        "type": "pdf",
+        "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Hydroxychloroquine/Prise-en-charge-des-patients-sous-hydroxychloroquine/A-quelle-dose-prescrire/Plaquenil_Dosage.pdf",
+        "slug": "plaquenil_dosage_pdf",
+        "submenu": false
+      },
+      {
+        "id": "",
+        "name": "Comment suivre et optimiser le traitement d’un patient sous anti-IL17 ?",
+        "subtitle": "",
+        "appId": 0,
+        "parentId": 0,
+        "type": "pdf",
+        "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Hydroxychloroquine/Prise-en-charge-des-patients-sous-hydroxychloroquine/Comment-suivre-et-optimiser-le-traitement-d-un-patient-sous-anti-IL17/Plaquenil_Optimiser_efficacite.pdf",
+        "slug": "plaquenil_optimiser_efficacite_pdf",
+        "submenu": false
+      },
+      {
+      "id": "",
+      "name": "Comment suivre un patient traité par hydroxychloroquine ?",
+      "subtitle": "",
+      "appId": 0,
+      "parentId": 0,
+      "type": "pdf",
+      "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Hydroxychloroquine/Prise-en-charge-des-patients-sous-hydroxychloroquine/Comment-suivre-un-patient-traite-par-hydroxychloroquine/Plaquenil_Suivi_patient.pdf",
+      "slug": "plaquenil_suivi_patient_pdf",
+      "submenu": false
+      },
+      {
+        "id": "",
+        "name": "Effets secondaires de l’hydroxychloroquine hors atteinte ophtalmologique et leur prise en charge",
+        "subtitle": "",
+        "appId": 0,
+        "parentId": 0,
+        "type": "pdf",
+        "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Hydroxychloroquine/Prise-en-charge-des-patients-sous-hydroxychloroquine/Effets-secondaires-de-l-hydroxychloroquine-hors-atteinte-ophtalmologique-et-leur-prise-en-charge/Plaquenil_Effets_secondaires.pdf",
+        "slug": "plaquenil_effets_secondaires_pdf",
+        "submenu": false
+      },
+      {
+        "id": "",
+        "name": "Conduite à tenir en cas :",
+        "subtitle": "",
+        "appId": 0,
+        "parentId": 0,
+        "type": "pdflist",
+        "content": "",
+        "slug": "conduite-a-tenir-en-cas-",
+        "submenu": true,
+        "children": [
+          {
+            "id": "",
+            "name": "d’associations médicamenteuses",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Hydroxychloroquine/Prise-en-charge-des-patients-sous-hydroxychloroquine/Conduite-a-tenir-en-cas-/Plaquenil_Associations_medicamenteuses.pdf",
+            "slug": "plaquenil_associations_medicamenteuses_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "de contraception, grossesse et allaitement ?\n",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Hydroxychloroquine/Prise-en-charge-des-patients-sous-hydroxychloroquine/Conduite-a-tenir-en-cas-/Plaquenil_Contraception_grossesse.pdf",
+            "slug": "plaquenil_contraception_grossesse_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "de situations particulières",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Hydroxychloroquine/Prise-en-charge-des-patients-sous-hydroxychloroquine/Conduite-a-tenir-en-cas-/Plaquenil_Situations_particulieres.pdf",
+            "slug": "plaquenil_situations_particulieres_pdf",
+            "submenu": false
+          }
+        ]
+      },
+      {
+        "id": "",
+        "name": "Fiche d'information à destination des patients",
+        "subtitle": "",
+        "appId": 0,
+        "parentId": 0,
+        "type": "pdf",
+        "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Hydroxychloroquine/Prise-en-charge-des-patients-sous-hydroxychloroquine/Fiche-dinformation-a-destination-des-patients/Plaquenil_Information_patients.pdf",
+        "slug": "plaquenil_information_patients_pdf",
+        "submenu": false
+      }
+    ]
+  },
+  {
+    "id": "",
+    "name": "inhibiteurs de Janus Kinases (JAKi)",
+    "subtitle": "",
+    "appId": 0,
+    "parentId": 0,
+    "type": "list",
+    "content": "",
+    "slug": "inhibiteurs-de-janus-kinases-jaki",
+    "submenu": true,
+    "children": [
+      {
+        "id": "",
+        "name": "Dans la polyarthrite rhumatoïde modérée à sévère",
+        "subtitle": "",
+        "appId": 0,
+        "parentId": 0,
+        "type": "list",
+        "content": "",
+        "slug": "dans-la-polyarthrite-rhumatoide-moderee-a-severe",
+        "submenu": true,
+        "children": [
+          {
+            "id": "",
+            "name": "Que faire avant d’initier les inhibiteurs de JAK (JAKi) ?",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/inhibiteurs-de-Janus-Kinases-(JAKi)/Dans-la-polyarthrite-rhumatoide-moderee-a-severe/Que-faire-avant-d-initier-les-inhibiteurs-de-JAK-(JAKi)/JAK_01_Bilan-pretherapeutique_MAJ_220719.pdf",
+            "slug": "jak_01_bilan-pretherapeutique_maj_220719_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "Comment suivre un patient traité par JAKi ?",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/inhibiteurs-de-Janus-Kinases-(JAKi)/Dans-la-polyarthrite-rhumatoide-moderee-a-severe/Comment-suivre-un-patient-traite-par-JAKi/JAK_02_Suivi-TP_MAJ_220719.pdf",
+            "slug": "jak_02_suivi-tp_maj_220719_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "Comment optimiser le traitement par JAKi ?",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/inhibiteurs-de-Janus-Kinases-(JAKi)/Dans-la-polyarthrite-rhumatoide-moderee-a-severe/Comment-optimiser-le-traitement-par-JAKi/JAK_03_Optimisation_VDEF_1218.pdf",
+            "slug": "jak_03_optimisation_vdef_1218_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "Pathologies : que faire en cas d’antécédent ou d’apparition de...",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdflist",
+            "content": "",
+            "slug": "pathologies-que-faire-en-cas-dantecedent-ou-dapparition-de_",
+            "submenu": true,
+            "children": [
+              {
+                "id": "",
+                "name": "Infections virales ?",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/inhibiteurs-de-Janus-Kinases-(JAKi)/Dans-la-polyarthrite-rhumatoide-moderee-a-severe/Pathologies--que-faire-en-cas-d-antecedent-ou-d-apparition-de/JAK_04_Infections-viro_MAJ_220719.pdf",
+                "slug": "jak_04_-infections-viro_maj_220719_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Infections bactériennes ?",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/inhibiteurs-de-Janus-Kinases-(JAKi)/Dans-la-polyarthrite-rhumatoide-moderee-a-severe/Pathologies--que-faire-en-cas-d-antecedent-ou-d-apparition-de/JAK_05_Infections-bact_09102018.pdf",
+                "slug": "jak_05_-infections-bact_09102018_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Affections cardiovasculaires ?",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/inhibiteurs-de-Janus-Kinases-(JAKi)/Dans-la-polyarthrite-rhumatoide-moderee-a-severe/Pathologies--que-faire-en-cas-d-antecedent-ou-d-apparition-de/JAK_06_Cardio_MAJ_220719.pdf",
+                "slug": "jak_06_-cardio_maj_220719_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Néoplasies solides ?",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/inhibiteurs-de-Janus-Kinases-(JAKi)/Dans-la-polyarthrite-rhumatoide-moderee-a-severe/Pathologies--que-faire-en-cas-d-antecedent-ou-d-apparition-de/JAK_07_Cancer_MAJ_220719.pdf",
+                "slug": "jak_07_cancer_maj_220719_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Affections hématologiques et lymphomes ?",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/inhibiteurs-de-Janus-Kinases-(JAKi)/Dans-la-polyarthrite-rhumatoide-moderee-a-severe/Pathologies--que-faire-en-cas-d-antecedent-ou-d-apparition-de/JAK_08_Aff-Hemato_MAJ_200819.pdf",
+                "slug": "jak_08_aff-hemato_maj_200819_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Troubles digestifs et hépatiques ?",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/inhibiteurs-de-Janus-Kinases-(JAKi)/Dans-la-polyarthrite-rhumatoide-moderee-a-severe/Pathologies--que-faire-en-cas-d-antecedent-ou-d-apparition-de/JAK_09_Digestif_Hepatiq_MAJ_220719.pdf",
+                "slug": "jak_09_digestif_hepatiq_maj_220719_pdf",
+                "submenu": false
+              }
+            ]
+          },
+          {
+            "id": "",
+            "name": "Situations cliniques : quelle conduite à tenir en cas de... ",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdflist",
+            "content": "",
+            "slug": "situations-cliniques-quelle-conduite-a-tenir-en-cas-de_",
+            "submenu": true,
+            "children": [
+              {
+                "id": "",
+                "name": "Chirurgie et soins dentaires ? ",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/inhibiteurs-de-Janus-Kinases-(JAKi)/Dans-la-polyarthrite-rhumatoide-moderee-a-severe/Situations-cliniques--quelle-conduite-a-tenir-en-cas-de/JAK_10_Chirurgie_VDEF_1218.pdf",
+                "slug": "jak_10_chirurgie_vdef_1218_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Grossesse ?",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/inhibiteurs-de-Janus-Kinases-(JAKi)/Dans-la-polyarthrite-rhumatoide-moderee-a-severe/Situations-cliniques--quelle-conduite-a-tenir-en-cas-de/JAK_11_Grossesse_VDEF_1218.pdf",
+                "slug": "jak_11_grossesse_vdef_1218_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Vaccination ?",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/inhibiteurs-de-Janus-Kinases-(JAKi)/Dans-la-polyarthrite-rhumatoide-moderee-a-severe/Situations-cliniques--quelle-conduite-a-tenir-en-cas-de/JAK_12_Vaccination_VDEF_1218.pdf",
+                "slug": "jak_12_vaccination_vdef_1218_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Voyage ?",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/inhibiteurs-de-Janus-Kinases-(JAKi)/Dans-la-polyarthrite-rhumatoide-moderee-a-severe/Situations-cliniques--quelle-conduite-a-tenir-en-cas-de/JAK_13_Voyage.pdf",
+                "slug": "jak_13_voyage_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Associations médicamenteuses ?",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/inhibiteurs-de-Janus-Kinases-(JAKi)/Dans-la-polyarthrite-rhumatoide-moderee-a-severe/Situations-cliniques--quelle-conduite-a-tenir-en-cas-de/JAK_14_Association_Med_VDEF_1218.pdf",
+                "slug": "jak_14_association_med_vdef_1218_pdf",
+                "submenu": false
+              }
+            ]
+          },
+          {
+            "id": "",
+            "name": "Exemple de lettre d’information au...",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdflist",
+            "content": "",
+            "slug": "exemple-de-lettre-dinformation-au_",
+            "submenu": true,
+            "children": [
+              {
+                "id": "",
+                "name": "Rhumatologue traitant ",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/inhibiteurs-de-Janus-Kinases-(JAKi)/Dans-la-polyarthrite-rhumatoide-moderee-a-severe/Exemple-de-lettre-d-information-au/JAK_15_Lettre-rhumato_MAJ_220719.pdf",
+                "slug": "jak_15_lettre-rhumato_maj_220719_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Médecin traitant",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/inhibiteurs-de-Janus-Kinases-(JAKi)/Dans-la-polyarthrite-rhumatoide-moderee-a-severe/Exemple-de-lettre-d-information-au/JAK_16_Lettre-au-medecin-traitant.pdf",
+                "slug": "jak_16_lettre-au-medecin-traitant_pdf",
+                "submenu": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "",
+    "name": "Méthotrexate",
+    "subtitle": "",
+    "appId": 0,
+    "parentId": 0,
+    "type": "list",
+    "content": "",
+    "slug": "methotrexate",
+    "submenu": true,
+    "children": [
+      {
+        "id": "",
+        "name": "Polyarthrite rhumatoïde (PR)",
+        "subtitle": "",
+        "appId": 0,
+        "parentId": 0,
+        "type": "list",
+        "content": "",
+        "slug": "polyarthrite-rhumatoide-pr",
+        "submenu": true,
+        "children": [
+          {
+            "id": "",
+            "name": "Que faire avant d’initier le méthotrexate ?",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Methotrexate/Polyarthrite-rhumatoide-(PR)/Que-faire-avant-d-initier-le-methotrexate/MTX_01.pdf",
+            "slug": "mtx_01_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "Comment optimiser l’efficacité du méthotrexate ?",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Methotrexate/Polyarthrite-rhumatoide-(PR)/Comment-optimiser-l-efficacite-du-methotrexate/MTX_02.pdf",
+            "slug": "mtx_02_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "Comment suivre un patient traité par méthotrexate ?",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Methotrexate/Polyarthrite-rhumatoide-(PR)/Comment-suivre-un-patient-traite-par-methotrexate/MTX_03.pdf",
+            "slug": "mtx_03_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "Pathologies : que faire en cas d’antécédent ou d’apparition de...",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdflist",
+            "content": "",
+            "slug": "pathologies-que-faire-en-cas-dantecedent-ou-dapparition-de_",
+            "submenu": true,
+            "children": [
+              {
+                "id": "",
+                "name": "Néoplasie solide ?",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Methotrexate/Polyarthrite-rhumatoide-(PR)/Pathologies--que-faire-en-cas-d-antecedent-ou-d-apparition-de/MTX_04.pdf",
+                "slug": "mtx_04_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Affection hématologique ? ",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Methotrexate/Polyarthrite-rhumatoide-(PR)/Pathologies--que-faire-en-cas-d-antecedent-ou-d-apparition-de/MTX_05.pdf",
+                "slug": "mtx_05_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Affections cardiovasculaires ?",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Methotrexate/Polyarthrite-rhumatoide-(PR)/Pathologies--que-faire-en-cas-d-antecedent-ou-d-apparition-de/MTX_06.pdf",
+                "slug": "mtx_06_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Infection bactérienne ou virale ?",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Methotrexate/Polyarthrite-rhumatoide-(PR)/Pathologies--que-faire-en-cas-d-antecedent-ou-d-apparition-de/MTX_07.pdf",
+                "slug": "mtx_07_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Manifestations cutanéo-muqueuses ?",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Methotrexate/Polyarthrite-rhumatoide-(PR)/Pathologies--que-faire-en-cas-d-antecedent-ou-d-apparition-de/MTX_08.pdf",
+                "slug": "mtx_08_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Pathologie pulmonaire ?",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Methotrexate/Polyarthrite-rhumatoide-(PR)/Pathologies--que-faire-en-cas-d-antecedent-ou-d-apparition-de/MTX_09.pdf",
+                "slug": "mtx_09_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Anomalies hépatiques et digestives ?",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Methotrexate/Polyarthrite-rhumatoide-(PR)/Pathologies--que-faire-en-cas-d-antecedent-ou-d-apparition-de/MTX_10.pdf",
+                "slug": "mtx_10_pdf",
+                "submenu": false
+              }
+            ]
+          },
+          {
+            "id": "",
+            "name": "Situations cliniques : quelle conduite à tenir en cas de...",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdflist",
+            "content": "",
+            "slug": "situations-cliniques-quelle-conduite-a-tenir-en-cas-de_",
+            "submenu": true,
+            "children": [
+              {
+                "id": "",
+                "name": "Associations médicamenteuses ?",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Methotrexate/Polyarthrite-rhumatoide-(PR)/Situations-cliniques--quelle-conduite-a-tenir-en-cas-de/MTX_11.pdf",
+                "slug": "mtx_11_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Chirurgie, soins dentaires, brûlures et traumatismes ?",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Methotrexate/Polyarthrite-rhumatoide-(PR)/Situations-cliniques--quelle-conduite-a-tenir-en-cas-de/MTX_12.pdf",
+                "slug": "mtx_12_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Grossesse ?",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Methotrexate/Polyarthrite-rhumatoide-(PR)/Situations-cliniques--quelle-conduite-a-tenir-en-cas-de/MTX_13.pdf",
+                "slug": "mtx_13_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Situations particulières : insuffisance rénale modérée et dialyse, hémoglobinopathie, splénectomie ?",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Methotrexate/Polyarthrite-rhumatoide-(PR)/Situations-cliniques--quelle-conduite-a-tenir-en-cas-de/MTX_14.pdf",
+                "slug": "mtx_14_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Vaccination ?",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Methotrexate/Polyarthrite-rhumatoide-(PR)/Situations-cliniques--quelle-conduite-a-tenir-en-cas-de/MTX_15.pdf",
+                "slug": "mtx_15_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Voyage ?",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Methotrexate/Polyarthrite-rhumatoide-(PR)/Situations-cliniques--quelle-conduite-a-tenir-en-cas-de/MTX_16.pdf",
+                "slug": "mtx_16_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Autres effets secondaires : perte de cheveux, troubles de la libido/de l’érection, dépression ?",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Methotrexate/Polyarthrite-rhumatoide-(PR)/Situations-cliniques--quelle-conduite-a-tenir-en-cas-de/MTX_17.pdf",
+                "slug": "mtx_17_pdf",
+                "submenu": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "",
+    "name": "Rituximab",
+    "subtitle": "",
+    "appId": 0,
+    "parentId": 0,
+    "type": "list",
+    "content": "",
+    "slug": "rituximab",
+    "submenu": true,
+    "children": [
+      {
+        "id": "",
+        "name": "Chez l'enfant",
+        "subtitle": "",
+        "appId": 0,
+        "parentId": 0,
+        "type": "pdflist",
+        "content": "",
+        "slug": "chez-lenfant",
+        "submenu": true,
+        "children": [
+          {
+            "id": "",
+            "name": "Document complet",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Rituximab/Chez-lenfant/RTX_Pediatrie.pdf",
+            "slug": "rtx_pediatrie_pdf",
+            "submenu": false
+          }
+        ]
+      },
+      {
+        "id": "",
+        "name": "Dans la polyarthrite rhumatoïde",
+        "subtitle": "",
+        "appId": 0,
+        "parentId": 0,
+        "type": "list",
+        "content": "",
+        "slug": "dans-la-polyarthrite-rhumatoide",
+        "submenu": true,
+        "children": [
+          {
+            "id": "",
+            "name": "Que faire avant d’initier le rituximab ?",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Rituximab/Dans-la-polyarthrite-rhumatoide/Que-faire-avant-d-initier-le-rituximab/RTX_01_Bilan.pdf",
+            "slug": "rtx_01_bilan_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "Comment suivre un patient traité par rituximab ?",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Rituximab/Dans-la-polyarthrite-rhumatoide/Comment-suivre-un-patient-traite-par-rituximab/RTX_02_Traitement.pdf",
+            "slug": "rtx_02_traitement_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "Comment retraiter un patient traité par rituximab ?",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Rituximab/Dans-la-polyarthrite-rhumatoide/Comment-retraiter-un-patient-traite-par-rituximab/RTX_03_Retraitement.pdf",
+            "slug": "rtx_03_retraitement_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "Pathologies : que faire en cas d’antécédents ou d’apparition de...?",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdflist",
+            "content": "",
+            "slug": "pathologies-que-faire-en-cas-dantecedents-ou-dapparition-de_-",
+            "submenu": true,
+            "children": [
+              {
+                "id": "",
+                "name": "Infections bactériennes et virales",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Rituximab/Dans-la-polyarthrite-rhumatoide/Pathologies--que-faire-en-cas-d-antecedents-ou-d-apparition-de/RTX_04_Infections_bacteriennes.pdf",
+                "slug": "rtx_04_infections_bacteriennes_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Affections cardiovasculaires",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Rituximab/Dans-la-polyarthrite-rhumatoide/Pathologies--que-faire-en-cas-d-antecedents-ou-d-apparition-de/RTX_05_Cardio.pdf",
+                "slug": "rtx_05_cardio_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Néoplasie solide",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Rituximab/Dans-la-polyarthrite-rhumatoide/Pathologies--que-faire-en-cas-d-antecedents-ou-d-apparition-de/RTX_06_Neoplasie.pdf",
+                "slug": "rtx_06_neoplasie_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Affections hématologiques et lymphomes",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Rituximab/Dans-la-polyarthrite-rhumatoide/Pathologies--que-faire-en-cas-d-antecedents-ou-d-apparition-de/RTX_07_Affections.pdf",
+                "slug": "rtx_07_affections_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Réaction et intolérance cutanées ?",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Rituximab/Dans-la-polyarthrite-rhumatoide/Pathologies--que-faire-en-cas-d-antecedents-ou-d-apparition-de/RTX_08_Reactions_perfusion.pdf",
+                "slug": "rtx_08_reactions_perfusion_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Affections du Système Nerveux Central",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Rituximab/Dans-la-polyarthrite-rhumatoide/Pathologies--que-faire-en-cas-d-antecedents-ou-d-apparition-de/RTX_09_Affections_du_SNC.pdf",
+                "slug": "rtx_09_affections_du_snc_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Affections pulmonaires ?",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Rituximab/Dans-la-polyarthrite-rhumatoide/Pathologies--que-faire-en-cas-d-antecedents-ou-d-apparition-de/RTX_10_Affections_pulmonaires.pdf",
+                "slug": "rtx_10_affections_pulmonaires_pdf",
+                "submenu": false
+              }
+            ]
+          },
+          {
+            "id": "",
+            "name": "Situations cliniques : conduite à tenir en cas de...",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdflist",
+            "content": "",
+            "slug": "situations-cliniques-conduite-a-tenir-en-cas-de_",
+            "submenu": true,
+            "children": [
+              {
+                "id": "",
+                "name": "Chirurgie et soins dentaires",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Rituximab/Dans-la-polyarthrite-rhumatoide/Situations-cliniques--conduite-a-tenir-en-cas-de/RTX_11_Chirurgie.pdf",
+                "slug": "rtx_11_chirurgie_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Grossesse",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Rituximab/Dans-la-polyarthrite-rhumatoide/Situations-cliniques--conduite-a-tenir-en-cas-de/RTX_12_Grossesse.pdf",
+                "slug": "rtx_12_grossesse_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Vaccination",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Rituximab/Dans-la-polyarthrite-rhumatoide/Situations-cliniques--conduite-a-tenir-en-cas-de/RTX_13_Vaccination.pdf",
+                "slug": "rtx_13_vaccination_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Voyage",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Rituximab/Dans-la-polyarthrite-rhumatoide/Situations-cliniques--conduite-a-tenir-en-cas-de/RTX_14_Voyages_V2.pdf",
+                "slug": "rtx_14_voyages_v2_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Associations médicamenteuses",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Rituximab/Dans-la-polyarthrite-rhumatoide/Situations-cliniques--conduite-a-tenir-en-cas-de/RTX_15_Assoc_Medic.pdf",
+                "slug": "rtx_15_assoc_medic_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Situations particulières (dialyse, splénectomie, hémoglobinopathie)",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Rituximab/Dans-la-polyarthrite-rhumatoide/Situations-cliniques--conduite-a-tenir-en-cas-de/RTX_16_Situations_Part.pdf",
+                "slug": "rtx_16_situations_part_pdf",
+                "submenu": false
+              }
+            ]
+          },
+          {
+            "id": "",
+            "name": "Ce que nous apprend le registre AIR",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Rituximab/Dans-la-polyarthrite-rhumatoide/Ce-que-nous-apprend-le-registre-AIR/RTX_17_Registre.pdf",
+            "slug": "rtx_17_registre_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "Exemple de lettre d'information pour...",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdflist",
+            "content": "",
+            "slug": "exemple-de-lettre-dinformation-pour_",
+            "submenu": true,
+            "children": [
+              {
+                "id": "",
+                "name": "Le rhumatologue traitant",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Rituximab/Dans-la-polyarthrite-rhumatoide/Exemple-de-lettre-dinformation-pour/RTX_18_Rhumatologue_traitant.pdf",
+                "slug": "rtx_18_rhumatologue_traitant_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Le médecin traitant",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Rituximab/Dans-la-polyarthrite-rhumatoide/Exemple-de-lettre-dinformation-pour/RTX_19_Medecin_traitant.pdf",
+                "slug": "rtx_19_medecin_traitant_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Le patient",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Rituximab/Dans-la-polyarthrite-rhumatoide/Exemple-de-lettre-dinformation-pour/RTX_20-Info_patient.pdf",
+                "slug": "rtx_20-info_patient_pdf",
+                "submenu": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "",
+    "name": "Ustékinumab",
+    "subtitle": "",
+    "appId": 0,
+    "parentId": 0,
+    "type": "list",
+    "content": "",
+    "slug": "ustekinumab",
+    "submenu": true,
+    "children": [
+      {
+        "id": "",
+        "name": "Dans le rhumatisme psoriasique et le psoriasis en plaques",
+        "subtitle": "",
+        "appId": 0,
+        "parentId": 0,
+        "type": "list",
+        "content": "",
+        "slug": "dans-le-rhumatisme-psoriasique-et-le-psoriasis-en-plaques",
+        "submenu": true,
+        "children": [
+          {
+            "id": "",
+            "name": "Que faire avant d’initier l’ustékinumab ?",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Ustekinumab/Dans-le-rhumatisme-psoriasique-et-le-psoriasis-en-plaques/Que-faire-avant-d-initier-l-ustekinumab/USK_01_Bilan_V2.pdf",
+            "slug": "usk_01_bilan_v2_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "Comment suivre un patient traité par ustékinumab ?",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Ustekinumab/Dans-le-rhumatisme-psoriasique-et-le-psoriasis-en-plaques/Comment-suivre-un-patient-traite-par-ustekinumab/USK_02_Suivi_V2.pdf",
+            "slug": "usk_02_suivi_v2_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "Comment optimiser le traitement par ustékinumab ?",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdf",
+            "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Ustekinumab/Dans-le-rhumatisme-psoriasique-et-le-psoriasis-en-plaques/Comment-optimiser-le-traitement-par-ustekinumab/USK_03_Optimisation.pdf",
+            "slug": "usk_03_optimisation_pdf",
+            "submenu": false
+          },
+          {
+            "id": "",
+            "name": "Pathologies : que faire en cas d’antécédent ou d’apparition de...",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdflist",
+            "content": "",
+            "slug": "pathologies-que-faire-en-cas-dantecedent-ou-dapparition-de_",
+            "submenu": true,
+            "children": [
+              {
+                "id": "",
+                "name": "Infection bactérienne et virale ?",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Ustekinumab/Dans-le-rhumatisme-psoriasique-et-le-psoriasis-en-plaques/Pathologies--que-faire-en-cas-d-antecedent-ou-d-apparition-de/USK_04_Infection.pdf",
+                "slug": "usk_04_infection_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Affections cardiovasculaires ?",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Ustekinumab/Dans-le-rhumatisme-psoriasique-et-le-psoriasis-en-plaques/Pathologies--que-faire-en-cas-d-antecedent-ou-d-apparition-de/USK_05_Cardio_V2.pdf",
+                "slug": "usk_05_cardio_v2_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Néoplasies solides ? ",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Ustekinumab/Dans-le-rhumatisme-psoriasique-et-le-psoriasis-en-plaques/Pathologies--que-faire-en-cas-d-antecedent-ou-d-apparition-de/USK_06_Cancer.pdf",
+                "slug": "usk_06_cancer_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Affections hématologiques et lymphomes ? ",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Ustekinumab/Dans-le-rhumatisme-psoriasique-et-le-psoriasis-en-plaques/Pathologies--que-faire-en-cas-d-antecedent-ou-d-apparition-de/USK_07_Hemato.pdf",
+                "slug": "usk_07_hemato_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Réactions à l’injection ?",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Ustekinumab/Dans-le-rhumatisme-psoriasique-et-le-psoriasis-en-plaques/Pathologies--que-faire-en-cas-d-antecedent-ou-d-apparition-de/USK_08_Cutane.pdf",
+                "slug": "usk_08_cutane_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Anomalies hépatiques ?",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Ustekinumab/Dans-le-rhumatisme-psoriasique-et-le-psoriasis-en-plaques/Pathologies--que-faire-en-cas-d-antecedent-ou-d-apparition-de/USK_09_Hepato.pdf",
+                "slug": "usk_09_hepato_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Affections auto-immunes ?",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Ustekinumab/Dans-le-rhumatisme-psoriasique-et-le-psoriasis-en-plaques/Pathologies--que-faire-en-cas-d-antecedent-ou-d-apparition-de/USK_10-Aff_Autoimmunes.pdf",
+                "slug": "usk_10-aff_autoimmunes_pdf",
+                "submenu": false
+              }
+            ]
+          },
+          {
+            "id": "",
+            "name": "Situations cliniques : quelle conduite à tenir en cas de...",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdflist",
+            "content": "",
+            "slug": "situations-cliniques-quelle-conduite-a-tenir-en-cas-de_",
+            "submenu": true,
+            "children": [
+              {
+                "id": "",
+                "name": "Chirurgie, soins dentaires, brûlures et traumatismes ?",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Ustekinumab/Dans-le-rhumatisme-psoriasique-et-le-psoriasis-en-plaques/Situations-cliniques--quelle-conduite-a-tenir-en-cas-de/USK_11_Chirurgie.pdf",
+                "slug": "usk_11_chirurgie_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Grossesse ?",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Ustekinumab/Dans-le-rhumatisme-psoriasique-et-le-psoriasis-en-plaques/Situations-cliniques--quelle-conduite-a-tenir-en-cas-de/USK_12_Grossesse_V2.pdf",
+                "slug": "usk_12_grossesse_v2_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Vaccination ?",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Ustekinumab/Dans-le-rhumatisme-psoriasique-et-le-psoriasis-en-plaques/Situations-cliniques--quelle-conduite-a-tenir-en-cas-de/USK_13_Vaccination.pdf",
+                "slug": "usk_13_vaccination_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Voyage ?",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Ustekinumab/Dans-le-rhumatisme-psoriasique-et-le-psoriasis-en-plaques/Situations-cliniques--quelle-conduite-a-tenir-en-cas-de/USK_14_Voyage.pdf",
+                "slug": "usk_14_voyage_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Associations médicamenteuses ?",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Ustekinumab/Dans-le-rhumatisme-psoriasique-et-le-psoriasis-en-plaques/Situations-cliniques--quelle-conduite-a-tenir-en-cas-de/USK_15_Association.pdf",
+                "slug": "usk_15_association_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Situations particulières (dialyse, splénectomie, hémoglobinopathie) ?",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Ustekinumab/Dans-le-rhumatisme-psoriasique-et-le-psoriasis-en-plaques/Situations-cliniques--quelle-conduite-a-tenir-en-cas-de/USK_16-Situations_particulieres.pdf",
+                "slug": "usk_16-situations_particulieres_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Sujets âgés ?",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Ustekinumab/Dans-le-rhumatisme-psoriasique-et-le-psoriasis-en-plaques/Situations-cliniques--quelle-conduite-a-tenir-en-cas-de/USK_17_Sujets_ages.pdf",
+                "slug": "usk_17_sujets_ages_pdf",
+                "submenu": false
+              }
+            ]
+          },
+          {
+            "id": "",
+            "name": "Exemple de lettre d’information pour...",
+            "subtitle": "",
+            "appId": 0,
+            "parentId": 0,
+            "type": "pdflist",
+            "content": "",
+            "slug": "exemple-de-lettre-dinformation-pour_",
+            "submenu": true,
+            "children": [
+              {
+                "id": "",
+                "name": "Le rhumatologue",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Ustekinumab/Dans-le-rhumatisme-psoriasique-et-le-psoriasis-en-plaques/Exemple-de-lettre-d-information-pour/USK_18_Lettre_Rhumato.pdf",
+                "slug": "usk_18_lettre_rhumato_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Le médecin traitant",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Ustekinumab/Dans-le-rhumatisme-psoriasique-et-le-psoriasis-en-plaques/Exemple-de-lettre-d-information-pour/USK_19_Lettre_MG.pdf",
+                "slug": "usk_19_lettre_mg_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Le dermatologue",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Ustekinumab/Dans-le-rhumatisme-psoriasique-et-le-psoriasis-en-plaques/Exemple-de-lettre-d-information-pour/USK_20_Lettre_Dermatologue_V2.pdf",
+                "slug": "usk_20_lettre_dermatologue_v2_pdf",
+                "submenu": false
+              },
+              {
+                "id": "",
+                "name": "Le patient",
+                "subtitle": "",
+                "appId": 0,
+                "parentId": 0,
+                "type": "pdf",
+                "content": "https://f.360medics.com/pdfviewer/index.html?f=https://med-cdn.ams3.digitaloceanspaces.com/assets/media/ref-sfr/CRI/Ustekinumab/Dans-le-rhumatisme-psoriasique-et-le-psoriasis-en-plaques/Exemple-de-lettre-d-information-pour/USK_21_Info_Patient.pdf",
+                "slug": "usk_21_info_patient_pdf",
+                "submenu": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

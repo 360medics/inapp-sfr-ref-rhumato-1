@@ -2,8 +2,7 @@
   <section class="Arthrite">
     <h2 class="title">ARTHRITE SEPTIQUE</h2>
 <span class="line"></span>
-
-    <img src="@/assets/urgence1.png">
+    <PNGViewer :src="'urgence1.png'" :myID:="'urgence1.png'"/>
     <p>Recommandations françaises 2020 sur la prise en charge des arthrites septiques sur articulation native de l’adulte, JBS</p>
 
     <p class="bold">L’antibiothérapie sera initiée dès la réception de résultats microbiologiques positifs (examen direct, culture du liquide synovial ou hémoculture). Une antibiothérapie probabiliste peut être envisagée en cas de liquide synovial franchement purulent sans cristaux</p>
@@ -14,8 +13,7 @@
       <li>Si allergie à une pénicilline, l’emploi d’une céphalosporine peut être envisagé car le risque d’allergie croisée entre les pénicillines et les céphalosporines est faible</li>
     </ul>
     <p>Recommandations françaises 2020 sur la prise en charge des arthrites septiques sur articulation native de l’adulte, JBS</p>
-
-    <img src="@/assets/urgence2.png">
+    <PNGViewer :src="'urgence2.png'" :myID:="'urgence2.png'"/>
     <p>Recommandations françaises 2020 sur la prise en charge des arthrites septiques sur articulation native de l’adulte, JBS</p>
 
     <ul>
@@ -28,16 +26,11 @@
 </template>
 
 <script lang="js">
-    export default {
-        name: 'Arthrite',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
-    }
+import PNGViewer from "@/components/PNGViewer";
+export default {
+  name: 'Arthrite',
+  components: { PNGViewer }
+}
 </script>
 
 <style scoped lang="scss">

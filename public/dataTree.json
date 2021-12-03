@@ -138,7 +138,7 @@
               "children": [
                 {
                   "id": "",
-                  "name": "classification ",
+                  "name": "Classification ",
                   "subtitle": "",
                   "appId": 1,
                   "parentId": 2,
@@ -165,7 +165,7 @@
                       "subtitle": "",
                       "appId": 1,
                       "parentId": 2,
-                      "type": "",
+                      "type": "html",
                       "content": "",
                       "slug": "classificaton-de-new-york",
                       "submenu": false,
@@ -177,10 +177,11 @@
                       "subtitle": "",
                       "appId": 1,
                       "parentId": 2,
-                      "type": "",
+                      "type": "html",
                       "content": "",
                       "slug": "criteres-de-new-york-modifies",
-                      "submenu": false
+                      "submenu": false,
+                      "component": "NewYorkCriteria"
                     },
                     {
                       "id": "",
@@ -260,7 +261,7 @@
               "children": [
                 {
                   "id": "",
-                  "name": "classification ",
+                  "name": "Classification ",
                   "subtitle": "",
                   "appId": 1,
                   "parentId": 2,
@@ -323,7 +324,7 @@
               "children": [
                 {
                   "id": "",
-                  "name": "classification",
+                  "name": "Critères de classification de la PPR EULAR/ACR 2012",
                   "subtitle": "",
                   "appId": 1,
                   "parentId": 2,
@@ -400,14 +401,14 @@
           "children": [
             {
               "id": "",
-              "name": "Lupus érythémateux systémique",
+              "name": "Lupus érythémateux systémique (score selena-sledai)",
               "subtitle": "",
               "appId": 1,
               "parentId": 2,
               "type": "html",
               "content": "",
               "slug": "lupus-erythemateux-systemique",
-              "component":"SelenaSledai",
+              "component": "SelenaSledai",
               "submenu": false
             },
             {
@@ -431,7 +432,7 @@
                   "content": "",
                   "slug": "essdai",
                   "submenu": false,
-                  "component":"Essdai"
+                  "component": "Essdai"
                 }
               ]
             },
@@ -480,7 +481,7 @@
                   "content": "",
                   "slug": "ffs",
                   "submenu": false,
-                  "component":"Ffs"
+                  "component": "Ffs"
                 },
                 {
                   "id": "",
@@ -518,7 +519,7 @@
               "content": "https://www.fai2r.org/les-pathologies-rares/maladie-de-horton-pseudo-polyarthrite-rhizomelique/criteres/criteres-de-classification-de-larterite-a-cellules-geantes-de-lacr-1990",
               "slug": "maladie-de-horton",
               "submenu": false,
-              "component":"ArthritisAcr1990"
+              "component": "ArthritisAcr1990"
             },
             {
               "id": "",
@@ -545,7 +546,7 @@
               "children": [
                 {
                   "id": "",
-                  "name": "Classification",
+                  "name": "Critères de classification ACR-EULAR de la sclérodermie systémique",
                   "subtitle": "",
                   "appId": 1,
                   "parentId": 2,
@@ -557,7 +558,7 @@
                 },
                 {
                   "id": "",
-                  "name": "Activité",
+                  "name": "Score de Rodnan",
                   "subtitle": "",
                   "appId": 1,
                   "parentId": 2,
@@ -644,12 +645,12 @@
               "children": [
                 {
                   "id": "",
-                  "name": "Indice fonctionnel de Lequesnes",
+                  "name": "Indice fonctionnel de Lequesnes (hanche)",
                   "subtitle": "",
                   "appId": 1,
                   "parentId": 2,
                   "type": "html",
-                  "component" : "HipLequesnes",
+                  "component": "HipLequesnes",
                   "content": "http://www.antalvite.fr/pdf/Indice%20algo-fonctionnel%20de%20Lequesne%20pour%20la%20hanche.pdf",
                   "slug": "indice-fonctionnel-de-lequesnes-hanche",
                   "submenu": false
@@ -669,7 +670,7 @@
               "children": [
                 {
                   "id": "",
-                  "name": "Indice fonctionnel de Lequesnes",
+                  "name": "Indice fonctionnel de Lequesnes (genou)",
                   "subtitle": "",
                   "appId": 1,
                   "parentId": 2,
@@ -707,7 +708,7 @@
               "children": [
                 {
                   "id": "",
-                  "name": "Fist",
+                  "name": "First",
                   "subtitle": "",
                   "appId": 1,
                   "parentId": 2,
@@ -760,7 +761,7 @@
       "children": [
         {
           "id": "",
-          "name": "Polyarthrite Rhumatoïde",
+          "name": "Polyarthrite Rhumatoïde (Reco)",
           "subtitle": "",
           "appId": 1,
           "parentId": 2,
@@ -771,7 +772,7 @@
         },
         {
           "id": "",
-          "name": "Spondyloarthrite",
+          "name": "Spondyloarthrite (Reco)",
           "subtitle": "",
           "appId": 1,
           "parentId": 2,
@@ -782,7 +783,7 @@
         },
         {
           "id": "",
-          "name": "Ostéoporose",
+          "name": "Ostéoporose (Reco)",
           "subtitle": "",
           "appId": 1,
           "parentId": 2,
@@ -793,7 +794,7 @@
         },
         {
           "id": "",
-          "name": "Goutte",
+          "name": "Goutte (Reco)",
           "subtitle": "",
           "appId": 1,
           "parentId": 2,
@@ -804,7 +805,7 @@
         },
         {
           "id": "",
-          "name": "Gonarthrose",
+          "name": "Gonarthrose (Reco)",
           "subtitle": "",
           "appId": 1,
           "parentId": 2,
@@ -815,7 +816,7 @@
         },
         {
           "id": "",
-          "name": "Arthrite septique",
+          "name": "Arthrite septique (Reco)",
           "subtitle": "",
           "appId": 1,
           "parentId": 2,
@@ -936,7 +937,7 @@
           "children": [
             {
               "id": "",
-              "name": "Généralités",
+              "name": "Généralités à propos de la grossesse",
               "subtitle": "Sous-titre facultatif",
               "appId": 1,
               "parentId": null,
@@ -991,7 +992,7 @@
                   "content": "",
                   "slug": "mycophenolate-mofetil",
                   "submenu": false,
-                  "component": "MycophénolateMofetil"
+                  "component": "MycophenolateMofetil"
                 },
                 {
                   "id": "",
@@ -1264,7 +1265,7 @@
           "children": [
             {
               "id": "",
-              "name": "Généralités",
+              "name": "Généralités (rhumato)",
               "subtitle": "Sous-titre facultatif",
               "appId": 1,
               "parentId": null,
@@ -1316,13 +1317,13 @@
     },
     {
       "id": "",
-      "name": "Traitements médicamenteux ",
+      "name": "Traitements médicamenteux",
       "subtitle": "Sous-titre facultatif",
       "appId": 1,
       "parentId": null,
       "type": "list",
       "content": "",
-      "slug": "traitements-medicamenteux ",
+      "slug": "traitements-medicamenteux",
       "submenu": true,
       "children": [
         {
@@ -1348,18 +1349,6 @@
           "slug": "glucocorticoides",
           "submenu": false,
           "component": "Glucocorticoides"
-        },
-        {
-          "id": "",
-          "name": "Corticoïdes",
-          "subtitle": "Sous-titre facultatif",
-          "appId": 1,
-          "parentId": null,
-          "type": "html",
-          "content": "",
-          "slug": "corticoides",
-          "submenu": false,
-          "component": "Corticoides"
         },
         {
           "id": "",
@@ -2055,7 +2044,7 @@
           "children": [
             {
               "id": "",
-              "name": "Généralités",
+              "name": "Généralités (Tac Tag)",
               "subtitle": "Sous-titre facultatif",
               "appId": 1,
               "parentId": null,
@@ -2268,7 +2257,7 @@
                   "parentId": null,
                   "type": "html",
                   "content": "",
-                  "slug": "methotrexate",
+                  "slug": "methotrexateordonnance",
                   "submenu": false,
                   "component": "MethotrexateOrdonnance"
                 },
@@ -2286,13 +2275,13 @@
                 },
                 {
                   "id": "",
-                  "name": "Apremilast",
+                  "name": "Apremilast (ordonnance)",
                   "subtitle": "Sous-titre facultatif",
                   "appId": 1,
                   "parentId": null,
                   "type": "html",
                   "content": "",
-                  "slug": "apremilast",
+                  "slug": "apremilastordonnance",
                   "submenu": false,
                   "component": "ApremilastOrdonnance"
                 }
@@ -2319,7 +2308,8 @@
               "type": "html",
               "content": "",
               "slug": "tsdmards",
-              "submenu": false
+              "submenu": false,
+              "component": "tsDMARDS"
             },
             {
               "id": "",
@@ -2327,10 +2317,96 @@
               "subtitle": "Sous-titre facultatif",
               "appId": 1,
               "parentId": null,
-              "type": "html",
+              "type": "list",
               "content": "",
               "slug": "traitement-anti-osteoporotique",
-              "submenu": false
+              "submenu": true,
+              "children": [
+                {
+                  "id": "",
+                  "name": "Denosumab / Tériparatide",
+                  "subtitle": "Sous-titre facultatif",
+                  "appId": 1,
+                  "parentId": null,
+                  "type": "html",
+                  "content": "",
+                  "slug": "denosumabordonnance",
+                  "submenu": false,
+                  "component": "DenosumabOrdonnance"
+                },
+                {
+                  "id": "",
+                  "name": "Injection Teriparatide",
+                  "subtitle": "Sous-titre facultatif",
+                  "appId": 1,
+                  "parentId": null,
+                  "type": "html",
+                  "content": "",
+                  "slug": "teriparatideordonnance",
+                  "submenu": false,
+                  "component": "TeriparatideOrdonance"
+                },
+                {
+                  "id": "",
+                  "name": "Ordonnance acide zolédronique",
+                  "subtitle": "Sous-titre facultatif",
+                  "appId": 1,
+                  "parentId": null,
+                  "type": "html",
+                  "content": "",
+                  "slug": "zoledroniqueordonnance",
+                  "submenu": false,
+                  "component": "ZoledroniqueOrdonance"
+                },
+                {
+                  "id": "",
+                  "name": "Perfusion acide zolédronique",
+                  "subtitle": "Sous-titre facultatif",
+                  "appId": 1,
+                  "parentId": null,
+                  "type": "html",
+                  "content": "",
+                  "slug": "zoledroniqueperfordonnance",
+                  "submenu": false,
+                  "component": "ZoledroniquePerfOrdonance"
+                },
+                {
+                  "id": "",
+                  "name": "Ordonnance bisphosphonates oraux (ex.Risedronate)",
+                  "subtitle": "Sous-titre facultatif",
+                  "appId": 1,
+                  "parentId": null,
+                  "type": "html",
+                  "content": "",
+                  "slug": "residronateordonnance",
+                  "submenu": false,
+                  "component": "RisedronateOrdo"
+                },
+                {
+                  "id": "",
+                  "name": "Ordonnance bisphosphonates oraux (ex.Alendronate)",
+                  "subtitle": "Sous-titre facultatif",
+                  "appId": 1,
+                  "parentId": null,
+                  "type": "html",
+                  "content": "",
+                  "slug": "alendronateordonnance",
+                  "submenu": false,
+                  "component": "AlendronateOrdo"
+                }
+              ]
+            },
+            {
+              "id": "",
+              "name": "Supplémentation vitamine D",
+              "subtitle": "Sous-titre facultatif",
+              "appId": 1,
+              "parentId": null,
+              "type": "html",
+              "content": "",
+              "slug": "vitamined",
+              "submenu": false,
+              "component": "Vitamined"
             },
             {
               "id": "",
@@ -2688,9 +2764,9 @@
           "subtitle": "Sous-titre facultatif",
           "appId": 1,
           "parentId": null,
-          "type": "link",
+          "type": "html",
           "content": "http://www.cri-net.com/recherche/fiches-pratiques-et-recommandations/dernieres-mises-a-jour",
-          "slug": "fiches-du-cri",
+          "slug": "cri",
           "submenu": false
         },
         {
@@ -2752,7 +2828,7 @@
         },
         {
           "id": "",
-          "name": "Evènements REF",
+          "name": "Evènements REF (section à venir)",
           "subtitle": "Sous-titre facultatif",
           "appId": 1,
           "parentId": null,
@@ -2763,7 +2839,7 @@
         },
         {
           "id": "",
-          "name": "Veille bibliographique de la REF",
+          "name": "Veille bibliographique de la REF (section à venir)",
           "subtitle": "Sous-titre facultatif",
           "appId": 1,
           "parentId": null,
@@ -2796,37 +2872,13 @@
         },
         {
           "id": "",
-          "name": "conctacts",
+          "name": "Contacts",
           "subtitle": "Sous-titre facultatif",
           "appId": 1,
           "parentId": null,
           "type": "link",
-          "content": "mailto:sectionref@gmail.com",
+          "content": "mailto:sectionref@gmail.com?subject=Calendrier%20Vaccinal%20-%20Tools",
           "slug": "contacts",
-          "submenu": false
-        }
-      ]
-    },
-    {
-      "id": "",
-      "name": "Fonctions recherches",
-      "subtitle": "Sous-titre facultatif",
-      "appId": 1,
-      "parentId": null,
-      "type": "list",
-      "content": "",
-      "slug": "fonctions-recherche",
-      "submenu": true,
-      "children": [
-        {
-          "id": "",
-          "name": "Sous sections dans l'arborescence",
-          "subtitle": "Sous-titre facultatif",
-          "appId": 1,
-          "parentId": null,
-          "type": "html",
-          "content": "",
-          "slug": "sous-sections-dans-l-arborescence",
           "submenu": false
         }
       ]

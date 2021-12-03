@@ -74,13 +74,8 @@
 <script lang="js">
     export default {
         name: 'VANCOMYCINE',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

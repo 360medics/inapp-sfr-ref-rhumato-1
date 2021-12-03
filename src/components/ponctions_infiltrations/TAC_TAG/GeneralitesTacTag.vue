@@ -54,13 +54,8 @@
 <script lang="js">
     export default {
         name: 'GeneralitesTacTag',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

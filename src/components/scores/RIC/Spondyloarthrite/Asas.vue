@@ -1,16 +1,22 @@
 <template>
   <div class="Asas">
     <h2 class="title">Spondylarthrite axiale, Critères ASAS</h2>
-    <p class="description"></p>
+    <p class="description">
+        Chez un patient présentant une rachialgie ≥ 3 mois dont l'âge du diagnostic est < 45 ans, on peut classer sa maladie dans la forme spondylarthrite axiale si:
+        Sacro-iliite à l'imagerie.
+        ET
+        ≥ 1 signe de spondylarthite.
+
+        OU
+
+        HLA-B27 positif.
+        ET
+        ≥ 2 autres signes de spondylarthite.
+    </p>
     <span class="line"></span>
-    <div class="information">
-      Chez un patient présentant une rachialgie ≥ 3 mois dont l'âge du
-      diagnostic est &lsaquo; 45 ans alors on peut classer sa maladie dans la
-      forme spondylarthrite axiale
-    </div>
 
     <form class="form">
-      <h4 class="categorie">Sacro-iliite à l'imagerie:</h4>
+      <h4 class="subtitle">Sacro-iliite à l'imagerie:</h4>
       <div class="btn" :class="{ selected: toggle1[1] === true }" @click="calcChecked(1, 0)">
         Inflammation fortement évocatrice de sacro-iliite à l'IRM.
       </div>
@@ -18,7 +24,7 @@
         Sacro-iliite radiologique stade ≥ 2 si bilatéral OU ≥ 3 si unilatéral.
       </div>
 
-      <h4 class="categorie">Signes de spondylarthrite:</h4>
+      <h4 class="subtitle">Signes de spondylarthrite:</h4>
                   <div @click="calcChecked(0, 1)" class="btn" :class="{ selected: toggle2[1] === true }">          Rachialgie inflammatoire.
           </div>
                           <div @click="calcChecked(0, 2)" class="btn" :class="{ selected: toggle2[2] === true }">Arthrite.</div>
@@ -63,15 +69,17 @@
         validation and final selection. Ann Rheum Dis. 2009;68:777–83.
       </em>
     </div>
+      <Footer/>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import Footer from "@/components/Footer.vue";
 
 export default Vue.extend({
-  mounted() {},
-  data() {
+    components: {Footer},
+    data() {
     return {
       result: "",
       toggle1: {

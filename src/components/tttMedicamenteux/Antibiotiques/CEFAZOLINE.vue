@@ -68,13 +68,8 @@
 <script lang="js">
     export default {
         name: 'CEFAZOLINE',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

@@ -1,7 +1,7 @@
 <template>
 <div class="Amor">
   <!-- <h3>http://www.rhumato.info/fiches-pratiques2/166-spondylarthrite-ankylosante/1747-criteres-damor-des-spondylarthropathies</h3> -->
-  <h2 class="title">Critères d’AMOR DES SPONDYLARTHROPATHIES</h2>
+  <h2 class="title">Critères d’amor des spondylarthropathies</h2>
   <span class="line"></span>
 
   <h4>Sélectionner les critères :</h4>
@@ -10,8 +10,8 @@
       Douleurs nocturnes ou raideur matinale de siège lombaire ou dorsal (1 points)
     </div>
 
-    <div class="btn" :class="{ selected: toggle[2] === true }" @click="toggle[2] === false ? calcPlus(1, 2) : calcLess(1, 2)">
-      Oligoarthrite asymétrique (1 points)
+    <div class="btn" :class="{ selected: toggle[2] === true }" @click="toggle[2] === false ? calcPlus(2, 2) : calcLess(2, 2)">
+      Oligoarthrite asymétrique (2 points)
     </div>
 
     <div class="btn" :class="{ selected: toggle[3] === true }" @click="toggle[3] === false ? calcPlus(1, 3) : calcLess(1, 3 )">
@@ -68,6 +68,8 @@
     <span>Points total: {{ total }}</span>
   </div>
 
+    <ReferencesMedical message2="Amor B  Dougados M Mujiyawa M. Critères diagnostiques des spondylarthropathies. Rev Rhum 1990; 57: 85-89" />
+    <Footer/>
 </div>
 
 
@@ -75,9 +77,12 @@
 
 <script lang="ts">
 import Vue from "vue";
+import ReferencesMedical from "@/components/ReferencesMedical.vue";
+import Footer from "@/components/Footer.vue";
 
 export default Vue.extend({
-  data() {
+    components: {Footer, ReferencesMedical},
+    data() {
     return{
     toggle: {
       1:false,

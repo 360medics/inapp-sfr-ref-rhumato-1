@@ -18,7 +18,7 @@
         <li>150 mg (soit 2 injections 75 mg) à S0, S4 puis toutes les 12 semaines</li>
       </ul>
     </div>
-
+<div class="line"></div>
     <p class="bold">GUSELKUMAB</p>
     <div>
       DCI : GUSELKUMAB<br>
@@ -53,13 +53,8 @@
 <script lang="js">
     export default {
         name: 'AntiIL23',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

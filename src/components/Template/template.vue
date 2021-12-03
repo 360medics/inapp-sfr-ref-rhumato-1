@@ -8,7 +8,7 @@ critères ACR/EULAR</h2>
 <br>
 <div class="introduction">test</div>
 <form class="form">
-<h4 class="categorie">Atteintes articulaires</h4>
+<h4 class="subtitle">Atteintes articulaires</h4>
 <p class="details">On différencie les grosses et petites articulations :- Grosses articulations : épaule, coude, hanche, genou, cheville. - Petites articulations : toutes autres articulations des membres</p>
 <button type="button" class="btn">0 - 1 grosse articulation.</button>
 <button type="button" class="btn validate"> 2 à 10 grosses articulations.</button>
@@ -80,7 +80,7 @@ critères ACR/EULAR</h2>
 import Vue from "vue";
 
 export default Vue.extend({
-  mounted() {},
+
 });
 </script>
 

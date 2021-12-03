@@ -33,13 +33,8 @@
 <script lang="js">
     export default {
         name: 'tttPousseeGrossesse',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

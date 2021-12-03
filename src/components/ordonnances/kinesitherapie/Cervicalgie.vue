@@ -1,28 +1,22 @@
 <template lang="html">
-    <section class="Cervicalgie">
-      <h2 class="title">Cervicalgie</h2>
-<span class="line"></span>
-
-      <p>
-        Ces modèles d’ordonnances sont proposés à titre indicatif, beaucoup de kinésithérapeutes proposent une prise en charge personnalisée à la suite d’un bilan diagnostique, ainsi, il est possible de noter sur votre ordonnance de kinésithérapie :
-        <br><br>
-        « Merci de réaliser un bilan diagnostique pour … et de proposer un programme adapté »
-      </p>
-
-      <img src="@/assets/CervicalgieKine.png">    </section>
+  <section class="Cervicalgie">
+    <h2 class="title">Cervicalgie</h2>
+    <span class="line"></span>
+    <p>
+      Ces modèles d’ordonnances sont proposés à titre indicatif, beaucoup de kinésithérapeutes proposent une prise en charge personnalisée à la suite d’un bilan diagnostique, ainsi, il est possible de noter sur votre ordonnance de kinésithérapie :
+      <br><br>
+      « Merci de réaliser un bilan diagnostique pour … et de proposer un programme adapté »
+    </p>
+    <PNGViewer :src="'CervicalgieKine.png'" :myId="'CervicalgieKine.png'"/>
+  </section>
 </template>
 
 <script lang="js">
-    export default {
-        name: 'Cervicalgie',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
-    }
+import PNGViewer from "@/components/PNGViewer";
+export default {
+  name: 'Cervicalgie',
+  components: { PNGViewer }
+}
 </script>
 
 <style scoped lang="scss">

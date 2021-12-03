@@ -1,5 +1,5 @@
 <template lang="html">
-  <section class="MycophénolateMofetil">
+  <section class="MycophenolateMofetil">
     <h2 class="title">Mycophénolate Mofetil</h2>
 <span class="line"></span>
 
@@ -26,20 +26,15 @@
 
 <script lang="js">
     export default {
-        name: 'MycophénolateMofetil',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+        name: 'MycophenolateMofetil',
+
+
     }
 </script>
 
 <style scoped lang="scss">
 @import "src/sass/global.scss";
-    .MycophénolateMofetil {
+    .MycophenolateMofetil {
       padding: 0 15px;
       text-align: left;
 

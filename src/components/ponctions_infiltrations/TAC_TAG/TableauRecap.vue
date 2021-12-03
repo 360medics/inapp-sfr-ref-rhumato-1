@@ -8,28 +8,24 @@
       <br>
       Vue d’ensemble
     </p>
-    <img src="@/assets/ponction_infiltration1.png">
+    <PNGViewer :src="'ponction_infiltration1.png'" :myID="'ponction_infiltration2.png'"/>
 
     <p>
       Gestion des anticoagulants- antiagrégants plaquettaires avant infiltrations
       <br>
       Risques hémorragiques vs risques thrombo-emboliques
     </p>
-    <img src="@/assets/ponction_infiltration2.png">
+    <PNGViewer :src="'ponction_infiltration2.png'" :myID="'ponction_infiltration2.png'"/>
   </section>
 </template>
 
 <script lang="js">
-    export default {
-        name: 'TableauRecap',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
-    }
+
+  import PNGViewer from '@/components/PNGViewer.vue';
+  export default {
+    name: 'TableauRecap',
+    components: { PNGViewer }
+  }
 </script>
 
 <style scoped lang="scss">

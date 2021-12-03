@@ -23,13 +23,6 @@
 <script lang="js">
     export default {
         name: 'Echographie',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
     }
 </script>
 

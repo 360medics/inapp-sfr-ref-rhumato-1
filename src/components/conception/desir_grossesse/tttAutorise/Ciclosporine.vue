@@ -27,13 +27,8 @@
 <script lang="js">
     export default {
         name: 'Ciclosporine',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

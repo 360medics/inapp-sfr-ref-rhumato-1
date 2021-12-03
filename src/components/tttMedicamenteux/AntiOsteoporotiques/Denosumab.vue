@@ -115,13 +115,8 @@
 <script lang="js">
     export default {
         name: 'Denosumab',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

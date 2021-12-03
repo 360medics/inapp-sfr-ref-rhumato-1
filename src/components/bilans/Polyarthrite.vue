@@ -109,13 +109,8 @@
 <script lang="js">
     export default {
         name: 'Polyarthrite',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

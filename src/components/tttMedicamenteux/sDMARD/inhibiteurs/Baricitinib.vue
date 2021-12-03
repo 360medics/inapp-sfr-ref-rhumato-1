@@ -68,13 +68,8 @@
 <script lang="js">
     export default {
         name: 'Baricitinib',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

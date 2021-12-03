@@ -63,13 +63,8 @@
 <script lang="js">
     export default {
         name: 'Leflunomide',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

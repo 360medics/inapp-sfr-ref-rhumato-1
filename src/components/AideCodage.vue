@@ -175,20 +175,14 @@
 <script lang="js">
     export default {
         name: 'AideCodage',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 
 <style scoped lang="scss">
 @import "src/sass/global.scss";
     .AideCodage {
-      padding: 0 15px;
       text-align: left;
 
       h2 {

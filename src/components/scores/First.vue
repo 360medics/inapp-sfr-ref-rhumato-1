@@ -93,20 +93,35 @@
     <div class="result">
       Items présents : {{ quest.length }}
     </div>
+
+    <ReferencesMedical
+      message1="Le questionnaire FiRST est un outil de dépistage de la fibromyalgie, simple et facile d'utilisation, avec une bonne sensibilité et spécificité. Un score de 5 items sur les 6 items du questionnaire permet de détecter la fibromyalgie avec une sensibilité de 90,5 % et une spécificité de 85,7 %."
+      message2="Burckhardt CS, clark SR, Benett RM. Fibromyalgia and quality of life : a comparative analysis. J Rheumatology 1993 ; 20:475-9.
+        Perrot S, Bouhassira D, Fermanian J. Cercle d'Etude de la Douleur en Rhumatologie. Development and validation of the Fibromyalgia Rapid Screening tool (FiRST). Pain. 2010 ; 150:250."
+      source-link="http://medicalcul.free.fr/firstquest.html"
+    />
+      <Footer/>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import { isMobile } from '@/global';
+import Footer from "@/components/Footer.vue";
+import ReferencesMedical from "@/components/ReferencesMedical.vue";
 
 export default Vue.extend({
   name: "First",
-  data() {
+    components: {Footer, ReferencesMedical },
+    data() {
     return {
       quest: [],
     };
   },
-  mounted() {},
+  methods: {
+    isMobile
+  }
+
 });
 </script>
 

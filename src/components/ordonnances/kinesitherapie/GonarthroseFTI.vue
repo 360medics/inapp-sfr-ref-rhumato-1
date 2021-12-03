@@ -1,28 +1,22 @@
 <template lang="html">
-    <section class="GonarthroseFTI">
-      <h2 class="title">Gonarthrose FTI</h2>
-<span class="line"></span>
-
-      <p>
-        Ces modèles d’ordonnances sont proposés à titre indicatif, beaucoup de kinésithérapeutes proposent une prise en charge personnalisée à la suite d’un bilan diagnostique, ainsi, il est possible de noter sur votre ordonnance de kinésithérapie :
-        <br><br>
-        « Merci de réaliser un bilan diagnostique pour … et de proposer un programme adapté »
-      </p>
-
-      <img src="@/assets/GonarthroseFTIKine.png">    </section>
+  <section class="GonarthroseFTI">
+    <h2 class="title">Gonarthrose FTI</h2>
+    <span class="line"></span>
+    <p>
+      Ces modèles d’ordonnances sont proposés à titre indicatif, beaucoup de kinésithérapeutes proposent une prise en charge personnalisée à la suite d’un bilan diagnostique, ainsi, il est possible de noter sur votre ordonnance de kinésithérapie :
+      <br><br>
+      « Merci de réaliser un bilan diagnostique pour … et de proposer un programme adapté »
+    </p>
+    <PNGViewer :src="'GonarthroseFTIKine.png'" :myID="'GonarthroseFTIKine.png'"/>
+  </section>
 </template>
 
 <script lang="js">
-    export default {
-        name: 'GonarthroseFTI',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
-    }
+import PNGViewer from "@/components/PNGViewer";
+export default {
+  name: 'GonarthroseFTI',
+  components: { PNGViewer }
+}
 </script>
 
 <style scoped lang="scss">

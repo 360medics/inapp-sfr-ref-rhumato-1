@@ -4,7 +4,7 @@
       Critères de classification ACR-EULAR de la sclérodermie systémique
     </h2>
 
-    <h4 class="categorie">
+    <h4 class="subtitle">
       Epaississement cutané (ne tenir compte que du score le plus élevé) :
     </h4>
     <p class="description">
@@ -84,7 +84,7 @@
     />
     <label class="btn" :class="{selected: questions.q3 === '4'}" for="btnradio6">OUI</label>
 
-    <h4 class="categorie">
+    <h4 class="subtitle">
       Lésions pulpaires (ne tenir compte que du score le plus élevé) :
     </h4>
     <p class="description">Ulcères pulpaires digitaux</p>
@@ -265,41 +265,47 @@
     <label class="btn" :class="{selected: questions.q10 === '3'}" for="btnradio20">OUI</label>
 
     <div class="result">
-      <p class="description">{{ total }} Points</p>
+      <p>{{ total }} Points</p>
 
-      <p class="description">0 Critère d'exclusion</p>
+      <p>0 Critère d'exclusion</p>
 
-      <p v-if="total < 9" class="description">Negatif</p>
+      <p v-if="total < 9">Negatif</p>
 
-      <p v-else class="description">Positif</p>
+      <p v-else>Positif</p>
 
-      <p class="description">
+      <p>
         Le critère peut être retenu s'il est présent à un moment au moins de
         l'histoire clinique. Un score ≥ 9 permet de classer les patients comme
         atteints de sclérodermie systémique.
       </p>
     </div>
+
+      <ReferencesMedical sourceLink="https://www.fai2r.org/les-pathologies-rares/sclerodermie-systemique/criteres/" />
+      <Footer/>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import ReferencesMedical from "@/components/ReferencesMedical.vue";
+import Footer from "@/components/Footer.vue";
 
 export default Vue.extend({
   name: "SystemicSclerodermaAcrEular",
-  data(){
+    components: {Footer, ReferencesMedical},
+    data(){
     return{
       questions:{
-        q1:'0',
-        q2:'0',
-        q3:'0',
-        q4:'0',
-        q5:'0',
-        q6:'0',
-        q7:'0',
-        q8:'0',
-        q9:'0',
-        q10:'0',
+        q1:null,
+        q2:null,
+        q3:null,
+        q4:null,
+        q5:null,
+        q6:null,
+        q7:null,
+        q8:null,
+        q9:null,
+        q10: null,
       },
       total:0,
     }
@@ -317,7 +323,7 @@ export default Vue.extend({
 
   },
   methods:{},
-  mounted() {},
+
 });
 </script>
 

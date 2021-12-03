@@ -49,13 +49,8 @@
 <script lang="js">
     export default {
         name: 'tttRhumato',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

@@ -19,13 +19,8 @@
 <script lang="js">
     export default {
         name: 'Belimumab',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

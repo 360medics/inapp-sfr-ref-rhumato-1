@@ -105,13 +105,8 @@
 <script lang="js">
     export default {
         name: 'Raloxifene',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

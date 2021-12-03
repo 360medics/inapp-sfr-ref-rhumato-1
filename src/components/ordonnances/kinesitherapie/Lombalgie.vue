@@ -8,22 +8,16 @@
       <br><br>
       « Merci de réaliser un bilan diagnostique pour … et de proposer un programme adapté »
     </p>
-
-    <img src="@/assets/LombalgieKine.png">
+    <PNGViewer :src="'LombalgieKine.png'" :myID="'LombalgieKine.png'"/>
   </section>
 </template>
 
 <script lang="js">
-    export default {
-        name: 'Lombalgie',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
-    }
+import PNGViewer from "@/components/PNGViewer";
+export default {
+  name: 'Lombalgie',
+  components: { PNGViewer }
+}
 </script>
 
 <style scoped lang="scss">

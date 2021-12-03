@@ -47,10 +47,10 @@
       </ul>
       <span class="underline">POSOLOGIES :</span>
       <ul>
-        PR, SpA et Rpso : 40 mg tous les 14 jours</li>
-        Psoriasis, uvéite : 80 mg à S0, 40 mg à S1 puis 40 mg tous les 14 jours</li>
-        MICI 80 mg à S0, 40 mg à S2 puis 40 mg/14j</li>
-        Hydrosadénite suppurée : 160 mg à S0, 80 mg à S2 puis 40 mg par semaine</li>
+        <li>PR, SpA et Rpso : 40 mg tous les 14 jours</li>
+        <li>Psoriasis, uvéite : 80 mg à S0, 40 mg à S1 puis 40 mg tous les 14 jours</li>
+        <li>MICI 80 mg à S0, 40 mg à S2 puis 40 mg/14j</li>
+        <li>Hydrosadénite suppurée : 160 mg à S0, 80 mg à S2 puis 40 mg par semaine</li>
       </ul>
     </div>
 
@@ -156,13 +156,8 @@
 <script lang="js">
     export default {
         name: 'AntiTNF',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

@@ -1,5 +1,5 @@
 <template>
-  <div class=""HaqQuestion>
+  <div class="">
     <div v-if="title">
       <h3 class="title">{{ title }}</h3>
     </div>
@@ -20,18 +20,21 @@
           Incapable de le faire
       </div>
     </section>
+      <Footer/>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import Footer from "@/components/Footer.vue";
 
 export default Vue.extend({
   name: "HaqQuestion",
-  props: ["index", "title", "question", "malusScore"],
+    components: {Footer},
+    props: ["index", "title", "question", "malusScore"],
   data() {
     return {
-      score: 0
+      score: null
     };
   },
   methods: {
@@ -43,7 +46,7 @@ export default Vue.extend({
       });
     },
   },
-  mounted() {},
+
 });
 </script>
 <style scoped lang="scss">

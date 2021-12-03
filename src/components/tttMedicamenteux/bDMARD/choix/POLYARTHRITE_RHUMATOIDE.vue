@@ -247,13 +247,8 @@
 <script lang="js">
     export default {
         name: 'POLYARTHRITE_RHUMATOIDE',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

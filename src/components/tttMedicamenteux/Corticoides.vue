@@ -7,13 +7,8 @@
 <script lang="js">
     export default {
         name: 'Corticoides',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

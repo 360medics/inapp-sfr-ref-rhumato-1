@@ -1,11 +1,17 @@
 <template>
   <div class="Basfi">
     <h3 class="title">Score Basfi</h3>
-    <span align="center" class="score_note">Pour chaque item, indiquez une valeur de 0 (absent) à 10 (extrême) concernant votre ressenti.</span>
+    <span align="center" class="score_note"
+      >Pour chaque item, indiquez une valeur de 0 (sans problème) à 10
+      (impossible) selon la facilité à réaliser les actions.</span
+    >
     <span class="line"></span>
 
     <form name="Form" id="Form">
-      <p>1. Pouvez-vous mettre vos chaussettes ou vos collants sans aide extérieure et sans moyen extérieur (ex. tire-bas) ?</p>
+      <p>
+        1. Pouvez-vous mettre vos chaussettes ou vos collants sans aide
+        extérieure et sans moyen extérieur (ex. tire-bas) ?
+      </p>
       <input
         name="vItem1"
         id="vItem1"
@@ -14,9 +20,12 @@
         v-model="vItem1"
         min="0"
         max="10"
-      /><span class="score_note"> (0=absent, 10=extrême)</span>
+      /><span class="score_note"> (0=aisé, 10=impossible)</span>
 
-      <p>2. Pouvez-vous vous pencher en avant pour ramasser un stylo par terre, sans aide ?</p>
+      <p>
+        2. Pouvez-vous vous pencher en avant pour ramasser un stylo par terre,
+        sans aide ?
+      </p>
       <input
         name="vItem2"
         id="vItem2"
@@ -25,9 +34,12 @@
         v-model="vItem2"
         min="0"
         max="10"
-      /><span class="score_note"> (0=absent, 10=extrême)</span>
+      /><span class="score_note"> (0=aisé, 10=impossible)</span>
 
-      <p>3. Pouvez-vous prendre quelque chose sur une étagère élevée sans aide (ex. pince) ?</p>
+      <p>
+        3. Pouvez-vous prendre quelque chose sur une étagère élevée sans aide
+        (ex. pince) ?
+      </p>
       <input
         name="vItem3"
         id="vItem3"
@@ -36,9 +48,12 @@
         v-model="vItem3"
         min="0"
         max="10"
-      /><span class="score_note"> (0=absent, 10=extrême)</span>
+      /><span class="score_note"> (0=aisé, 10=impossible)</span>
 
-      <p>4. Pouvez-vous vous lever d'un siège dans accoudoirs, sans vous aider de vos mains ni d'aucune aide ?</p>
+      <p>
+        4. Pouvez-vous vous lever d'un siège sans accoudoirs, sans vous aider de
+        vos mains ni d'aucune aide ?
+      </p>
       <input
         name="vItem4"
         id="vItem4"
@@ -47,9 +62,12 @@
         v-model="vItem4"
         min="0"
         max="10"
-      /><span class="score_note"> (0=absent, 10=extrême)</span>
+      /><span class="score_note"> (0=aisé, 10=impossible)</span>
 
-      <p>5. Pouvez-vous passer de la position couchée sur le dos à la position debout sans aide ?</p>
+      <p>
+        5. Pouvez-vous passer de la position couchée sur le dos à la position
+        debout sans aide ?
+      </p>
       <input
         name="vItem5"
         id="vItem5"
@@ -58,9 +76,11 @@
         v-model="vItem5"
         min="0"
         max="10"
-      /><span class="score_note"> (0=absent, 10=extrême)</span>
+      /><span class="score_note"> (0=aisé, 10=impossible)</span>
 
-      <p>6. Pouvez-vous rester debout 10 minutes sans soutien et sans avoir mal ?</p>
+      <p>
+        6. Pouvez-vous rester debout 10 minutes sans soutien et sans avoir mal ?
+      </p>
       <input
         name="vItem6"
         id="vItem6"
@@ -69,9 +89,12 @@
         v-model="vItem6"
         min="0"
         max="10"
-      /><span class="score_note"> (0=absent, 10=extrême)</span>
+      /><span class="score_note"> (0=aisé, 10=impossible)</span>
 
-      <p>7. Pouvez-vous monter 12 à 15 marches sans vous tenir à la rampe ou utiliser un autre soutien et en ne posant qu'un seul pied par marche ?</p>
+      <p>
+        7. Pouvez-vous monter 12 à 15 marches sans vous tenir à la rampe ou
+        utiliser un autre soutien et en ne posant qu'un seul pied par marche ?
+      </p>
       <input
         name="vItem7"
         id="vItem7"
@@ -80,9 +103,11 @@
         v-model="vItem7"
         min="0"
         max="10"
-      /><span class="score_note"> (0=absent, 10=extrême)</span>
+      /><span class="score_note"> (0=aisé, 10=impossible)</span>
 
-      <p>8. Pouvez-vous regarder par-dessus votre épaule sans vous retourner ?</p>
+      <p>
+        8. Pouvez-vous regarder par-dessus votre épaule sans vous retourner ?
+      </p>
       <input
         name="vItem8"
         id="vItem8"
@@ -91,9 +116,12 @@
         v-model="vItem8"
         min="0"
         max="10"
-      /><span class="score_note"> (0=absent, 10=extrême)</span>
+      /><span class="score_note"> (0=aisé, 10=impossible)</span>
 
-      <p>9. Pouvez-vous effectuer des activités nécessitant un effort physique (ex: kinésithérapie, jardinage ou sport) ?</p>
+      <p>
+        9. Pouvez-vous effectuer des activités nécessitant un effort physique
+        (ex: kinésithérapie, jardinage ou sport) ?
+      </p>
       <input
         name="vItem9"
         id="vItem9"
@@ -102,9 +130,12 @@
         v-model="vItem9"
         min="0"
         max="10"
-      /><span class="score_note"> (0=absent, 10=extrême)</span>
+      /><span class="score_note"> (0=aisé, 10=impossible)</span>
 
-      <p>10. Pouvez-vous rester actif toute la journée, que ce soit chez vous ou au travail ?</p>
+      <p>
+        10. Pouvez-vous rester actif toute la journée, que ce soit chez vous ou
+        au travail ?
+      </p>
       <input
         name="vItem10"
         id="vItem10"
@@ -113,46 +144,55 @@
         v-model="vItem10"
         min="0"
         max="10"
-      /><span class="score_note"> (0=absent, 10=extrême)</span>
+      /><span class="score_note"> (0=aisé, 10=impossible)</span>
 
       <div>
-        <hr width="80%" class="line" />
-        <p align="center">
-          <input
-            class="btn"
-            name="Submit"
-            type="button"
-            @click="f_Calculer()"
-            value="Calculer"
-          />
-        </p>
-        <hr width="80%" class="line" />
+
+        <button type="button" class="btn btn__submit" @click="f_Calculer()">
+          Calculer
+        </button>
+
         <p class="result">
           Score :
-          {{ result}}
+          {{ result }}
         </p>
       </div>
     </form>
+
+    <div class="info">
+      <p>Interprétation:
+        Le BASFI (Bath ankylosing spondylitis functional index) reflète le retentissement fonctionnel, c'est-à-dire l'incapacité à exécuter des actions de la vie quotidienne. Pour chacune des dix activités, il faut évaluer de 0 à 10 la facilité ou la difficulté à les effectuer pendant le mois passé. 0 signifie la facilité totale, 10 signifie l'impossibilité. Ce score est une aide au suivi des spondylarthrites ankylosantes.</p>
+    </div>
+
+    <p class="score_ref">
+      Références:<br />Calin A, Garrett S, Whitelock H et al. A new approch to
+      defining functional ability in ankylosing spondylitis : the development of
+      the Bath Ankylosing Spondylitis Functional Index. J.Rheumatol.
+      1994;21(12):2281-2285.
+    </p>
+      <Footer/>
   </div>
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import Vue from 'vue';
+import Footer from "@/components/Footer.vue";
 
 export default Vue.extend({
-  name: "Basfi",
-  data() {
+  name: 'Basfi',
+    components: {Footer},
+    data() {
     return {
-      vItem1: 0,
-      vItem2: 0,
-      vItem3: 0,
-      vItem4: 0,
-      vItem5: 0,
-      vItem6: 0,
-      vItem7: 0,
-      vItem8: 0,
-      vItem9: 0,
-      vItem10: 0,
+      vItem1: null,
+      vItem2: null,
+      vItem3: null,
+      vItem4: null,
+      vItem5: null,
+      vItem6: null,
+      vItem7: null,
+      vItem8: null,
+      vItem9: null,
+      vItem10: null,
       result: 0,
     };
   },
@@ -169,19 +209,20 @@ export default Vue.extend({
           this.vItem7 * 1 +
           this.vItem8 * 1 +
           this.vItem9 * 1 +
-          this.vItem10 * 1) / 10;
+          this.vItem10 * 1) /
+        10;
 
       // Affichage du résultat
       return (this.result = Res);
     },
   },
-  mounted() {},
+
 });
 </script>
 
 <style scoped lang="scss">
-@import "src/sass/global.scss";
-@import "src/sass/global";
+@import 'src/sass/global.scss';
+@import 'src/sass/global';
 
 .Basfi {
   display: flex;
@@ -195,7 +236,6 @@ export default Vue.extend({
   }
 
   label {
-
   }
 
   .label:hover,
@@ -209,7 +249,7 @@ export default Vue.extend({
     outline: 1px solid black;
   }
 
-  [type="radio"]:checked + label {
+  [type='radio']:checked + label {
     background-color: violet;
   }
 
@@ -231,12 +271,8 @@ export default Vue.extend({
 
   .score_table {
     border-width: 0;
-    border-collapse: 0;
     margin-left: auto;
     margin-right: auto;
-    padding: 2;
   }
 }
 </style>
-
-

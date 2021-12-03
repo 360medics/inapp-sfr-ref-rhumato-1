@@ -1,6 +1,6 @@
 <template>
   <div class="Cdai">
-    <h2 class="title">polyarthrite rhumatoïde - CDAI</h2>
+    <h2 class="title">Polyarthrite rhumatoïde - CDAI</h2>
     <p class="description">
       Le CDAI ou Clinical Disease Activity Index est inspiré de la famille de
       scores « DAS » pour la polyarthrite rhumatoïde, comprenant DAS28 et
@@ -91,19 +91,23 @@
         22.
       </em>
     </div>
+      <ReferencesMedical sourceText="application rheumatools" />
+      <Footer/>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import ReferencesMedical from "@/components/ReferencesMedical.vue";
+import Footer from "@/components/Footer.vue";
 export default Vue.extend({
-  mounted() {},
-  data() {
+    components: {Footer, ReferencesMedical},
+    data() {
     return {
-      tenderJoins: 0,
-      swollenJoins: 0,
-      patientEvaluation: 0,
-      medicEvaluation: 0,
+      tenderJoins: null,
+      swollenJoins: null,
+      patientEvaluation: null,
+      medicEvaluation: null,
     };
   },
   methods: {
@@ -123,7 +127,15 @@ export default Vue.extend({
 @import "src/sass/global.scss";
 
 .Cdai {
+
   input {
+    height: 30px;
+    padding: 0 3px;
+    background: #EDECF4 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+    margin: 0 10px;
+    border: none;
     width: 60px;
   }
 

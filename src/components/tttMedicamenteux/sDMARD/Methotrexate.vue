@@ -34,7 +34,7 @@
       <li>Rpso</li>
       <li>Psoriasis</li>
       <li>AJI de forme polyarticulaire active et sévère</li>
-      <li>(Pas d’AMM même si prescrit dans les spondylarthrites avec atteinte périphériques, le lupus, le Horton ...)</li>
+      <li>(Pas d’AMM même si prescrit dans les spondylarthrites avec atteinte périphériques, le lupus, leHorton ...)</li>
     </ul>
     <p><span class="bold">Posologies</span> </p>
     <ul>
@@ -134,13 +134,8 @@
 <script lang="js">
     export default {
         name: 'Methotrexate',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

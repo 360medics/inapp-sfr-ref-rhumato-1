@@ -4,7 +4,7 @@
     <span class="line"></span>
 
 
-    <h4 class="categorie"> Dérouillage matinal > 45 minutes </h4>
+    <h4 class="subtitle"> Dérouillage matinal > 45 minutes </h4>
     <div>
       <p @click="choice1(0)" class="btn" :class="{ selected: score1 === 0 }">
         Non
@@ -16,7 +16,7 @@
       </p>
     </div>
 
-    <h4 class="categorie"> Douleur de hanche ou limitation articulaire </h4>
+    <h4 class="subtitle"> Douleur de hanche ou limitation articulaire </h4>
     <div>
       <p @click="choice2(0)" class="btn" :class="{ selected: score2 === 0 }">
         Non
@@ -28,7 +28,7 @@
       </p>
     </div>
 
-    <h4 class="categorie"> Absence de facteurs rhumatoïdes et d'anticorps anti-CCP </h4>
+    <h4 class="subtitle"> Absence de facteurs rhumatoïdes et d'anticorps anti-CCP </h4>
     <div>
       <p @click="choice3(0)" class="btn" :class="{ selected: score3 === 0 }">
         Non
@@ -40,7 +40,7 @@
       </p>
     </div>
 
-    <h4 class="categorie"> Absence d'autres articulations atteintes </h4>
+    <h4 class="subtitle"> Absence d'autres articulations atteintes </h4>
     <div>
       <p @click="choice4(0)" class="btn" :class="{ selected: score4 === 0 }">
         Non
@@ -52,7 +52,7 @@
       </p>
     </div>
 
-    <h4 class="categorie">Critères relatifs à l'échographie :</h4>
+    <h4 class="subtitle">Critères relatifs à l'échographie :</h4>
     <p>Au moins 1 épaule avec une bursite sous-deltoïdienne et/ou une ténosynovite bicipitale et/ou une synovite glénohumérale (postérieure ou axillaire) et au moins une hanche avec une synovite et/ou une bursite trochantérienne </p>
     <div>
       <p @click="choice5(0)" class="btn" :class="{ selected: score5 === 0 }">
@@ -86,15 +86,21 @@
          <div class="info">
       <span>Si le patient a plus de 50 ans, des douleurs scapulaires bilatérales, une CRP et/ou une VS augmentées ET un score ≥ 4 sans les critères échographiques ou un score ≥ 5 avec les critères échographiques ⇒ la sensibilité est de 68 % et la spécificité est de 78 % sans l’échographie et 66 % et 81 % avec l’échographie. </span>
     </div>
+
+      <ReferencesMedical sourceLink="https://www.fai2r.org/les-pathologies-rares/maladie-de-horton-pseudo-polyarthrite-rhizomelique/criteres/criteres-de-classification-de-la-ppr-eular-acr-2012/" />
+      <Footer/>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import ReferencesMedical from "@/components/ReferencesMedical.vue";
+import Footer from "@/components/Footer.vue";
 
 export default Vue.extend({
-  mounted() {},
-  data() {
+  name: "PprEularAcr2012",
+    components: {Footer, ReferencesMedical},
+    data() {
     return {
       score1: 0,
       score2: 0,
@@ -179,30 +185,6 @@ export default Vue.extend({
 
   .btn.selected {
     background-color: #3abaea;
-    color: white;
-  }
-
-  .title {
-    color: rgb(143, 58, 177);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  }
-
-  .result {
-    width: 80%;
-    margin: auto;
-    border-radius: 10px;
-    background-color: #4c2b62;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    justify-content: center;
-    display: block !important;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-
-    /* align-content: space-around; */
-    /* align-items: flex-start; */
-    text-align: center;
     color: white;
   }
 

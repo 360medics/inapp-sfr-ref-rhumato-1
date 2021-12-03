@@ -2,22 +2,16 @@
   <section class="Perfusion">
     <h2 class="title">Perfusion acide zolédronique</h2>
 <span class="line"></span>
-
-    <img src="@/assets/PerfusionActe.png">
+    <PNGViewer :src="'PerfusionActe.png'" :myID="'PerfusionActe.png'"/>
   </section>
 </template>
 
 <script lang="js">
-    export default {
-        name: 'Perfusion',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
-    }
+import PNGViewer from "@/components/PNGViewer";
+export default {
+  name: 'Perfusion',
+  components: { PNGViewer }
+}
 </script>
 
 <style scoped lang="scss">
@@ -28,7 +22,6 @@
       p {
         text-align: left;
       }
-
 
       img {
         max-width: 100%;

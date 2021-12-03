@@ -2,22 +2,17 @@
   <section class="Methotrexate">
     <h2 class="title">Methotrexate</h2>
 <span class="line"></span>
-
-    <img src="@/assets/MethotrexateCSDMARDS.png">
+    <p>Sur ordonnance d’exception</p>
+    <PNGViewer :src="'MethotrexateCSDMARDS.png'" :myID="'MethotrexateCSDMARDS.png'"/>
   </section>
 </template>
 
 <script lang="js">
-    export default {
-        name: 'Methotrexate',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
-    }
+import PNGViewer from "@/components/PNGViewer";
+export default {
+  name: 'Methotrexate',
+  components: { PNGViewer }
+}
 </script>
 
 <style scoped lang="scss">

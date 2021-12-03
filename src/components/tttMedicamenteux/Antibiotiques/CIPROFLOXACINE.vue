@@ -69,13 +69,8 @@
 <script lang="js">
     export default {
         name: 'CIPROFLOXACINE',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

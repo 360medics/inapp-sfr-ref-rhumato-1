@@ -1,81 +1,71 @@
 <template>
-  <div class="header">
-    <div v-if="headerQuitApp" class="quit">
-      <a v-if="isMobile()" href="cmd://webview-close" >
-        <i class="fal fa-times-circle"></i>
-      </a>
-    </div>
-    <div v-else @click="goBack(this,2)" class="back">
-      <i class="fal fa-chevron-circle-left"></i>
+  <header class="header">
+    <div @click="goBack" class="header__icon header__icon--left" v-if="displayChevronCircle">
+      <i class="far fa-chevron-circle-left" />
     </div>
 
-    <div>
-      <img class="test" :src="require('@/assets/logo-sfr.png')" alt="Logo sfr">
-      <img :src="require('@/assets/logo-ref.png')" alt="Logo ref">
+    <router-link  to="/">
+      <img class="header__logo" :src="require('@/assets/logo-sfr.png')" alt="Logo sfr" />
+      <img class="header__logo" :src="require('@/assets/logo-ref.png')" alt="Logo ref" />
+    </router-link>
+
+    <div v-if="isMobile()" class="header__icon header__icon--right">
+        <a href="cmd://webview-close" >
+          <i class="far fa-times-circle" />
+        </a>
     </div>
-  </div>
+  </header>
 </template>
 
 <script lang="ts">
-import Vue from "vue"
-import { goBack, isMobile } from "@/global";
+import Vue from 'vue';
+import { goBack, isMobile } from '@/global';
 
 export default Vue.extend({
-  props: [ "headerQuitApp" ],
-  mounted() {},
+  name: "Header",
+  data: () => ({
+    displayChevronCircle: false,
+  }),
   methods: {
     goBack,
-    isMobile
-  }
-})
+    isMobile,
+  },
+  mounted() {
+    this.displayChevronCircle = this.$route.path !== "/";
+  },
+  watch: {
+    $route: function() {
+      this.displayChevronCircle = this.$route.path !== "/";
+    }
+  },
+});
 </script>
 
 <style scoped lang="scss">
-@import "src/sass/global.scss";;
-.header {
-  margin-bottom: 1em;
-  box-shadow: 0 3px 6px rgba(196,154,108,.2980392156862745);
-  border-bottom-left-radius: 1em;
-  border-bottom-right-radius: 1em;
-  padding: 1rem .75rem;
-  justify-content: space-between;
-  display: flex;
-  align-items: center;
-
-  img {
-    height: 40px;
+  .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      padding: 1rem 0.75rem;
+      background-color: #F1F1F6;
+      box-shadow: 0px 3px 6px #00000029;
+      border-radius: 0 0 1.06em 1.06em;
+      &__logo {
+          height: 40px;
+      }
+      &__icon {
+        font-size: 24px;
+        position: absolute;
+        &--left {
+          left: 15px;
+        }
+        &--right {
+          right: 15px;
+        }
+      }
   }
-
-
-  .quit {
-    height: 3em;
-
-    a {
-      display: inline-block;
-      font-weight: 400;
-      line-height: 1.5;
-      text-align: center;
-      text-decoration: none;
-      vertical-align: middle;
-      cursor: pointer;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-      background-color: transparent;
-      border: 1px solid transparent;
-      padding: .375rem .75rem;
-      font-size: 1rem;
-      border-radius: .5rem;
-      transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-      color: #cb2080;
-      align-items: center !important;
-    }
+  .far {
+    color: #38bbec;
   }
-
-  .back {
-    font-size: 24px;
-    color: #58b4d9;
-  }
-}
 </style>

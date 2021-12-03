@@ -64,13 +64,8 @@
 <script lang="js">
     export default {
         name: 'CEFTRIAXONE',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

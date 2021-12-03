@@ -69,13 +69,8 @@
 <script lang="js">
     export default {
         name: 'LEVOFLOXACINE',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

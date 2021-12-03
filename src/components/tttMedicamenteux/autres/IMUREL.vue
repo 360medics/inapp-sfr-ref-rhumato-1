@@ -84,13 +84,8 @@
 <script lang="js">
     export default {
         name: 'IMUREL',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

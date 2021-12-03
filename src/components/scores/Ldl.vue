@@ -4,20 +4,18 @@
     <span class="line"></span>
 
     <a href="https://www.ldlcible.com/" target="_blank">Calculer en ligne</a>
+      <Footer/>
   </div>
 
 </template>
 
 <script lang="ts">
-import Vue from "vue";
-export default Vue.extend({
-  data() {
-    return {};
-  },
-  methods: {
-  },
-  mounted() {},
-});
+  import Vue from "vue";
+  import Footer from "@/components/Footer.vue";
+  export default Vue.extend({
+    name: 'Ldl',
+      components: {Footer},
+  });
 </script>
 
 <style scoped lang="scss">

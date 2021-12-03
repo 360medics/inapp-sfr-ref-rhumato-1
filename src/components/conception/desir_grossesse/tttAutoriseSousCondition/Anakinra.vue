@@ -25,13 +25,8 @@
 <script lang="js">
     export default {
         name: 'Anakinra',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

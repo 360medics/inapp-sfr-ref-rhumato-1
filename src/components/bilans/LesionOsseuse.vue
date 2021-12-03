@@ -56,13 +56,8 @@
 <script lang="js">
     export default {
         name: 'LesionOsseuse',
-        props: [],
-        mounted() {},
-        data() {
-            return {};
-        },
-        methods: {},
-        computed: {}
+
+
     }
 </script>
 

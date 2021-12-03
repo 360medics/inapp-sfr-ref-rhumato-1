@@ -12,9 +12,9 @@
 
     <div class="container">
       <form class="form">
-        <h4 class="categorie">Atteintes articulaires</h4>
+        <h4 class="subtitle">Atteintes articulaires</h4>
         <div>
-          <ul class="details">
+          <ul class="indication">
             <li> On différencie les grosses et petites articulations: </li>
             <li>
                 Grosses articulations : épaule, coude, hanche, genou, cheville.
@@ -50,9 +50,9 @@
           </p>
         </div>
 
-        <h4 class="categorie">Sérologie</h4>
+        <h4 class="subtitle">Sérologie</h4>
         <div>
-          <ul class="details">
+          <ul class="indication">
             Notes :
             <li>FR = Facteur rhumatoïde.</li>
             <li>ACPA = Anticorps anti-peptides/protéines citrulliné(e)s.</li>
@@ -74,10 +74,10 @@
             FR ou ACPA fortement positif <span>(> 3 x normale).</span>
           </p>
         </div>
-        <h4 class="categorie">Durée de la synovite</h4>
+        <h4 class="subtitle">Durée de la synovite</h4>
         <div>
           <p @click="choice3(0)" class="btn" :class="{ selected: score3 === 0 }">
-            Durée &#8249; 6 semaines.
+            Durée < 6 semaines.
           </p>
         </div>
         <div>
@@ -86,7 +86,7 @@
           </p>
         </div>
 
-        <h4 class="categorie">Marqueurs de l'inflammation</h4>
+        <h4 class="subtitle">Marqueurs de l'inflammation</h4>
         <div>
           <p @click="choice4(0)" class="btn" :class="{ selected: score4 === 0 }">
             VS et CRP normales.
@@ -98,40 +98,33 @@
           </p>
         </div>
 
-        <div class="result">
+        <div class="result" :class="{red : calcTotal() >= 6}">
           <h4>Score : {{ calcTotal() }}</h4>
         </div>
       </form>
     </div>
 
-         <div class="info">
-      <span>
-        Interprétation : Les critères ACR/EULAR donnent la possibilité de
-        diagnostiquer précocement une polyarthrite rhumatoïde. Un score à 6 ou
-        plus pose le diagnostic de polyarthrite rhumatoïde.
-      </span>
-      <br>
-      <span>
-        Références : Funovits J, Aletaha D, Bykerk V, Combe B, Dougados M, Emery
-        P, et al. The American College of Rheumatology/European League Against
-        Rheumatism classification criteria for rheumatoid arthritis:
-        methodological report Phase 1. Ann Rheum Dis 2010; 69: 1589–95.
-      </span>
+    <div class="info">
+      <p>Interprétation : Les critères ACR/EULAR donnent la possibilité de diagnostiquer précocement une polyarthrite rhumatoïde.</p>
+      <p><strong>Un score à 6 ou plus pose le diagnostic de polyarthrite rhumatoïde.</strong></p>
+     <p>Références : Funovits J, Aletaha D, Bykerk V, Combe B, Dougados M, Emery P, et al. The American College of Rheumatology/European League Against Rheumatism classification criteria for rheumatoid arthritis: methodological report Phase 1. Ann Rheum Dis 2010; 69: 1589–95.</p>
     </div>
+      <Footer/>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import Footer from "@/components/Footer.vue";
 
 export default Vue.extend({
-  mounted() {},
-  data() {
+    components: {Footer},
+    data() {
     return {
-      score1: 0,
-      score2: 0,
-      score3: 0,
-      score4: 0,
+      score1: null,
+      score2: null,
+      score3: null,
+      score4: null,
     };
   },
   methods: {
@@ -169,40 +162,5 @@ export default Vue.extend({
     justify-content: center;
   }
 
-  .btn {
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
-    background-color: #eceaf0;
-    cursor: pointer;
-
-    border: none;
-    padding: 5px 5px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 0 0 1em;
-    justify-content: center;
-    align-content: space-around;
-    align-items: flex-start;
-    height: 100%;
-    width: 80%;
-    border-radius: 8px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-size: 1rem;
-    color: rgb(49, 49, 49);
-  }
-
-
-
-  .btn.selected {
-    background-color: #3abaea;
-    color: white;
-  }
-
-  .line {
-    display: block;
-    width: 100%;
-    border-top: 2px solid #ccc;
-  }
 }
 </style>
