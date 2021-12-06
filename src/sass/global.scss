@@ -38,6 +38,13 @@ main {
         font-weight: 700 !important;
         border: none;
     }
+    &__halfsize {
+        flex-basis: 48% !important;
+    }
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .title {

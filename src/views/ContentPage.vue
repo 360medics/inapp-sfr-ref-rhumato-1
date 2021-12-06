@@ -179,6 +179,7 @@ import Injection from '@/components/ordonnances/acteInfirmier/Injection.vue';
 import Vaccinations from '@/components/ordonnances/Vaccinations.vue';
 import Echographie from '@/components/compteRendu/Echographie.vue';
 import AcrEular2016 from '@/components/scores/AcrEular2016.vue';
+import DouleursNeuropathique from '@/components/scores/DouleursNeuropathique.vue';
 
 export default Vue.extend({
   name: 'ContentPage',
@@ -344,6 +345,7 @@ export default Vue.extend({
       Cyclophosphamide,
       TofacitinibBaricitinib,
       AcrEular2016,
+      DouleursNeuropathique,
   },
   methods: {
     searchComponentName(nodes, slug) {

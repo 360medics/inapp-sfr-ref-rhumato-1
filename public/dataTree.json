@@ -614,6 +614,18 @@
           "content": "https://www.ldlcible.com/",
           "slug": "ldl-cible",
           "submenu": false
+        },
+        {
+          "id": "",
+          "name": "Douleurs neuropathique",
+          "subtitle": "",
+          "appId": 1,
+          "parentId": 2,
+          "type": "html",
+          "content": "https://www.imc.fr/",
+          "slug": "douleurs-neuropathique",
+          "component": "DouleursNeuropathique",
+          "submenu": false
         }
       ]
     },
