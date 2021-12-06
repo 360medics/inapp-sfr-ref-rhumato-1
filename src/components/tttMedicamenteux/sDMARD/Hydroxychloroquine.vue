@@ -17,8 +17,10 @@
 
     <p><span class="bold">Posologies</span> </p>
     <ul>
-      <li>Lupus : 1 à 3 cp max par jour selon indication</li>
-      <li>PR : 2 à 3 cp par jour en tt d’attaque, 1 à 2 cp en entretien en 1 à 2 prises</li>
+        <li>Lupus : 1 à 3 cp max par jour selon indication</li>
+        <li>PR : 2 à 3 cp par jour en tt d’attaque, 1 à 2 cp en entretien en 1 à 2 prises</li>
+        <li>Posologie 5mg/kg poids réel</li>
+        <li>Cible Hydroxychloroquinémie >=500</li>
     </ul>
 
     <p><span class="bold">Contre-indications :</span> </p>
