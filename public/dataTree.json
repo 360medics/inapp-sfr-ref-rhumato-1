@@ -597,11 +597,36 @@
           "subtitle": "",
           "appId": 1,
           "parentId": 2,
-          "type": "html",
-          "content": "https://www.imc.fr/",
-          "slug": "IMC",
-          "component": "IMC",
-          "submenu": false
+          "type": "list",
+          "content": "",
+          "slug": "imc",
+          "submenu": true,
+          "children": [
+            {
+              "id": "",
+              "name": "IMC",
+              "subtitle": "",
+              "appId": 1,
+              "parentId": 2,
+              "type": "html",
+              "content": "https://www.imc.fr/",
+              "slug": "IMC",
+              "component": "IMC",
+              "submenu": false
+            },
+            {
+              "id": "",
+              "name": "IMC CRP",
+              "subtitle": "",
+              "appId": 1,
+              "parentId": 2,
+              "type": "html",
+              "content": "",
+              "slug": "IMC-CRP",
+              "component": "CRPimc",
+              "submenu": false
+            }
+          ]
         },
         {
           "id": "",
@@ -622,7 +647,7 @@
           "appId": 1,
           "parentId": 2,
           "type": "html",
-          "content": "https://www.imc.fr/",
+          "content": "https://pediadol.org/questionnaire-dn4-douleur-neuropathique/",
           "slug": "douleurs-neuropathique",
           "component": "DouleursNeuropathique",
           "submenu": false

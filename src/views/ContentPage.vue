@@ -180,6 +180,7 @@ import Vaccinations from '@/components/ordonnances/Vaccinations.vue';
 import Echographie from '@/components/compteRendu/Echographie.vue';
 import AcrEular2016 from '@/components/scores/AcrEular2016.vue';
 import DouleursNeuropathique from '@/components/scores/DouleursNeuropathique.vue';
+import CRPimc from '@/components/scores/CRPimc.vue';
 
 export default Vue.extend({
   name: 'ContentPage',
@@ -346,6 +347,7 @@ export default Vue.extend({
       TofacitinibBaricitinib,
       AcrEular2016,
       DouleursNeuropathique,
+      CRPimc,
   },
   methods: {
     searchComponentName(nodes, slug) {
