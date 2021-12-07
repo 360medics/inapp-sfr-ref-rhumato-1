@@ -2780,7 +2780,7 @@
           "appId": 1,
           "parentId": null,
           "type": "link",
-          "content": "mailto:sectionref@gmail.com?subject=Calendrier%20Vaccinal%20-%20Tools",
+          "content": "mailto:sectionref@gmail.com",
           "slug": "contacts",
           "submenu": false
         }
