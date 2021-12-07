@@ -182,6 +182,9 @@ import AcrEular2016 from '@/components/scores/AcrEular2016.vue';
 import DouleursNeuropathique from '@/components/scores/DouleursNeuropathique.vue';
 import CRPimc from '@/components/scores/CRPimc.vue';
 import RECAPITULATIF from '@/components/tttMedicamenteux/Antibiotiques/RECAPITULATIF.vue';
+import MethotrexatePaternite from '@/components/conception/desir_paternite/MethotrexatePaternite.vue';
+import FilgotinibPaternite from '@/components/conception/desir_paternite/FilgotinibPaternite.vue';
+
 
 export default Vue.extend({
   name: 'ContentPage',
@@ -350,6 +353,8 @@ export default Vue.extend({
       DouleursNeuropathique,
       CRPimc,
       RECAPITULATIF,
+      MethotrexatePaternite,
+      FilgotinibPaternite,
   },
   methods: {
     searchComponentName(nodes, slug) {

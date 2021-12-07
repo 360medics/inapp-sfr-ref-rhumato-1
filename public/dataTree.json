@@ -1205,6 +1205,43 @@
               "component": "CalendrierVaccinal"
             }
           ]
+        },
+        {
+          "id": "",
+          "name": "Désir de paternité",
+          "subtitle": "",
+          "appId": 1,
+          "parentId": null,
+          "type": "list",
+          "content": "",
+          "slug": "desir-de-paternite",
+          "submenu": true,
+          "children": [
+            {
+              "id": "",
+              "name": "Methotrexate",
+              "subtitle": "",
+              "appId": 1,
+              "parentId": null,
+              "type": "html",
+              "content": "",
+              "slug": "Methotrexate",
+              "submenu": false,
+              "component": "MethotrexatePaternite"
+            },
+            {
+              "id": "",
+              "name": "Filgotinib",
+              "subtitle": "",
+              "appId": 1,
+              "parentId": null,
+              "type": "html",
+              "content": "",
+              "slug": "Filgotinib",
+              "submenu": false,
+              "component": "FilgotinibPaternite"
+            }
+          ]
         }
       ]
     },
