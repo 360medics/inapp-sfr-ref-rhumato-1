@@ -181,6 +181,7 @@ import Echographie from '@/components/compteRendu/Echographie.vue';
 import AcrEular2016 from '@/components/scores/AcrEular2016.vue';
 import DouleursNeuropathique from '@/components/scores/DouleursNeuropathique.vue';
 import CRPimc from '@/components/scores/CRPimc.vue';
+import RECAPITULATIF from '@/components/tttMedicamenteux/Antibiotiques/RECAPITULATIF.vue';
 
 export default Vue.extend({
   name: 'ContentPage',
@@ -348,6 +349,7 @@ export default Vue.extend({
       AcrEular2016,
       DouleursNeuropathique,
       CRPimc,
+      RECAPITULATIF,
   },
   methods: {
     searchComponentName(nodes, slug) {

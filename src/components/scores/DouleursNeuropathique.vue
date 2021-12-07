@@ -42,10 +42,10 @@
     </div>
 </template>
 
-<script>
-import ReferencesMedical from "@/components/ReferencesMedical";
-import Footer from "@/components/Footer";
+<script lang="ts">
 import Vue from "vue";
+import ReferencesMedical from "@/components/ReferencesMedical.vue";
+import Footer from "@/components/Footer.vue";
 
 export default Vue.extend({
     name: "DouleursNeuropathique",
@@ -85,6 +85,8 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
+@import "src/sass/global.scss";
+
 .description {
   &__list {
     padding: 0;

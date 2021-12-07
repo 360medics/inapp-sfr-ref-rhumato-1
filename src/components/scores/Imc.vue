@@ -38,7 +38,6 @@
 
 <script lang="ts">
 import Vue from "vue";
-import { isMobile } from '@/global';
 import ReferencesMedical from "@/components/ReferencesMedical.vue";
 import Footer from "@/components/Footer.vue";
 
@@ -55,7 +54,6 @@ export default Vue.extend({
     };
   },
   methods: {
-    isMobile,
     getDetail(imc) {
       if (imc < 16.5) {
         return "Famine";
@@ -81,7 +79,7 @@ export default Vue.extend({
     },
     getImc(weight, size) {
       let sizeMeter = parseInt(size) / 100;
-      return this.arround(parseInt(weight) / (sizeMeter * sizeMeter));
+      return this.arround(parseInt(weight) / (sizeMeter * sizeMeter)).toFixed(2);
     },
     arround(nombre) {
       return Math.round(100 * nombre) / 100;

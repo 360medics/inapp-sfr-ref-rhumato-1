@@ -5,17 +5,25 @@
 
 
     <div class="crp__container">
+        <div class="crp__content--left">
         <label for="crp-ratio">CRP</label>
-        <input type="number" v-model="crp" value="crp" name="groupRadioGender" id="crp-ratio" @input="setTotal()">
-        <select v-model="unit" id="crp-select-id" @change="setTotal()">
-            <option value="mg/L">mg/L</option>
-            <option value="mg/dL">mg/dL</option>
-        </select>
+        </div>
+
+        <div class="crp__content--right">
+            <input type="number" v-model="crp" value="crp" name="groupRadioGender" id="crp-ratio" @input="setTotal()">
+            <select v-model="unit" id="crp-select-id" @change="setTotal()">
+                <option value="mg/L">mg/L</option>
+                <option value="mg/dL">mg/dL</option>
+            </select>
+        </div>
     </div>
 
 
     <div class="crp__container">
-        <p>SEXE</p>
+        <div class="crp__content--left">
+            <p>SEXE</p>
+        </div>
+        <div class="crp__content--right">
         <div class="btn__container">
             <input type="radio" v-model="gender" value="Femme" name="groupRadioGender" id="crpF" @change="setTotal()">
             <label class="btn btn__halfsize" :class="{selected:  gender === 'Femme'}" for="crpF">Femme</label>
@@ -23,11 +31,16 @@
             <input type="radio" v-model="gender" value="Homme" name="groupRadioGender" id="crpH" @change="setTotal()">
             <label class="btn btn__halfsize"  :class="{selected:  gender === 'Homme'}" for="crpH">Homme</label>
         </div>
+        </div>
     </div>
 
     <div class="crp__container">
-        <label for="imc-score">IMC</label>
-        <input type="number" v-model="imc" value="imc" name="groupRadioGender" id="imc-score" @input="setTotal()">
+        <div class="crp__content--left">
+            <label for="imc-score">IMC</label>
+        </div>
+        <div class="crp__content--right">
+            <input type="number" v-model="imc" value="imc" name="groupRadioGender" id="imc-score" @input="setTotal()">
+        </div>
     </div>
 
     <div class="result">
@@ -72,25 +85,42 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
-.crp__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 1em 0;
+@import "src/sass/global.scss";
+
+.crp {
+  &__container {
+    display: flex;
+    align-items: center;
+    margin: 1em 0;
+  }
+  &__content--left {
+    width: 20%;
+  }
+  &__content--right {
+    width: 80%;
+    justify-content: space-between;
+    display: flex;
+  }
 }
 input, select {
-    height: 30px;
-    padding: 0 3px;
-    background: #EDECF4 0% 0% no-repeat padding-box;
-    border-radius: 5px;
-    opacity: 1;
-    margin: 0 10px;
-    border: none;
+  height: 30px;
+  padding: 0 3px;
+  background: #EDECF4 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  border: none;
+}
+input {
+  width: 100%;
+}
+select {
+  margin-left: 10px;
+
 }
 [type="radio"] {
   display: none;
 }
 .btn__container {
-  width: 80%;
+  width: 100%;
 }
+
 </style>

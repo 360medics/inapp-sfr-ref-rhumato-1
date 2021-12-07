@@ -10,7 +10,7 @@
         </div>
 
         <div v-if="result.item.type === 'link'" class="list__item__container">
-          <a v-if="!isMobile()" :href="result.item.content" target="blank">{{ result.item.name }}</a>
+          <a v-if="!isMobile()" :href="result.item.content" target="_blank" rel="noreferrer noopener">{{ result.item.name }}</a>
           <a v-else :href="'medics://viewer?m_source=' + result.item.content">{{ result.item.name }}</a>
         </div>
       </li>

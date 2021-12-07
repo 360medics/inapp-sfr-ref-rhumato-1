@@ -1908,6 +1908,18 @@
               "slug": "amikacine",
               "submenu": false,
               "component": "AMIKACINE"
+            },
+            {
+              "id": "",
+              "name": "RECAPITULATIF",
+              "subtitle": "",
+              "appId": 1,
+              "parentId": null,
+              "type": "html",
+              "content": "",
+              "slug": "recapitulatif",
+              "submenu": false,
+              "component": "RECAPITULATIF"
             }
           ]
         }
