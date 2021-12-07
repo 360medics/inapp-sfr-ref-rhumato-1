@@ -604,7 +604,7 @@
           "children": [
             {
               "id": "",
-              "name": "IMC",
+              "name": "Calcul IMC",
               "subtitle": "",
               "appId": 1,
               "parentId": 2,
@@ -616,13 +616,13 @@
             },
             {
               "id": "",
-              "name": "IMC CRP",
+              "name": "CRP selon IMC",
               "subtitle": "",
               "appId": 1,
               "parentId": 2,
               "type": "html",
               "content": "",
-              "slug": "IMC-CRP",
+              "slug": "CRP-IMC",
               "component": "CRPimc",
               "submenu": false
             }

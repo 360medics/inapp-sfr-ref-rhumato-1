@@ -45,7 +45,9 @@
 <script>
 import ReferencesMedical from "@/components/ReferencesMedical";
 import Footer from "@/components/Footer";
-export default {
+import Vue from "vue";
+
+export default Vue.extend({
     name: "DouleursNeuropathique",
     components: {Footer, ReferencesMedical},
     data(){
@@ -79,7 +81,7 @@ export default {
             }
         }
     },
-}
+});
 </script>
 
 <style lang="scss" scoped>
