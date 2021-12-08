@@ -44,11 +44,9 @@
     </div>
 
     <div class="result">
-        <h3>CRP {{ total >= 4 ? "normal" : "élevée" }} selon BMI :</h3>
+        <h3>CRP {{ crp  <= total ? "normal" : "élevée" }} selon BMI :</h3>
         <p>{{ total.toFixed(2) }} {{ unit }}</p>
     </div>
-    <p>/!\/!\/!\/!\<br> Remarque il manque des informations pour réaliser la formule, que faire du ratio CRP ?
-        ! On dit du CRP qu'il est Elevée ou Normal à partir de quels taux pour mg/L et mg/dL ?<br>/!\/!\/!\/!\</p>
 </div>
 </template>
 
@@ -68,16 +66,18 @@ export default Vue.extend({
     },
     methods:{
         setTotal : function () {
-/* TODO les info pour le calcul ==> CRP selon IMC : (1 + (IMC-25)/25 pour les hommes et 1 + (IMC-25)/12,5 pour les femmes)
-! Remarque il manque des informations pour réaliser la formule, que faire du ratio CRP ?
- ! Elevée ou normal à partir de quels taux pour mg/L et mg/dL ?
- */
-
             if (this.gender === 'Homme') {
-                this.total = 1 + (this.imc-25) / 25
-
+                if (this.unit === 'mg/L') {
+                    this.total = ( 1 + (this.imc-25) / 25 ) * 10
+                } else {
+                    this.total = 1 + (this.imc-25) / 25
+                }
             } else {
-                this.total = 1 + (this.imc-25) / 12.5
+                if (this.unit === 'mg/L') {
+                    this.total = ( 1 + (this.imc-25) / 12.5 ) * 10
+                } else {
+                    this.total = 1 + (this.imc-25) / 12.5
+                }
             }
         }
     },
@@ -98,7 +98,6 @@ export default Vue.extend({
   }
   &__content--right {
     width: 80%;
-    justify-content: space-between;
     display: flex;
   }
 }
@@ -110,11 +109,10 @@ input, select {
   border: none;
 }
 input {
-  width: 100%;
+  width: 25%;
 }
 select {
-  margin-left: 10px;
-
+  margin-left: 5px;
 }
 [type="radio"] {
   display: none;
