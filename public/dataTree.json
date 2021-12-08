@@ -2779,7 +2779,7 @@
           "subtitle": "Sous-titre facultatif",
           "appId": 1,
           "parentId": null,
-          "type": "link",
+          "type": "mailto",
           "content": "mailto:sectionref@gmail.com",
           "slug": "contacts",
           "submenu": false

@@ -64,6 +64,12 @@
           <i v-if="!this.showChildren" class="fas fa-link"></i>
       </a>
     </div>
+      <div v-else-if="this.type === 'mailto'">
+          <a :href="content" class="label-wrapper">
+              {{ name }}
+              <i v-if="!this.showChildren" class="far fa-paper-plane"></i>
+          </a>
+      </div>
 
     <div v-else-if="this.type === 'pdf'">
       <a
