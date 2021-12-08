@@ -6,24 +6,27 @@
       grandChildren: depth !== 0 && depth % 2 === 0,
     }"
   >
-    <div v-if="this.type === 'list'">
+    <div v-if="this.type === 'list'"
+    >
       <div class="label-wrapper" @click="toggleChildren">
         {{ name }}
         <i v-if="!this.showChildren" class="fas fa-chevron-right" />
         <i v-else class="fas fa-chevron-down" />
       </div>
-      <tree-menu
-        v-if="showChildren"
-        v-for="subChildren in children"
-        :name="subChildren.name"
-        :type="subChildren.type"
-        :slug="subChildren.slug"
-        :children="subChildren.children"
-        :depth="depth + 1"
-        :key="subChildren.name"
-        :content="subChildren.content"
-      >
-      </tree-menu>
+        <div  v-for="(subChildren , index) in children" :key="index">
+            <tree-menu
+                    :index="index"
+                    v-if="showChildren"
+                    :name="subChildren.name"
+                    :type="subChildren.type"
+                    :slug="subChildren.slug"
+                    :children="subChildren.children"
+                    :depth="depth + 1"
+                    :content="subChildren.content"
+            >
+            </tree-menu>
+        </div>
+
     </div>
 
     <div v-else-if="this.type === 'pdflist'">
@@ -90,19 +93,36 @@
     </router-link>
   </div>
 </template>
-<script>
-export default {
-  props: ['name', 'type', 'slug', 'children', 'depth', 'content'],
+
+<script lang="ts">
+import Vue from 'vue';
+
+export default Vue.extend({
+
+  props: ['name', 'type', 'slug', 'children', 'depth', 'content', 'index'],
   data() {
     return {
       showChildren: false,
       childrenIsArray: Array.isArray(this.children),
+        navigation: this.$root.$data.state.navigation
     };
   },
   name: 'tree-menu',
-  methods: {
+    mounted() {
+          this.showChildren = this.navigation[this.depth] === this.name;
+    },
+    watch: {
+        navigation: function (newNav, oldNav) {
+            this.showChildren = this.navigation[this.depth] === this.name;
+        },
+    },
+    computed: {
+
+    },
+    methods: {
     toggleChildren() {
-      this.showChildren = !this.showChildren;
+        this.showChildren = !this.showChildren;
+        this.$root.$data.state.addNavigation(this.depth, this.name)
     },
 
     isMobile() {
@@ -110,7 +130,6 @@ export default {
         navigator.userAgent
       );
     },
-
     externLink(link) {
       let finalLink = '';
       let target = '_blank';
@@ -123,8 +142,7 @@ export default {
       return finalLink;
     },
   },
-
-};
+});
 </script>
 <style scoped lang="scss">
 @import 'src/sass/global.scss';

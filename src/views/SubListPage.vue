@@ -11,13 +11,14 @@
       <div class="sub-categories">
         <div v-for="(subChildren, index) in submenu.children" :key="submenu.name + index">
           <tree-menu
-            :name="subChildren.name"
-            :type="subChildren.type"
-            :slug="subChildren.slug"
-            :children="subChildren.children"
-            :depth="0"
-            :content="subChildren.content"
-          ></tree-menu>
+                  :index="index"
+                  :name="subChildren.name"
+                  :type="subChildren.type"
+                  :slug="subChildren.slug"
+                  :children="subChildren.children"
+                  :depth="0"
+                  :content="subChildren.content"
+          />
         </div>
       </div>
     </main>

@@ -4,7 +4,8 @@
     <div class="sub-categories">
       <div v-for="(subChildren, index) in listFiches" :key="index">
         <tree-menu
-          :name="subChildren.name"
+                :index="index"
+                :name="subChildren.name"
           :type="subChildren.type"
           :slug="subChildren.slug"
           :children="subChildren.children"
