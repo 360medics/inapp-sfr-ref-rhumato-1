@@ -86,7 +86,6 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 @import "src/sass/global.scss";
-
 .description {
   &__list {
     padding: 0;
