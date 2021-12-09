@@ -4,15 +4,14 @@
     <ListSearchResult :resultItems="listResult" :notFound="resultNotFound" v-if="displayResultSearch"/>
       <component v-if="displayAideCodage" v-bind:is="AideCodage" />
 
-<!--      // TODO v-scrool-to à placer au bon endroit -->
-      <main class="subMenu" v-if="!displayResultSearch" v-scroll-to="'#menu-id'">
+<!--      // TODO v-scrool-to à placer au bon endroit  v-scroll-to="'#menu-id'"-->
+      <main class="subMenu" v-if="!displayResultSearch">
       <h1 class="subMenu__title">
         {{ submenu.name }}
       </h1>
       <div class="sub-categories">
         <div v-for="(subChildren, index) in submenu.children" :key="submenu.name + index">
           <tree-menu
-                  id="menu-id"
                   :index="index"
                   :name="subChildren.name"
                   :type="subChildren.type"
