@@ -22,6 +22,7 @@
       "
       class="label-wrapper"
       :target="isMobile() ? '_self' : '_blank'"
+      rel="noreferrer noopener"
     >
       Calculer en ligne
     </a>

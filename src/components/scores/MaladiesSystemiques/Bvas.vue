@@ -379,9 +379,7 @@ export default Vue.extend({
       Footer,
       ReferencesMedical,
   },
-/*  mounted() {
-    this.calcTotal();
-  },*/
+
   data() {
     return {
       general: {

@@ -20,7 +20,6 @@
           Incapable de le faire
       </div>
     </section>
-      <Footer/>
   </div>
 </template>
 

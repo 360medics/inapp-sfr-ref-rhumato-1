@@ -70,15 +70,16 @@
     </form>
 
     <form class="form">
+        <div>
       <p>CRP en :</p>
-      <label for="crpTypeL">mg/L</label>
-      <input type="radio" id="crpTypeL" value="l" v-model="crpType" />
+            <div>
+                <label for="crpTypeL">mg/L</label>
+                <input type="radio" id="crpTypeL" value="l" v-model="crpType" />
 
-      <label for="crpTypeDl">mg/dL</label>
-      <input type="radio" id="crpTypeDl" value="dl" v-model="crpType" />
+                <label for="crpTypeDl">mg/dL</label>
+                <input type="radio" id="crpTypeDl" value="dl" v-model="crpType" />
+            </div>
 
-      <div>
-        <label for="crpL" v-if="crpType === 'l'">CRP en mg/L</label>
         <input
           v-model="crpL"
           type="number"
@@ -87,19 +88,16 @@
           min="0"
           v-if="crpType === 'l'"
         />
+            <input
+                    v-model="crpDl"
+                    type="number"
+                    id="crpDl"
+                    name="crpDl"
+                    min="0"
+                    v-if="crpType === 'dl'"
+            />
       </div>
 
-      <div>
-        <label for="crpDl" v-if="crpType === 'dl'">CRP en mg/dL</label>
-        <input
-          v-model="crpDl"
-          type="number"
-          id="crpDl"
-          name="crpDl"
-          min="0"
-          v-if="crpType === 'dl'"
-        />
-      </div>
     </form>
 
     <div class="result" v-if="calcTotal() <= 2.8">
@@ -191,7 +189,6 @@ export default Vue.extend({
 @import 'src/sass/global.scss';
 
 .Sdai {
-
   input:not([type="radio"]) {
     height: 30px;
     padding: 0 3px;
@@ -207,6 +204,7 @@ export default Vue.extend({
     div {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       margin: 20px 0;
 
       label {

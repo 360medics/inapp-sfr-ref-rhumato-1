@@ -69,8 +69,6 @@
 <script lang="js">
     export default {
         name: 'OFLOXACINE',
-
-
     }
 </script>
 
@@ -79,8 +77,6 @@
     .OFLOXACINE {
       padding: 0 15px;
       text-align: left;
-
-
 
       .bold {
         font-weight: bold;

@@ -3,7 +3,7 @@
     <h2>LDL-Cible</h2>
     <span class="line"></span>
 
-    <a href="https://www.ldlcible.com/" target="_blank">Calculer en ligne</a>
+    <a href="https://www.ldlcible.com/" target="_blank" rel="noopener noreferrer">Calculer en ligne</a>
       <Footer/>
   </div>
 

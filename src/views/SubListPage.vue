@@ -2,20 +2,24 @@
   <div>
     <SearchBar @onSearch="handleFindResult" @onClear="handleRemoveSearch" />
     <ListSearchResult :resultItems="listResult" :notFound="resultNotFound" v-if="displayResultSearch"/>
-    <main class="subMenu" v-else="displayResultSearch">
+      <component v-if="displayAideCodage" v-bind:is="AideCodage" />
+
+<!--      // TODO v-scrool-to à placer au bon endroit  v-scroll-to="'#menu-id'"-->
+      <main class="subMenu" v-if="!displayResultSearch">
       <h1 class="subMenu__title">
         {{ submenu.name }}
       </h1>
       <div class="sub-categories">
         <div v-for="(subChildren, index) in submenu.children" :key="submenu.name + index">
           <tree-menu
-            :name="subChildren.name"
-            :type="subChildren.type"
-            :slug="subChildren.slug"
-            :children="subChildren.children"
-            :depth="0"
-            :content="subChildren.content"
-          ></tree-menu>
+                  :index="index"
+                  :name="subChildren.name"
+                  :type="subChildren.type"
+                  :slug="subChildren.slug"
+                  :children="subChildren.children"
+                  :depth="0"
+                  :content="subChildren.content"
+          />
         </div>
       </div>
     </main>
@@ -28,6 +32,7 @@ import DataService from "@/service/DataService";
 import TreeMenu from "@/components/TreeMenu.vue";
 import SearchBar from "@/components/search/SearchBar.vue";
 import ListSearchResult from '@/components/ListSearchResult.vue';
+import AideCodage from '@/components/AideCodage.vue';
 
 export default Vue.extend({
   name: "SubListPage",
@@ -36,11 +41,14 @@ export default Vue.extend({
     displayResultSearch: false,
     listResult: [],
     resultNotFound: null,
+      displayAideCodage: false,
+      AideCodage,
   }),
   components: {
     TreeMenu,
     SearchBar,
-    ListSearchResult
+    ListSearchResult,
+      AideCodage
   },
   mounted() {
     DataService.load()
@@ -50,7 +58,12 @@ export default Vue.extend({
         // Retrive component name from slug.
         for (let list of dataTree) {
           if (list.slug === slug) {
-            this.submenu = list;
+              if (slug === 'aide-codage') {
+                 this.displayAideCodage = true
+              } else {
+                  this.displayAideCodage = false
+                  this.submenu = list;
+              }
             break;
           }
         }
