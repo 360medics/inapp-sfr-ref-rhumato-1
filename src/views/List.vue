@@ -26,6 +26,9 @@ export default Vue.extend({
     ListSearchResult,
     ListPage
   },
+    mounted(){
+   this.$root.$data.state.addNavigation(0, null)
+    },
   methods: {
     handleFindResult(result, searching) {
       this.displayResultSearch = searching
