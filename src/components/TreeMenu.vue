@@ -1,11 +1,8 @@
 <template>
-    <div
-            class="tree-menu"
-            :class="{
-      children: depth % 2 === 1,
-      grandChildren: depth !== 0 && depth % 2 === 0,
-    }"
-    >
+    <div class="tree-menu" :class="{ children: depth === 1,
+    grandChildren: depth === 2,
+    grandGrandChildren: depth === 3}">
+
         <div v-if="this.type === 'list'"
         >
             <div class="label-wrapper" @click="toggleChildren">
@@ -13,19 +10,11 @@
                 <i v-if="!this.showChildren" class="fas fa-chevron-right" />
                 <i v-else class="fas fa-chevron-down" />
             </div>
-            <div  v-for="(subChildren , index) in children" :key="index">
-                <tree-menu
-                        :index="index"
-                        v-if="showChildren"
-                        :name="subChildren.name"
-                        :type="subChildren.type"
-                        :slug="subChildren.slug"
-                        :children="subChildren.children"
-                        :depth="depth + 1"
-                        :content="subChildren.content"
-                >
-                </tree-menu>
-            </div>
+
+                <div  v-for="(subChildren , index) in children" :key="index">
+                    <tree-menu :index="index" v-if="showChildren" :name="subChildren.name" :type="subChildren.type" :slug="subChildren.slug" :children="subChildren.children" :depth="depth + 1" :content="subChildren.content"/>
+                </div>
+
 
         </div>
 
@@ -56,8 +45,8 @@
             </div>
         </div>
 
-        <div v-else-if="this.type === 'link'">
-            <a
+        <div v-else-if="this.type === 'link'" >
+            <a @click="closeOtherMenu()"
                     :href="externLink(content)"
                     class="label-wrapper"
                     :target="isMobile() ? '_self' : '_blank'"
@@ -68,14 +57,14 @@
             </a>
         </div>
         <div v-else-if="this.type === 'mailto'">
-            <a :href="content" class="label-wrapper">
+            <a @click="closeOtherMenu()" :href="content" class="label-wrapper">
                 {{ name }}
                 <i v-if="!this.showChildren" class="far fa-paper-plane"></i>
             </a>
         </div>
 
         <div v-else-if="this.type === 'pdf'">
-            <a
+            <a @click="closeOtherMenu()"
                     :href="externLink(content)"
                     class="label-wrapper"
                     :target="isMobile() ? '_self' : '_blank'"
@@ -86,7 +75,7 @@
         </div>
 
         <router-link :to="'/score/' + this.slug" v-else>
-            <div class="label-wrapper">
+            <div class="label-wrapper" @click="closeOtherMenu()">
                 {{ name }}
                 <i v-if="!this.showChildren" class="fas fa-chevron-right" />
             </div>
@@ -116,10 +105,11 @@ export default Vue.extend({
             this.showChildren = this.navigation[this.depth] === this.name;
         },
     },
-    computed: {
-
-    },
     methods: {
+        closeOtherMenu() {
+            if (this.depth === 0 )
+                this.$root.$data.state.addNavigation(0, null)
+        },
         toggleChildren() {
             this.showChildren = !this.showChildren;
             this.$root.$data.state.addNavigation(this.depth, this.name)
@@ -146,6 +136,7 @@ export default Vue.extend({
 </script>
 <style scoped lang="scss">
 @import 'src/sass/global.scss';
+
 .tree-menu {
   color: #472e5a;
   font-weight: bold;
@@ -155,7 +146,7 @@ export default Vue.extend({
   padding: 16px;
   transition: all 0.5s linear;
   border: 1px solid #f7f7f7;
-  box-shadow: 0px 0px 10px 5px rgba(246,246,246,0.69);
+  box-shadow: 0 0 10px 5px rgba(246,246,246,0.69);
 
   i {
     background: #80cc28;
@@ -193,6 +184,9 @@ export default Vue.extend({
     color: #4c2b62;
     box-shadow: none;
     border: none;
+  }
+  &.grandGrandChildren {
+   // background-color: red;
   }
 }
 .pdf-viewer {

@@ -3,79 +3,21 @@
     <h2 class="title">Critères de classification de la PPR EULAR/ACR 2012</h2>
     <span class="line"></span>
 
+      <div v-for="option in options" :key="option.id">
+          <h4 class="subtitle" v-if="option.subtitle">{{option.subtitle}}</h4>
+          <div v-else>
+              <p class="description">{{ option.describe }}</p>
+              <p class="description__info" v-if="option.text">{{ option.text }}</p>
 
-    <h4 class="subtitle"> Dérouillage matinal > 45 minutes </h4>
-    <div>
-      <p @click="choice1(0)" class="btn" :class="{ selected: score1 === 0 }">
-        Non
-      </p>
-    </div>
-    <div>
-      <p @click="choice1(2)" class="btn" :class="{ selected: score1 === 2 }">
-        Oui
-      </p>
-    </div>
+              <div class="btn__container">
+                  <input type="radio" v-model="option.selected" :value="0" :name="option.name" :id="`No-${option.id}`" @change="calculate('decrement', option.value)">
+                  <label class="btn btn__halfsize" :class="{selected:  option.selected === 0}" :for="`No-${option.id}`">NON</label>
 
-    <h4 class="subtitle"> Douleur de hanche ou limitation articulaire </h4>
-    <div>
-      <p @click="choice2(0)" class="btn" :class="{ selected: score2 === 0 }">
-        Non
-      </p>
-    </div>
-    <div>
-      <p @click="choice2(1)" class="btn" :class="{ selected: score2 === 1 }">
-        Oui
-      </p>
-    </div>
-
-    <h4 class="subtitle"> Absence de facteurs rhumatoïdes et d'anticorps anti-CCP </h4>
-    <div>
-      <p @click="choice3(0)" class="btn" :class="{ selected: score3 === 0 }">
-        Non
-      </p>
-    </div>
-    <div>
-      <p @click="choice3(2)" class="btn" :class="{ selected: score3 === 2 }">
-        Oui
-      </p>
-    </div>
-
-    <h4 class="subtitle"> Absence d'autres articulations atteintes </h4>
-    <div>
-      <p @click="choice4(0)" class="btn" :class="{ selected: score4 === 0 }">
-        Non
-      </p>
-    </div>
-    <div>
-      <p @click="choice4(1)" class="btn" :class="{ selected: score4 === 1 }">
-        Oui
-      </p>
-    </div>
-
-    <h4 class="subtitle">Critères relatifs à l'échographie :</h4>
-    <p>Au moins 1 épaule avec une bursite sous-deltoïdienne et/ou une ténosynovite bicipitale et/ou une synovite glénohumérale (postérieure ou axillaire) et au moins une hanche avec une synovite et/ou une bursite trochantérienne </p>
-    <div>
-      <p @click="choice5(0)" class="btn" :class="{ selected: score5 === 0 }">
-        Non
-      </p>
-    </div>
-    <div>
-      <p @click="choice5(1)" class="btn" :class="{ selected: score5 === 1 }">
-        Oui
-      </p>
-    </div>
-
-    <p> Bursite sous-deltoïdienne, ténosynovite bicipitale ou synovite glénohumérale bilatérale </p>
-    <div>
-      <p @click="choice6(0)" class="btn" :class="{ selected: score6 === 0 }">
-        Non
-      </p>
-    </div>
-    <div>
-      <p @click="choice6(1)" class="btn" :class="{ selected: score6 === 1 }">
-        Oui
-      </p>
-    </div>
+                  <input type="radio" v-model="option.selected" :value="option.value" :name="option.name" :id="`Yes-${option.id}`" @change="calculate('increment', option.value)">
+                  <label class="btn btn__halfsize"  :class="{selected: option.selected === option.value}" :for="`Yes-${option.id}`">OUI</label>
+              </div>
+          </div>
+      </div>
 
     <div class="result">
       <h3>{{ result }} Points</h3>
@@ -99,99 +41,40 @@ import Footer from "@/components/Footer.vue";
 
 export default Vue.extend({
   name: "PprEularAcr2012",
-    components: {Footer, ReferencesMedical},
+    components: { Footer, ReferencesMedical },
     data() {
     return {
-      score1: 0,
-      score2: 0,
-      score3: 0,
-      score4: 0,
-      score5: 0,
-      score6: 0,
       result: 0,
+        options: [
+            { id: 1,describe: 'Dérouillage matinal > 45 minutes',value: 2 , name: 'btnradio1', selected: 0 },
+            { id: 2,describe: 'Douleur de hanche ou limitation articulaire',value: 1 , name: 'btnradio2', selected: 0 },
+            { id: 3,describe: 'Absence de facteurs rhumatoïdes et d\'anticorps anti-CCP',value: 2 , name: 'btnradio3', selected: 0 },
+            { id: 4,describe: 'Absence d\'autres articulations atteintes',value: 1 , name: 'btnradio4', selected: 0 },
+            { id: 5,describe: 'Critères relatifs à l\'échographie :',value: 1 , name: 'btnradio5', selected: 0, text: 'Au moins 1 épaule avec une bursite sous-deltoïdienne et/ou une ténosynovite bicipitale et/ou une synovite glénohumérale (postérieure ou axillaire) et au moins une hanche avec une synovite et/ou une bursite trochantérienne' },
+            { id: 6,describe: 'Bursite sous-deltoïdienne, ténosynovite bicipitale ou synovite glénohumérale bilatérale',value: 1 , name: 'btnradio6', selected: 0 },
+        ]
     };
   },
   methods: {
-    calcul() {
-      this.result = parseInt(this.score1) + parseInt(this.score2) + parseInt(this.score3) + parseInt(this.score4) + parseInt(this.score5) + parseInt(this.score6);
-    },
-
-    choice1(number) {
-      this.score1 = number;
-      this.calcul();
-    },
-    choice2(number) {
-      this.score2 = number;
-      this.calcul();
-    },
-    choice3(number) {
-      this.score3 = number;
-      this.calcul();
-    },
-    choice4(number) {
-      this.score4 = number;
-      this.calcul();
-    },
-    choice5(number) {
-      this.score5 = number;
-      this.calcul();
-    },
-    choice6(number) {
-      this.score6 = number;
-      this.calcul();
-    },
-  },
+      calculate: function (action, amount) {
+          if (action === 'decrement') {
+              this.result -= amount
+          }
+          if (action === 'increment') {
+              this.result += amount
+          }
+      },
+  }
 });
 </script>
 
 <style scoped lang="scss">
 @import "src/sass/global.scss";
-.PprEularAcr2012 {
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .btn {
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
-    background-color: #eceaf0;
-    cursor: pointer;
-
-    border: none;
-    padding: 5px 5px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 0 0 1em;
-    justify-content: center;
-    align-content: space-around;
-    align-items: flex-start;
-    height: 100%;
-    width: 80%;
-    border-radius: 8px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-size: 1rem;
-    color: rgb(49, 49, 49);
-  }
-
-
-
-  .btn.selected {
-    background-color: #3abaea;
-    color: white;
-  }
-
-  .line {
-    display: block;
-    width: 100%;
-    border-top: 2px solid #ccc;
-  }
+.description__info {
+  font-style: italic;
+  margin: 0;
+}
+[type="radio"] {
+  display: none;
 }
 </style>

@@ -2,7 +2,7 @@ export const store = {
     navigation: [],
 
     addNavigation (depth,name)  {
-        // toggle off when menu is already opened and all children
+        // Close menu if you clic when it's open
         if (this.navigation[depth] === name) {
             this.navigation.splice(depth, this.navigation.length - depth);
             return

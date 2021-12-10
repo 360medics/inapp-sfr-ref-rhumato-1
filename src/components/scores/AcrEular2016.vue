@@ -3,141 +3,28 @@
   <div class="acrEular2016">
       <h2 class="title">Critères de classification du Gougerot-Sjögren: ACR/EULAR 2016</h2>
 
-      <h4 class="subtitle">Sialadénite lymphocytaire avec focus score ≥ 1 sur la biopsie de glandes salivaires accessoires et focus score ≥ 1 foci/4mm² </h4>
-      <div>
-          <p @click="choice1(0)" class="btn" :class="{ selected: score1 === 0 }">
-              Non
-          </p>
-      </div>
-      <div>
-          <p @click="choice1(3)" class="btn" :class="{ selected: score1 === 3 }">
-              Oui
-          </p>
+      <div v-for="option in options" :key="option.id">
+          <h4 class="subtitle" v-if="option.subtitle">{{option.subtitle}}</h4>
+          <div v-else>
+              <p class="description">{{ option.describe }}</p>
+              <div v-if="option.countPoint" class="btn__container">
+                  <input type="radio" v-model="option.selected" :value="0" :name="option.name" :id="`No-${option.id}`" @change="calculate('decrementPoint', option.value)">
+                  <label class="btn btn__halfsize" :class="{selected:  option.selected === 0}" :for="`No-${option.id}`">NON</label>
+
+                  <input type="radio" v-model="option.selected" :value="option.value" :name="option.name" :id="`Yes-${option.id}`" @change="calculate('incrementPoint', option.value)">
+                  <label class="btn btn__halfsize"  :class="{selected: option.selected === option.value}" :for="`Yes-${option.id}`">OUI</label>
+              </div>
+              <span v-if="option.divider" class="line" />
+              <div v-if="option.countExclusion" class="btn__container">
+                  <input type="radio" v-model="option.selected" :value="0" :name="option.name" :id="`No-${option.id}`" @change="calculate('decrementExclusion', option.value)">
+                  <label class="btn btn__halfsize" :class="{selected:  option.selected === 0}" :for="`No-${option.id}`">NON</label>
+
+                  <input type="radio" v-model="option.selected" :value="option.value" :name="option.name" :id="`Yes-${option.id}`" @change="calculate('incrementExclusion', option.value)">
+                  <label class="btn btn__halfsize"  :class="{selected: option.selected === option.value}" :for="`Yes-${option.id}`">OUI</label>
+              </div>
+          </div>
       </div>
 
-      <h4 class="subtitle">Anticorps anti-SSA/Ro positif</h4>
-      <div>
-          <p @click="choice2(0)" class="btn" :class="{ selected: score2 === 0 }">
-              Non
-          </p>
-      </div>
-      <div>
-          <p @click="choice2(3)" class="btn" :class="{ selected: score2 === 3 }">
-              Oui
-          </p>
-      </div>
-      <h4 class="subtitle">Ocular Staining Score ≥ 5 (ou score de van Bijsterveld ≥ 4) pour au moins un oeil </h4>
-      <div>
-          <p @click="choice3(0)" class="btn" :class="{ selected: score3 === 0 }">
-              Non
-          </p>
-      </div>
-      <div>
-          <p @click="choice3(1)" class="btn" :class="{ selected: score3 === 1 }">
-              Oui
-          </p>
-      </div>
-      <h4 class="subtitle">Test de Schirmer ≤ 5 mm/ 5 min pour au moins un oeil</h4>
-      <div>
-          <p @click="choice4(0)" class="btn" :class="{ selected: score4 === 0 }">
-              Non
-          </p>
-      </div>
-      <div>
-          <p @click="choice4(1)" class="btn" :class="{ selected: score4=== 1 }">
-              Oui
-          </p>
-      </div>
-      <h4 class="subtitle">Flux salivaire sans stimulation ≤ 0,1 mL / min</h4>
-      <div>
-          <p @click="choice5(0)" class="btn" :class="{ selected: score5 === 0 }">
-              Non
-          </p>
-      </div>
-      <div>
-          <p @click="choice5(1)" class="btn" :class="{ selected: score5 === 1 }">
-              Oui
-          </p>
-      </div>
-      <span class="line" />
-      <h3>Critères d'exclusion :</h3>
-      <h4 class="subtitle">Antécédent d'irradiation cervicale</h4>
-      <div>
-          <p @click="choice6(0)" class="btn" :class="{ selected: score6 === 0 }">
-              Non
-          </p>
-      </div>
-      <div>
-          <p @click="choice6(1)" class="btn" :class="{ selected: score6 === 1 }">
-              Oui
-          </p>
-      </div>
-      <h4 class="subtitle">Infection par le VHC</h4>
-      <div>
-          <p @click="choice7(0)" class="btn" :class="{ selected: score7 === 0 }">
-              Non
-          </p>
-      </div>
-      <div>
-          <p @click="choice7(1)" class="btn" :class="{ selected: score7 === 1 }">
-              Oui
-          </p>
-      </div>
-      <h4 class="subtitle">Infection par le VIH</h4>
-      <div>
-          <p @click="choice8(0)" class="btn" :class="{ selected: score8 === 0 }">
-              Non
-          </p>
-      </div>
-      <div>
-          <p @click="choice8(1)" class="btn" :class="{ selected: score8 === 1 }">
-              Oui
-          </p>
-      </div>
-      <h4 class="subtitle">Sarcoïdose</h4>
-      <div>
-          <p @click="choice9(0)" class="btn" :class="{ selected: score9 === 0 }">
-              Non
-          </p>
-      </div>
-      <div>
-          <p @click="choice9(1)" class="btn" :class="{ selected: score9 === 1 }">
-              Oui
-          </p>
-      </div>
-      <h4 class="subtitle">Amylose</h4>
-      <div>
-          <p @click="choice10(0)" class="btn" :class="{ selected: score10 === 0 }">
-              Non
-          </p>
-      </div>
-      <div>
-          <p @click="choice10(1)" class="btn" :class="{ selected: score10 === 1 }">
-              Oui
-          </p>
-      </div>
-      <h4 class="subtitle">Réaction du greffon contre l'hôte</h4>
-      <div>
-          <p @click="choice11(0)" class="btn" :class="{ selected: score11 === 0 }">
-              Non
-          </p>
-      </div>
-      <div>
-          <p @click="choice11(1)" class="btn" :class="{ selected: score11 === 1 }">
-              Oui
-          </p>
-      </div>
-      <h4 class="subtitle">Maladie associée aux IgG4</h4>
-      <div>
-          <p @click="choice12(0)" class="btn" :class="{ selected: score12 === 0 }">
-              Non
-          </p>
-      </div>
-      <div>
-          <p @click="choice12(1)" class="btn" :class="{ selected: score12 === 1 }">
-              Oui
-          </p>
-      </div>
       <span class="line" />
 
       <div class="result">
@@ -162,77 +49,40 @@ export default Vue.extend({
     components: { ReferencesMedical, Footer },
     data() {
     return {
-        score1: 0,
-        score2: 0,
-        score3: 0,
-        score4: 0,
-        score5: 0,
-        score6: 0,
-        score7: 0,
-        score8: 0,
-        score9: 0,
-        score10: 0,
-        score11: 0,
-        score12: 0,
         resultPoint: 0,
         resultExclusion: 0,
+        options: [
+            { id: 1,describe: 'Sialadénite lymphocytaire avec focus score ≥ 1 sur la biopsie de glandes salivaires accessoires et focus score ≥ 1 foci/4mm²',value: 3 , name: 'btnradio1', selected: 0, countPoint: true, countExclusion: false  },
+            { id: 2,describe: 'Anticorps anti-SSA/Ro positif',value: 3 , name: 'btnradio2', selected: 0, countPoint: true, countExclusion: false },
+            { id: 3,describe: 'Ocular Staining Score ≥ 5 (ou score de van Bijsterveld ≥ 4) pour au moins un oeil',value: 1 , name: 'btnradio3', selected: 0, countPoint: true, countExclusion: false },
+            { id: 4,describe: 'Test de Schirmer ≤ 5 mm/ 5 min pour au moins un oeil',value: 1 , name: 'btnradio4', selected: 0, countPoint: true, countExclusion: false },
+            { id: 5,describe: 'Flux salivaire sans stimulation ≤ 0,1 mL / min',value: 1 , name: 'btnradio5', selected: 0, countPoint: true, countExclusion: false },
+            { divider: true},
+            { subtitle: 'Critères d\'exclusion :'},
+            { id: 6,describe: 'Antécédent d\'irradiation cervicale',value: 1 , name: 'btnradio6', selected: 0, countPoint: false, countExclusion: true },
+            { id: 7,describe: 'Infection par le VHC',value: 1 , name: 'btnradio7', selected: 0, countPoint: false, countExclusion: true },
+            { id: 8,describe: 'Infection par le VIH',value: 1 , name: 'btnradio8', selected: 0, countPoint: false, countExclusion: true },
+            { id: 9,describe: 'Sarcoïdose',value: 1 , name: 'btnradio9', selected: 0, countPoint: false, countExclusion: true },
+            { id: 10,describe: 'Amylose',value: 1 , name: 'btnradio10', selected: 0, countPoint: false, countExclusion: true },
+            { id: 11,describe: 'Réaction du greffon contre l\'hôte',value: 1 , name: 'btnradio11', selected: 0, countPoint: false, countExclusion: true },
+            { id: 12,describe: 'Maladie associée aux IgG4',value: 1 , name: 'btnradio12', selected: 0, countPoint: false, countExclusion: true },
+        ]
     };
   },
   methods: {
-    isMobile,
-      countPoints() {
-          this.resultPoint = parseInt(this.score1) + parseInt(this.score2) + parseInt(this.score3) + parseInt(this.score4) + parseInt(this.score5);
-      },
-      countExclusion() {
-          this.resultExclusion = parseInt(this.score6) + parseInt(this.score7) + parseInt(this.score8) + parseInt(this.score9) + parseInt(this.score10) + parseInt(this.score11) + parseInt(this.score12);
-      },
-      choice1(number) {
-          this.score1 = number;
-          this.countPoints();
-      },
-      choice2(number) {
-          this.score2 = number;
-          this.countPoints();
-      },
-      choice3(number) {
-          this.score3 = number;
-          this.countPoints();
-      },
-      choice4(number) {
-          this.score4 = number;
-          this.countPoints();
-      },
-      choice5(number) {
-          this.score5 = number;
-          this.countPoints();
-      },
-      choice6(number) {
-          this.score6 = number;
-          this.countExclusion();
-      },
-      choice7(number) {
-          this.score7 = number;
-          this.countExclusion();
-      },
-      choice8(number) {
-          this.score8 = number;
-          this.countExclusion();
-      },
-      choice9(number) {
-          this.score9 = number;
-          this.countExclusion();
-      },
-      choice10(number) {
-          this.score10 = number;
-          this.countExclusion();
-      },
-      choice11(number) {
-          this.score11 = number;
-          this.countExclusion();
-      },
-      choice12(number) {
-          this.score12 = number;
-          this.countExclusion();
+      calculate : function (action,amount) {
+          if (action === 'decrementExclusion') {
+              this.resultExclusion -= amount
+          }
+          if (action === 'incrementExclusion') {
+              this.resultExclusion += amount
+          }
+          if (action === 'decrementPoint') {
+              this.resultPoint -= amount
+          }
+          if (action === 'incrementPoint') {
+              this.resultPoint += amount
+          }
       },
   }
 });
@@ -240,4 +90,7 @@ export default Vue.extend({
 
 <style scoped lang="scss">
 @import "src/sass/global.scss";
+[type="radio"] {
+  display: none;
+}
 </style>
