@@ -3,8 +3,6 @@
     <SearchBar @onSearch="handleFindResult" @onClear="handleRemoveSearch" />
     <ListSearchResult :resultItems="listResult" :notFound="resultNotFound" v-if="displayResultSearch"/>
       <component v-if="displayAideCodage" v-bind:is="AideCodage" />
-
-<!--      // TODO v-scrool-to à placer au bon endroit  v-scroll-to="'#menu-id'"-->
       <main class="subMenu" v-if="!displayResultSearch">
       <h1 class="subMenu__title">
         {{ submenu.name }}
