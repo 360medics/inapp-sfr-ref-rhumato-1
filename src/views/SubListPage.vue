@@ -7,19 +7,19 @@
       <h1 class="subMenu__title">
         {{ submenu.name }}
       </h1>
-      <div class="sub-categories">
-        <div v-for="(subChildren, index) in submenu.children" :key="submenu.name + index">
-          <tree-menu
-                  :index="index"
-                  :name="subChildren.name"
-                  :type="subChildren.type"
-                  :slug="subChildren.slug"
-                  :children="subChildren.children"
-                  :depth="0"
-                  :content="subChildren.content"
-          />
-        </div>
-      </div>
+          <div class="sub-categories">
+              <div v-for="(subChildren, index) in submenu.children" :key="submenu.name + index">
+                  <tree-menu
+                          :index="index"
+                          :name="subChildren.name"
+                          :type="subChildren.type"
+                          :slug="subChildren.slug"
+                          :children="subChildren.children"
+                          :depth="0"
+                          :content="subChildren.content"
+                  />
+              </div>
+  </div>
     </main>
   </div>
 </template>
@@ -43,10 +43,10 @@ export default Vue.extend({
       AideCodage,
   }),
   components: {
-    TreeMenu,
-    SearchBar,
-    ListSearchResult,
-      AideCodage
+      TreeMenu,
+      SearchBar,
+      ListSearchResult,
+      AideCodage,
   },
   mounted() {
     DataService.load()

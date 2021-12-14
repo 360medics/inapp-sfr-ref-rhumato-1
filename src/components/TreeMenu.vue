@@ -11,9 +11,13 @@
                 <i v-else class="fas fa-chevron-down" />
             </div>
 
-                <div  v-for="(subChildren , index) in children" :key="index">
-                    <tree-menu :index="index" v-if="showChildren" :name="subChildren.name" :type="subChildren.type" :slug="subChildren.slug" :children="subChildren.children" :depth="depth + 1" :content="subChildren.content"/>
+            <collapse-transition>
+                <div v-show="showChildren">
+                    <div v-for="(subChildren , index) in children" :key="index">
+                       <tree-menu :index="index" :name="subChildren.name" :type="subChildren.type" :slug="subChildren.slug" :children="subChildren.children" :depth="depth + 1" :content="subChildren.content"/>
+                    </div>
                 </div>
+            </collapse-transition>
 
 
         </div>
@@ -85,6 +89,7 @@
 
 <script lang="ts">
 import Vue from 'vue';
+import { CollapseTransition } from "@ivanv/vue-collapse-transition"
 
 export default Vue.extend({
 
@@ -97,7 +102,11 @@ export default Vue.extend({
         };
     },
     name: 'tree-menu',
+    components: {
+        CollapseTransition
+    },
     mounted() {
+        console.log('mounted')
         this.showChildren = this.navigation[this.depth] === this.name;
     },
     watch: {

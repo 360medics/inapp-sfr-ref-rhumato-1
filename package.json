@@ -8,6 +8,7 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@ivanv/vue-collapse-transition": "^1.0.2",
     "axios": "^0.21.1",
     "fuse.js": "^6.4.6",
     "vue": "^2.6.12",
