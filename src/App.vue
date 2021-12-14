@@ -29,6 +29,7 @@ export default Vue.extend({
     color: #2c3e50;
     width: 100%;
     height: 100%;
+    margin-top: 6rem;
   }
 
   #nav {

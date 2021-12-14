@@ -42,30 +42,34 @@ export default Vue.extend({
 </script>
 
 <style scoped lang="scss">
-  .header {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      padding: 1rem 0.75rem;
-      background-color: #F1F1F6;
-      box-shadow: 0px 3px 6px #00000029;
-      border-radius: 0 0 1.06em 1.06em;
-      &__logo {
-          height: 40px;
-      }
-      &__icon {
-        font-size: 24px;
-        position: absolute;
-        &--left {
-          left: 15px;
-        }
-        &--right {
-          right: 15px;
-        }
-      }
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 500;
+  padding: 1rem 0.75rem;
+  background-color: #F1F1F6;
+  box-shadow: 0 3px 6px #00000029;
+  border-radius: 0 0 1.06em 1.06em;
+  &__logo {
+    height: 40px;
   }
-  .far {
-    color: #38bbec;
+  &__icon {
+    font-size: 24px;
+    position: absolute;
+    &--left {
+      left: 15px;
+    }
+    &--right {
+      right: 15px;
+    }
   }
+}
+.far {
+  color: #38bbec;
+}
 </style>

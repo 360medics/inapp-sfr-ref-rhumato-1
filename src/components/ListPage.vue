@@ -34,7 +34,6 @@ export default Vue.extend({
   flex-flow: column nowrap;
   padding: 0 0.75rem;
   &__item {
-
     transition: all 0.5s linear;
     border: 1px solid #f7f7f7;
     box-shadow: 0px 0px 10px 5px rgba(246,246,246,0.69);
