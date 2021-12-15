@@ -1,0 +1,44 @@
+// Colors
+$lightColor: #ffffff;
+$darkColor: #404040;
+$primaryColor: rgba(128, 204, 40, 1);
+$primaryColor-light: rgba(128, 204, 40, .2);
+$secondaryColor: rgba(76, 43, 99, 1);
+$secondaryColor-clear: rgba(76, 43, 99, .5);
+$secondaryColor-light: rgba(76, 43, 99, .2);
+$secondaryColor-veryLight: rgba(76, 43, 99, .1);
+$tertiaryColor: rgba(56, 187, 236, 1);
+$tertiaryColor-light: rgba(56, 187, 236, .2);
+$borderColor: #F1F1F6;
+$backgroundItem: #F4F4F8;
+$shadowColor: #00000029;
+$textDark: #6b6b6b;
+$dangerColor: #DB007A;
+$itemDisabledColor: #e4e6e8;
+// FontSize
+$fontSize_small: 0.9375rem;
+$fontSize_medium: 1.0625rem;
+$fontSize_large: 1.275rem;
+$fontSize_big: 1.81rem;
+// interline
+$lineHeight_medium: 1.9;
+$lineHeight_large: 3;
+// gutters
+$gutter_small: 0.75rem;
+$gutter_medium: 0.9375rem;
+$gutter_large: 2.3125rem;
+
+// Header Vars
+$headerArrowIcon_color: $tertiaryColor;
+$headerArrowIconDisabled_color: $itemDisabledColor;
+$headerCrossIcon_color: $dangerColor;
+$headerIcon_size: 1.1rem;
+$headerIcon_gutter: $gutter_large;
+$headerLogo_width: 9.25rem;
+$headerLogo_height: 2rem;
+$header_gutter: $gutter_medium;
+$header_BackgroundColor: $backgroundItem;
+$header_width: 100%;
+$header_height: calc(#{$headerLogo_height} + (#{$header_gutter * 2}));
+$header_shadow: 0 -1px 1px 1px $shadowColor;
+$header_radius: 1em;
