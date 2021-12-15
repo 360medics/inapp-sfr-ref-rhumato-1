@@ -171,7 +171,7 @@ export default Vue.extend({
       padding: $menuItem_iconGutter-inverted;
     }
     &-plane {
-      padding: $menuItem_iconGutter;
+      padding: $menuItem_iconGutter-inverted;
     }
   }
   &.children {
