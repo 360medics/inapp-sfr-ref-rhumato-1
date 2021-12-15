@@ -62,19 +62,19 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import 'src/sass/global.scss';
   .search {
     position: relative;
     padding: 0 0.75rem;
-    margin: 1em 0;
-
+    margin: 1em .5em;
     &__wrapper{
       display: flex;
       align-items: center;
     }
     &__input {
       width: 100%;
-      border: 1px solid #F1F1F6;
-      border-radius: 1em;
+      border: $searchBar_border;
+      border-radius: $searchBar_borderRadius;
       outline: none;
       cursor: pointer;
       padding: .4em 2.5em;
@@ -86,13 +86,16 @@ export default {
       background-color: #fff;
       &__clear {
         right: 15px;
+        color: $searchBar_iconColor;
+        font-size: $searchBar_iconSize;
       }
       &__find {
         left: 15px;
+        color: $searchBar_iconColor;
+        font-size: $searchBar_iconSize;
       }
     }
   }
-
   input,
   input:active,
   input:focus,
@@ -100,5 +103,6 @@ export default {
   input:hover,
   input:visited {
     font-size: 16px !important;
+    color: $searchBar_placeholderColor;
   }
 </style>

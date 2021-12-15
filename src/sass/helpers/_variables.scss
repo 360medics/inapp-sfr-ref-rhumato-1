@@ -42,3 +42,9 @@ $header_width: 100%;
 $header_height: calc(#{$headerLogo_height} + (#{$header_gutter * 2}));
 $header_shadow: 0 -1px 1px 1px $shadowColor;
 $header_radius: 1em;
+// SearchBar Vars
+$searchBar_border: 1px solid $borderColor;
+$searchBar_borderRadius: 10px;
+$searchBar_placeholderColor: $textDark;
+$searchBar_iconColor: $secondaryColor;
+$searchBar_iconSize: $fontSize_small;
