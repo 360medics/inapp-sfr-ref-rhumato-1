@@ -154,11 +154,25 @@ export default Vue.extend({
   align-items: center;
 }
 .tree-menu {
-  & i {
+  & .menu__icon {
     color: $primaryColor;
     background-color: $primaryColor-light;
-    padding: $menuItem_iconGutter-inverted;
     border-radius: $menuItem_corner;
+    &-right {
+      padding: $menuItem_iconGutter;
+    }
+    &-up {
+      padding: $menuItem_iconGutter-inverted;
+    }
+    &-down {
+      padding: $menuItem_iconGutter-inverted;
+    }
+    &-link {
+      padding: $menuItem_iconGutter-inverted;
+    }
+    &-plane {
+      padding: $menuItem_iconGutter;
+    }
   }
   &.children {
     background-color: $backgroundItem;
