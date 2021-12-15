@@ -48,3 +48,8 @@ $searchBar_borderRadius: 10px;
 $searchBar_placeholderColor: $textDark;
 $searchBar_iconColor: $secondaryColor;
 $searchBar_iconSize: $fontSize_small;
+// MenuItem Vars
+$menuItem_illustrated-contentGutter: $gutter_small * 1.5;
+$menuItem_color: $darkColor;
+$menuItem_iconGutter: $gutter_small/1.5 $gutter_small;
+$menuItem_contentSize: calc(100% - #{$gutter_small} - 1.5rem);
