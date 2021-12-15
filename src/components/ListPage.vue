@@ -91,8 +91,11 @@ export default Vue.extend({
       &--text {
         display: flex;
         align-items: center;
+        font-size:clamp(.75rem, 5vw, 1rem);
       }
       &--icon {
+        @extend %flexCenter;
+        height: 100%;
         padding: $menuItem_iconGutter;
         border-radius: 7px;
         &-1 {
@@ -102,7 +105,6 @@ export default Vue.extend({
         &-2 {
           color: $primaryColor;
           background-color: $primaryColor-light ;
-
         }
         &-3 {
           color: $secondaryColor;
@@ -113,27 +115,25 @@ export default Vue.extend({
   }
 
   &__item {
-    transition: all 0.5s linear;
-    border: 1px solid #f7f7f7;
-    box-shadow: 0 0 10px 5px rgba(246,246,246,0.69);
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-top: 0.5rem;
-    padding: 1em 0;
+    padding: $menuItem_illustrated-contentGutter 0;
+    border-bottom: solid 1px $borderColor;
     color: $menuItem_color;
-    background: #ecf1f5;
-    border-radius: 5px;
     font-weight: 700;
     text-decoration: none;
-
-    &__icon{
-      background: #80cc28;
-      color: #ecf1f6;
-      border-radius: 0.5rem;
-      padding: 0.5em 0.75em;
-      margin-left: 1em;
+    &__icon {
+      @extend %flexCenter;
+      height: 100%;
+      padding: $menuItem_iconGutter;
+      border-radius: 7px;
+      color: $primaryColor;
+      background-color: $primaryColor-light ;
     }
+  }
+  &__items:nth-child(4) {
+    border-top:  solid 1px $borderColor;
+    margin-top: $gutter_small;
   }
 }
 </style>

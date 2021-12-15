@@ -7,8 +7,8 @@
         >
             <div class="label-wrapper" @click="toggleChildren">
                 {{ name }}
-                <i v-if="!this.showChildren" class="fas fa-chevron-right" />
-                <i v-else class="fas fa-chevron-down" />
+                <i v-if="!this.showChildren" class="fas fa-chevron-up menu__icon menu__icon-up" />
+                <i v-else class="fas fa-chevron-down menu__icon menu__icon-down" />
             </div>
 
             <collapse-transition>
@@ -23,10 +23,10 @@
         </div>
 
         <div v-else-if="this.type === 'pdflist'">
-            <div class="label-wrapper" @click="toggleChildren">
+            <div class="label-wrapper menuDarkImportant" @click="toggleChildren">
                 {{ name }}
-                <i v-if="!this.showChildren" class="fas fa-chevron-right"></i>
-                <i v-else class="fas fa-chevron-down"></i>
+                <i v-if="!this.showChildren" class="fas fa-chevron-right menu__icon menu__icon-right" />
+                <i v-else class="fas fa-chevron-down menu__icon menu__icon-down" />
             </div>
             <div
                     v-if="showChildren"
@@ -52,25 +52,25 @@
         <div v-else-if="this.type === 'link'" >
             <a @click="closeOtherMenu()"
                     :href="externLink(content)"
-                    class="label-wrapper"
+                    class="label-wrapper menuDarkImportant"
                     :target="isMobile() ? '_self' : '_blank'"
                     rel="noopener noreferrer"
             >
                 {{ name }}
-                <i v-if="!this.showChildren" class="fas fa-link"></i>
+                <i v-if="!this.showChildren" class="fas fa-link menu__icon menu__icon-link" />
             </a>
         </div>
         <div v-else-if="this.type === 'mailto'">
-            <a @click="closeOtherMenu()" :href="content" class="label-wrapper">
+            <a @click="closeOtherMenu()" :href="content" class="label-wrapper menuDarkImportant">
                 {{ name }}
-                <i v-if="!this.showChildren" class="far fa-paper-plane"></i>
+                <i v-if="!this.showChildren" class="far fa-paper-plane menu__icon menu__icon-plane" />
             </a>
         </div>
 
         <div v-else-if="this.type === 'pdf'">
             <a @click="closeOtherMenu()"
                     :href="externLink(content)"
-                    class="label-wrapper"
+                    class="label-wrapper menuDarkImportant"
                     :target="isMobile() ? '_self' : '_blank'"
                     rel="noopener noreferrer"
             >
@@ -81,7 +81,7 @@
         <router-link :to="'/score/' + this.slug" v-else>
             <div class="label-wrapper" @click="closeOtherMenu()">
                 {{ name }}
-                <i v-if="!this.showChildren" class="fas fa-chevron-right" />
+                <i v-if="!this.showChildren" class="fas fa-chevron-right menu__icon menu__icon-right" />
             </div>
         </router-link>
     </div>
@@ -145,60 +145,53 @@ export default Vue.extend({
 </script>
 <style scoped lang="scss">
 @import 'src/sass/global.scss';
-
+.menuDarkImportant {
+  color: $darkColor;
+}
+.label-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .tree-menu {
-  color: #472e5a;
-  font-weight: bold;
-  background: #ecf1f5;
-  border-radius: 5px;
-  margin-top: 0.5rem;
-  padding: 16px;
-  transition: all 0.5s linear;
-  border: 1px solid #f7f7f7;
-  box-shadow: 0 0 10px 5px rgba(246,246,246,0.69);
-
-  i {
-    background: #80cc28;
-    color: #ecf1f6;
-    padding: 0.5em 0.75em;
-    border-radius: 0.5rem;
-    font-weight: lighter;
-    display: flex;
+  & i {
+    color: $primaryColor;
+    background-color: $primaryColor-light;
+    padding: $menuItem_iconGutter-inverted;
+    border-radius: $menuItem_corner;
   }
-
-  .label-wrapper {
-    display: flex;
-    cursor: pointer;
-    text-align: left;
-    justify-content: space-between;
-    align-items: center;
-    outline: none;
-    color: inherit;
-  }
-
-  a {
-    all: unset;
-  }
-
   &.children {
-    i {
-      background: #472e5a;
+    background-color: $backgroundItem;
+    color: $darkColor;
+    border-radius: $menuItem_corner;
+    font-size: $fontSize_small;
+    padding: 1px $gutter_small;
+    margin: $gutter_small;
+    & i {
+      color: $darkColor;
+      background-color: transparent;
     }
-    background-color: #4c2b62;
-    color: #fff;
   }
-
   &.grandChildren {
-    background-color: #fff;
-    color: #4c2b62;
-    box-shadow: none;
-    border: none;
+    background-color: #F6ECFC;
+    color: $secondaryColor !important;
+    border-radius: $menuItem_corner;
+    padding: 1px $gutter_small;
+    margin: $gutter_small 0;
+    & i {
+      color: $secondaryColor;
+    }
   }
   &.grandGrandChildren {
-   // background-color: red;
+    background-color: #FCF6FF;
+    color: #806294;
+    font-weight: 400;
+    border-radius: $menuItem_corner;
+    padding: $gutter_small/2 $gutter_small;
+    margin: $gutter_small 0;
+    & i {
+      display: none;
+    }
   }
-}
-.pdf-viewer {
-  margin: 10px;
 }
 </style>
