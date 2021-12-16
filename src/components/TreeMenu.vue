@@ -79,7 +79,7 @@
         </div>
 
         <router-link :to="'/score/' + this.slug" v-else>
-            <div class="label-wrapper" @click="closeOtherMenu()">
+            <div class="label-wrapper menuDarkImportant" @click="closeOtherMenu()">
                 {{ name }}
                 <i v-if="!this.showChildren" class="fas fa-chevron-right menu__icon menu__icon-right" />
             </div>
@@ -146,7 +146,7 @@ export default Vue.extend({
 <style scoped lang="scss">
 @import 'src/sass/global.scss';
 .menuDarkImportant {
-  color: $darkColor;
+  color: $darkColor !important;
 }
 .label-wrapper {
   display: flex;
@@ -175,7 +175,10 @@ export default Vue.extend({
     }
   }
   &.children {
+/*
     background-color: $backgroundItem;
+*/
+    background-color: #fff;
     color: $darkColor;
     border-radius: $menuItem_corner;
     font-size: $fontSize_small;
@@ -188,7 +191,7 @@ export default Vue.extend({
   }
   &.grandChildren {
     background-color: #F6ECFC;
-    color: $secondaryColor !important;
+    color: $secondaryColor;
     border-radius: $menuItem_corner;
     padding: 1px $gutter_small;
     margin: $gutter_small 0;

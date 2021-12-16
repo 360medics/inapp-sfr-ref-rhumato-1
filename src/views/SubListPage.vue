@@ -92,6 +92,9 @@ export default Vue.extend({
   margin: 0;
   padding: 0;
 }
+.sub-categories {
+  margin-top: $gutter_small;
+}
 .subMenu {
   padding: 0 .75rem;
 
