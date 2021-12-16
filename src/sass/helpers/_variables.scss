@@ -1,3 +1,4 @@
+@use "sass:math";
 // Colors
 $lightColor: #ffffff;
 $darkColor: #404040;
@@ -51,9 +52,10 @@ $searchBar_iconSize: $fontSize_small;
 // MenuItem Vars
 $menuItem_illustrated-contentGutter: $gutter_small * 1.5;
 $menuItem_color: $darkColor;
-$menuItem_iconGutter: $gutter_small/1.5 $gutter_small;
+$menuItem_iconGutter: math.div($gutter-small, 1.5) $gutter_small;
 $menuItem_iconGutter-inverted: .5rem .6rem;
 $menuItem_iconGutter-square: $gutter_small;
 $menuItem_contentSize: calc(100% - #{$gutter_small} - 1.5rem);
 $menuItem_gutter: $gutter_small;
 $menuItem_corner: 7px;
+$menuItemGrandChildren_gutter: math.div($gutter-small, 2) $gutter_small;

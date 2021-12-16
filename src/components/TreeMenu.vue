@@ -201,7 +201,7 @@ export default Vue.extend({
     color: #806294;
     font-weight: 400;
     border-radius: $menuItem_corner;
-    padding: $gutter_small/2 $gutter_small;
+    padding: $menuItemGrandChildren_gutter;
     margin: $gutter_small 0;
     & i {
       display: none;

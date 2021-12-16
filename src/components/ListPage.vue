@@ -69,11 +69,13 @@ export default Vue.extend({
   &__illustrated {
     &__container {
       margin-bottom: $gutter_small;
+      @extend %flexCenter;
       &-first {
         margin: $gutter_small 0;
       }
     }
     &__item {
+      width: 100%;
       position: relative;
       &--bg {
         width: 100%;
