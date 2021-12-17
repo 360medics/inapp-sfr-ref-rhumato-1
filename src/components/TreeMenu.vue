@@ -150,6 +150,7 @@ export default Vue.extend({
 }
 .menuDarkImportant {
   color: $darkColor !important;
+  padding-left: 0.75rem;
 }
 .label-wrapper {
   display: flex;
