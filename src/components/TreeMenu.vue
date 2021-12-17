@@ -5,13 +5,13 @@
 
         <div v-if="this.type === 'list'"
         >
-            <div class="label-wrapper" @click="toggleChildren">
-                {{ name }}
-                <i v-if="!this.showChildren" class="fas fa-chevron-up menu__icon menu__icon-up" />
-                <i v-else class="fas fa-chevron-down menu__icon menu__icon-down" />
+            <div class="label-wrapper dropdown" @click="toggleChildren">
+                <p class="dropdown__item">{{ name }}</p>
+                <i v-if="!this.showChildren" class="fas fa-chevron-down menu__icon menu__icon-down" />
+                <i v-else class="fas fa-chevron-up menu__icon menu__icon-up" />
             </div>
 
-            <collapse-transition>
+            <collapse-transition :duration="150">
                 <div v-show="showChildren">
                     <div v-for="(subChildren , index) in children" :key="index">
                        <tree-menu :index="index" :name="subChildren.name" :type="subChildren.type" :slug="subChildren.slug" :children="subChildren.children" :depth="depth + 1" :content="subChildren.content"/>
@@ -145,6 +145,9 @@ export default Vue.extend({
 </script>
 <style scoped lang="scss">
 @import 'src/sass/global.scss';
+.dropdown__item {
+  padding-left: $gutter_small;
+}
 .menuDarkImportant {
   color: $darkColor !important;
 }
@@ -152,6 +155,29 @@ export default Vue.extend({
   display: flex;
   justify-content: space-between;
   align-items: center;
+  &.dropdown  {
+    padding: .25em 0;
+    width: 100%;
+    & + div {
+      background-color: #F4F4F8;
+      border-radius: 7px;
+      color: #4C2B63;
+      & > div {
+        border-top: 1px solid #EBEBF2;
+      }
+      & > :first-child {
+        border: none;
+      }
+    }
+    & + div > :first-child > div{
+      border-top-right-radius: 7px;
+      border-top-left-radius: 7px;
+    }
+    & + div > :last-child > div{
+      border-bottom-right-radius: 7px;
+      border-bottom-left-radius: 7px;
+    }
+  }
 }
 .tree-menu {
   & .menu__icon {
@@ -163,49 +189,51 @@ export default Vue.extend({
     }
     &-up {
       padding: $menuItem_iconGutter-inverted;
+      margin-bottom: $gutter_small;
     }
-    &-down {
-      padding: $menuItem_iconGutter-inverted;
-    }
-    &-link {
-      padding: $menuItem_iconGutter-inverted;
-    }
-    &-plane {
+    &-down, &-link , &-plane{
       padding: $menuItem_iconGutter-inverted;
     }
   }
   &.children {
-/*
-    background-color: $backgroundItem;
-*/
-    background-color: #fff;
+    background-color: #F4F4F8;
     color: $darkColor;
-    border-radius: $menuItem_corner;
     font-size: $fontSize_small;
-    padding: 1px $gutter_small;
-    margin: $gutter_small;
+    & + div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
     & i {
       color: $darkColor;
       background-color: transparent;
     }
   }
   &.grandChildren {
-    background-color: #F6ECFC;
-    color: $secondaryColor;
-    border-radius: $menuItem_corner;
-    padding: 1px $gutter_small;
-    margin: $gutter_small 0;
+    background-color: #EBEBF2;
+    color: #4C2B63;
+    & > div {
+      border-bottom: 1px solid #DFDFEB;
+      & div ~ .label-wrapper .dropdown, div {
+        margin: -1px 0;
+      }
+    }
     & i {
       color: $secondaryColor;
     }
   }
   &.grandGrandChildren {
-    background-color: #FCF6FF;
-    color: #806294;
+    background-color: #DFDFEB;
+    color: #4C2B63;
     font-weight: 400;
-    border-radius: $menuItem_corner;
     padding: $menuItemGrandChildren_gutter;
-    margin: $gutter_small 0;
+    & > div + div ~ .dropdown, div {
+      border-bottom: 1px solid #C0ADCC;
+    }
+    & > a > div {
+      padding: $gutter_small 0;
+    }
     & i {
       display: none;
     }
