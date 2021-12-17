@@ -191,7 +191,6 @@ export default Vue.extend({
     }
     &-up {
       padding: $menuItem_iconGutter-inverted;
-      margin-bottom: $gutter_small;
     }
     &-down, &-link , &-plane{
       padding: $menuItem_iconGutter-inverted;
