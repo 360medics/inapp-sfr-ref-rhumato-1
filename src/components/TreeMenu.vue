@@ -24,7 +24,7 @@
 
         <div v-else-if="this.type === 'pdflist'">
             <div class="label-wrapper menuDarkImportant" @click="toggleChildren">
-                {{ name }}
+                <p class="dropdown__item">{{ name }}</p>
                 <i v-if="!this.showChildren" class="fas fa-chevron-right menu__icon menu__icon-right" />
                 <i v-else class="fas fa-chevron-down menu__icon menu__icon-down" />
             </div>
@@ -56,13 +56,13 @@
                     :target="isMobile() ? '_self' : '_blank'"
                     rel="noopener noreferrer"
             >
-                {{ name }}
+                <p class="dropdown__item">{{ name }}</p>
                 <i v-if="!this.showChildren" class="fas fa-link menu__icon menu__icon-link" />
             </a>
         </div>
         <div v-else-if="this.type === 'mailto'">
             <a @click="closeOtherMenu()" :href="content" class="label-wrapper menuDarkImportant">
-                {{ name }}
+                <p class="dropdown__item">{{ name }}</p>
                 <i v-if="!this.showChildren" class="far fa-paper-plane menu__icon menu__icon-plane" />
             </a>
         </div>
@@ -74,13 +74,13 @@
                     :target="isMobile() ? '_self' : '_blank'"
                     rel="noopener noreferrer"
             >
-                {{ name }}
+                <p class="dropdown__item"> {{ name }} </p>
             </a>
         </div>
 
         <router-link :to="'/score/' + this.slug" v-else>
             <div class="label-wrapper menuDarkImportant" @click="closeOtherMenu()">
-                {{ name }}
+                <p class="dropdown__item"> {{ name }}</p>
                 <i v-if="!this.showChildren" class="fas fa-chevron-right menu__icon menu__icon-right" />
             </div>
         </router-link>
@@ -150,15 +150,16 @@ export default Vue.extend({
 }
 .menuDarkImportant {
   color: $darkColor !important;
-  padding-left: 0.75rem;
 }
 .label-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   &.dropdown  {
-    padding: .25em 0;
     width: 100%;
+    & > div, div {
+      padding: 1em;
+    }
     & + div {
       background-color: #F4F4F8;
       border-radius: 7px;
@@ -231,9 +232,6 @@ export default Vue.extend({
     padding: $menuItemGrandChildren_gutter;
     & > div + div ~ .dropdown, div {
       border-bottom: 1px solid #C0ADCC;
-    }
-    & > a > div {
-      padding: $gutter_small 0;
     }
     & i {
       display: none;

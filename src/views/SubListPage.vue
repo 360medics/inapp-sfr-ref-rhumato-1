@@ -107,7 +107,6 @@ export default Vue.extend({
     color: #4c2b62;
   }
   &__item {
-    padding: $menuItem_gutter 0;
     font-weight: 700;
     border-bottom: 1px solid $borderColor;
     color: $darkColor;
