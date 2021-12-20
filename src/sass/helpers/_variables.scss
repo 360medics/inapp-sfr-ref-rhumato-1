@@ -58,4 +58,4 @@ $menuItem_iconGutter-square: $gutter_small;
 $menuItem_contentSize: calc(100% - #{$gutter_small} - 1.5rem);
 $menuItem_gutter: $gutter_small;
 $menuItem_corner: 7px;
-$menuItemGrandChildren_gutter: math.div($gutter-small, 2) $gutter_small;
+$menuItemGrandChildren_gutter: 0 $gutter_small;

@@ -3,8 +3,7 @@
     grandChildren: depth === 2,
     grandGrandChildren: depth === 3}">
 
-        <div v-if="this.type === 'list'"
-        >
+        <div v-if="this.type === 'list'">
             <div class="label-wrapper dropdown" @click="toggleChildren">
                 <p class="dropdown__item">{{ name }}</p>
                 <i v-if="!this.showChildren" class="fas fa-chevron-down menu__icon menu__icon-down" />
@@ -14,11 +13,10 @@
             <collapse-transition :duration="150">
                 <div v-show="showChildren">
                     <div v-for="(subChildren , index) in children" :key="index">
-                       <tree-menu :index="index" :name="subChildren.name" :type="subChildren.type" :slug="subChildren.slug" :children="subChildren.children" :depth="depth + 1" :content="subChildren.content"/>
+                       <tree-menu :class="{ childrenBorder: depth === 0 && index,grandChildrenBorder: depth === 1 && index,grandGrandChildrenBorder: depth === 2 && index}" :index="index" :name="subChildren.name" :type="subChildren.type" :slug="subChildren.slug" :children="subChildren.children" :depth="depth + 1" :content="subChildren.content"/>
                     </div>
                 </div>
             </collapse-transition>
-
 
         </div>
 
@@ -28,22 +26,8 @@
                 <i v-if="!this.showChildren" class="fas fa-chevron-right menu__icon menu__icon-right" />
                 <i v-else class="fas fa-chevron-down menu__icon menu__icon-down" />
             </div>
-            <div
-                    v-if="showChildren"
-                    v-for="(pdf, i) in children"
-                    :key="i"
-                    :class="{
-          'tree-menu': showChildren,
-          grandChildren: depth % 2 === 1,
-          children: depth !== 0 && depth % 2 === 0,
-    }"
-            >
-                <a
-                        :href="externLink(pdf.content)"
-                        class="label-wrapper"
-                        :target="isMobile() ? '_self' : '_blank'"
-                        rel="noopener noreferrer"
-                >
+            <div v-if="showChildren" v-for="(pdf, i) in children" :key="i" :class="{'tree-menu': showChildren,grandChildren: depth % 2 === 1,children: depth !== 0 && depth % 2 === 0,}">
+                <a :href="externLink(pdf.content)" class="label-wrapper" :target="isMobile() ? '_self' : '_blank'" rel="noopener noreferrer">
                     {{ pdf.name }}
                 </a>
             </div>
@@ -66,7 +50,6 @@
                 <i v-if="!this.showChildren" class="far fa-paper-plane menu__icon menu__icon-plane" />
             </a>
         </div>
-
         <div v-else-if="this.type === 'pdf'">
             <a @click="closeOtherMenu()"
                     :href="externLink(content)"
@@ -145,8 +128,33 @@ export default Vue.extend({
 </script>
 <style scoped lang="scss">
 @import 'src/sass/global.scss';
+.childrenBorder {
+  & > div > div > .dropdown__item {
+    border-top: 1px solid #EBEBF2;
+    width: 95%;
+    padding: 0.75em 0;
+  }
+}
+.grandChildrenBorder {
+  /* border-top: 1px solid #DFDFEB;*/
+  & > div > div > .dropdown__item {
+    border-top: 1px solid #DFDFEB;
+    width: 95%;
+    padding: 0.75em 0;
+  }
+}
+.grandGrandChildrenBorder {
+  & > a > div > .dropdown__item {
+    border-top: 1px solid #C0ADCC;
+    width: 95%;
+    padding: 0.75em 0;
+  }
+}
 .dropdown__item {
-  padding-left: $gutter_small;
+  position: relative;
+  margin: 0 .75em 0 0.75em;
+  padding: .75em 2em .75em 0;
+
 }
 .menuDarkImportant {
   color: $darkColor !important;
@@ -164,9 +172,6 @@ export default Vue.extend({
       background-color: #F4F4F8;
       border-radius: 7px;
       color: #4C2B63;
-      & > div {
-        border-top: 1px solid #EBEBF2;
-      }
       & > :first-child {
         border: none;
       }
@@ -183,6 +188,8 @@ export default Vue.extend({
 }
 .tree-menu {
   & .menu__icon {
+    position: absolute;
+    right: 20px;
     color: $primaryColor;
     background-color: $primaryColor-light;
     border-radius: $menuItem_corner;
@@ -214,12 +221,6 @@ export default Vue.extend({
   &.grandChildren {
     background-color: #EBEBF2;
     color: #4C2B63;
-    & > div {
-      border-bottom: 1px solid #DFDFEB;
-      & div ~ .label-wrapper .dropdown, div {
-        margin: -1px 0;
-      }
-    }
     & i {
       color: $secondaryColor;
     }
@@ -229,12 +230,20 @@ export default Vue.extend({
     color: #4C2B63;
     font-weight: 400;
     padding: $menuItemGrandChildren_gutter;
-    & > div + div ~ .dropdown, div {
-      border-bottom: 1px solid #C0ADCC;
-    }
     & i {
       display: none;
     }
+  }
+}
+.subMenu__item > .tree-menu {
+  & > div > div > .dropdown__item  {
+    margin-left: 0;
+  }
+  & > a > div > .dropdown__item {
+    margin-left: 0;
+  }
+  & > div > a > .dropdown__item {
+    margin-left: 0;
   }
 }
 </style>
