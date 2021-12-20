@@ -2,7 +2,7 @@
   <section class="preJAKi">
     <h2 class="title">Biologie pré-JAKi</h2>
 <span class="line"></span>
-    <PNGViewer :src="'pré-JAKiBiologie.png'" :myID="'pré-JAKiBiologie.png'"/>
+    <PNGViewer :src="'pre-JAKiBiologie.png'" :myID="'pre-JAKiBiologie.png'"/>
   </section>
 </template>
 
