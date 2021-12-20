@@ -1,14 +1,14 @@
 <template>
   <div>
-    <SearchBar @onSearch="handleFindResult" @onClear="handleRemoveSearch" />
-    <ListSearchResult :resultItems="listResult" :notFound="resultNotFound" v-if="displayResultSearch"/>
       <component v-if="displayAideCodage" v-bind:is="AideCodage" />
-      <main class="subMenu" v-if="!displayResultSearch">
+      <main class="subMenu">
       <h1 class="subMenu__title">
         {{ submenu.name }}
       </h1>
-          <div class="sub-categories">
-              <div v-for="(subChildren, index) in submenu.children" :key="submenu.name + index">
+    <SearchBar @onSearch="handleFindResult" @onClear="handleRemoveSearch" class="sublist__searchbar"/>
+    <ListSearchResult :resultItems="listResult" :notFound="resultNotFound" v-if="displayResultSearch"/>
+          <div class="sub-categories" v-if="!displayResultSearch">
+              <div v-for="(subChildren, index) in submenu.children" :key="submenu.name + index" class="subMenu__item">
                   <tree-menu
                           :index="index"
                           :name="subChildren.name"
@@ -87,16 +87,29 @@ export default Vue.extend({
 </script>
 
 <style scoped lang="scss">
-
+@import 'src/sass/global.scss';
+.sublist__searchbar {
+  margin: 0;
+  padding: 0;
+}
+.sub-categories {
+  margin-top: $gutter_small;
+}
 .subMenu {
   padding: 0 .75rem;
+
   &__title {
-    margin: .5rem 0;
+    margin: $gutter_medium 0;
     font-weight: 500;
     line-height: 1.2;
     text-align: left;
-    font-size: calc(1.375rem + 1.5vw);
+    font-size: calc(1.15rem + 1.5vw);
     color: #4c2b62;
+  }
+  &__item {
+    font-weight: 700;
+    border-bottom: 1px solid $borderColor;
+    color: $darkColor;
   }
 }
 

@@ -48,6 +48,9 @@ export default Vue.extend({
 });
 </script>
 <style scoped lang="scss">
+.List {
+  width: 95%;
+}
 .ListPage__title {
   padding: 0 .75em;
   color: #4c2b62;

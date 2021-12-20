@@ -20,7 +20,7 @@
       :href="
         externLink('https://www.sheffield.ac.uk/FRAX/tool.aspx?country=12')
       "
-      class="label-wrapper"
+      class="label-wrapper link"
       :target="isMobile() ? '_self' : '_blank'"
       rel="noreferrer noopener"
     >
@@ -70,7 +70,9 @@ export default {
 <style scoped lang="scss">
 @import 'src/sass/global.scss';
 @import 'src/sass/global';
-
+.link {
+  color: $tertiaryColor;
+}
 .FRAX {
   [type='number'] {
     width: 60px;

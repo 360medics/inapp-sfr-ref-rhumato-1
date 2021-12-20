@@ -1,19 +1,20 @@
 <template>
   <header class="header">
-    <div @click="goBack" class="header__icon header__icon--left" v-if="displayChevronCircle">
-      <i class="far fa-chevron-circle-left" />
-    </div>
+      <div v-if="displayChevronCircle" class="fas fa-chevron-left header__icon header__icon--left" @click="goBack" />
+      <div v-else class="fas fa-chevron-left header__icon header__icon--left-disabled" />
 
     <router-link  to="/">
       <img class="header__logo" :src="require('@/assets/logo-sfr.png')" alt="Logo sfr" />
       <img class="header__logo" :src="require('@/assets/logo-ref.png')" alt="Logo ref" />
     </router-link>
 
-    <div v-if="isMobile()" class="header__icon header__icon--right">
-        <a href="cmd://webview-close" >
-          <i class="far fa-times-circle" />
-        </a>
-    </div>
+      <div v-if="isMobile()">
+          <a href="cmd://webview-close" class="header__icon header__icon--right">
+              <i class="far fa-times-circle" />
+          </a>
+      </div>
+
+      <div v-else />
   </header>
 </template>
 
@@ -42,34 +43,34 @@ export default Vue.extend({
 </script>
 
 <style scoped lang="scss">
+@import 'src/sass/global.scss';
+
 .header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 500;
-  padding: 1rem 0.75rem;
-  background-color: #F1F1F6;
-  box-shadow: 0 3px 6px #00000029;
-  border-radius: 0 0 1.06em 1.06em;
+  width: $header_width;
+  padding: $header_gutter 0;
+  background-color: $header_BackgroundColor;
+  box-shadow: $header_shadow;
+  border-radius: 0 0 $header_radius $header_radius;
+  @include positionFixed(0, 0, null, 0);
+  @extend %flexAlignCenter;
+  justify-content: space-between;
+  z-index: 10;
   &__logo {
-    height: 40px;
+    max-width: $headerLogo_width;
+    height: $headerLogo_height;
+    text-decoration: none;
   }
   &__icon {
-    font-size: 24px;
-    position: absolute;
+    width: $headerIcon_size;
+    height: $headerIcon_size;
     &--left {
-      left: 15px;
+      @include circleIcon($headerArrowIcon_color);
     }
     &--right {
-      right: 15px;
+      margin-right: $headerIcon_gutter;
+      font-size: $headerIcon_size * 1.4;
+      color: $headerCrossIcon_color;
     }
   }
-}
-.far {
-  color: #38bbec;
 }
 </style>
