@@ -1222,7 +1222,7 @@
           "children": [
             {
               "id": "",
-              "name": "Methotrexate (Désir de paternité)",
+              "name": "Methotrexate",
               "subtitle": "",
               "appId": 1,
               "parentId": null,
@@ -1234,7 +1234,7 @@
             },
             {
               "id": "",
-              "name": "Filgotinib (Désir de paternité)",
+              "name": "Filgotinib",
               "subtitle": "",
               "appId": 1,
               "parentId": null,
