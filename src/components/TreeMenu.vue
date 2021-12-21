@@ -13,7 +13,14 @@
             <collapse-transition :duration="150">
                 <div v-show="showChildren">
                     <div v-for="(subChildren , index) in children" :key="index">
-                       <tree-menu :class="{ childrenBorder: depth === 0 && index,grandChildrenBorder: depth === 1 && index,grandGrandChildrenBorder: depth === 2 && index}" :index="index" :name="subChildren.name" :type="subChildren.type" :slug="subChildren.slug" :children="subChildren.children" :depth="depth + 1" :content="subChildren.content"/>
+                       <tree-menu :class="{
+                           childrenBorder: depth === 0 && index,
+                           grandChildrenBorder: depth === 1 && index,
+                           grandGrandChildrenBorder: depth === 2 && index,
+                           allChildrenBorder: depth === 0,
+                           allGrandChildrenBorder: depth === 1,
+                           allGrandGrandChildrenBorder: depth === 2
+                       }" :index="index" :name="subChildren.name" :type="subChildren.type" :slug="subChildren.slug" :children="subChildren.children" :depth="depth + 1" :content="subChildren.content"/>
                     </div>
                 </div>
             </collapse-transition>
@@ -131,23 +138,37 @@ export default Vue.extend({
 .childrenBorder {
   & > div > div > .dropdown__item {
     border-top: 1px solid #EBEBF2;
-    width: 95%;
-    padding: 0.75em 0;
   }
 }
 .grandChildrenBorder {
-  /* border-top: 1px solid #DFDFEB;*/
   & > div > div > .dropdown__item {
     border-top: 1px solid #DFDFEB;
-    width: 95%;
-    padding: 0.75em 0;
   }
 }
 .grandGrandChildrenBorder {
   & > a > div > .dropdown__item {
     border-top: 1px solid #C0ADCC;
+  }
+}
+.allChildrenBorder {
+  & > div > div > .dropdown__item {
     width: 95%;
-    padding: 0.75em 0;
+    padding: 1.3em 0;
+    margin: 0 1em;
+  }
+}
+.allGrandChildrenBorder {
+  & > div > div > .dropdown__item {
+    width: 95%;
+    padding: 1.3em 0;
+    margin: 0 1.5em;
+  }
+}
+.allGrandGrandChildrenBorder {
+  & > a > div > .dropdown__item {
+    width: 95%;
+    padding: 1.3em 0;
+    margin: 0 2em;
   }
 }
 .dropdown__item {
@@ -229,7 +250,6 @@ export default Vue.extend({
     background-color: #DFDFEB;
     color: #4C2B63;
     font-weight: 400;
-    padding: $menuItemGrandChildren_gutter;
     & i {
       display: none;
     }
@@ -245,5 +265,8 @@ export default Vue.extend({
   & > div > a > .dropdown__item {
     margin-left: 0;
   }
+}
+.tree-menu {
+  width: 100%;
 }
 </style>

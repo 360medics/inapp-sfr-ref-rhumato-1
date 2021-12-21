@@ -1,26 +1,27 @@
 <template>
-  <div>
-      <component v-if="displayAideCodage" v-bind:is="AideCodage" />
-      <main class="subMenu">
-      <h1 class="subMenu__title">
-        {{ submenu.name }}
-      </h1>
-    <SearchBar @onSearch="handleFindResult" @onClear="handleRemoveSearch" class="sublist__searchbar"/>
-    <ListSearchResult :resultItems="listResult" :notFound="resultNotFound" v-if="displayResultSearch"/>
-          <div class="sub-categories" v-if="!displayResultSearch">
-              <div v-for="(subChildren, index) in submenu.children" :key="submenu.name + index" class="subMenu__item">
-                  <tree-menu
-                          :index="index"
-                          :name="subChildren.name"
-                          :type="subChildren.type"
-                          :slug="subChildren.slug"
-                          :children="subChildren.children"
-                          :depth="0"
-                          :content="subChildren.content"
-                  />
-              </div>
-  </div>
-    </main>
+    <div class="sublistPage">
+        <main class="subMenu">
+            <h1 class="subMenu__title">
+                {{ submenu.name }}
+            </h1>
+            <h1 v-if="displayAideCodage" class="subMenu__title">Aide au codage</h1>
+            <SearchBar @onSearch="handleFindResult" @onClear="handleRemoveSearch" class="sublist__searchbar"/>
+            <ListSearchResult :resultItems="listResult" :notFound="resultNotFound" v-if="displayResultSearch"/>
+            <component v-if="displayAideCodage" v-bind:is="AideCodage" />
+            <div class="sub-categories" v-if="!displayResultSearch">
+                <div v-for="(subChildren, index) in submenu.children" :key="submenu.name + index" class="subMenu__item">
+                    <tree-menu
+                            :index="index"
+                            :name="subChildren.name"
+                            :type="subChildren.type"
+                            :slug="subChildren.slug"
+                            :children="subChildren.children"
+                            :depth="0"
+                            :content="subChildren.content"
+                    />
+                </div>
+            </div>
+        </main>
   </div>
 </template>
 
@@ -88,6 +89,9 @@ export default Vue.extend({
 
 <style scoped lang="scss">
 @import 'src/sass/global.scss';
+.sublistPage {
+  width: 100%;
+}
 .sublist__searchbar {
   margin: 0;
   padding: 0;
@@ -110,6 +114,9 @@ export default Vue.extend({
     font-weight: 700;
     border-bottom: 1px solid $borderColor;
     color: $darkColor;
+    min-height: 3.5em;
+    display: flex;
+    align-items: center;
   }
 }
 

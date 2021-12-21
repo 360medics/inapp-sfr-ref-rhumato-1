@@ -131,6 +131,7 @@ export default Vue.extend({
       border-radius: 7px;
       color: $primaryColor;
       background-color: $primaryColor-light ;
+      margin-left: .5em;
     }
   }
   &__items:nth-child(4) {

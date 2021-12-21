@@ -2,8 +2,10 @@
   <div class="List">
     <h1 class="ListPage__title">Accueil</h1>
     <SearchBar @onSearch="handleFindResult" @onClear="handleRemoveSearch"/>
+      <div :class="displayResultSearch ? 'main__container__result' : ''">
     <ListSearchResult :resultItems="listResult" :notFound="resultNotFound" v-if="displayResultSearch"/>
-    <ListPage v-else="displayResultSearch"/>
+      <ListPage v-else="displayResultSearch"/>
+      </div>
   </div>
 </template>
 
@@ -48,8 +50,12 @@ export default Vue.extend({
 });
 </script>
 <style scoped lang="scss">
+.main__container__result {
+  padding: 0 0.75rem;
+  margin: 0 0.5em;
+}
 .List {
-  width: 95%;
+  width: 100%;
 }
 .ListPage__title {
   padding: 0 .75em;

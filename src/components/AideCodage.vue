@@ -1,8 +1,6 @@
 <template lang="html">
   <section class="AideCodage">
-    <h2>Aide au codage</h2>
-
-    <table>
+    <table class="AideCodage__table">
       <tr>
         <th>Code</th>
         <th>Intitulé CCAM</th>
@@ -142,9 +140,6 @@
         <td>YYYY033 + Y + MZLH002</td>
         <td>Infiltration MS avec guidage radio <br> Infiltration MI avec guidage radio</td>
       </tr>
-
-
-
     </table>
   </section>
 </template>
@@ -152,15 +147,14 @@
 <script lang="js">
     export default {
         name: 'AideCodage',
-
-
     }
 </script>
 
 <style scoped lang="scss">
 @import "src/sass/global.scss";
     .AideCodage {
-      text-align: left;
+      display: flex;
+      justify-content: center;
 
       h2 {
         text-align: center;
@@ -174,6 +168,7 @@
         border-collapse: collapse;
         width: 100%;
         margin-bottom: 15px;
+        margin-top: $gutter_medium;
       }
 
       td, th {
