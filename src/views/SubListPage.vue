@@ -114,7 +114,6 @@ export default Vue.extend({
     font-weight: 700;
     border-bottom: 1px solid $borderColor;
     color: $darkColor;
-    min-height: 3.5em;
     display: flex;
     align-items: center;
   }

@@ -119,11 +119,13 @@ export default Vue.extend({
   &__item {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: $menuItem_illustrated-contentGutter 0;
     border-bottom: solid 1px $borderColor;
     color: $menuItem_color;
     font-weight: 700;
     text-decoration: none;
+    min-height: 2.6em;
     &__icon {
       @extend %flexCenter;
       height: 100%;

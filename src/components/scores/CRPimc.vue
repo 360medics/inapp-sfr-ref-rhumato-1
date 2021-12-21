@@ -1,7 +1,7 @@
 <template>
 <div class="crpimc">
     <h2 class="title">CRP selon IMC</h2>
-
+    <span class="line" />
 
 
     <div class="crp__container">

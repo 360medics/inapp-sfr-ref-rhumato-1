@@ -256,14 +256,13 @@ export default Vue.extend({
   }
 }
 .subMenu__item > .tree-menu {
-  & > div > div > .dropdown__item  {
+  & > div > div > .dropdown__item,
+  > a > div > .dropdown__item,
+  > div > a > .dropdown__item  {
     margin-left: 0;
-  }
-  & > a > div > .dropdown__item {
-    margin-left: 0;
-  }
-  & > div > a > .dropdown__item {
-    margin-left: 0;
+    min-height: 2.6em;
+    display: flex;
+    align-items: center;
   }
 }
 .tree-menu {
