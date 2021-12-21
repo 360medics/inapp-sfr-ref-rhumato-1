@@ -12,6 +12,7 @@
 .content-page {
    padding: 0 0.75em;
    margin-top: 1em;
+    width: 100%;
 }
 </style>
 

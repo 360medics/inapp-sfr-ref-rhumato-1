@@ -43,9 +43,9 @@
         </div>
     </div>
 
-    <div class="result">
-        <h3>CRP {{ crp  <= total ? "normal" : "élevée" }} selon BMI :</h3>
-        <p>{{ total.toFixed(2) }} {{ unit }}</p>
+    <div class="result crp__result">
+        <h3 class="result crp__result__leftSide">CRP {{ crp  <= total ? "normal" : "élevée" }} selon BMI :</h3>
+        <p class="result crp__result__rightSide">{{ total.toFixed(2) }} {{ unit }}</p>
     </div>
 </div>
 </template>
@@ -88,6 +88,18 @@ export default Vue.extend({
 @import "src/sass/global.scss";
 
 .crp {
+  &__result {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    &__leftSide {
+      flex-basis: 55%;
+      font-size: clamp(.84rem, 1vw, 1.2rem);
+    }
+    &__rightSide {
+      margin-left: .5em;
+    }
+  }
   &__container {
     display: flex;
     align-items: center;
@@ -120,5 +132,6 @@ select {
 .btn__container {
   width: 100%;
 }
+
 
 </style>
