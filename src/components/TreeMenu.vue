@@ -17,9 +17,9 @@
                            childrenBorder: depth === 0 && index,
                            grandChildrenBorder: depth === 1 && index,
                            grandGrandChildrenBorder: depth === 2 && index,
-                           allChildrenBorder: depth === 0,
-                           allGrandChildrenBorder: depth === 1,
-                           allGrandGrandChildrenBorder: depth === 2
+                           allChildren: depth === 0,
+                           allGrandChildren: depth === 1,
+                           allGrandGrandChildren: depth === 2
                        }" :index="index" :name="subChildren.name" :type="subChildren.type" :slug="subChildren.slug" :children="subChildren.children" :depth="depth + 1" :content="subChildren.content"/>
                     </div>
                 </div>
@@ -139,10 +139,16 @@ export default Vue.extend({
   & > div > div > .dropdown__item {
     border-top: 1px solid #EBEBF2;
   }
+  & > a > div > .dropdown__item {
+    border-top: 1px solid #EBEBF2;
+  }
 }
 .grandChildrenBorder {
   & > div > div > .dropdown__item {
     border-top: 1px solid #DFDFEB;
+  }
+  & > a > div > .dropdown__item {
+    border-top: 1px solid #C0ADCC;
   }
 }
 .grandGrandChildrenBorder {
@@ -150,21 +156,31 @@ export default Vue.extend({
     border-top: 1px solid #C0ADCC;
   }
 }
-.allChildrenBorder {
+.allChildren {
   & > div > div > .dropdown__item {
     width: 95%;
     padding: 1.3em 0;
     margin: 0 1em;
   }
+  & > a > div > .dropdown__item {
+    width: 95%;
+    padding: 1.3em 0;
+    margin: 0 1em;
+  }
 }
-.allGrandChildrenBorder {
+.allGrandChildren {
   & > div > div > .dropdown__item {
     width: 95%;
     padding: 1.3em 0;
     margin: 0 1.5em;
   }
+  & > a > div > .dropdown__item {
+    width: 95%;
+    padding: 1.3em 0;
+    margin: 0 1.5em;
+  }
 }
-.allGrandGrandChildrenBorder {
+.allGrandGrandChildren {
   & > a > div > .dropdown__item {
     width: 95%;
     padding: 1.3em 0;
