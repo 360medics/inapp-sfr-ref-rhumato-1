@@ -2707,6 +2707,17 @@
           "content": "http://www.lecofer.org/semiologie.php",
           "slug": "Examen clinique en video",
           "submenu": false
+        },
+        {
+          "id": "",
+          "name": "Podcast La Minute Rhumato",
+          "subtitle": "Sous-titre facultatif",
+          "appId": 1,
+          "parentId": null,
+          "type": "link",
+          "content": "https://sfr.larhumatologie.fr/formations-ressources/la-minute-rhumato",
+          "slug": "la-minute-rhumato",
+          "submenu": false
         }
       ]
     },
