@@ -732,6 +732,17 @@
           "content": "https://www.sciencedirect.com/science/article/pii/S1297319X20301482?via%3Dihub",
           "slug": "arthrite septique",
           "submenu": false
+        },
+        {
+          "id": "",
+          "name": "Régime diététique (Reco)",
+          "subtitle": "",
+          "appId": 1,
+          "parentId": 2,
+          "type": "link",
+          "content": "https://www.sciencedirect.com/science/article/pii/S1297319X21001925?via%3Dihub",
+          "slug": "regime-dietetique",
+          "submenu": false
         }
       ]
     },
