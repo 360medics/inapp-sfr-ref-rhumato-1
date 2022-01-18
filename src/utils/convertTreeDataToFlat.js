@@ -1,6 +1,7 @@
 const fs = require("fs-extra");
 const data = require("../../public/dataTree.json");
-const PATHOFJSONWRITE = `../../public/dataFlat.json`;
+
+console.log(data)
 
 const flatData = [];
 const flattenData = (nestedObject, fullObject) => {
@@ -23,5 +24,5 @@ const ConvertToFlat = treeItems => {
 };
 
 const dataConverted = ConvertToFlat(data.tree);
-fs.writeJsonSync(PATHOFJSONWRITE, dataConverted);
-console.info(`json generate in ${PATHOFJSONWRITE}`);
+fs.writeJsonSync(__dirname + "/../../public/dataFlat.json", dataConverted);
+console.info(`json generate in "/public/dataFlat.json"`);
