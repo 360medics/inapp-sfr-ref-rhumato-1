@@ -11,3 +11,4 @@ For this only one step:
 ```
 npm run convert:data
 ```
+ps: script don't work with following command convert:data
