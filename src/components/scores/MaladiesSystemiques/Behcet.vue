@@ -4,61 +4,60 @@
     <h2 class="title">Critères de classification pour la maladie de Behçet</h2>
     <span class="line"></span>
     <!-- first choice -->
-      <label> Aphtose orale </label>
-      <span v-if="this.score1 == 0">
-      <button type="button" class="btn" @click="choice1(1);">non</button>
-      </span>
-      <span v-else>
-      <button type="button" class="btn selected" @click="choice1(0)">oui</button>
-      </span>
-    <!-- second choice -->
-      <br>
-      <label>Aphtose génitale </label>
-      <span v-if="this.score2 == 0">
-      <button type="button" class="btn" @click="choice2(2);">non</button>
-      </span>
-      <span v-else>
-      <button type="button" class="btn selected" @click="choice2(0)">oui</button>
-      </span>
-      <br>
-      <!-- third choice -->
-      <label> Lésions cutanées </label>
-      <span v-if="this.score3 == 0">
-      <button type="button" class="btn" @click="choice3(1);">non</button>
-      </span>
-      <span v-else>
-      <button type="button" class="btn selected"  @click="choice3(0)">oui</button>
-      </span>
-      <br>
-      <!-- fourth choice -->
-      <label> Atteinte oculaire </label>
-      <span v-if="this.score4 == 0">
-      <button type="button" class="btn" @click="choice4(2);">non</button>
-      </span>
-      <span v-else>
-      <button type="button"  class="btn selected" @click="choice4(0)">oui</button>
-      </span>
-      <br>
-      <!-- fifth choice -->
-      <label> Test pathergique positif  </label>
-      <span v-if="this.score5 == 0">
-      <button type="button"  class="btn" @click="choice5(1);">non</button>
-      </span>
-      <span v-else>
-      <button type="button"  class="btn selected" @click="choice5(0)">oui</button>
-      </span>
-      <br>
-      <!-- sixth choice -->
-      <label> Lésion vasculaire (thrombose artérielle, veineuse, anévrysme) </label>
-      <span v-if="this.score6 == 0">
-      <button type="button"  class="btn" @click="choice6(1);">non</button>
-      </span>
-      <span v-else>
-      <button type="button" class="btn selected" @click="choice6(0)">oui</button>
-      </span>
-      <br>
+      <p class="description">Aphtose orale</p>
+      <div class="btn__container">
+          <input type="radio"  name="btnradio1" id="btnradio1"  @click="choice1(0)">
+          <label class="btn btn__halfsize" :class="{selected: score1 === 0}" for="btnradio1">NON</label>
 
-    <br>
+          <input type="radio"  name="btnradio1" id="btnradio2" @click="choice1(1)">
+          <label class="btn btn__halfsize" :class="{selected: score1 === 1}" for="btnradio2">OUI</label>
+      </div>
+    <!-- second choice -->
+      <p class="description">Aphtose génitale</p>
+      <div class="btn__container">
+          <input type="radio"  name="btnradio2" id="btnradio3"  @click="choice2(0)">
+          <label class="btn btn__halfsize" :class="{selected: score2 === 0}" for="btnradio3">NON</label>
+
+          <input type="radio"  name="btnradio2" id="btnradio4" @click="choice2(2)">
+          <label class="btn btn__halfsize" :class="{selected: score2 === 2}" for="btnradio4">OUI</label>
+      </div>
+      <!-- third choice -->
+            <p class="description">Lésions cutanées</p>
+      <div class="btn__container">
+          <input type="radio"  name="btnradio3" id="btnradio5"  @click="choice3(0)">
+          <label class="btn btn__halfsize" :class="{selected: score3 === 0}" for="btnradio5">NON</label>
+
+          <input type="radio"  name="btnradio3" id="btnradio6" @click="choice3(1)">
+          <label class="btn btn__halfsize" :class="{selected: score3 === 1}" for="btnradio6">OUI</label>
+      </div>
+      <!-- fourth choice -->
+            <p class="description">Atteinte oculaire</p>
+      <div class="btn__container">
+          <input type="radio"  name="btnradio4" id="btnradio7"  @click="choice4(0)">
+          <label class="btn btn__halfsize" :class="{selected: score4 === 0}" for="btnradio7">NON</label>
+
+          <input type="radio"  name="btnradio4" id="btnradio8" @click="choice4(2)">
+          <label class="btn btn__halfsize" :class="{selected: score4 === 2}" for="btnradio8">OUI</label>
+      </div>
+      <!-- fifth choice -->
+            <p class="description">Test pathergique positif</p>
+      <div class="btn__container">
+          <input type="radio"  name="btnradio5" id="btnradio9"  @click="choice5(0)">
+          <label class="btn btn__halfsize" :class="{selected: score5 === 0}" for="btnradio9">NON</label>
+
+          <input type="radio"  name="btnradio5" id="btnradio10" @click="choice5(1)">
+          <label class="btn btn__halfsize" :class="{selected: score5 === 1}" for="btnradio10">OUI</label>
+      </div>
+      <!-- sixth choice -->
+            <p class="description">Lésion vasculaire (thrombose artérielle, veineuse, anévrysme)</p>
+      <div class="btn__container">
+          <input type="radio"  name="btnradio6" id="btnradio11"  @click="choice6(0)">
+          <label class="btn btn__halfsize" :class="{selected: score6 === 0}" for="btnradio11">NON</label>
+
+          <input type="radio"  name="btnradio6" id="btnradio12" @click="choice6(1)">
+          <label class="btn btn__halfsize" :class="{selected: score6 === 1}" for="btnradio12">OUI</label>
+      </div>
+
     <div class="result">
     <div >
       <span>{{ total() }} Points</span> <br>
@@ -120,41 +119,8 @@ export default Vue.extend({
 <style scoped lang="scss">
 @import "src/sass/global.scss";
 .Behcet {
-  .btn {
-    background-color: rgb(199, 197, 197);
-    border: none;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin-bottom: 5px;
-    justify-content: center;
-    align-content: space-around;
-    align-items: flex-start;
-    height: 50px;
-    border-radius: 8px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 20px;
-    color: rgb(49, 49, 49);
-  }
-
-  .btn:focus {
-    background-color: rgb(63, 160, 177);
-    border: none;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin-bottom: 5px;
-    justify-content: center;
-    align-content: space-around;
-    align-items: flex-start;
-    height: 50px;
-    border-radius: 8px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 20px;
-    color: white;
-
+  [type="radio"] {
+    display: none;
   }
 }
 </style>

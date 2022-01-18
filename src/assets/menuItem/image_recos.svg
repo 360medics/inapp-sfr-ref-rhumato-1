@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="340" height="110" viewBox="0 0 340 110">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1002" data-name="Rectangle 1002" width="340" height="110" rx="18" transform="translate(37 375)" fill="#80cc28" opacity="0.1"/>
+    </clipPath>
+  </defs>
+  <g id="image_recos" transform="translate(-37 -375)">
+    <rect id="Rectangle_996" data-name="Rectangle 996" width="340" height="110" rx="18" transform="translate(37 375)" fill="#f2fae9"/>
+    <g id="Groupe_de_masques_2" data-name="Groupe de masques 2" clip-path="url(#clip-path)">
+      <g id="file-medical-alt-duotone" transform="matrix(0.966, -0.259, 0.259, 0.966, 53.28, 357.33)">
+        <path id="Tracé_5050" data-name="Tracé 5050" d="M81.413,85.988v.021a4.218,4.218,0,0,1-4.229,4.208H17.958a4.218,4.218,0,0,1-4.208-4.229v-29.6H26.1l6.132,12.246a1.41,1.41,0,0,0,2.52,0L44.762,48.6l3.894,7.788H64.423A2.867,2.867,0,0,0,67.3,53.919a2.963,2.963,0,0,0,.023-.352A2.819,2.819,0,0,0,64.5,50.747H52.127L46.013,38.5a1.41,1.41,0,0,0-2.52,0L33.485,58.535l-3.506-7.013a1.434,1.434,0,0,0-1.269-.775H13.75V4.208A4.218,4.218,0,0,1,17.979,0h40.88V19.735a2.819,2.819,0,0,0,2.819,2.819H81.413Z" transform="translate(-2.473 0)" fill="#80cc28" opacity="0.4"/>
+        <path id="Tracé_5051" data-name="Tracé 5051" d="M77.706,18.5,60.456,1.233A4.229,4.229,0,0,0,57.46,0H56.386V19.735A2.819,2.819,0,0,0,59.2,22.554H78.94V21.479A4.211,4.211,0,0,0,77.706,18.5ZM62.024,50.747H49.655L43.54,38.5a1.41,1.41,0,0,0-2.52,0L31.012,58.535l-3.506-7.013a1.434,1.434,0,0,0-1.269-.775H1.41A1.41,1.41,0,0,0,0,52.157v2.819a1.41,1.41,0,0,0,1.41,1.41H23.629l6.132,12.246a1.41,1.41,0,0,0,2.52,0L42.289,48.6l3.894,7.788H61.95a2.867,2.867,0,0,0,2.872-2.467,2.963,2.963,0,0,0,.023-.352A2.819,2.819,0,0,0,62.024,50.747Z" transform="translate(0 0)" fill="#80cc28"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,8 +1,6 @@
 <template lang="html">
   <section class="AideCodage">
-    <h2>Aide au codage</h2>
-
-    <table>
+    <table class="AideCodage__table">
       <tr>
         <th>Code</th>
         <th>Intitulé CCAM</th>
@@ -35,37 +33,17 @@
 
       <tr>
         <td>NZLB001</td>
-        <td>Inj artic MI sans guidage</td>
-      </tr>
-
-      <tr>
-        <td>NZJB001</td>
-        <td>Evacuation MI</td>
+        <td>Inj artic MI sans guidage <br> Evacuation MS sans guidage <br> Evacuation MI</td>
       </tr>
 
       <tr>
         <td>NZLB001 + NZLB001</td>
-        <td>Inj artic MI sans guidage x</td>
-      </tr>
-
-      <tr>
-        <td>NZLB001 + NZLB001</td>
-        <td>Evacuation puis infiltration MI</td>
+        <td>Inj artic MI sans guidage x <br> Evacuation puis infiltration MI <br> Evacuation puis infiltration MS</td>
       </tr>
 
       <tr>
         <td>NZHB002 + NZLB001</td>
         <td>Ponction + Infiltration MI</td>
-      </tr>
-
-      <tr>
-        <td>MZJB001</td>
-        <td>Evacuation MS sans guidage</td>
-      </tr>
-
-      <tr>
-        <td>MZJB001 + MZLB001</td>
-        <td>Evacuation puis infiltration MS</td>
       </tr>
 
       <tr>
@@ -160,14 +138,8 @@
 
        <tr>
         <td>YYYY033 + Y + MZLH002</td>
-        <td>Infiltration MS avec guidage radio</td>
+        <td>Infiltration MS avec guidage radio <br> Infiltration MI avec guidage radio</td>
       </tr>
-
-       <tr>
-        <td>YYYY033 + Y + NZLH002</td>
-        <td>Infiltration MI avec guidage radio</td>
-      </tr>
-
     </table>
   </section>
 </template>
@@ -175,15 +147,14 @@
 <script lang="js">
     export default {
         name: 'AideCodage',
-
-
     }
 </script>
 
 <style scoped lang="scss">
 @import "src/sass/global.scss";
     .AideCodage {
-      text-align: left;
+      display: flex;
+      justify-content: center;
 
       h2 {
         text-align: center;
@@ -197,6 +168,7 @@
         border-collapse: collapse;
         width: 100%;
         margin-bottom: 15px;
+        margin-top: $gutter_medium;
       }
 
       td, th {

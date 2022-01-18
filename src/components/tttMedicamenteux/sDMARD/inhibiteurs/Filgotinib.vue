@@ -17,7 +17,7 @@
 
     <p><span class="bold">Posologies</span></p>
     <ul>
-      <li>200 mg par jour</li>
+      <li>200 mg par jour si >75 ans 100mg</li>
       <li>Adaptation posologique à 100 mg si âge > 75 ans ou clairance rénale < 60 mL/min</li>
       <li>Population avec IR < 15 mL/min, insuffisance hépatique sévère, HCV, HBV et HIV non représentés dans étude</li>
     </ul>

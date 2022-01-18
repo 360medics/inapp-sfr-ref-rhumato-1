@@ -39,6 +39,9 @@
         </div>
       </div>
     </transition>
+      <div class="zoom__icon__container">
+          <i class="zoom__icon fa fa-expand" @click="openModal()"/>
+      </div>
   </div>
 </template>
 
@@ -97,7 +100,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .imageModal {
   width: 100%;
 }
@@ -167,5 +170,23 @@ export default {
   max-width: 100%;
   margin: auto;
 }
+
+.zoom__icon {
+    width: 1.7em;
+    height: 1.7em;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0px 1px 3px 1px grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+&__container{
+     display: flex;
+     justify-content: flex-end;
+     margin-right: 1em;
+     margin-top: -1.5em;
+ }
+}
+
 
 </style>

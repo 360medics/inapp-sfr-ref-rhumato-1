@@ -1,24 +1,27 @@
 <template>
-  <div>
-    <SearchBar @onSearch="handleFindResult" @onClear="handleRemoveSearch" />
-    <ListSearchResult :resultItems="listResult" :notFound="resultNotFound" v-if="displayResultSearch"/>
-    <main class="subMenu" v-else="displayResultSearch">
-      <h1 class="subMenu__title">
-        {{ submenu.name }}
-      </h1>
-      <div class="sub-categories">
-        <div v-for="(subChildren, index) in submenu.children" :key="submenu.name + index">
-          <tree-menu
-            :name="subChildren.name"
-            :type="subChildren.type"
-            :slug="subChildren.slug"
-            :children="subChildren.children"
-            :depth="0"
-            :content="subChildren.content"
-          ></tree-menu>
-        </div>
-      </div>
-    </main>
+    <div class="sublistPage">
+        <main class="subMenu">
+            <h1 class="subMenu__title">
+                {{ submenu.name }}
+            </h1>
+            <h1 v-if="displayAideCodage" class="subMenu__title">Aide au codage</h1>
+            <SearchBar @onSearch="handleFindResult" @onClear="handleRemoveSearch" class="sublist__searchbar"/>
+            <ListSearchResult :resultItems="listResult" :notFound="resultNotFound" v-if="displayResultSearch"/>
+            <component v-if="displayAideCodage" v-bind:is="AideCodage" />
+            <div class="sub-categories" v-if="!displayResultSearch">
+                <div v-for="(subChildren, index) in submenu.children" :key="submenu.name + index" class="subMenu__item">
+                    <tree-menu
+                            :index="index"
+                            :name="subChildren.name"
+                            :type="subChildren.type"
+                            :slug="subChildren.slug"
+                            :children="subChildren.children"
+                            :depth="0"
+                            :content="subChildren.content"
+                    />
+                </div>
+            </div>
+        </main>
   </div>
 </template>
 
@@ -28,6 +31,7 @@ import DataService from "@/service/DataService";
 import TreeMenu from "@/components/TreeMenu.vue";
 import SearchBar from "@/components/search/SearchBar.vue";
 import ListSearchResult from '@/components/ListSearchResult.vue';
+import AideCodage from '@/components/AideCodage.vue';
 
 export default Vue.extend({
   name: "SubListPage",
@@ -36,11 +40,14 @@ export default Vue.extend({
     displayResultSearch: false,
     listResult: [],
     resultNotFound: null,
+      displayAideCodage: false,
+      AideCodage,
   }),
   components: {
-    TreeMenu,
-    SearchBar,
-    ListSearchResult
+      TreeMenu,
+      SearchBar,
+      ListSearchResult,
+      AideCodage,
   },
   mounted() {
     DataService.load()
@@ -50,7 +57,12 @@ export default Vue.extend({
         // Retrive component name from slug.
         for (let list of dataTree) {
           if (list.slug === slug) {
-            this.submenu = list;
+              if (slug === 'aide-codage') {
+                 this.displayAideCodage = true
+              } else {
+                  this.displayAideCodage = false
+                  this.submenu = list;
+              }
             break;
           }
         }
@@ -76,16 +88,34 @@ export default Vue.extend({
 </script>
 
 <style scoped lang="scss">
-
+@import 'src/sass/global.scss';
+.sublistPage {
+  width: 100%;
+}
+.sublist__searchbar {
+  margin: 0;
+  padding: 0;
+}
+.sub-categories {
+  margin-top: $gutter_small;
+}
 .subMenu {
   padding: 0 .75rem;
+
   &__title {
-    margin: .5rem 0;
+    margin: $gutter_medium 0;
     font-weight: 500;
     line-height: 1.2;
     text-align: left;
-    font-size: calc(1.375rem + 1.5vw);
+    font-size: calc(1.15rem + 1.5vw);
     color: #4c2b62;
+  }
+  &__item {
+    font-weight: 700;
+    border-bottom: 1px solid $borderColor;
+    color: $darkColor;
+    display: flex;
+    align-items: center;
   }
 }
 

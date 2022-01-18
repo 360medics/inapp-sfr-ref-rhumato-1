@@ -4,280 +4,28 @@
       Critères de classification ACR-EULAR de la sclérodermie systémique
     </h2>
 
-    <h4 class="subtitle">
-      Epaississement cutané (ne tenir compte que du score le plus élevé) :
-    </h4>
-    <p class="description">
-      Epaississement cutané des doigts des mains s'étendant au-delà des
-      articulations MCP
-    </p>
-    <p class="description">9 points</p>
-    <input
-      type="radio"
-      class="btn-check"
-      name="btnradio1"
-      id="btnradio1"
-      autocomplete="off"
-      v-model="questions.q1"
-      value=0
-    />
-    <label class="btn" :class="{selected: questions.q1 === '0'}" for="btnradio1">NON</label>
+      <div v-for="option in options" :key="option.id">
+          <h4 class="subtitle" v-if="option.subtitle">{{option.subtitle}}</h4>
+          <div v-else>
+              <p class="description">{{ option.describe }}</p>
+              <div class="btn__container">
+                  <input type="radio" v-model="option.selected" :value="0" :name="option.name" :id="`No-${option.id}`" @change="calculate('decrement', option.value)">
+                  <label class="btn btn__halfsize" :class="{selected:  option.selected === 0}" :for="`No-${option.id}`">NON</label>
 
-    <input
-      type="radio"
-      class="btn-check"
-      name="btnradio1"
-      id="btnradio2"
-      autocomplete="off"
-      v-model="questions.q1"
-      value=9
-    />
-    <label class="btn" :class="{selected: questions.q1 === '9'}" for="btnradio2">OUI</label>
-
-    <p class="description">Doigts boudinés</p>
-    <p class="description">2 points</p>
-    <input
-      type="radio"
-      class="btn-check"
-      name="btnradio2"
-      id="btnradio3"
-      autocomplete="off"
-      v-model="questions.q2"
-      value=0
-    />
-    <label class="btn" :class="{selected: questions.q2 === '0'}" for="btnradio3">NON</label>
-
-    <input
-      type="radio"
-      class="btn-check"
-      name="btnradio2"
-      id="btnradio4"
-      autocomplete="off"
-      v-model="questions.q2"
-      value=2
-    />
-    <label class="btn" :class="{selected: questions.q2 === '2'}" for="btnradio4">OUI</label>
-
-    <p class="description">
-      Atteinte des doigts ne dépassant pas les articulations MCP
-    </p>
-    <p class="description">4 points</p>
-    <input
-      type="radio"
-      class="btn-check"
-      name="btnradio3"
-      id="btnradio5"
-      autocomplete="off"
-      v-model="questions.q3"
-      value=0
-    />
-    <label class="btn" :class="{selected: questions.q3 === '0'}" for="btnradio5">NON</label>
-
-    <input
-      type="radio"
-      class="btn-check"
-      name="btnradio3"
-      id="btnradio6"
-      autocomplete="off"
-      v-model="questions.q3"
-      value=4
-    />
-    <label class="btn" :class="{selected: questions.q3 === '4'}" for="btnradio6">OUI</label>
-
-    <h4 class="subtitle">
-      Lésions pulpaires (ne tenir compte que du score le plus élevé) :
-    </h4>
-    <p class="description">Ulcères pulpaires digitaux</p>
-    <p class="description">2 points</p>
-
-    <input
-      type="radio"
-      class="btn-check"
-      name="btnradio4"
-      id="btnradio7"
-      autocomplete="off"
-      v-model="questions.q4"
-      value=0
-    />
-    <label class="btn" :class="{selected: questions.q4 === '0'}" for="btnradio7">NON</label>
-
-    <input
-      type="radio"
-      class="btn-check"
-      name="btnradio4"
-      id="btnradio8"
-      autocomplete="off"
-      v-model="questions.q4"
-      value=2
-    />
-    <label class="btn" :class="{selected: questions.q4 === '2'}" for="btnradio8">OUI</label>
-
-    <p class="description">Cicatrices déprimées</p>
-    <p class="description">3 points</p>
-    <input
-      type="radio"
-      class="btn-check"
-      name="btnradio5"
-      id="btnradio9"
-      autocomplete="off"
-      v-model="questions.q5"
-      value=0
-    />
-    <label class="btn" :class="{selected: questions.q5 === '0'}" for="btnradio9">NON</label>
-
-    <input
-      type="radio"
-      class="btn-check"
-      name="btnradio5"
-      id="btnradio10"
-      autocomplete="off"
-      v-model="questions.q5"
-      value=3
-    />
-    <label class="btn" :class="{selected: questions.q5 === '3'}" for="btnradio10">OUI</label>
-
-    <p class="description">Télangiectasies</p>
-    <p class="description">2 points</p>
-
-    <input
-      type="radio"
-      class="btn-check"
-      name="btnradio6"
-      id="btnradio11"
-      autocomplete="off"
-      v-model="questions.q6"
-      value=0
-    />
-    <label class="btn" :class="{selected: questions.q6 === '0'}" for="btnradio11">NON</label>
-
-    <input
-      type="radio"
-      class="btn-check"
-      name="btnradio6"
-      id="btnradio12"
-      autocomplete="off"
-      v-model="questions.q6"
-      value=2
-    />
-    <label class="btn" :class="{selected: questions.q6 === '2'}" for="btnradio12">OUI</label>
-
-    <p class="description">Anomalies capillaroscopiques</p>
-    <p class="description">2 points</p>
-
-    <input
-      type="radio"
-      class="btn-check"
-      name="btnradio7"
-      id="btnradio13"
-      autocomplete="off"
-      v-model="questions.q7"
-      value=0
-    />
-    <label class="btn" :class="{selected: questions.q7 === '0'}" for="btnradio13">NON</label>
-
-    <input
-      type="radio"
-      class="btn-check"
-      name="btnradio7"
-      id="btnradio14"
-      autocomplete="off"
-      v-model="questions.q7"
-      value=2
-    />
-    <label class="btn" :class="{selected: questions.q7 === '2'}" for="btnradio14">OUI</label>
-
-    <p class="description">HTAP et/ou fibrose pulmonaire</p>
-    <p class="description">2 points</p>
-
-    <input
-      type="radio"
-      class="btn-check"
-      name="btnradio8"
-      id="btnradio15"
-      autocomplete="off"
-      v-model="questions.q8"
-      value=0
-    />
-    <label class="btn" :class="{selected: questions.q8 === '0'}" for="btnradio15">NON</label>
-
-    <input
-      type="radio"
-      class="btn-check"
-      name="btnradio8"
-      id="btnradio16"
-      autocomplete="off"
-      v-model="questions.q8"
-      value=2
-    />
-    <label class="btn" :class="{selected: questions.q8 === '2'}" for="btnradio16">OUI</label>
-
-    <p class="description">Phénomène de Raynaud</p>
-    <p class="description">3 points</p>
-
-    <input
-      type="radio"
-      class="btn-check"
-      name="btnradio9"
-      id="btnradio17"
-      autocomplete="off"
-      v-model="questions.q9"
-      value=0
-    />
-    <label class="btn" :class="{selected: questions.q9 === '0'}" for="btnradio17">NON</label>
-
-    <input
-      type="radio"
-      class="btn-check"
-      name="btnradio9"
-      id="btnradio18"
-      autocomplete="off"
-      v-model="questions.q9"
-      value=3
-    />
-    <label class="btn" :class="{selected: questions.q9 === '3'}" for="btnradio18">OUI</label>
-
-    <p class="description">
-      Anticorps spécifiques: anti-topoisomérase I ou anti-centromères ou
-      anti-ARN polymérase de type III
-    </p>
-    <p class="description">3 points</p>
-
-    <input
-      type="radio"
-      class="btn-check"
-      name="btnradio10"
-      id="btnradio19"
-      autocomplete="off"
-      v-model="questions.q10"
-      value=0
-    />
-    <label class="btn" :class="{selected: questions.q10 === '0'}" for="btnradio19">NON</label>
-
-    <input
-      type="radio"
-      class="btn-check"
-      name="btnradio10"
-      id="btnradio20"
-      autocomplete="off"
-      v-model="questions.q10"
-      value=3
-    />
-    <label class="btn" :class="{selected: questions.q10 === '3'}" for="btnradio20">OUI</label>
+                  <input type="radio" v-model="option.selected" :value="option.value" :name="option.name" :id="`Yes-${option.id}`" @change="calculate('increment', option.value)">
+                  <label class="btn btn__halfsize"  :class="{selected: option.selected === option.value}" :for="`Yes-${option.id}`">OUI</label>
+              </div>
+          </div>
+      </div>
 
     <div class="result">
-      <p>{{ total }} Points</p>
+        <p>{{ total }} Points</p>
+        <h3>{{ total < 9 ? "Negatif" : "Positif" }}</h3>
 
-      <p>0 Critère d'exclusion</p>
-
-      <p v-if="total < 9">Negatif</p>
-
-      <p v-else>Positif</p>
-
-      <p>
-        Le critère peut être retenu s'il est présent à un moment au moins de
-        l'histoire clinique. Un score ≥ 9 permet de classer les patients comme
-        atteints de sclérodermie systémique.
-      </p>
+        <p>
+            Le critère peut être retenu s'il est présent à un moment au moins de l'histoire clinique. <br>
+            Un score ≥ 9 permet de classer les patients comme atteints de sclérodermie systémique.
+        </p>
     </div>
 
       <ReferencesMedical sourceLink="https://www.fai2r.org/les-pathologies-rares/sclerodermie-systemique/criteres/" />
@@ -295,34 +43,34 @@ export default Vue.extend({
     components: {Footer, ReferencesMedical},
     data(){
     return{
-      questions:{
-        q1:null,
-        q2:null,
-        q3:null,
-        q4:null,
-        q5:null,
-        q6:null,
-        q7:null,
-        q8:null,
-        q9:null,
-        q10: null,
-      },
       total:0,
+        options: [
+            { subtitle: 'Epaississement cutané (ne tenir compte que du score le plus élevé) :'},
+            { id: 1,describe: 'Epaississement cutané des doigts des mains s\'étendant au-delà des articulations MCP',value: 9 , name: 'btnradio1', selected: 0 },
+            { id: 2,describe: 'Doigts boudinés',value: 2 , name: 'btnradio2', selected: 0 },
+            { id: 3,describe: 'Atteinte des doigts ne dépassant pas les articulations MCP',value: 4 , name: 'btnradio3', selected: 0 },
+            { id: 4,describe: 'Ulcères pulpaires digitaux',value: 2 , name: 'btnradio4', selected: 0 },
+            { subtitle: 'Lésions pulpaires (ne tenir compte que du score le plus élevé) :'},
+            { id: 5,describe: 'Cicatrices déprimées',value: 3 , name: 'btnradio5', selected: 0 },
+            { id: 6,describe: 'Télangiectasies',value: 2 , name: 'btnradio6', selected: 0 },
+            { id: 7,describe: 'Anomalies capillaroscopiques',value: 2 , name: 'btnradio7', selected: 0 },
+            { id: 8,describe: 'HTAP et/ou fibrose pulmonaire',value: 2 , name: 'btnradio8', selected: 0 },
+            { id: 9,describe: 'Phénomène de Raynaud',value: 3 , name: 'btnradio9', selected: 0 },
+            { id: 10,describe: 'Anticorps spécifiques: anti-topoisomérase I ou anti-centromères ou anti-ARN polymérase de type III',value: 3 , name: 'btnradio10', selected: 0 },
+        ]
     }
   },
-  watch:{
-    questions: {
-      handler: function(){
-        this.total = 0
-        for(let item in this.questions){
-        this.total+=Number(this.questions[item])
-      }
-      },
-      deep:true,
-    }
 
+  methods:{
+      calculate : function (action,amount) {
+          if (action === 'decrement') {
+              this.total -= amount
+          }
+          if (action === 'increment') {
+              this.total += amount
+          }
+      }
   },
-  methods:{},
 
 });
 </script>

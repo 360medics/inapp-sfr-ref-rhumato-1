@@ -1,14 +1,13 @@
 <template>
   <div id="app">
-    <Header></Header>
-    <router-view></router-view>
+    <Header />
+      <router-view />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
 import Header from '@/components/Header.vue';
-
 export default Vue.extend({
   components: { Header },
 });
@@ -30,6 +29,9 @@ export default Vue.extend({
     color: #2c3e50;
     width: 100%;
     height: 100%;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
   }
 
   #nav {

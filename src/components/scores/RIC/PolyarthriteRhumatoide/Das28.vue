@@ -44,20 +44,14 @@
       </section>
 
       <section>
-        <div>
-          <label for="Vs">Utiliser V.S.</label>
-          <input type="radio" class="btn" value="Vs" v-model="picked" id="Vs"/>
-        </div>
-
-        <div>
-          <label for="Crp">Utiliser C.R.P.</label>
-          <input
-            type="radio"
-            class="btn"
-            value="Crp"
-            v-model="picked"
-            id="Crp"/>
-        </div>
+          <div>
+              <label for="Vs">Utiliser V.S.</label>
+              <input type="radio" id="Vs" value="Vs" v-model="picked" />
+          </div>
+          <div>
+              <label for="Crp">Utiliser C.R.P.</label>
+              <input type="radio" id="Crp" value="Crp" v-model="picked" />
+          </div>
       </section>
 
       <button type="button" class="btn btn__submit" v-on:click="calcScore">
@@ -100,11 +94,11 @@ export default Vue.extend({
     components: {Footer, ReferencesMedical},
     data() {
     return {
-      valuePainfullJoint: 0,
-      valueSwollenJoint: 0,
-      valueDiseaseAssesment: 0,
-      valueVsCrp: 0,
-      score: 0,
+      valuePainfullJoint: null,
+      valueSwollenJoint: null,
+      valueDiseaseAssesment: null,
+      valueVsCrp: null,
+      score: null,
       picked: "Vs",
       prActivity: "",
     };
@@ -160,9 +154,16 @@ export default Vue.extend({
   .inputNumber {
     width: 60px;
   }
-
-
-
+  input:not([type="radio"]) {
+    height: 30px;
+    padding: 0 3px;
+    background: #EDECF4 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+    margin: .75em;
+    border: none;
+    width: 60px;
+  }
   section {
     padding: 5px 10px;
     line-height: 30px;

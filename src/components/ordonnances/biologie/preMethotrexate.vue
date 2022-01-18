@@ -2,7 +2,7 @@
   <section class="preMethotrexate">
     <h2 class="title">Biologie pré-Methotrexate</h2>
 <span class="line"></span>
-    <PNGViewer :src="'pré-MethotrexateBiologie.png'" myID="'pré-MethotrexateBiologie.png'"/>
+    <PNGViewer :src="'pre-MethotrexateBiologie.png'" myID="'pre-MethotrexateBiologie.png'"/>
   </section>
 </template>
 

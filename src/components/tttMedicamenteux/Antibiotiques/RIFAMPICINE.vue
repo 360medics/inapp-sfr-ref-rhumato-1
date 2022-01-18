@@ -78,8 +78,6 @@
 <script lang="js">
     export default {
         name: 'RIFAMPICINE',
-
-
     }
 </script>
 
@@ -88,8 +86,6 @@
     .RIFAMPICINE {
       padding: 0 15px;
       text-align: left;
-
-
 
       .bold {
         font-weight: bold;

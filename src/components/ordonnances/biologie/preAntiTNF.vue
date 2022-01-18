@@ -3,15 +3,13 @@
     <h2 class="title">Biologie pré-antiTNF</h2>
 <span class="line"></span>
 
-    <img src="@/assets/pré-antiTNFBiologie.png">
+    <img src="@/assets/pre-antiTNFBiologie.png" alt="ordonnance">
   </section>
 </template>
 
 <script lang="js">
     export default {
         name: 'preAntiTNF',
-
-
     }
 </script>
 
@@ -19,8 +17,6 @@
 @import "src/sass/global.scss";
     .preAntiTNF {
       padding: 0 15px;
-
-
 
       img {
         max-width: 100%;

@@ -1,7 +1,7 @@
 <template lang="html">
   <section class="recapGrossesse">
     <h2 class="title">Récapitulatif</h2>
-<span class="line"></span>
+<span class="line" />
 
     <PNGViewer :src="'grossesse.png'" :myID="'grossesse'"/>
 

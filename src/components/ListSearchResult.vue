@@ -10,7 +10,7 @@
         </div>
 
         <div v-if="result.item.type === 'link'" class="list__item__container">
-          <a v-if="!isMobile()" :href="result.item.content" target="blank">{{ result.item.name }}</a>
+          <a v-if="!isMobile()" :href="result.item.content" target="_blank" rel="noreferrer noopener">{{ result.item.name }}</a>
           <a v-else :href="'medics://viewer?m_source=' + result.item.content">{{ result.item.name }}</a>
         </div>
       </li>
@@ -21,20 +21,23 @@
 <script lang="ts">
 import { isMobile } from '@/global';
 export default {
-  name: 'ListSearchResult',
-
-  props: {
-    resultItems: Array,
-    notFound: Boolean
-  },
-  methods: {
-    isMobile
-  }
+    name: 'ListSearchResult',
+    props: {
+        resultItems: Array,
+        notFound: Boolean,
+        aideCodage: Boolean
+    },
+    methods: {
+        isMobile
+    }
 };
 </script>
 
 <style scoped lang="scss">
-
+@import 'src/sass/global.scss';
+main {
+  margin: 0 !important;
+}
 .list {
   padding: 0;
   &__item {
@@ -49,18 +52,14 @@ export default {
     }
   }
   a {
-    color: #472e5a;
-    background: #ecf1f5;
-    border-radius: 5px;
-    user-select: none;
-    transition: box-sadow .3s ease-in;
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 100%;
+    padding: $menuItem_illustrated-contentGutter 0;
+    border-bottom: solid 1px $borderColor;
+    color: $menuItem_color;
+    font-weight: 700;
     text-decoration: none;
-    flex-basis: 85%;
-    padding: 1em;
-    margin: .25em;
-    &:hover{
-      box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.2);
-    }
   }
 }
 </style>

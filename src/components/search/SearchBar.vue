@@ -1,15 +1,15 @@
 <template>
   <form class="search" >
     <div class="search__wrapper">
-        <input class="search__input" :value="searchText" placeholder="Rechercher..." @input="handleSearch($event.target.value)" />
-
         <button class="search__button search__button__find">
           <i class="fas fa-search"  />
         </button>
+        <input class="search__input" :value="searchText" placeholder="Rechercher..." @input="handleSearch($event.target.value)" />
 
         <button v-if="searchText" class="search__button search__button__clear" @click="handleClear">
           <i class="fas fa-times"/>
         </button>
+        <div class="search__button-hidden" v-else />
     </div>
   </form>
 </template>
@@ -62,37 +62,45 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import 'src/sass/global.scss';
   .search {
     position: relative;
     padding: 0 0.75rem;
-    margin: 1em 0;
-
+    margin: 1em .5em;
     &__wrapper{
       display: flex;
       align-items: center;
+      justify-content: space-between;
+      border: 1px solid #F1F1F6;
+      border-radius: 10px;
+      padding: 0.4em 0;
+      width: 100%;
     }
     &__input {
-      width: 100%;
-      border: 1px solid #F1F1F6;
-      border-radius: 1em;
       outline: none;
       cursor: pointer;
-      padding: .4em 2.5em;
+      border: none;
+      width: 100%;
     }
     &__button {
-      position: absolute;
       border: none;
       border-radius: 50px;
       background-color: #fff;
+      &-hidden {
+        flex-basis: 15%;
+      }
       &__clear {
-        right: 15px;
+        color: $searchBar_iconColor;
+        font-size: $searchBar_iconSize;
+        flex-basis: 15%;
       }
       &__find {
-        left: 15px;
+        color: $searchBar_iconColor;
+        font-size: $searchBar_iconSize;
+        flex-basis: 15%;
       }
     }
   }
-
   input,
   input:active,
   input:focus,
@@ -100,5 +108,6 @@ export default {
   input:hover,
   input:visited {
     font-size: 16px !important;
+    color: $searchBar_placeholderColor;
   }
 </style>
