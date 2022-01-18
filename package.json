@@ -5,7 +5,8 @@
   "scripts": {
     "start": "npm run serve",
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "convert:data": "node src/utils/convertTreeDataToFlat"
   },
   "dependencies": {
     "@ivanv/vue-collapse-transition": "^1.0.2",

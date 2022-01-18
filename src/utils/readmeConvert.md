@@ -1,6 +1,13 @@
 # Convert Tree data to Flat
 
 ## Instruction
-Put a file "data.json" in this directory and run
+We need convert data Tree to data Flat for use the plugins Fuse.js (searchbar)
+For this only one step:
 
-`node convertTreeDataToFlat`
+- execute the script `node convertTreeDataToFlat` on the script inner src/utils 
+
+## commande Npm :
+
+```
+npm run convert:data
+```
