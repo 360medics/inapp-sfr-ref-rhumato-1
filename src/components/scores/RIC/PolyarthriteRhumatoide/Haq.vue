@@ -13,6 +13,7 @@
       ></HaqQuestion>
       <br />
     </div>
+    <p class="result">Total {{ finalScore }} </p>
       <ReferencesMedical sourceText="application rheumatools" />
       <Footer/>
   </div>
@@ -158,6 +159,7 @@ export default Vue.extend({
         (parseFloat(x1) + parseFloat(x2)).toFixed(1)
       ) / totalAnswer)*10)/10
     },
+
     upwardChange(e: any) {
       this.scores[e.index] = e.userScore;
       this.calcResult();
