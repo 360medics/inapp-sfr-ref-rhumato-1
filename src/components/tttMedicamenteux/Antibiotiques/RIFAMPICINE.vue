@@ -18,8 +18,8 @@
       <p>- Arthrite septique documentée à Staphylococcus Aureus en bithérapie</p>
       <p>- Arthrite septique documentée à streptocoque en bithérapie</p>
       <ul>
-        <li><span class="bold">Per os</span> : 10-15 mg/kg/jour (600mg×1/j (<45kg) 900mg×1/j (45–60kg) 600mg×2/j(>60kg))</li>
-        <li>Prise orale à Jeun, en une prise par jour si dose totale < 900 mg, en 2 prises si dose totale > 900 mg.</li>
+        <li><span class="bold">Per os</span> : 10-15 mg/kg/jour (600mg×1/j (&lt;45kg) 900mg×1/j (45–60kg) 600mg×2/j(>60kg))</li>
+        <li>Prise orale à Jeun, en une prise par jour si dose totale &lt; 900 mg, en 2 prises si dose totale > 900 mg.</li>
       </ul>
 
       <div>

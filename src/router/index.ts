@@ -1,15 +1,11 @@
-import Vue from "vue";
-import VueRouter, { RouteConfig } from "vue-router";
+import { RouteRecordRaw, createRouter, createWebHashHistory } from "vue-router";
 import List from "@/views/List.vue";
 import SubListPage from "@/views/SubListPage.vue";
 import ContentPage from "@/views/ContentPage.vue";
 import Search from "@/components/ListSearchResult.vue";
 import CRI from "@/views/CRI.vue";
-import AideCodage from '@/components/AideCodage.vue'
 
-Vue.use(VueRouter);
-
-const routes: Array<RouteConfig> = [
+const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
     name: "List",
@@ -41,11 +37,10 @@ const routes: Array<RouteConfig> = [
   }
 ];
 
-const router = new VueRouter({
+const router = createRouter({
   routes,
   //do NOT user mode: "history" or "abstract", we need hastags
-  //mode: "history",
-  mode: "hash"
+  history: createWebHashHistory()
 });
 
 export default router;

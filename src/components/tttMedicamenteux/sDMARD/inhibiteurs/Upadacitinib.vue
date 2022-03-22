@@ -23,7 +23,7 @@
 
     <p><span class="bold">Contre-indications</span></p>
     <ul>
-      <li>Anémie < 9 g/dL, leucopénie < 1 G/L, lymphopénie < 0,75 G/L</li>
+      <li>Anémie &lt; 9 g/dL, leucopénie &lt; 1 G/L, lymphopénie &lt; 0,75 G/L</li>
       <li>Tuberculose active, infection grave (et infections VIH, VHB et VHC actives non traitées)</li>
       <li> Insuffisance hépatique sévère</li>
       <li>Grossesse</li>

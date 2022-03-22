@@ -37,7 +37,7 @@
     <p>Densitométrie osseuse</p>
 
     <h4>Deuxième intention :</h4>
-    <p>si femme < 50 ans et homme < 70 ans</p>
+    <p>si femme &lt; 50 ans et homme &lt; 70 ans</p>
     <ul>
       <li>Fer sérique, coefficient saturation de la transferrine</li>
       <li>FSH, LH</li>

@@ -26,7 +26,7 @@
 
     <p><span class="bold">Contre-indications (RCP)</span></p>
     <ul>
-      <li>Anémie < 8 g/dL, leucopénie < 1 G/L, lymphopénie < 0,5 G/L</li>
+      <li>Anémie &lt; 8 g/dL, leucopénie &lt; 1 G/L, lymphopénie &lt; 0,5 G/L</li>
       <li>Insuffisance hépatique, insuffisance rénale sévère</li>
       <li>Grossesse</li>
     </ul>

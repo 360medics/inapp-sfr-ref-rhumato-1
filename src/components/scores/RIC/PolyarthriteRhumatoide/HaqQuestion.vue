@@ -24,10 +24,10 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import { defineComponent } from "vue";
 import Footer from "@/components/Footer.vue";
 
-export default Vue.extend({
+export default defineComponent({
   name: "HaqQuestion",
     components: {Footer},
     props: ["index", "title", "question", "malusScore"],

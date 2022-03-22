@@ -29,7 +29,7 @@
       <li>
         Adaptation posologique à 5 mg par jour
         <ul>
-          <li>Clairance rénale < 30 mL/min</li>
+          <li>Clairance rénale &lt; 30 mL/min</li>
           <li>Co-prescription d’inhibiteurs du CYP450  ou inducteurs du CYP3A4</li>
         </ul>
       </li>
@@ -37,7 +37,7 @@
 
     <p><span class="bold">Contre-indications (RCP)</span></p>
     <ul>
-      <li>Anémie < 9 g/dL, leucopénie < 1 G/L, lymphopénie < 0,75 G/L</li>
+      <li>Anémie &lt; 9 g/dL, leucopénie &lt; 1 G/L, lymphopénie &lt; 0,75 G/L</li>
       <li>Insuffisance hépatique</li>
       <li>Grossesse</li>
     </ul>

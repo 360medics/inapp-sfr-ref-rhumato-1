@@ -35,7 +35,7 @@
 
     <p class="bold">PRECAUTIONS</p>
     <ul>
-      <li>IgG en dessous de la normale du laboratoire (surtout < 5 g/L)</li>
+      <li>IgG en dessous de la normale du laboratoire (surtout &lt; 5 g/L)</li>
       <li>Lymphopénie T et/ou B</li>
       <li>Hépatite, VIH</li>
       <li>Neutropénie > 1500/mm3</li>

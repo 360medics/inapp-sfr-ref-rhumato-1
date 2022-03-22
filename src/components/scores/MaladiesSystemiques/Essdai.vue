@@ -52,7 +52,7 @@
     <p @click="choice3(2)" class="btn" :class="{ selected: score3 === 2 }">
       Hypertrophie glandulaire modérée, avec:
       <br />
-      - Parotidomégalie (<= 3cm)
+      - Parotidomégalie (&lt;= 3cm)
       <br />
       - Ou hypertrophie modérée des glandes sous-mandibulaire et lacrymales
     </p>
@@ -147,9 +147,9 @@
       <br />
       * Ou anomalies EFR avec:
       <br />
-      - DLCO < 40%
+      - DLCO &lt; 40%
       <br />
-      - Ou CVF < 60%
+      - Ou CVF &lt; 60%
     </p>
 
     <h4>7. ATTEINTE rénale</h4>
@@ -165,7 +165,7 @@
     <p @click="choice7(0)" class="btn" :class="{ selected: score7 === 0 }">
       Absence d'atteinte rénale active:
       <br />
-      - Protéinurie < 0.5g/j, pas d'hématurie, pas de leucocyturie, pas
+      - Protéinurie &lt; 0.5g/j, pas d'hématurie, pas de leucocyturie, pas
       d'acidose.
       <br />
       - Ou protéinurie ou insuffisance rénale ancienne stable
@@ -182,7 +182,7 @@
     <p @click="choice7(10)" class="btn" :class="{ selected: score7 === 10 }">
       Atteinte rénale modérément active :
       <br />
-      * Acidose turbulaire avec insuffisance rénale (DFG < 60 ml/min)
+      * Acidose turbulaire avec insuffisance rénale (DFG &lt; 60 ml/min)
       <br />
       * Atteinte glomérulaire :
       <br />
@@ -202,7 +202,7 @@
       <br />
       - avec protéinurie > 1.5g/j
       <br />
-      - ou hématurie et ou insuffisance rénale (GFR < 60ml/min) * Ou signes
+      - ou hématurie et ou insuffisance rénale (GFR &lt; 60ml/min) * Ou signes
       histologiques :
       <br />
       - glomérulonéphrite proliférative
@@ -224,19 +224,19 @@
       <br />
       - absence de faiblesse musculaire
       <br />
-      - ou élévation des CPK (N < CPK <= 2N)
+      - ou élévation des CPK (N &lt; CPK &lt;= 2N)
     </p>
     <p @click="choice8(12)" class="btn" :class="{ selected: score8 === 12 }">
       Myosite modérément active avec preuve EMG ou histologie, et :
       <br />
       - faiblesse (déficit maximal: 4/5)
       <br />
-      - ou élévation des CPK (2N < CPK <= 4N)
+      - ou élévation des CPK (2N &lt; CPK &lt;= 4N)
     </p>
     <p @click="choice8(18)" class="btn" :class="{ selected: score8 === 18 }">
       Myosite très active avec preuve EMG ou histologie, et :
       <br />
-      - faiblesse (déficit <= 3/5)
+      - faiblesse (déficit &lt;= 3/5)
       <br />
       - ou élévation des CPK (> 4N)
     </p>
@@ -276,7 +276,7 @@
     <p @click="choice9(15)" class="btn" :class="{ selected: score9 === 15 }">
       Atteinte neurologique périphérique très active prouvée par l'ENMG
       <br />
-      - Neuropathie axonale sensitivo-motrice pure avec déficit moteur <= 3/5
+      - Neuropathie axonale sensitivo-motrice pure avec déficit moteur &lt;= 3/5
       <br />
       - Atteinte neurologique périphérique liée à une vascularite (ex:
       mononévrite multiple...)
@@ -284,7 +284,7 @@
       - Ganglionopathie avec ataxie sévère
       <br />
       - Polyradiculonécrite (PIDC) avec retentissement fonctionnel sévère
-      (déficit moteur <= 3/5, ou ataxie sévère)
+      (déficit moteur &lt;= 3/5, ou ataxie sévère)
     </p>
 
     <h4>10. ATTEINTE NEUROLOGIQUE CENTRALE</h4>
@@ -335,33 +335,33 @@
     <p @click="choice11(2)" class="btn" :class="{ selected: score11 === 2 }">
       Crytopénie auto-immune avec:
       <br />
-      - neuropénie (1000 < neutrophiles < 1500/mm3)
+      - neuropénie (1000 &lt; neutrophiles &lt; 1500/mm3)
       <br />
-      - ou anémie (10 < Hémoglobine < 12g/dl)
+      - ou anémie (10 &lt; Hémoglobine &lt; 12g/dl)
       <br />
-      - ou thrombocytopénie (100.000 < Plaquettes < 150.000/mm3)
+      - ou thrombocytopénie (100.000 &lt; Plaquettes &lt; 150.000/mm3)
       <br />
-      - ou lymphopénie (500 < lymphocytes < 1000/mm3)
+      - ou lymphopénie (500 &lt; lymphocytes &lt; 1000/mm3)
     </p>
     <p @click="choice11(4)" class="btn" :class="{ selected: score11 === 4 }">
       Crytopénie auto-immune avec:
       <br />
-      - neuropénie (500 <= neutrophiles <= 1000/mm3)
+      - neuropénie (500 &lt;= neutrophiles &lt;= 1000/mm3)
       <br />
-      - ou anémie (8 <= Hémoglobine <= 10g/dl)
+      - ou anémie (8 &lt;= Hémoglobine &lt;= 10g/dl)
       <br />
-      - ou thrombocytopénie (50.000 <= Plaquettes <= 100.000/mm3)
+      - ou thrombocytopénie (50.000 &lt;= Plaquettes &lt;= 100.000/mm3)
       <br />
-      - ou lymphopénie (<= 500/mm3)
+      - ou lymphopénie (&lt;= 500/mm3)
     </p>
     <p @click="choice11(6)" class="btn" :class="{ selected: score11 === 6 }">
       Crytopénie auto-immune avec:
       <br />
-      - neuropénie (neutrophiles < 500/mm3)
+      - neuropénie (neutrophiles &lt; 500/mm3)
       <br />
-      - ou anémie Hémoglobine < 8g/dl)
+      - ou anémie Hémoglobine &lt; 8g/dl)
       <br />
-      - ou thrombocytopénie (Plaquettes < 50.000/mm3)
+      - ou thrombocytopénie (Plaquettes &lt; 50.000/mm3)
     </p>
 
     <h4>12. DOMAINE BIOLOGIQUE</h4>
@@ -382,7 +382,7 @@
       <br />
       - ou hypergammaglobulinémie ou taux d'IgG > 20 g/L
       <br />
-      - ou apparition d'une hypergammaglobulinémie (< 5 g/L)
+      - ou apparition d'une hypergammaglobulinémie (&lt; 5 g/L)
     </p>
 
     <div class="essdai-result" :class="{green : result < 4, marron : (result >= 4 && result < 50), orange: (result >= 50 && result < 100),  red: result >= 100}">
@@ -393,10 +393,10 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
+import { defineComponent } from 'vue';
 import Footer from "@/components/Footer.vue";
 
-export default Vue.extend({
+export default defineComponent({
     components: {Footer},
     data() {
     return {

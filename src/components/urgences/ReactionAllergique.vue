@@ -21,10 +21,10 @@
       <li>
         Caractériser le phénotype de la RHM :
         <ul>
-          <li>Chronologie : réaction immédiate < 6h ou réaction retardée > 6h</li>
-          <li>Réaction de type I : immédiate (<6h), tryptase sérique augmentée (implication des mastocytes et basophiles), IgE médiée ou non. Si IgE médiée, apparition à partir de la 2ème perfusion</li>
-          <li>Réaction de relargage cytokinique : immédiate (<6h), impliquant le lymphocyte T</li>
-          <li>Réaction liée à la perfusion : immédiate (<6h),  résolution spontanée, répond à la prémédication</li>
+          <li>Chronologie : réaction immédiate &lt; 6h ou réaction retardée > 6h</li>
+          <li>Réaction de type I : immédiate (&lt;6h), tryptase sérique augmentée (implication des mastocytes et basophiles), IgE médiée ou non. Si IgE médiée, apparition à partir de la 2ème perfusion</li>
+          <li>Réaction de relargage cytokinique : immédiate (&lt;6h), impliquant le lymphocyte T</li>
+          <li>Réaction liée à la perfusion : immédiate (&lt;6h),  résolution spontanée, répond à la prémédication</li>
           <li>Réaction mixte (type T et relargage cytokinique)</li>
         </ul>
       </li>

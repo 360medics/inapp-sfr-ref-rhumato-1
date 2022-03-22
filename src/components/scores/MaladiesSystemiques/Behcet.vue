@@ -71,13 +71,13 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import { defineComponent } from "vue";
 import Footer from "@/components/Footer.vue";
 import ReferencesMedical from "@/components/ReferencesMedical.vue";
 
 
 
-export default Vue.extend({
+export default defineComponent({
   name: "Behcet",
     components: {ReferencesMedical, Footer},
     data() {

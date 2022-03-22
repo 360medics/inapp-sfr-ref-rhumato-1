@@ -8,7 +8,7 @@
       <li>éInfiltrations intra-articulaires</li>
       <li>AINS : pas après 32 SA !!!</li>
       <li>Colchicine</li>
-      <li>Corticothérapie : < 20 mg par jour</li>
+      <li>Corticothérapie : &lt; 20 mg par jour</li>
     </ul>
 
     <p>Douleurs :</p>
@@ -18,7 +18,7 @@
 
     <p>Poussée systémique :</p>
     <ul>
-      <li>Corticothérapie : < 20 mg par jour</li>
+      <li>Corticothérapie : &lt; 20 mg par jour</li>
       <li>Bolus de méthylprednisolone : traitement le plus court possible</li>
       <li>Hydroxychloroquine</li>
       <li>Azathioprine</li>

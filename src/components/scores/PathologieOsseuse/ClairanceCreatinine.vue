@@ -78,7 +78,7 @@
     <p>80 à 120 ml/min : Valeurs normales</p>
     <p>60 et 80 ml/min : Insuffisance rénale légère</p>
     <p>30 et 60 ml/min : Insuffisance rénale modérée</p>
-    <p>< 30 ml/min : Insuffisance rénale sévère</p>
+    <p>&lt; 30 ml/min : Insuffisance rénale sévère</p>
 
       <h3>Interprétation IMC</h3>
 
@@ -107,10 +107,10 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue"
+import { defineComponent } from "vue"
 import Footer from "@/components/Footer.vue";
 
-export default Vue.extend({
+export default defineComponent({
   name:"ClairanceCreatinine",
     components: {Footer},
     data() {

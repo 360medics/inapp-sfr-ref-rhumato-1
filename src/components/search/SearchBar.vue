@@ -33,8 +33,8 @@ export default {
       ]
     },
   }),
-  async mounted() {
-    await DataService.loadSearch().then((data: any) => {
+  mounted() {
+    DataService.loadSearch().then((data: any) => {
       this.list = data
     })
   },

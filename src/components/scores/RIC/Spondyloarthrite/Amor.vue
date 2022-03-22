@@ -35,7 +35,7 @@
     </div>
 
     <div class="btn" :class="{ selected: toggle[8] === true }" @click="toggle[8] === false ? calcPlus(1, 8 ) : calcLess(1, 8 )">
-      <label for="inp8">Urétrite non gonococcique ou cervicite (< 1 mois avant arthrite)  (1 points)</label>
+      <label for="inp8">Urétrite non gonococcique ou cervicite (&lt; 1 mois avant arthrite)  (1 points)</label>
     </div>
 
     <div class="btn" :class="{ selected: toggle[9] === true }" @click="toggle[9] === false ? calcPlus(1, 9 ) : calcLess(1, 9)">
@@ -76,11 +76,11 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import { defineComponent } from "vue";
 import ReferencesMedical from "@/components/ReferencesMedical.vue";
 import Footer from "@/components/Footer.vue";
 
-export default Vue.extend({
+export default defineComponent({
     components: {Footer, ReferencesMedical},
     data() {
     return{

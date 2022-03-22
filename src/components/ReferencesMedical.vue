@@ -17,10 +17,10 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
+import { defineComponent } from 'vue';
 import {isMobile} from "@/global";
 
-export default Vue.extend({
+export default defineComponent({
     name: "ReferencesMedical",
     props: {
         message1: String,

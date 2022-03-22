@@ -105,10 +105,10 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
+import { defineComponent } from 'vue';
 import Footer from "@/components/Footer.vue";
 
-export default Vue.extend({
+export default defineComponent({
   name: 'Caspar',
     components: {Footer},
     data() {

@@ -77,7 +77,7 @@
         <h4 class="subtitle">Durée de la synovite</h4>
         <div>
           <p @click="choice3(0)" class="btn" :class="{ selected: score3 === 0 }">
-            Durée < 6 semaines.
+            Durée &lt; 6 semaines.
           </p>
         </div>
         <div>
@@ -114,10 +114,10 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import { defineComponent } from "vue";
 import Footer from "@/components/Footer.vue";
 
-export default Vue.extend({
+export default defineComponent({
     components: {Footer},
     data() {
     return {

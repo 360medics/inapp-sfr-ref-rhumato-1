@@ -10,7 +10,7 @@
         </div>
 
         <div class="crp__content--right">
-            <input type="number" v-model="crp" value="crp" name="groupRadioGender" id="crp-ratio" @input="setTotal()">
+            <input type="number" v-model="crp" name="groupRadioGender" id="crp-ratio" @input="setTotal()">
             <select v-model="unit" id="crp-select-id" @change="setTotal()">
                 <option value="mg/L">mg/L</option>
                 <option value="mg/dL">mg/dL</option>
@@ -39,7 +39,7 @@
             <label for="imc-score">IMC</label>
         </div>
         <div class="crp__content--right">
-            <input type="number" v-model="imc" value="imc" name="groupRadioGender" id="imc-score" @input="setTotal()">
+            <input type="number" v-model="imc" name="groupRadioGender" id="imc-score" @input="setTotal()">
         </div>
     </div>
 
@@ -50,10 +50,10 @@
 </div>
 </template>
 
-<script>
-import Vue from "vue";
+<script lang="ts">
+import { defineComponent } from "vue";
 
-export default Vue.extend({
+export default defineComponent({
     name: "CRPimc",
     data() {
         return {

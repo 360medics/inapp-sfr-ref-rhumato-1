@@ -17,9 +17,9 @@
       </ul>
       <span class="underline">POSOLOGIES :</span>
       <ul>
-        <li>PR et RP (IV) : 500 mg si < 60 kg, 750 mg si entre 60 et 100 kg, 1000 mg si > 100 kg à S0, S2, S4 puis 1/4S</li>
+        <li>PR et RP (IV) : 500 mg si &lt; 60 kg, 750 mg si entre 60 et 100 kg, 1000 mg si > 100 kg à S0, S2, S4 puis 1/4S</li>
         <li>PR et RP (SC) : 125 mg/sem</li>
-        <li>AJI (IV) : 10 mg/kg si < 75 kg, idem adulte si > 75 kg.</li>
+        <li>AJI (IV) : 10 mg/kg si &lt; 75 kg, idem adulte si > 75 kg.</li>
         <li>AJI (SC) : 50 mg/s si 10 à 25 kg, 87,5 mg/s si 25 à 50 kg, 125 mg si > 50 kg</li>
       </ul>
     </div>
@@ -38,7 +38,7 @@
       <li>Vaccination récente ou prévue</li>
       <li>Diabète : abatacept peut interférer avec la mesure de la glycémie sur certains appareils de mesure</li>
       <li>MGUS</li>
-      <li>Néoplasie < 5 ans sauf cancer cutané (hors mélanome et carcinome spinocellulaire sévère) avec exérèse complète dont les limites passent en zone saine.</li>
+      <li>Néoplasie &lt; 5 ans sauf cancer cutané (hors mélanome et carcinome spinocellulaire sévère) avec exérèse complète dont les limites passent en zone saine.</li>
     </ul>
   </section>
 </template>

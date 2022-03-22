@@ -18,13 +18,13 @@
     <p><span class="bold">Posologies</span></p>
     <ul>
       <li>200 mg par jour si >75 ans 100mg</li>
-      <li>Adaptation posologique à 100 mg si âge > 75 ans ou clairance rénale < 60 mL/min</li>
-      <li>Population avec IR < 15 mL/min, insuffisance hépatique sévère, HCV, HBV et HIV non représentés dans étude</li>
+      <li>Adaptation posologique à 100 mg si âge > 75 ans ou clairance rénale &lt; 60 mL/min</li>
+      <li>Population avec IR &lt; 15 mL/min, insuffisance hépatique sévère, HCV, HBV et HIV non représentés dans étude</li>
     </ul>
 
     <p><span class="bold">Contre-indications</span></p>
     <ul>
-      <li>Anémie < 8 g/dL, leucopénie < 1 G/L ou lymphopénie < 0,5 G/L</li>
+      <li>Anémie &lt; 8 g/dL, leucopénie &lt; 1 G/L ou lymphopénie &lt; 0,5 G/L</li>
       <li>Infections actives ou ITL</li>
       <li>Grossesse</li>
     </ul>

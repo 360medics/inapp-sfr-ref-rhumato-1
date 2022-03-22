@@ -19,10 +19,10 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
+import { defineComponent } from 'vue';
 import { goBack, isMobile } from '@/global';
 
-export default Vue.extend({
+export default defineComponent({
   name: "Header",
   data: () => ({
     displayChevronCircle: false,
