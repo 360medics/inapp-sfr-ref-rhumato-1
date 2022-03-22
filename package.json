@@ -15,6 +15,7 @@
     "fuse.js": "^6.4.6",
     "vue": "^3.1.0-0",
     "vue-class-component": "^7.2.3",
+    "vue-gtag": "^2.0.1",
     "vue-property-decorator": "^8.4.2",
     "vue-router": "^4.0.14",
     "vuex": "^4.0.2"
