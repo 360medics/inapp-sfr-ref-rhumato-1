@@ -9,10 +9,10 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import { defineComponent } from "vue";
 import PNGViewer from '@/components/PNGViewer.vue'
 
-export default Vue.extend({
+export default defineComponent({
     name: "RECAPITULATIF",
     components: {PNGViewer}
 })

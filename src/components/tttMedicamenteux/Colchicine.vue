@@ -35,7 +35,7 @@
         Traitement de la chondrocalcinose
         <ul>
           <li>
-            Prise quotidienne per-os 1 mg/jour (0.5 mg si patient < 70 kg)
+            Prise quotidienne per-os 1 mg/jour (0.5 mg si patien &lt; 70 kg)
           </li>
         </ul>
       </li>
@@ -49,7 +49,7 @@
       <li>
         Contre-indications
         <ul>
-          <li>Insuffisance rénale sévère (DFG < 30 mL/min)</li>
+          <li>Insuffisance rénale sévère (DFG &lt; 30 mL/min)</li>
           <li>Insuffisance hépatique sévère</li>
           <li>
             Association avec des antibiotiques de la famille des macrolides
@@ -113,7 +113,7 @@
         (risque de masquer un potentiel signe de surdosage)
       </li>
       <li>
-        Utilisation hors AMM envisageable si clairance < 30mL/min, à faible dose
+        Utilisation hors AMM envisageable si clairance &lt; 30mL/min, à faible dose
         (0.5mg/j voire /48h) avec surveillance quotidienne des signe de
         surdosage.
       </li>

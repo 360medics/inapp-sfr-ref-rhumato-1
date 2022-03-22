@@ -18,11 +18,11 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
+import { defineComponent } from 'vue';
 import DataService from '@/service/DataService';
 import TreeMenu from '@/components/TreeMenu.vue';
 
-export default Vue.extend({
+export default defineComponent({
   name: 'FichesDuCRI',
   components: { TreeMenu },
 

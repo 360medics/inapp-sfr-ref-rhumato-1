@@ -7,7 +7,7 @@
 
     <p class="bold">L’antibiothérapie sera initiée dès la réception de résultats microbiologiques positifs (examen direct, culture du liquide synovial ou hémoculture). Une antibiothérapie probabiliste peut être envisagée en cas de liquide synovial franchement purulent sans cristaux</p>
     <ul>
-      <li>Si ATB probabiliste (signes de gravité immédiat, SOFA ≥ 2) : C1G injectable (céfazoline) si < 70 ans et C3G injectable (ceftriaxone ou céfotaxime) si > 70 ans</li>
+      <li>Si ATB probabiliste (signes de gravité immédiat, SOFA ≥ 2) : C1G injectable (céfazoline) si &lt; 70 ans et C3G injectable (ceftriaxone ou céfotaxime) si > 70 ans</li>
       <li>Bithérapie d’emble si Pseudomonas aeruginosa</li>
       <li>Adjonction d’un aminoside si infection à Enterococcus sp. ou Pseudomonas aeruginosa</li>
       <li>Si allergie à une pénicilline, l’emploi d’une céphalosporine peut être envisagé car le risque d’allergie croisée entre les pénicillines et les céphalosporines est faible</li>

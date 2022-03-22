@@ -21,7 +21,7 @@
       <span class="underline">POSOLOGIES :</span>
       <ul>
         <li>Adulte ou > 50 kg : 100 mg/j SC</li>
-        <li>< 50 kg : 1 à 2 mg/kg/j SC</li>
+        <li>&lt; 50 kg : 1 à 2 mg/kg/j SC</li>
       </ul>
     </div>
 <div class="line"></div>
@@ -47,7 +47,7 @@
 
     <p class="bold">CONTRE-INDICATIONS</p>
     <ul>
-      <li>Neutropénie < 1,5 G/L</li>
+      <li>Neutropénie &lt; 1,5 G/L</li>
       <li>Hypersensibilité à la substance ou excipient</li>
       <li>Infection active</li>
     </ul>

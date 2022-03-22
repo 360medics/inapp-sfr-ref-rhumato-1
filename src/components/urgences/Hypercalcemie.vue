@@ -4,7 +4,7 @@
 <span class="line"></span>
 
     <ul>
-      <li>EST-ELLE SYMPTOMATIQUE ?
+      <p>EST-ELLE SYMPTOMATIQUE ?</p>
       <li>Signes digestifs : anorexie, nausées, vomissements, constipation, syndrome subocclusif, douleurs abdominales pseudo-chirurgicales</li>
       <li>Signes rénaux : polyurie et polydipsie, insuffisance rénale aiguë fonctionnelle, alcalose métabolique de contraction</li>
       <li>Signe généraux : asthénie, léthargie, fatigabilité, céphalées, confusion, coma et convulsions</li>
@@ -113,8 +113,6 @@
     .Hypercalcemie {
       padding: 0 15px;
       text-align: left;
-
-
 
       .bold {
         font-weight: bold;

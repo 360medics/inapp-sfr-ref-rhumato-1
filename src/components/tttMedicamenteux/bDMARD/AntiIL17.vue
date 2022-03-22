@@ -72,7 +72,7 @@
     <ul>
         <li>Infection chronique ou antécédents d’infections récurrentes</li>
         <li>Dépistage tuberculose latente</li>
-        <li>Tumeurs malignes solides (active ou rémission < 5 ans sauf carcinome basocellulaire ou carcinome épidermoïde)</li>
+        <li>Tumeurs malignes solides (active ou rémission &lt; 5 ans sauf carcinome basocellulaire ou carcinome épidermoïde)</li>
         <li>Maladie inflammatoire chronique de l’intestin</li>
     </ul>
   </section>

@@ -29,12 +29,12 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import { defineComponent } from "vue";
 import HipLequesnesQuestion from "./HipLequesnesQuestion.vue";
 import ReferencesMedical from "@/components/ReferencesMedical.vue";
 import Footer from "@/components/Footer.vue";
 
-export default Vue.extend({
+export default defineComponent({
   name: "HipLequesnes",
   components: {
       Footer,

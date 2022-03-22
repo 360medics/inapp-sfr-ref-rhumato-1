@@ -20,7 +20,7 @@
     <p><span class="bold">Contre-indications :</span> </p>
     <ul>
       <li>Infection médullaire</li>
-      <li>IR modérée à sévère (DFG < 60 mL/min) car non representé dans études</li>
+      <li>IR modérée à sévère (DFG &lt; 60 mL/min) car non representé dans études</li>
       <li>Hypoprotidémie sévère</li>
       <li>Grossesse et allaitement</li>
     </ul>

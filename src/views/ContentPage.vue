@@ -17,7 +17,7 @@
 </style>
 
 <script lang="ts">
-import Vue from 'vue';
+import { defineComponent } from 'vue';
 import DataService from '@/service/DataService';
 import Haq from '@/components/scores/RIC/PolyarthriteRhumatoide/Haq.vue';
 import Basdai from '@/components/scores/RIC/Spondyloarthrite/Basdai.vue';
@@ -187,7 +187,7 @@ import MethotrexatePaternite from '@/components/conception/desir_paternite/Metho
 import FilgotinibPaternite from '@/components/conception/desir_paternite/FilgotinibPaternite.vue';
 
 
-export default Vue.extend({
+export default defineComponent({
   name: 'ContentPage',
   components: {
       Lombalgie,
