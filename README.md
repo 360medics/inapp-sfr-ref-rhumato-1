@@ -1,6 +1,6 @@
 # inapp REF x SFR
 
-J'ai laissé la liste des liens et l'arborescence dans public/fichesCRI.json . J'arrive pas à trier tout ca pour y integrer dans l'app <3
+Ne pas oublier de générer le dataFlat.json via npm run convert:data avant de builder
 
 ## Project setup
 
