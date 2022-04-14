@@ -1,12 +1,21 @@
-import Vue from 'vue'
+import { createApp } from 'vue'
+import VueGtag from "vue-gtag";
 import App from './App.vue'
 import router from './router'
-import { store } from '@/store'
+import { store } from './store'
 
-Vue.config.productionTip = false
+// G-JVLG7EPNN6
 
-new Vue({
-  data: {state: store},
-  router,
-  render: h => h(App)
-}).$mount('#app')
+createApp(App)
+  .use(router)
+  .use(store)
+  .use(
+    VueGtag,
+    {
+      config: {
+        id: "G-JVLG7EPNN6",
+      },
+    },
+    router
+  )
+  .mount('#app')

@@ -27,7 +27,7 @@ critères ACR/EULAR</h2>
 
 <h6 class="categorie">Durée de la synovite</h6>
 
-<button type="button" class="btn">Durée < 6 semaines.</button>
+<button type="button" class="btn">Durée &lt; 6 semaines.</button>
 <button type="button" class="btn validate"> Durée ≥ 6 semaines.</button>
 
 <h7 class="categorie">Marqueurs de l'inflammation</h7>
@@ -60,7 +60,7 @@ critères ACR/EULAR</h2>
 
       <h6 class="categorie">Durée de la synovite</h6>
 
-      <button type="button" class="btn">Durée < 6 semaines.</button>
+      <button type="button" class="btn">Durée &lt; 6 semaines.</button>
       <button type="button" class="btn validate">Durée ≥ 6 semaines.</button>
 
       <h7 class="categorie">Marqueurs de l'inflammation</h7>
@@ -77,9 +77,9 @@ critères ACR/EULAR</h2>
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import { defineComponent } from "vue";
 
-export default Vue.extend({
+export default defineComponent({
 
 });
 </script>

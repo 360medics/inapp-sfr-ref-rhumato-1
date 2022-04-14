@@ -144,10 +144,12 @@
   </section>
 </template>
 
-<script lang="js">
-    export default {
-        name: 'AideCodage',
-    }
+<script lang="ts">
+import { defineComponent } from "vue";
+
+export default defineComponent({
+    name: 'AideCodage',
+});
 </script>
 
 <style scoped lang="scss">

@@ -39,7 +39,7 @@
     <div>
       <span class="bold">- Contre-indications</span>
       <ul>
-        <li>Insuffisance rénale sévère avec DFG < 30 mL/min</li>
+        <li>Insuffisance rénale sévère avec DFG &lt; 30 mL/min</li>
         <li>Hypercalcémie</li>
         <li>Maladie métaboliques osseuses autre que l’ostéoporose primitive ou cortisonique</li>
         <li>Élévation inexpliquée des phosphatases alcalines</li>

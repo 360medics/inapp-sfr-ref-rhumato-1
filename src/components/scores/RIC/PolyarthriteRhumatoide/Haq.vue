@@ -13,18 +13,19 @@
       ></HaqQuestion>
       <br />
     </div>
+    <p class="result">Total {{ finalScore }} </p>
       <ReferencesMedical sourceText="application rheumatools" />
       <Footer/>
   </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
+import { defineComponent } from 'vue';
 import HaqQuestion from './HaqQuestion.vue';
 import ReferencesMedical from "@/components/ReferencesMedical.vue";
 import Footer from "@/components/Footer.vue";
 
-export default Vue.extend({
+export default defineComponent({
   name: 'HAQ',
   components: {
       Footer,
@@ -158,6 +159,7 @@ export default Vue.extend({
         (parseFloat(x1) + parseFloat(x2)).toFixed(1)
       ) / totalAnswer)*10)/10
     },
+
     upwardChange(e: any) {
       this.scores[e.index] = e.userScore;
       this.calcResult();

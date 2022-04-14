@@ -20,7 +20,7 @@
     <ul>
       <li>Initiation progressive sur 6 jours (+ 10 mg par jour)</li>
       <li>30 mg 2 fois par jour</li>
-      <li>Adaptation posologique à 30 mg par jour le matin si clairance < 30 mL/min</li>
+      <li>Adaptation posologique à 30 mg par jour le matin si clairance &lt; 30 mL/min</li>
     </ul>
 
     <p><span class="bold">Contre-indications :</span> </p>

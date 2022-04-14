@@ -31,7 +31,7 @@
       <li>Neutropénie et thrombopénie</li>
       <li>Pathologie hépatique active ou greffe</li>
       <li>Pathologie rénale active et IR, greffe</li>
-      <li>Maladie neuropsychiatrique (Néoplasie < 5 ans sauf cancer cutané (hors mélanome) avec exérèse complète dont les limites passent en zone saine</li>
+      <li>Maladie neuropsychiatrique (Néoplasie &lt; 5 ans sauf cancer cutané (hors mélanome) avec exérèse complète dont les limites passent en zone saine</li>
       <li>Traitements immunosuppresseurs associés en particulier ceux ciblant le lymphocyte B et cyclophosphamide.</li>
       <li class="bold">Une contraception efficace est justifiée.</li>
     </ul>

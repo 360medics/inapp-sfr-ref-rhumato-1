@@ -19,7 +19,7 @@
       <p>- Arthrite septique documentée à streptocoque en bithérapie</p>
       <p>- Arthrite septique documentée à Entérobactérie du groupe 1-2 sensible à l’acide nalidixique</p>
       <ul>
-        <li><span class="bold">Per os :</span> 500 mg une fois par jour (<60 kg) 750 mg par jour (>60 kg)</li>
+        <li><span class="bold">Per os :</span> 500 mg une fois par jour (&lt;60 kg) 750 mg par jour (>60 kg)</li>
       </ul>
 
       <div>

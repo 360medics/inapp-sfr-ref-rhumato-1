@@ -136,7 +136,7 @@
     <ul>
       <li><span class="underline">Cushing</span> : obésité facio-tronculaire, bosse de bison, hypertrophie des boules de Bichat) 🡪 diminution de la polosogie</li>
       <li><span class="underline">Ostéo-musculaires</span> : ostéoporose, ostéonécrose aseptique, amyotrophie proximale, retard staturo-pondéral chez l’enfance 🡪 prévention ostéoporose cortico-induite</li>
-      <li><span class="underline">Rétention hydrosodée</span> (HTA, OMI) par hyperaldostéronisme + hypokaliémie 🡪 restriction sodée < 6g +/- supplémentation en potassium</li>
+      <li><span class="underline">Rétention hydrosodée</span> (HTA, OMI) par hyperaldostéronisme + hypokaliémie 🡪 restriction sodée &lt; 6g +/- supplémentation en potassium</li>
       <li><span class="underline">Troubles psychiatriques</span> : irritabilité, insomnie, dépression, décompensation maniaque, troubles délirants 🡪 consultation psychiatrique</li>
       <li><span class="underline">Infectieux</span> : anguillulose, hyperleucocytose, lymphopénie, stimulation de l’érythropoïèse 🡪 recherche de foyers infectieux et vérifications des vaccins</li>
       <li><span class="underline">Cutanées</span> : hypercatabolisme (atrophie, cicatrisation lente, fragilité capillaire, vergeture pourpre), acné, hypertrichose, pupura vasculaire 🡪 diminution de la posologie si possible</li>

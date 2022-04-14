@@ -43,7 +43,7 @@
     <div>
       <span class="bold">- Contre-indications</span>
       <ul>
-        <li>Insuffisance rénale avec DFG < 35 mL/min</li>
+        <li>Insuffisance rénale avec DFG &lt; 35 mL/min</li>
         <li> Hypocalcémie</li>
         <li>Hypersensibilité aux biphosphonates</li>
         <li>Incapacité à se tenir debout ou assis pendant 30 minutes</li>

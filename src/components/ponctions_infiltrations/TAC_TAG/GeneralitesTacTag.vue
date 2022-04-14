@@ -23,7 +23,7 @@
     <p class="bold">Quel bilan biologique proposer ? </p>
     <ul>
       <li><span class="underline">Pour tous</span> : <span class="bold">plaquettes > 50G/L</span> (hors urgence diagnostique)</li>
-      <li><span class="underline">AVK</span> : <span class="bold">INR</span> (cible selon le niveau de risque <3 ou <1,5</li>
+      <li><span class="underline">AVK</span> : <span class="bold">INR</span> (cible selon le niveau de risque &lt;3 ou &lt;1,5</li>
       <li><span class="underline">AAP ou AOD ou héparines</span> : aucun</li>
     </ul>
 
@@ -36,12 +36,12 @@
     </ul>
     <p class="underline">Contre-indications :</p>
     <ul>
-      <li>Pq < 10 G/L en urgence dans certaines situations <span class="red bold"><50G/L hors urgence</span></li>
+      <li>Pq &lt; 10 G/L en urgence dans certaines situations <span class="red bold">&lt;50G/L hors urgence</span></li>
       <li class="red bold">Pathologie locale (infectieuse, néoplasique, fibrose... )</li>
       <li>Anomalie connue de l’hémostase ou saignement actif ou anticoagulation efficace</li>
       <li><span class="bold">Instabilité hémodynamique</span> (hors pupura fulminans)</li>
       <li><span class="bold">Signe d’engagement cérébral</span> (mydriase unilatérale, hoquet, troubles ventilatoires, mouvements d’enroulement)</li>
-      <li><span class="bold">Risque élevé d’engagement cérébral après PL</span> (signes de focalisation neurologique, troubles de la vigilance avec GCS < ou = 11, crises convulsives “récentes” ou en cours => TDM sans et avec IV</li>
+      <li><span class="bold">Risque élevé d’engagement cérébral après PL</span> (signes de focalisation neurologique, troubles de la vigilance avec GCS &lt; ou = 11, crises convulsives “récentes” ou en cours => TDM sans et avec IV</li>
     </ul>
 
     <p class="bold"></p>

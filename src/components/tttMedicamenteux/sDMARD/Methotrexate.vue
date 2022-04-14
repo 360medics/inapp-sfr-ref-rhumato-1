@@ -5,7 +5,7 @@
 
     <p><span class="bold">DCI : </span>METHOTREXATE</p>
     <p><span class="bold">Nom commercial :</span> IMETH, NOVATREX, NORMET, METOJECT, METHOTREXATE BELLON, METHOTREXATE</p>
-    <p><span class="bold">Demi-vie d’élimination :</span> < 24h mais effet immunomodulateur prolongé à l’arrêt (3-4 semaines). Effet retardé (3-6 semaines).</p>
+    <p><span class="bold">Demi-vie d’élimination :</span> &lt; 24h mais effet immunomodulateur prolongé à l’arrêt (3-4 semaines). Effet retardé (3-6 semaines).</p>
     <p><span class="bold">Voie d’administration :</span></p>
     <ul>
       <li>
@@ -46,7 +46,7 @@
     <p><span class="bold">Contre-indications :</span> </p>
     <ul>
       <li>Insuffisance hépatique sévère</li>
-      <li>Insuffisance rénale (DFG < 30mL/min, prudence et diminution de dose 50% si DFG entre 30-60) sévère</li>
+      <li>Insuffisance rénale (DFG &lt; 30mL/min, prudence et diminution de dose 50% si DFG entre 30-60) sévère</li>
       <li>Insuffisance respiratoire sévère</li>
       <li>Hypoplasie médullaire, alcoolisme chronique sévère</li>
       <li>Grossesse et allaitement</li>
@@ -72,7 +72,7 @@
       <li>
         <span class="bold">Améliorer la tolérance digestive :</span>
         <ul>
-          <li>Prise de MTX le soir au coucher
+          <p>Prise de MTX le soir au coucher</p>
           <li>Augmenter la posologie de spéciafoldine, à prendre 24h après le MTX, voire 1cp tous les jours de la semaine sans prise de MTX</li>
           <li>Diviser la prise en 2 prises hebdomadaires (eg, 10mg lundi, 10mg jeudi)</li>
         </ul>
@@ -102,8 +102,8 @@
       <li>
         <span class="bold">CAT en cas de cytolyse hépatique (voir fiche du CRI pour détail) :</span>
         <ul>
-          <li>Cytolyse <= 3N : surveillance rapprocher, éviter autre hépatotoxique (AINS++), perte de poids si suspicion de NASH associée</li>
-          <li>Cytolyse >3N < 6N : arrêt du MTX jusqu’à normalisation puis reprise possible à plus faible dose.</li>
+          <li>Cytolyse &lt;= 3N : surveillance rapprocher, éviter autre hépatotoxique (AINS++), perte de poids si suspicion de NASH associée</li>
+          <li>Cytolyse >3N &lt; 6N : arrêt du MTX jusqu’à normalisation puis reprise possible à plus faible dose.</li>
           <li>Cytolyse > 6N : arrêt du MTX, bilan de cytolyse hépatique, avis spécialisé.</li>
         </ul>
       </li>

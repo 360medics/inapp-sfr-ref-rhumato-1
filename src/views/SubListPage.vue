@@ -26,22 +26,22 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import { defineComponent } from "vue";
 import DataService from "@/service/DataService";
 import TreeMenu from "@/components/TreeMenu.vue";
 import SearchBar from "@/components/search/SearchBar.vue";
 import ListSearchResult from '@/components/ListSearchResult.vue';
 import AideCodage from '@/components/AideCodage.vue';
 
-export default Vue.extend({
+export default defineComponent({
   name: "SubListPage",
   data: () => ({
     submenu: [],
     displayResultSearch: false,
     listResult: [],
     resultNotFound: null,
-      displayAideCodage: false,
-      AideCodage,
+    displayAideCodage: false,
+    AideCodage,
   }),
   components: {
       TreeMenu,

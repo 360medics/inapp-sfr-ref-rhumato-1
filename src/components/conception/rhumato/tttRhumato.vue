@@ -5,7 +5,7 @@
 
     <p>Traitement de l’AJI systémique :</p>
     <ul>
-      <li>AINS : indométacine (avis d’expert) à la dose quotidienne de 3 mg/kg (hors AMM si <15 ans)</li>
+      <li>AINS : indométacine (avis d’expert) à la dose quotidienne de 3 mg/kg (hors AMM si &lt;15 ans)</li>
     </ul>
 
     <p>Si échec (après un maximum de 15 jours) ou intolérance aux AINS :</p>
@@ -18,7 +18,7 @@
 
     <p>Traitement de l’AJI oligoarticulaire et polyarticulaire :</p>
     <ul>
-      <li>AINS : privilégier l’indométacine (avis d’expert) à la dose quotidienne de 3 mg/kg (hors AMM si <15 ans)</li>
+      <li>AINS : privilégier l’indométacine (avis d’expert) à la dose quotidienne de 3 mg/kg (hors AMM si &lt;15 ans)</li>
       <li>MTX : 10 à 15 mg/m2 /semaine per os, sans dépasser la dose de 25 mg/ (pour les formes polyarticulaires et oligoarticulaires étendues ou résistantes au traitement par AINS et corticoïdes locaux)</li>
       <li>Léflunomide, efficacité au mieux comparable à celle du méthotrexate chez des enfants porteurs d’AJI polyarticulaire</li>
       <li>Anti TNF-α : indiqué dans les AJI polyarticulaires (ou oligoarticulaires étendues) avec ou sans facteur rhumatoïde, en échec ou intolérance au méthotrexate, dès l’âge de 2 ans. Peut être proposé hors AMM pour les oligoarthrites persistantes réfractaires aux infiltrations et au MTX.</li>
@@ -32,7 +32,7 @@
       infliximab : pas d’AMM mais peut parfois être proposé si formes réfractaires ou si mauvaise observance à un autre anti-TNF. En association avec le methotrexate
     </p>
     <ul>
-      <li>Anti IL-6 R : tocilizumab 8 mg/kg toutes les 2 semaines si poids est supérieur ou égal à 30 kg ou de 12 mg/kg toutes les 2 semaines si poids < 30 kg. Indiqué en cas d’échec du MTX ou d’une première biothérapie dans les AJI polyarticulaires dès l’âge de 2 ans en monothérapie ou en association au MTX</li>
+      <li>Anti IL-6 R : tocilizumab 8 mg/kg toutes les 2 semaines si poids est supérieur ou égal à 30 kg ou de 12 mg/kg toutes les 2 semaines si poids &lt; 30 kg. Indiqué en cas d’échec du MTX ou d’une première biothérapie dans les AJI polyarticulaires dès l’âge de 2 ans en monothérapie ou en association au MTX</li>
       <li>CTLA4-Ig (Abatacept) 10 mg/kg IV à J1, J15, J30 puis tous les mois pour AJI polyarticulaires (ou oligoarticulaires étendues) si échec ou intolérance à un anti-TNF alpha, à partir de l’âge de 6 ans, en monothérapie ou en association au MTX</li>
       <li>Corticothérapie par voie générale doit être exceptionnelle</li>
     </ul>

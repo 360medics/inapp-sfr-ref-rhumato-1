@@ -33,10 +33,12 @@
                 <i v-if="!this.showChildren" class="fas fa-chevron-right menu__icon menu__icon-right" />
                 <i v-else class="fas fa-chevron-down menu__icon menu__icon-down" />
             </div>
-            <div v-if="showChildren" v-for="(pdf, i) in children" :key="i" :class="{'tree-menu': showChildren,grandChildren: depth % 2 === 1,children: depth !== 0 && depth % 2 === 0,}">
+            <div v-if="showChildren">
+              <div v-for="(pdf, i) in children" :key="i" :class="{'tree-menu': showChildren,grandChildren: depth % 2 === 1,children: depth !== 0 && depth % 2 === 0,}">
                 <a :href="externLink(pdf.content)" class="label-wrapper" :target="isMobile() ? '_self' : '_blank'" rel="noopener noreferrer">
                     {{ pdf.name }}
                 </a>
+              </div>
             </div>
         </div>
 
@@ -78,17 +80,17 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
-import { CollapseTransition } from "@ivanv/vue-collapse-transition"
+import { defineComponent } from 'vue';
+import CollapseTransition from '@ivanv/vue-collapse-transition/src/CollapseTransition.vue'
 
-export default Vue.extend({
+export default defineComponent({
 
     props: ['name', 'type', 'slug', 'children', 'depth', 'content', 'index'],
     data() {
         return {
             showChildren: false,
             childrenIsArray: Array.isArray(this.children),
-            navigation: this.$root.$data.state.navigation
+            navigation: this.$store.state.navigation,
         };
     },
     name: 'tree-menu',
@@ -100,18 +102,23 @@ export default Vue.extend({
         this.showChildren = this.navigation[this.depth] === this.name;
     },
     watch: {
-        navigation: function (newNav, oldNav) {
+        navigation: {
+          handler(newNav, oldNav) {
             this.showChildren = this.navigation[this.depth] === this.name;
+          },
+          deep: true
         },
     },
     methods: {
         closeOtherMenu() {
             if (this.depth === 0 )
-                this.$root.$data.state.addNavigation(0, null)
+            {
+              this.$store.commit('addNavigation', {depth: 0, name: null})
+            }
         },
         toggleChildren() {
             this.showChildren = !this.showChildren;
-            this.$root.$data.state.addNavigation(this.depth, this.name)
+            this.$store.commit('addNavigation', {depth: this.depth, name: this.name})
         },
 
         isMobile() {

@@ -2,7 +2,7 @@
   <div class="Asas">
     <h2 class="title">Spondylarthrite axiale, Critères ASAS</h2>
     <p class="description">
-        Chez un patient présentant une rachialgie ≥ 3 mois dont l'âge du diagnostic est < 45 ans, on peut classer sa maladie dans la forme spondylarthrite axiale si:
+        Chez un patient présentant une rachialgie ≥ 3 mois dont l'âge du diagnostic est &lt; 45 ans, on peut classer sa maladie dans la forme spondylarthrite axiale si:
         Sacro-iliite à l'imagerie.
         ET
         ≥ 1 signe de spondylarthite.
@@ -74,10 +74,10 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import { defineComponent } from "vue";
 import Footer from "@/components/Footer.vue";
 
-export default Vue.extend({
+export default defineComponent({
     components: {Footer},
     data() {
     return {

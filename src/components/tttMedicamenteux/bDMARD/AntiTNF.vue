@@ -98,7 +98,7 @@
       <span class="underline">POSOLOGIES :</span>
       <ul>
         <li>PR, SpA et Rpso : 50 mg toutes les 4 semaines, possibilité d’augmenter à 100 mg/4semaines si > 100 kg et pas de réponse satisfaisante après 3 ou 4 doses.</li>
-        <li>RCH : 200 mg S0 puis 100 mg S2 puis 50 mg/4 semaines si < 80 kg, 100 mg/4semaines si > 80 kg.</li>
+        <li>RCH : 200 mg S0 puis 100 mg S2 puis 50 mg/4 semaines si &lt; 80 kg, 100 mg/4semaines si > 80 kg.</li>
       </ul>
     </div>
 
@@ -145,7 +145,7 @@
     <div>
       <ul>
         <li>Infection chronique ou antécédents d’infections récurrentes</li>
-        <li>Tumeurs malignes solides (active ou rémission < 5 ans sauf carcinome basocellulaire ou carcinome épidermoïde)</li>
+        <li>Tumeurs malignes solides (active ou rémission &lt; 5 ans sauf carcinome basocellulaire ou carcinome épidermoïde)</li>
         <li>Pathologie démyélinisante</li>
         <li>Grossesse (sauf Certolizumab)</li>
       </ul>

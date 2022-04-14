@@ -18,8 +18,8 @@
       <span class="underline">POSOLOGIES :</span>
       <ul>
         <li>PR et ACG : 1 injection SC 162 mg/sem</li>
-        <li>AJIp: < 30 kg : 1 injection 162 mg/3 semaines, > 20 kg 162 mg/2 semaines</li>
-        <li>AJIs : < 30 kg : 1 inj 162 mg/2s, > 30 kg : 1 inj/s</li>
+        <li>AJIp: &lt; 30 kg : 1 injection 162 mg/3 semaines, > 20 kg 162 mg/2 semaines</li>
+        <li>AJIs : &lt; 30 kg : 1 inj 162 mg/2s, > 30 kg : 1 inj/s</li>
       </ul>
 
       <br><br>
@@ -37,9 +37,9 @@
       <span class="underline">POSOLOGIES :</span>
       <ul>
         <li>PR : 8 mg/kg toutes les 4 semaines, max 800 mg.</li>
-        <li>Sd relargage : 8 mg/kg si > 30 kg, 12 mg/kg si < 30 kg</li>
-        <li>AJIs : 8 mg/kg toutes les 2 semaines si > 30 kg, 12 mg/kg toutes les 2 semaines si < 30 kg</li>
-        <li>AJIp : 8 mg/kg/4s si > 30 kg, 10 mg/kg/4s si < 30 kg</li>
+        <li>Sd relargage : 8 mg/kg si > 30 kg, 12 mg/kg si &lt; 30 kg</li>
+        <li>AJIs : 8 mg/kg toutes les 2 semaines si > 30 kg, 12 mg/kg toutes les 2 semaines si &lt; 30 kg</li>
+        <li>AJIp : 8 mg/kg/4s si > 30 kg, 10 mg/kg/4s si &lt; 30 kg</li>
       </ul>
     </div>
 <div class="line"></div>
@@ -73,7 +73,7 @@
       <li> Diverticulite</li>
       <li>Hépatotoxicité</li>
       <li>Anomalies du bilan lipidique</li>
-      <li>Tumeurs malignes solides (active ou rémission < 5 ans sauf carcinome basocellulaire ou carcinome épidermoïde)</li>
+      <li>Tumeurs malignes solides (active ou rémission &lt; 5 ans sauf carcinome basocellulaire ou carcinome épidermoïde)</li>
       <li>Pathologie démyélinisante</li>
     </ul>
   </section>

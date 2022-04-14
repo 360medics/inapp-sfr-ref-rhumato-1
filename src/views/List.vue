@@ -10,12 +10,12 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
+import { defineComponent } from 'vue';
 import SearchBar from '@/components/search/SearchBar.vue';
 import ListSearchResult from '@/components/ListSearchResult.vue';
 import ListPage from '@/components/ListPage.vue';
 
-export default Vue.extend({
+export default defineComponent({
   name: 'List',
   data: () => ({
     displayResultSearch: false,
@@ -28,9 +28,9 @@ export default Vue.extend({
     ListSearchResult,
     ListPage
   },
-    mounted(){
-   this.$root.$data.state.addNavigation(0, null)
-    },
+  mounted(){
+    this.$store.commit('addNavigation', {depth: 0, name: null})
+  },
   methods: {
     handleFindResult(result, searching) {
       this.displayResultSearch = searching

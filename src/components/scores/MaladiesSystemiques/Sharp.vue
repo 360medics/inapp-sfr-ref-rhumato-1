@@ -17,7 +17,7 @@
         <input class="Sharp__list__item__input" type="checkbox" id="pulmonaire" value="Atteinte pulmonaire" v-model="checkMajor">
         <label class="Sharp__list__item__label" for="pulmonaire">Atteinte pulmonaire :</label>
     </div>
-    <p class="Sharp__list__sublist">- DLCO < 70%</p>
+    <p class="Sharp__list__sublist">- DLCO &lt; 70%</p>
     <p class="Sharp__list__sublist">- HTAP</p>
     <p class="Sharp__list__sublist">- Lésion histologiques vasculaire</p>
     <div class="Sharp__list__item">
@@ -96,10 +96,10 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
+import { defineComponent } from 'vue';
 import Footer from "@/components/Footer.vue";
 
-export default Vue.extend({
+export default defineComponent({
   name: 'Sharp',
     components: {Footer},
     data:() => ({
