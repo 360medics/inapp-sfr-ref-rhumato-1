@@ -22,11 +22,13 @@ export default {
     color: black;
     margin: 30px 0;
 }
-img{
+
+img {
     height: 50px;
     margin-left: 10px;
 }
-p{
+
+p {
     margin-top: 14px;
     margin-bottom: 0;
 }
