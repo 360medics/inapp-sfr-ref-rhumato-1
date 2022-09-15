@@ -1,8 +1,7 @@
 <template>
     <footer class="footer">
-        L’évaluation d’un patient est avant tout clinique et/ou biologique. Le
-        traitement d’un patient ne peut reposer sur le seul résultat de cette
-        application.
+        <p>Avec le soutien de</p>
+        <img src="@/assets/logo-glpg.svg" alt="sponsor">
     </footer>
 </template>
 
@@ -14,10 +13,21 @@ export default {
 
 <style scoped>
 .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-style: italic;
-    font-weight: 200;
-    font-size: .75rem;
-    color: #707070;
-    margin: 70px 0;
+    font-weight: 400;
+    font-size: .85rem;
+    color: black;
+    margin: 30px 0;
+}
+img{
+    height: 50px;
+    margin-left: 10px;
+}
+p{
+    margin-top: 14px;
+    margin-bottom: 0;
 }
 </style>
