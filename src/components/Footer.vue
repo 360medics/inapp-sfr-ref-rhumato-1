@@ -1,6 +1,6 @@
 <template>
     <footer class="footer">
-        <p>Avec le soutien de</p>
+        <p>Avec le soutien institutionnel de</p>
         <img src="@/assets/logo-glpg.svg" alt="sponsor">
     </footer>
 </template>
