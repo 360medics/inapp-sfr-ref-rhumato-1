@@ -1,6 +1,6 @@
 <template>
     <footer class="footer">
-        <p>Avec le soutien institutionnel de</p>
+        <p>Avec le soutien institutionnel du laboratoire</p>
         <img src="@/assets/logo-glpg.svg" alt="sponsor">
     </footer>
 </template>
@@ -25,11 +25,15 @@ export default {
 
 img {
     height: 50px;
-    margin-left: 10px;
+    width: 50%;
+    margin-right: 10px;
+    margin-bottom: 5px;
 }
 
 p {
-    margin-top: 14px;
     margin-bottom: 0;
+    width: 50%;
+    text-align: center;
+    margin-left: 10px;
 }
 </style>
