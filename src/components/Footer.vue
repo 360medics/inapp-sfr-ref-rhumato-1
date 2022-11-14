@@ -14,6 +14,7 @@ export default {
 <style scoped>
 .footer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-style: italic;
