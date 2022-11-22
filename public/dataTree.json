@@ -340,11 +340,37 @@
               "subtitle": "",
               "appId": 1,
               "parentId": 2,
-              "type": "html",
+              "type": "list",
               "content": "",
-              "slug": "essdai",
-              "submenu": false,
-              "component": "Essdai"
+              "slug": "",
+              "submenu": true,
+              "component": "Essdai",
+              "children": [
+                {
+                  "id": "",
+                  "name": "Critère de classification du Gougerot-Sjögren",
+                  "subtitle": "ACR/EULAR 2016",
+                  "appId": 1,
+                  "parentId": 2,
+                  "type": "html",
+                  "content": "https://www.fai2r.org/les-pathologies-rares/gougerot-sjogren/criteres-de-classification-du-gougerot-sjogren-acr-eular-2016/",
+                  "slug": "gougerot-sjogren",
+                  "submenu": false,
+                  "component": "AcrEular2016"
+                },
+                {
+                  "id": "",
+                  "name": "ESSDAI",
+                  "subtitle": "",
+                  "appId": 1,
+                  "parentId": 2,
+                  "type": "html",
+                  "content": "https://www.fai2r.org/les-pathologies-rares/gougerot-sjogren/criteres-de-classification-du-gougerot-sjogren-acr-eular-2016/",
+                  "slug": "essdai",
+                  "submenu": false,
+                  "component": "essdai"
+                }
+              ]
             },
             {
               "id": "",
@@ -579,18 +605,6 @@
           "slug": "fibromyalgie",
           "submenu": false,
           "component": "First"
-        },
-        {
-          "id": "",
-          "name": "Syndrome de Gougerot Sjogren : ACR/EULAR 2016",
-          "subtitle": "ACR/EULAR 2016",
-          "appId": 1,
-          "parentId": 2,
-          "type": "html",
-          "content": "https://www.fai2r.org/les-pathologies-rares/gougerot-sjogren/criteres-de-classification-du-gougerot-sjogren-acr-eular-2016/",
-          "slug": "gougerot-sjogren",
-          "submenu": false,
-          "component": "AcrEular2016"
         },
         {
           "id": "",
