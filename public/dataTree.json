@@ -57,7 +57,7 @@
                       "appId": 1,
                       "parentId": 2,
                       "type": "link",
-                      "content": "./raid_fr_CA.pdf",
+                      "content": "https://med-cdn.ams3.digitaloceanspaces.com/assets/apps-misc/rhumaref/raid_fr_CA.pdf",
                       "slug": "raid-score",
                       "component": "Raid",
                       "submenu": false
@@ -369,8 +369,19 @@
                   "slug": "classification-eular",
                   "submenu": false,
                   "component": ""
+                },
+                {
+                  "id": "",
+                  "name": "Critères de classfication selon le SLICC",
+                  "subtitle": "",
+                  "appId": 1,
+                  "parentId": 2,
+                  "type": "link",
+                  "content": "https://www.fai2r.org/les-pathologies-rares/lupus-systemique/criteres/criteres-de-classification-selon-slicc/",
+                  "slug": "classification-slicc",
+                  "submenu": false,
+                  "component": ""
                 }
-
               ]
             },
             {
@@ -644,6 +655,18 @@
           "slug": "fibromyalgie",
           "submenu": false,
           "component": "First"
+        },
+        {
+          "id": "",
+          "name": "SCORE2/OP",
+          "subtitle": "",
+          "appId": 1,
+          "parentId": 2,
+          "type": "link",
+          "content": "https://www.inanutshell.ch/fr/calculateurs/table-de-risque-score/",
+          "slug": "score2-op",
+          "submenu": false,
+          "component": ""
         },
         {
           "id": "",
