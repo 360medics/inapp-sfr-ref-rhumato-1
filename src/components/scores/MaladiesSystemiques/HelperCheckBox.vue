@@ -23,7 +23,7 @@ import { defineComponent } from 'vue';
 import Footer from "@/components/Footer.vue";
 
 export default defineComponent({
-  name: 'SelenaSledaiCheckBox',
+  name: 'HelperCheckBox',
     components: {Footer},
     props: ['index', 'question', 'malusScore'],
   methods: {

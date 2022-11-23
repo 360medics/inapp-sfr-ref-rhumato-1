@@ -4,12 +4,12 @@
     <span class="line"></span>
     <br>
     <div v-for="(dataQuestion, i) in datasQuestion" :key="i">
-      <SelenaSledaiCheckBox
+      <HelperCheckBox
         :index="i"
         :question="dataQuestion.question"
         :malusScore="dataQuestion.malusScore"
         @upwardChange="upwardChange"
-      ></SelenaSledaiCheckBox>
+      ></HelperCheckBox>
       <br />
     </div>
 
@@ -35,11 +35,11 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import SelenaSledaiCheckBox from './HelperCheckBox.vue';
+import HelperCheckBox from './HelperCheckBox.vue';
 import Footer from "@/components/Footer.vue";
 
 export default defineComponent({
-  components: {Footer, SelenaSledaiCheckBox },
+  components: {Footer, HelperCheckBox },
   name: 'SelenaSledai',
   data() {
     return {
