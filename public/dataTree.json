@@ -29,7 +29,7 @@
           "children": [
             {
               "id": "",
-              "name": "Polyarthrite rhumatoide",
+              "name": "Polyarthrite rhumatoïde",
               "subtitle": "",
               "appId": 1,
               "parentId": 2,
@@ -48,6 +48,18 @@
                       "content": "http://medicalcul.free.fr/pr_acreular.html",
                       "slug": "acr-eular-2010",
                       "component": "AcrEular2010",
+                      "submenu": false
+                    },
+                    {
+                      "id": "",
+                      "name": "RAID",
+                      "subtitle": "",
+                      "appId": 1,
+                      "parentId": 2,
+                      "type": "link",
+                      "content": "./raid_fr_CA.pdf",
+                      "slug": "raid-score",
+                      "component": "Raid",
                       "submenu": false
                     },
                     {
@@ -324,15 +336,42 @@
           "children": [
             {
               "id": "",
-              "name": "Lupus érythémateux systémique (score selena-sledai)",
+              "name": "Lupus érythémateux systémique",
               "subtitle": "",
               "appId": 1,
               "parentId": 2,
-              "type": "html",
+              "type": "list",
               "content": "",
               "slug": "lupus-erythemateux-systemique",
               "component": "SelenaSledai",
-              "submenu": false
+              "submenu": true,
+              "children":[
+                {
+                  "id": "",
+                  "name": "Score selena-sledai",
+                  "subtitle": "",
+                  "appId": 1,
+                  "parentId": 2,
+                  "type": "html",
+                  "content": "",
+                  "slug": "lupus-erythemateux-systemique",
+                  "submenu": false,
+                  "component": "SelenaSledai"
+                },
+                {
+                  "id": "",
+                  "name": "Critères de classification EULAR / ACR",
+                  "subtitle": "",
+                  "appId": 1,
+                  "parentId": 2,
+                  "type": "link",
+                  "content": "https://www.fai2r.org/les-pathologies-rares/lupus-systemique/criteres/criteres-de-classification-eular-acr-2019/",
+                  "slug": "classification-eular",
+                  "submenu": false,
+                  "component": ""
+                }
+
+              ]
             },
             {
               "id": "",
