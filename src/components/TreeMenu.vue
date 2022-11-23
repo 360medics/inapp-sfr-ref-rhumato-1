@@ -291,4 +291,7 @@ export default defineComponent({
 .tree-menu {
   width: 100%;
 }
+div.grandChildren > div > a.label-wrapper {
+  padding-left: 0.6rem;
+}
 </style>
