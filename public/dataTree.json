@@ -658,15 +658,41 @@
         },
         {
           "id": "",
-          "name": "SCORE2/OP",
+          "name": "Scores cardio-vasculaires",
           "subtitle": "",
           "appId": 1,
           "parentId": 2,
-          "type": "link",
-          "content": "https://www.inanutshell.ch/fr/calculateurs/table-de-risque-score/",
+          "type": "list",
+          "content": "",
           "slug": "score2-op",
           "submenu": false,
-          "component": ""
+          "component": "",
+          "children": [
+            {
+              "id": "",
+              "name": "SCORE2",
+              "subtitle": "",
+              "appId": 1,
+              "parentId": 2,
+              "type": "link",
+              "content": "https://u-prevent.com/calculators/score2",
+              "slug": "SCORE-2",
+              "submenu": false,
+              "component": "HipLequesnes"
+            },
+            {
+              "id": "",
+              "name": "SCORE2-OP",
+              "subtitle": "",
+              "appId": 1,
+              "parentId": 2,
+              "type": "link",
+              "content": "https://u-prevent.com/calculators/score2OP",
+              "slug": "SCORE-2",
+              "submenu": false,
+              "component": "SCORE-2-OP"
+            }
+          ]
         },
         {
           "id": "",
