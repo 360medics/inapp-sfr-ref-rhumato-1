@@ -76,18 +76,16 @@
     </div>
 
      <ReferencesMedical sourceLink="https://www.fai2r.org/les-pathologies-rares/maladie-de-horton-pseudo-polyarthrite-rhizomelique/criteres/criteres-de-classification-de-larterite-a-cellules-geantes-de-lacr-1990/" />
-  <Footer/>
  </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 import ReferencesMedical from "@/components/ReferencesMedical.vue";
-import Footer from "@/components/Footer.vue";
 
 export default defineComponent({
   name: "ArthritisAcr1990",
-    components: {Footer, ReferencesMedical},
+    components: { ReferencesMedical },
     data() {
     return {
       questions: [],

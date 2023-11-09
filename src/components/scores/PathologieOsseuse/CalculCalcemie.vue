@@ -27,15 +27,13 @@
       Arnette Blackwell (Paris) 1995. ISBN : 2-7184-0770-0 Manuel Merck
       troisième édition. Ed. d'Après (Paris) 1999. ISBN : 2-914313-00-4
     </p>
-      <Footer/>
   </section>
 </template>
 
 <script lang="js">
-import Footer from "@/components/Footer";
+
 export default {
     name: 'CalculCalcemie',
-    components: {Footer},
     data() {
         return {
           calcemie: 0,
