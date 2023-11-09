@@ -1,7 +1,7 @@
 <template>
     <footer class="footer">
         <p>Avec le soutien institutionnel du laboratoire</p>
-        <img src="@/assets/logo-glpg.svg" alt="sponsor">
+        <!--img sponso-->
     </footer>
 </template>
 

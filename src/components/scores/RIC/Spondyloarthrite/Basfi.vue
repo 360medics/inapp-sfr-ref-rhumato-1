@@ -170,17 +170,15 @@
       the Bath Ankylosing Spondylitis Functional Index. J.Rheumatol.
       1994;21(12):2281-2285.
     </p>
-      <Footer/>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import Footer from "@/components/Footer.vue";
+
 
 export default defineComponent({
   name: 'Basfi',
-    components: {Footer},
     data() {
     return {
       vItem1: null,

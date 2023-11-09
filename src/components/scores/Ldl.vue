@@ -4,17 +4,14 @@
     <span class="line"></span>
 
     <a href="https://www.ldlcible.com/" target="_blank" rel="noopener noreferrer">Calculer en ligne</a>
-      <Footer/>
   </div>
 
 </template>
 
 <script lang="ts">
   import { defineComponent } from "vue";
-  import Footer from "@/components/Footer.vue";
   export default defineComponent({
     name: 'Ldl',
-      components: {Footer},
   });
 </script>
 
