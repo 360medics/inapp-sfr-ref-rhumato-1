@@ -294,18 +294,16 @@
       <div>
           <ReferencesMedical sourceLink="https://sclerodermie.net/2015/01/score-de-rodnan-calculateur/"/>
       </div>
-      <Footer/>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue"
 import ReferencesMedical from "@/components/ReferencesMedical.vue";
-import Footer from "@/components/Footer.vue";
 
 export default defineComponent({
   name:"Rodnan",
-    components: {Footer, ReferencesMedical},
+    components: { ReferencesMedical },
     mounted(){},
   data(){
     return {

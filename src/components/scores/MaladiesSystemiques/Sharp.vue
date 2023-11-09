@@ -90,18 +90,15 @@
       <p class="Sharp__description__text">Ou probable si 3 majeurs.</p>
       <p class="Sharp__description__text">Ou 2 majeurs et 1 mineurs sans anti-Sm.</p>
     </div>
-      <Footer/>
   </div>
 
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import Footer from "@/components/Footer.vue";
 
 export default defineComponent({
   name: 'Sharp',
-    components: {Footer},
     data:() => ({
       checkMajor: [],
       checkMinor: [],

@@ -90,18 +90,15 @@
     <p class="description">2Risque absolu (en %) de survenue d’un événement coronarien mortel ou un infarctus du myocarde non mortel sur 10 ans.</p>
 
     <p class="description">Les patients présentant les maladies/facteurs de risque susmentionnés entrent d’office dans les catégories « risque très élevé » ou « risque élevé » ; le recours au calculateur de risque est superflu pour ces patients.</p>
-    <Footer/>
 </div>
 
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue"
-import Footer from "@/components/Footer.vue";
 
 export default defineComponent({
 name:"Gsla",
-    components: {Footer},
     mounted()
     {}
 })

@@ -38,18 +38,16 @@
         </div>
 
         <ReferencesMedical sourceLink="https://pediadol.org/questionnaire-dn4-douleur-neuropathique/" />
-        <Footer/>
     </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 import ReferencesMedical from "@/components/ReferencesMedical.vue";
-import Footer from "@/components/Footer.vue";
 
 export default defineComponent({
     name: "DouleursNeuropathique",
-    components: {Footer, ReferencesMedical},
+    components: { ReferencesMedical },
     data(){
         return{
             total:0,
