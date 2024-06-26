@@ -226,13 +226,16 @@
       the Bath Ankylosing Spondylitis Disease Activity Index; Journal of
       Rheumatology; Dec. 1994, 21(12):2286-91.
     </p>
+    <Footer/>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import Footer from '@/components/Footer.vue';
 
 export default defineComponent({
+  components: { Footer },
   name: 'Basdai',
     data() {
     return {

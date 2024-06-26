@@ -105,16 +105,18 @@
       </p>
     </div>
       <ReferencesMedical sourceLink="https://www.fai2r.org/les-pathologies-rares/syndrome-des-antiphospholipides/criteres/criteres-de-classification-sapl/" />
+      <Footer/>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 import ReferencesMedical from "@/components/ReferencesMedical.vue";
+import Footer from "@/components/Footer.vue";
 
 export default defineComponent({
   name: "Sapl",
-    components: { ReferencesMedical },
+    components: { ReferencesMedical, Footer },
     data() {
     return {
       questions1: [],

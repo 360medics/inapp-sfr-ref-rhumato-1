@@ -102,14 +102,17 @@
 
       <h3>Références IMC</h3>
       <p>World Health Organ Tech Rep Ser. 1995;854:1-452. Physical status: the use and interpretation of anthropometry. Report of a WHO Expert Committee.</p>
+    <Footer/>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue"
+import Footer from "@/components/Footer.vue";
 
 export default defineComponent({
   name:"ClairanceCreatinine",
+    components: { Footer },
     data() {
     return {
       birth: null,

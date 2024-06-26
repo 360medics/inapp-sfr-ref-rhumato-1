@@ -25,9 +25,11 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import Footer from "@/components/Footer.vue";
 
 export default defineComponent({
   name: "HaqQuestion",
+    components: { Footer },
     props: ["index", "title", "question", "malusScore"],
   data() {
     return {

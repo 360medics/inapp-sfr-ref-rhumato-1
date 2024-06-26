@@ -92,15 +92,17 @@
       </em>
     </div>
       <ReferencesMedical sourceText="application rheumatools" />
+      <Footer/>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 import ReferencesMedical from "@/components/ReferencesMedical.vue";
+import Footer from "@/components/Footer.vue";
 
 export default defineComponent({
-    components: { ReferencesMedical },
+    components: { ReferencesMedical, Footer },
     data() {
     return {
       tenderJoins: null,

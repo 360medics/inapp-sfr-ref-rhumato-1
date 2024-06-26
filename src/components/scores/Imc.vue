@@ -32,16 +32,18 @@
       </p>
       <ReferencesMedical sourceLink="https://www.imc.fr/" />
     </div>
+      <Footer/>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 import ReferencesMedical from "@/components/ReferencesMedical.vue";
+import Footer from "@/components/Footer.vue";
 
 export default defineComponent({
     name: "Imc",
-    components: { ReferencesMedical },
+    components: { ReferencesMedical, Footer },
     data() {
     return {
       weight: null,

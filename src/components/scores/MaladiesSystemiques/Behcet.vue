@@ -66,18 +66,20 @@
   </div>
   </div>
       <ReferencesMedical sourceLink="https://www.fai2r.org/les-pathologies-rares/behcet/criteres/" />
+      <Footer/>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 import ReferencesMedical from "@/components/ReferencesMedical.vue";
+import Footer from "@/components/Footer.vue";
 
 
 
 export default defineComponent({
   name: "Behcet",
-    components: { ReferencesMedical },
+    components: { ReferencesMedical, Footer },
     data() {
     return {
       score1: 0,

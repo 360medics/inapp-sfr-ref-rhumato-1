@@ -100,14 +100,17 @@
       Lukas C, Landewe R, Sieper J, Dougados M, Davis J, Braun J, et al. Taylor
       W, Gladman D, Helliwel P et al. Arthr & Rheum 2006; 54: 2665-73
     </p>
+    <Footer/>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import Footer from '@/components/Footer.vue';
 
 export default defineComponent({
   name: 'Caspar',
+    components: { Footer },
     data() {
     return {
       isFirstCriteriaChecked: false,

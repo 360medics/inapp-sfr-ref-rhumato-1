@@ -29,15 +29,17 @@
       disease activity index for lupus patients. Arthritis Rheum., 1992, 35,
       630-640.
     </p>
+    <Footer />
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
 import HelperCheckBox from './HelperCheckBox.vue';
+import Footer from '@/components/Footer.vue';
 
 export default defineComponent({
-  components: { HelperCheckBox },
+  components: { HelperCheckBox, Footer },
   name: 'SelenaSledai',
   data() {
     return {
