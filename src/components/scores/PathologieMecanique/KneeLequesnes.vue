@@ -28,6 +28,7 @@
 
 <!--&lt;!&ndash;      <ReferencesMedical sourceLink="http://www.antalvite.fr/pdf/Indice%20algo-fonctionnel%20de%20Lequesne%20pour%20le%20genou.pdf" />&ndash;&gt;-->
 <!--*Note* : les liens avec des espaces ne fonctionne pas avec les inapps 360medics-->
+    <Footer/>
   </div>
 </template>
 
@@ -36,12 +37,14 @@ import { defineComponent } from "vue"
 import HipLequesnesQuestion from "@/components/scores/PathologieMecanique/HipLequesnesQuestion.vue";
 import { isMobile } from '@/global';
 import ReferencesMedical from "@/components/ReferencesMedical.vue";
+import Footer from "@/components/Footer.vue";
 
 export default defineComponent({
   name:"KneeLequesnes",
   components: {
     ReferencesMedical,
-    HipLequesnesQuestion
+    HipLequesnesQuestion,
+    Footer
   },
 
   data() {

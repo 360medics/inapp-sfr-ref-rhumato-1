@@ -364,17 +364,20 @@
           Luqmani et al (1997). Disease assessment and management of the vasculitides. Baillieres Clin Rheumatol 11(2): 423-46;
           Mukhtyar et al (2009). Modification and validation of the Birmingham Vasculitis Activity Score (version 3) ARD 2009 68:1827"
       />
+      <Footer/>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 import ReferencesMedical from "@/components/ReferencesMedical.vue";
+import Footer from "@/components/Footer.vue";
 
 export default defineComponent({
   name: "Bvas",
   components: {
       ReferencesMedical,
+      Footer
   },
 
   data() {

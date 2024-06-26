@@ -96,15 +96,17 @@
       message2="- Leeb BF, Bird HA. A disease activity score for polymyalgia rheumatica. Ann Rheum Dis 2004;63:1279-83.<br><br>
 - Binard A, Lefebvre B, De Bandt M, Berthelot JM, Saraux A; Club “Rhumatismes et Infl ammation”. Validity of the polymyalgia rheumatica activity score in primary care practice. Ann Rheum Dis 2009;68:541-5"
     />
+   <Footer/>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 import ReferencesMedical from "@/components/ReferencesMedical.vue";
+import Footer from "@/components/Footer.vue";
 
 export default defineComponent({
-    components: { ReferencesMedical },
+    components: { ReferencesMedical, Footer },
     data() {
     return {
       crp: null,

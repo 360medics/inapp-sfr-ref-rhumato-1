@@ -15,6 +15,7 @@
     </div>
     <p class="result">Total {{ finalScore }} </p>
       <ReferencesMedical sourceText="application rheumatools" />
+      <Footer/>
   </div>
 </template>
 
@@ -22,12 +23,14 @@
 import { defineComponent } from 'vue';
 import HaqQuestion from './HaqQuestion.vue';
 import ReferencesMedical from "@/components/ReferencesMedical.vue";
+import Footer from '@/components/Footer.vue';
 
 export default defineComponent({
   name: 'HAQ',
   components: {
     ReferencesMedical,
     HaqQuestion,
+    Footer,
   },
   data() {
     return {

@@ -26,15 +26,17 @@
     >
       Calculer en ligne
     </a>
+    <Footer/>
   </section>
 </template>
 
 <script lang="js">
 import SubListPage from "@/views/SubListPage";
+import Footer from "@/components/Footer.vue";
 
 export default {
   name: 'FRAX',
-  components: { SubListPage },
+  components: { SubListPage, Footer },
 
   mounted() {
   },

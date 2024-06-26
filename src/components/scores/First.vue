@@ -100,17 +100,19 @@
         Perrot S, Bouhassira D, Fermanian J. Cercle d'Etude de la Douleur en Rhumatologie. Development and validation of the Fibromyalgia Rapid Screening tool (FiRST). Pain. 2010 ; 150:250."
       source-link="http://medicalcul.free.fr/firstquest.html"
     />
+    <Footer />
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 import { isMobile } from '@/global';
+import Footer from "@/components/Footer.vue";
 import ReferencesMedical from "@/components/ReferencesMedical.vue";
 
 export default defineComponent({
   name: "First",
-    components: { ReferencesMedical },
+    components: { ReferencesMedical, Footer },
     data() {
     return {
       quest: [],

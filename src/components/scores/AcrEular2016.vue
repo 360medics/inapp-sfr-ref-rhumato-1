@@ -34,17 +34,19 @@
       </div>
 
       <ReferencesMedical sourceLink="https://www.fai2r.org/les-pathologies-rares/gougerot-sjogren/criteres-de-classification-du-gougerot-sjogren-acr-eular-2016/" />
+        <Footer/>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 import { isMobile } from '@/global';
+import Footer from "@/components/Footer.vue";
 import ReferencesMedical from '@/components/ReferencesMedical.vue'
 
 export default defineComponent({
   name: "AcrEular2016",
-    components: { ReferencesMedical },
+    components: { ReferencesMedical, Footer },
     data() {
     return {
         resultPoint: 0,

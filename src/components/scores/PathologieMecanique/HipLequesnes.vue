@@ -24,6 +24,7 @@
     <p>Si l’indice est ≥ à 10-12, une prothèse peut être envisagée</p>
 <!--&lt;!&ndash;      <ReferencesMedical sourceLink="http://www.antalvite.fr/pdf/Indice%20algo-fonctionnel%20de%20Lequesne%20pour%20la%20hanche.pdf" />&ndash;&gt;-->
     <!--*Note* : les liens avec des espaces ne fonctionne pas avec les inapps 360medics, pas de référence-->
+    <Footer/>
   </div>
 </template>
 
@@ -31,12 +32,14 @@
 import { defineComponent } from "vue";
 import HipLequesnesQuestion from "./HipLequesnesQuestion.vue";
 import ReferencesMedical from "@/components/ReferencesMedical.vue";
+import Footer from "@/components/Footer.vue";
 
 export default defineComponent({
   name: "HipLequesnes",
   components: {
     ReferencesMedical,
-    HipLequesnesQuestion
+    HipLequesnesQuestion,
+    Footer
   },
   data() {
     return {
