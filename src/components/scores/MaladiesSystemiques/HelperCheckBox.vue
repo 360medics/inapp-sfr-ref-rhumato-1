@@ -20,9 +20,11 @@
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
+import Footer from '@/components/Footer.vue';
 
 export default defineComponent({
   name: 'HelperCheckBox',
+    components: { Footer },
     props: ['index', 'question', 'malusScore'],
   methods: {
     checkboxChange(e: any) {

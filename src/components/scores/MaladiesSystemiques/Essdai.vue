@@ -388,13 +388,16 @@
     <div class="essdai-result" :class="{green : result < 4, marron : (result >= 4 && result < 50), orange: (result >= 50 && result < 100),  red: result >= 100}">
       Résultat: {{ result }} - {{ activity }}
     </div>
+      <Footer/>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import Footer from '@/components/Footer.vue';
 
 export default defineComponent({
+    components: { Footer },
     data() {
     return {
       score1: null,

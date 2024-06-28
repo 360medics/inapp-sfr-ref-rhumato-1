@@ -29,16 +29,18 @@
     </div>
 
       <ReferencesMedical sourceLink="https://www.fai2r.org/les-pathologies-rares/sclerodermie-systemique/criteres/" />
+      <Footer/>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 import ReferencesMedical from "@/components/ReferencesMedical.vue";
+import Footer from "@/components/Footer.vue";
 
 export default defineComponent({
   name: "SystemicSclerodermaAcrEular",
-    components: { ReferencesMedical },
+    components: { ReferencesMedical, Footer },
     data(){
     return{
       total:0,

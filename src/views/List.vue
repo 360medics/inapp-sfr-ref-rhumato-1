@@ -6,6 +6,7 @@
     <ListSearchResult :resultItems="listResult" :notFound="resultNotFound" v-if="displayResultSearch"/>
       <ListPage v-else="displayResultSearch"/>
       </div>
+    <Footer/>
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import { defineComponent } from 'vue';
 import SearchBar from '@/components/search/SearchBar.vue';
 import ListSearchResult from '@/components/ListSearchResult.vue';
 import ListPage from '@/components/ListPage.vue';
+import Footer from '@/components/Footer.vue';
 
 export default defineComponent({
   name: 'List',
@@ -27,6 +29,7 @@ export default defineComponent({
     SearchBar,
     ListSearchResult,
     ListPage,
+    Footer,
   },
   mounted(){
     this.$store.commit('addNavigation', {depth: 0, name: null})

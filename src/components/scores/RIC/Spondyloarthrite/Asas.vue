@@ -69,13 +69,16 @@
         validation and final selection. Ann Rheum Dis. 2009;68:777–83.
       </em>
     </div>
+    <Footer />
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import Footer from "@/components/Footer.vue";
 
 export default defineComponent({
+    components: { Footer },
     data() {
     return {
       result: "",
