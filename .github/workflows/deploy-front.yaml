@@ -1,0 +1,56 @@
+name: Front - deploy a branch on an environment
+run-name: Deploy front '${{ github.ref_name }}' to ${{ github.event.inputs.environment }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        type: choice
+        description: 'Environment to deploy to'
+        required: true
+        options:
+          - dev
+          - beta
+          - prod
+
+env:
+  INAPP_NAME: sfr-ref-rhumato-1
+  NODEJS_VERSION: 14.21.3
+
+jobs:
+  deploy:
+    name: Deploy web application
+    runs-on: ubuntu-22.04
+    environment: ${{ github.event.inputs.environment }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.1.7
+
+      - name: Install NodeJS
+        uses: actions/setup-node@v4.0.3
+        with:
+          node-version: ${{ env.NODEJS_VERSION }}
+
+      - name: Install Dependencies
+        shell: bash
+        run: npm install
+
+      - name: Build web app
+        shell: bash
+        run: npm run build
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id: ${{ vars.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ vars.AWS_REGION }}
+
+      - name: Deploy web app
+        shell: bash
+        run: |
+          aws s3 sync ./dist s3://pulselife-${{ github.event.inputs.environment }}-inapps/${{ env.INAPP_NAME }}
+
+          aws cloudfront create-invalidation                             \
+            --distribution-id ${{ vars.AWS_CLOUDFRONT_DISTRIBUTION_ID }} \
+            --paths "/${{ env.INAPP_NAME }}"
