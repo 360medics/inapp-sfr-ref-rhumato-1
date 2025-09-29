@@ -1,7 +1,7 @@
 <template>
     <footer class="footer">
         <p>Avec le soutien institutionnel du laboratoire</p>
-        <img src="@/assets/logo-ucb.svg" alt="sponsor" />
+        <img src="@/assets/logo-ucb-v2.jpg" alt="sponsor" />
     </footer>
 </template>
 
