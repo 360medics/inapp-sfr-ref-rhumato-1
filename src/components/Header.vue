@@ -5,7 +5,6 @@
 
     <router-link  to="/">
       <img class="header__logo" :src="require('@/assets/logo-sfr.png')" alt="Logo sfr" />
-      <img class="header__logo" :src="require('@/assets/logo-ref.png')" alt="Logo ref" />
     </router-link>
 
       <div v-if="isMobile()">

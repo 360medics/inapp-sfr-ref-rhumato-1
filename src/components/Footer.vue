@@ -25,10 +25,10 @@ export default {
 }
 
 img {
-    height: 50px;
-    width: 50%;
-    margin-right: 10px;
-    margin-bottom: 5px;
+    max-height: 50px;
+    width: auto;
+    max-width: 100%;
+    margin: 5px 0;
 }
 
 p {
