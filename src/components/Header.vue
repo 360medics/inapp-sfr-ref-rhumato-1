@@ -46,7 +46,6 @@ export default defineComponent({
 
 .header {
   width: $header_width;
-  padding: $header_gutter 0;
   background-color: $header_BackgroundColor;
   box-shadow: $header_shadow;
   border-radius: 0 0 $header_radius $header_radius;
@@ -58,6 +57,8 @@ export default defineComponent({
     max-width: $headerLogo_width;
     height: $headerLogo_height;
     text-decoration: none;
+    left: -2rem;
+    position: relative;
   }
   &__icon {
     width: $headerIcon_size;
